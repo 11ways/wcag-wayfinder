@@ -42,9 +42,11 @@ function LanguageWrapper() {
   const { lang } = useParams<{ lang: string }>();
   const navigate = useNavigate();
   const location = useLocation();
-  const { i18n: i18nInstance, ready } = useTranslation();
+  const { i18n: i18nInstance } = useTranslation();
   const [languageSynced, setLanguageSynced] = useState(false);
 
+  // CRITICAL: Change language immediately, before any components render
+  // This prevents the initial navigator language from being used
   useEffect(() => {
     // If language is invalid, redirect to default language
     if (!isValidLanguage(lang)) {
@@ -55,13 +57,11 @@ function LanguageWrapper() {
       return;
     }
 
-    // Sync i18n language with URL
+    // Sync i18n language with URL synchronously and immediately
     const syncLanguage = async () => {
-      // Only change if different from current
+      // Always change language to match URL
       if (i18nInstance.language !== lang) {
-        // Load all namespaces for the new language before switching
-        await i18nInstance.loadNamespaces(['common', 'filters', 'results', 'settings']);
-        await i18nInstance.loadLanguages(lang);
+        // Change language immediately (don't wait for loading)
         await i18nInstance.changeLanguage(lang);
       }
 
@@ -79,7 +79,7 @@ function LanguageWrapper() {
   }, [lang, i18nInstance, navigate, location.pathname, location.search, location.hash]);
 
   // Don't render until language is valid and synced
-  if (!isValidLanguage(lang) || !languageSynced || !ready) {
+  if (!isValidLanguage(lang) || !languageSynced) {
     return null;
   }
 

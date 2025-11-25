@@ -49,17 +49,20 @@ const initOptions: InitOptions<HttpBackendOptions> = {
   },
 
   // Language detection configuration
+  // NOTE: We manually sync language in LanguageWrapper component
+  // Auto-detection is disabled to avoid conflicts with React Router
   detection: {
-    // Priority: URL path first, then localStorage, then browser
-    order: ['path', 'localStorage', 'navigator'],
+    // Only use navigator as fallback, ignore path and localStorage
+    // LanguageWrapper handles URL-based language switching
+    order: ['navigator'],
 
-    // Look for language in first path segment: /en/, /nl/, /fr/
+    // Path detection disabled (LanguageWrapper handles this)
     lookupFromPathIndex: 0,
 
-    // Cache detected language in localStorage
-    caches: ['localStorage'],
+    // Don't cache in localStorage - URL is the single source of truth
+    caches: [],
 
-    // localStorage key
+    // localStorage key (kept for reference but not used)
     lookupLocalStorage: LANGUAGE_STORAGE_KEY,
   } satisfies DetectorOptions,
 

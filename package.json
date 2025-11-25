@@ -1,6 +1,6 @@
 {
   "name": "wcag-explorer",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "private": true,
   "workspaces": [
     "apps/*",
@@ -10,9 +10,10 @@
     "prepare": "husky",
     "db:migrate": "bun run packages/db/src/migrate.ts",
     "db:seed": "bun run packages/db/src/seed.ts",
-    "dev": "bun run dev:api & bun run dev:web",
+    "dev": "bun run kill-ports && bun run dev:api & bun run dev:web",
     "dev:api": "cd apps/api && bun run dev",
     "dev:web": "cd apps/web && bun run dev",
+    "kill-ports": "lsof -ti:8787,5173 | xargs kill -9 2>/dev/null || true",
     "build": "cd apps/web && bun run build",
     "lint": "cd apps/web && bun run lint",
     "typecheck": "cd apps/web && bun run typecheck",

@@ -257,6 +257,7 @@ deploy_frontend() {
     rsync -avz --delete \
         --exclude='.DS_Store' \
         --exclude='*.map' \
+        --exclude='server.js' \
         "$LOCAL_WEB/dist/" "$SERVER:$FRONTEND_DIR/" > /dev/null
 
     # Permissions
@@ -304,6 +305,8 @@ deploy_api() {
 
     if [ "$API_COUNT" -eq 0 ] && [ "$PKG_COUNT" -eq 0 ]; then
         log_success "No changes - API is up to date"
+        log_info "Restarting API anyway to pick up any database changes..."
+        restart_api
         return 0
     fi
 
@@ -354,7 +357,7 @@ deploy_api() {
     # Ensure server.js wrapper exists
     ensure_server_wrapper
 
-    # Restart API
+    # Always restart API after deploying code changes
     restart_api
 
     log_success "API deployed"
@@ -408,19 +411,29 @@ WRAPPER_EOF"
 restart_api() {
     log_info "Restarting API..."
 
-    # Find and kill the API process - Hohenheim will auto-restart
-    API_PID=$(ssh "$SERVER" "pgrep -f 'wcag.be/api/apps/api/src/server.js' | head -1" 2>/dev/null || true)
+    # Kill both the Node wrapper and Bun process - Hohenheim will auto-restart
+    WRAPPER_PID=$(ssh "$SERVER" "pgrep -f 'wcag.be/api/apps/api/src/server.js' | head -1" 2>/dev/null || true)
+    BUN_PID=$(ssh "$SERVER" "pgrep -f 'wcag.be/api/apps/api/src/index.ts' | head -1" 2>/dev/null || true)
 
-    if [ -n "$API_PID" ]; then
-        ssh "$SERVER" "kill $API_PID 2>/dev/null || true"
+    if [ -n "$WRAPPER_PID" ] || [ -n "$BUN_PID" ]; then
+        # Kill wrapper first (will also kill child, but be explicit)
+        [ -n "$WRAPPER_PID" ] && ssh "$SERVER" "kill $WRAPPER_PID 2>/dev/null || true"
+        [ -n "$BUN_PID" ] && ssh "$SERVER" "kill $BUN_PID 2>/dev/null || true"
+
         log_info "Waiting for restart..."
-        sleep 3
+        sleep 5
 
-        # Verify
-        if ssh "$SERVER" "curl -s http://localhost:4751/api/principles > /dev/null 2>&1"; then
-            log_success "API restarted"
+        # Verify restart by checking if new process is running
+        NEW_PID=$(ssh "$SERVER" "pgrep -f 'wcag.be/api/apps/api/src/index.ts' | head -1" 2>/dev/null || true)
+        if [ -n "$NEW_PID" ]; then
+            # Also verify API is responding
+            if ssh "$SERVER" "curl -s http://localhost:4751/api/principles > /dev/null 2>&1"; then
+                log_success "API restarted (PID: $NEW_PID)"
+            else
+                log_warning "API process running but not responding - may still be starting"
+            fi
         else
-            log_warning "API may still be starting - verify manually"
+            log_warning "API process not found - may need manual restart via Hohenheim"
         fi
     else
         log_warning "API process not found - may need manual restart via Hohenheim"
