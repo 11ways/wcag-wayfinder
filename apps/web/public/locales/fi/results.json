@@ -1,0 +1,31 @@
+{
+  "error": {
+    "title": "Virhe",
+    "generic": "Jokin meni pieleen. Yritä uudelleen."
+  },
+  "empty": {
+    "searchTitle": "Emme löytäneet sivuja haulla \"{{query}}\"",
+    "noResults": "Tuloksia ei löytynyt",
+    "suggestions": "Ehkä etsit jotain näistä?",
+    "adjustFilters": "Kokeile muuttaa suodattimia tai hakukyselyä"
+  },
+  "criterion": {
+    "showDetails": "Näytä tiedot",
+    "hideDetails": "Piilota tiedot",
+    "level": "Taso",
+    "version": "Versio",
+    "principle": "Periaate",
+    "guideline": "Ohje",
+    "tags": "Tunnisteet",
+    "affects": "Vaikuttaa",
+    "responsibility": "Vastuu",
+    "technologies": "Teknologiat",
+    "howToMeet": "Miten täyttää",
+    "understanding": "Ymmärtäminen"
+  },
+  "announcements": {
+    "pageLoaded": "Sivu {{page}} / {{total}} ladattu",
+    "resultsUpdated": "{{count}} tulosta löytyi",
+    "jumpedToFirst": "Siirrytty ensimmäiseen tulokseen"
+  }
+}

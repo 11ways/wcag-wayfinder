@@ -1,0 +1,105 @@
+{
+  "app": {
+    "title": "WCAG Wayfinder",
+    "beta": "Beta",
+    "skipToSearch": "Gå til søgning",
+    "skipToFilters": "Gå til filtre",
+    "skipToResults": "Gå til resultater"
+  },
+  "header": {
+    "hideFilters": "Skjul filtre",
+    "showFilters": "Vis filtre",
+    "searchLabel": "Søg kriterier",
+    "searchPlaceholder": "Søg titel/beskrivelse...",
+    "searchHelp": "Søg i WCAG-succeskriterierenes titler og beskrivelser",
+    "startTour": "Start rundvisning",
+    "favorites": "{{count}} favorit",
+    "favorites_other": "{{count}} favoritter",
+    "clearFavorites": "Ryd alle favoritter"
+  },
+  "navigation": {
+    "previous": "Forrige",
+    "next": "Næste",
+    "pageOf": "Side {{page}} af {{total}}",
+    "pageLabel": "Side {{page}}"
+  },
+  "views": {
+    "list": "Listevisning",
+    "card": "Kortvisning",
+    "grid": "Gittervisning"
+  },
+  "actions": {
+    "clearAll": "Ryd alt",
+    "reset": "Nulstil",
+    "cancel": "Annuller",
+    "confirm": "Bekræft",
+    "expand": "Udvid",
+    "collapse": "Skjul",
+    "close": "Luk"
+  },
+  "status": {
+    "loading": "Indlæser…",
+    "error": "Fejl",
+    "noResults": "Ingen resultater fundet",
+    "resultsFound": "{{count}} resultat fundet",
+    "resultsFound_other": "{{count}} resultater fundet",
+    "pageLoaded": "Side {{page}} af {{total}} indlæst"
+  },
+  "language": {
+    "select": "Vælg sprog",
+    "switching": "Skifter til {{language}}...",
+    "changed": "Sprog ændret til {{language}}"
+  },
+  "favorites": {
+    "add": "Tilføj {{criterion}} til favoritter",
+    "remove": "Fjern {{criterion}} fra favoritter",
+    "addShort": "Tilføj til favoritter",
+    "removeShort": "Fjern fra favoritter"
+  },
+  "share": {
+    "link": "Del link til {{criterion}}",
+    "linkShort": "Del link",
+    "copied": "Link kopieret",
+    "copiedMessage": "Linket til **{{criterion}}** {{title}} er blevet kopieret til udklipsholderen."
+  },
+  "theme": {
+    "label": "Udseende:",
+    "select": "Vælg udseendetema",
+    "changed": "Skiftet til {{theme}}-tema",
+    "system": "Systemstandard",
+    "light": "Lys tilstand",
+    "dark": "Mørk tilstand",
+    "solarizedLight": "Solarized Light",
+    "solarizedDark": "Solarized Dark",
+    "dracula": "Dracula",
+    "highContrast": "Høj kontrast"
+  },
+  "modal": {
+    "close": "Luk",
+    "dialogClosed": "Dialog lukket"
+  },
+  "footer": {
+    "translationCredits": "Oversættelseskreditter",
+    "copyright": "© {{year}} WCAG Wayfinder",
+    "madeWith": "Lavet med ♥ for tilgængelighed"
+  },
+  "translationCredits": {
+    "title": "Oversættelseskreditter",
+    "intro": "WCAG-succeskriterieoversættelser leveres af autoriserede oversættere fra hele verden.",
+    "language": "Sprog",
+    "translator": "Oversætter",
+    "organization": "Organisation",
+    "publicationDate": "Udgivelsesdato",
+    "source": "Kilde",
+    "authorization": "Autorisation",
+    "w3cAuthorized": "W3C-autoriseret oversættelse",
+    "communityTranslation": "Fællesskabsoversættelse",
+    "noTranslator": "Ukendt oversætter",
+    "viewSource": "Se original kilde"
+  },
+  "pageTitles": {
+    "home": "WCAG-succeskriterier",
+    "favorites": "Mine favoritter",
+    "criterion": "{{num}} {{title}}"
+  }
+}

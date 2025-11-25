@@ -1,0 +1,31 @@
+{
+  "error": {
+    "title": "Fejl",
+    "generic": "Noget gik galt. Prøv venligst igen."
+  },
+  "empty": {
+    "searchTitle": "Vi fandt ingen sider, der matcher \"{{query}}\"",
+    "noResults": "Ingen resultater fundet",
+    "suggestions": "Måske leder du efter en af disse?",
+    "adjustFilters": "Prøv at justere dine filtre eller søgeforespørgsel"
+  },
+  "criterion": {
+    "showDetails": "Vis detaljer",
+    "hideDetails": "Skjul detaljer",
+    "level": "Niveau",
+    "version": "Version",
+    "principle": "Princip",
+    "guideline": "Retningslinje",
+    "tags": "Tags",
+    "affects": "Påvirker",
+    "responsibility": "Ansvar",
+    "technologies": "Teknologier",
+    "howToMeet": "Sådan opfyldes",
+    "understanding": "Forståelse"
+  },
+  "announcements": {
+    "pageLoaded": "Side {{page}} af {{total}} indlæst",
+    "resultsUpdated": "{{count}} resultater fundet",
+    "jumpedToFirst": "Hoppet til første resultat"
+  }
+}

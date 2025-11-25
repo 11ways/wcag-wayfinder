@@ -1,0 +1,52 @@
+{
+  "title": "筛选",
+  "reset": "重置筛选",
+  "resetLabel": "将所有筛选重置为默认值",
+  "clearAll": "清除所有筛选",
+  "clearAllLabel": "清除所有筛选并重置为默认值",
+  "backToAll": "返回所有准则",
+  "showingFavorites": "显示 {{count}} 个收藏",
+  "showingFavorites_other": "显示 {{count}} 个收藏",
+  "version": {
+    "label": "版本",
+    "help": "了解更多关于 WCAG 版本的信息",
+    "modalTitle": "关于 WCAG 版本"
+  },
+  "level": {
+    "label": "级别",
+    "help": "了解更多关于符合性级别的信息",
+    "modalTitle": "关于符合性级别"
+  },
+  "principle": {
+    "label": "原则",
+    "help": "了解更多关于 WCAG 原则的信息",
+    "modalTitle": "关于 WCAG 原则",
+    "selectedCount": "{{principle}}（已选择 {{checked}}/{{total}} 条指南）",
+    "customizeLabel": "自定义 {{principle}} 指南",
+    "guidelinesLabel": "{{principle}} 指南"
+  },
+  "guideline": {
+    "search": "搜索指南",
+    "searchPlaceholder": "搜索指南...",
+    "notFound": "未找到指南",
+    "found": "找到 {{count}} 条指南",
+    "found_other": "找到 {{count}} 条指南",
+    "clear": "清除指南筛选",
+    "count": "{{checked}}/{{total}}"
+  },
+  "customize": "自定义",
+  "tags": {
+    "active": "{{count}} 个活跃标签",
+    "active_other": "{{count}} 个活跃标签",
+    "shown": "显示 {{count}} 条准则",
+    "shown_other": "显示 {{count}} 条准则",
+    "hidden": "{{count}} 条已隐藏",
+    "expandHidden": "展开隐藏的准则",
+    "expandHiddenShort": "展开隐藏",
+    "collapseHidden": "收起隐藏的准则",
+    "collapseHiddenShort": "收起隐藏",
+    "clearAll": "全部清除",
+    "remove": "移除标签 {{tag}}",
+    "maxReached": "最多可选择 3 个标签"
+  }
+}

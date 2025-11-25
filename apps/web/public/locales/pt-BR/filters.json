@@ -1,0 +1,52 @@
+{
+  "title": "Filtros",
+  "reset": "Redefinir filtros",
+  "resetLabel": "Redefinir todos os filtros para os padrões",
+  "clearAll": "Limpar todos os filtros",
+  "clearAllLabel": "Limpar todos os filtros e redefinir para os padrões",
+  "backToAll": "Voltar para todos os critérios",
+  "showingFavorites": "Exibindo {{count}} favorito",
+  "showingFavorites_other": "Exibindo {{count}} favoritos",
+  "version": {
+    "label": "Versão",
+    "help": "Saiba mais sobre as versões WCAG",
+    "modalTitle": "Sobre as versões WCAG"
+  },
+  "level": {
+    "label": "Nível",
+    "help": "Saiba mais sobre os níveis de conformidade",
+    "modalTitle": "Sobre os níveis de conformidade"
+  },
+  "principle": {
+    "label": "Princípio",
+    "help": "Saiba mais sobre os princípios WCAG",
+    "modalTitle": "Sobre os princípios WCAG",
+    "selectedCount": "{{principle}} ({{checked}} de {{total}} diretrizes selecionadas)",
+    "customizeLabel": "Personalizar as diretrizes de {{principle}}",
+    "guidelinesLabel": "Diretrizes de {{principle}}"
+  },
+  "guideline": {
+    "search": "Buscar diretrizes",
+    "searchPlaceholder": "Buscar diretrizes...",
+    "notFound": "Nenhuma diretriz encontrada",
+    "found": "{{count}} diretriz encontrada",
+    "found_other": "{{count}} diretrizes encontradas",
+    "clear": "Limpar filtro de diretriz",
+    "count": "{{checked}}/{{total}}"
+  },
+  "customize": "Personalizar",
+  "tags": {
+    "active": "{{count}} etiqueta ativa",
+    "active_other": "{{count}} etiquetas ativas",
+    "shown": "{{count}} critério exibido",
+    "shown_other": "{{count}} critérios exibidos",
+    "hidden": "{{count}} ocultos",
+    "expandHidden": "Expandir critérios ocultos",
+    "expandHiddenShort": "Expandir ocultos",
+    "collapseHidden": "Recolher critérios ocultos",
+    "collapseHiddenShort": "Recolher ocultos",
+    "clearAll": "Limpar tudo",
+    "remove": "Remover etiqueta {{tag}}",
+    "maxReached": "Máximo de 3 etiquetas selecionadas"
+  }
+}

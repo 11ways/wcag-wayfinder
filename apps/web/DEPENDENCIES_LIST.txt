@@ -1,0 +1,33 @@
+Testing Dependencies Installation
+
+Copy and paste this command to install all required testing dependencies:
+
+npm install -D vitest @vitest/ui @vitest/coverage-v8 happy-dom @testing-library/react @testing-library/jest-dom @testing-library/user-event msw
+
+Or with specific versions:
+
+npm install -D \
+  vitest@^1.0.4 \
+  @vitest/ui@^1.0.4 \
+  @vitest/coverage-v8@^1.0.4 \
+  happy-dom@^12.10.3 \
+  @testing-library/react@^14.1.2 \
+  @testing-library/jest-dom@^6.1.5 \
+  @testing-library/user-event@^14.5.1 \
+  msw@^2.0.11
+
+Individual packages:
+- vitest: Fast unit test framework powered by Vite
+- @vitest/ui: Interactive UI for running tests
+- @vitest/coverage-v8: Code coverage using V8
+- happy-dom: Lightweight DOM implementation
+- @testing-library/react: React component testing utilities
+- @testing-library/jest-dom: Custom matchers for DOM assertions
+- @testing-library/user-event: Simulates user interactions
+- msw: Mock Service Worker for API mocking
+
+After installation, run:
+  npm test              # Run all tests
+  npm run test:watch    # Watch mode
+  npm run test:ui       # Interactive UI
+  npm run test:coverage # With coverage

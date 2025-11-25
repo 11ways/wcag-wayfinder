@@ -1,0 +1,82 @@
+{
+  "title": "Toegankelijkheidsinstellingen",
+  "backToExplorer": "← Terug naar Explorer",
+  "enabled": "Ingeschakeld",
+  "disabled": "Uitgeschakeld",
+  "screenReader": {
+    "title": "Schermlezeraankondigingen",
+    "description": "Wanneer ingeschakeld, biedt WCAG Wayfinder extra gesproken instructies voor schermlezergebruikers bij het filteren, navigeren en interacteren met de interface.",
+    "enable": "Schermlezeraankondigingen inschakelen",
+    "disable": "Schermlezeraankondigingen uitschakelen",
+    "enabledAnnounce": "Schermlezeraankondigingen ingeschakeld",
+    "disabledAnnounce": "Schermlezeraankondigingen uitgeschakeld"
+  },
+  "easyMode": {
+    "title": "Eenvoudige modus",
+    "description": "Vereenvoudig de interface door geavanceerde functies zoals filters, tags en deelopties te verbergen. Perfect voor gebruikers die een gestroomlijnde, afleidingsvrije ervaring willen die alleen gericht is op het bladeren door WCAG-criteria.",
+    "enable": "Eenvoudige modus inschakelen",
+    "disable": "Eenvoudige modus uitschakelen",
+    "activeMessage": "Eenvoudige modus is actief. De interface verbergt filters, tags, deelknoppen en andere geavanceerde functies wanneer u terugkeert naar de hoofdpagina.",
+    "enabledAnnounce": "Eenvoudige modus ingeschakeld - vereenvoudigde interface geactiveerd",
+    "disabledAnnounce": "Eenvoudige modus uitgeschakeld - volledige interface hersteld"
+  },
+  "resultsPerPage": {
+    "title": "Resultaten per pagina",
+    "description": "Kies hoeveel criteria per pagina worden weergegeven. Minder resultaten kunnen sneller laden en gemakkelijker te navigeren zijn.",
+    "current": "Huidig: <strong>{{count}} resultaten per pagina</strong>",
+    "announce": "Resultaten per pagina ingesteld op {{count}}"
+  },
+  "reduceMotion": {
+    "title": "Beweging verminderen",
+    "description": "Bepaal of animaties en bewegingseffecten op de site zijn ingeschakeld. Wanneer beweging verminderen is ingeschakeld, worden animaties geminimaliseerd voor een statischer, comfortabeler ervaring.",
+    "enable": "Beweging verminderen inschakelen",
+    "disable": "Beweging verminderen uitschakelen",
+    "systemEnabled": "Belangrijk: U heeft Beweging verminderen ingeschakeld in uw {{os}}-instellingen.",
+    "systemDisabled": "Uw systeem heeft Beweging verminderen niet ingeschakeld.",
+    "overrideHint": "Gebruik deze instelling om uw systeemvoorkeur te overschrijven, of wijzig het in",
+    "systemSettings": "Systeeminstellingen",
+    "macOSSettings": "macOS-instellingen",
+    "windowsSettings": "Windows-instellingen",
+    "iOSSettings": "iOS-instellingen",
+    "androidSettings": "Android-instellingen",
+    "macOSPath": "Systeeminstellingen → Toegankelijkheid → Beeldscherm → Beweging verminderen",
+    "windowsPath": "Instellingen → Toegankelijkheid → Visuele effecten → Animatie-effecten",
+    "iOSPath": "Instellingen → Toegankelijkheid → Beweging → Beweging verminderen",
+    "androidPath": "Instellingen → Toegankelijkheid → Animaties verwijderen",
+    "overrideActive": "(Override actief)",
+    "overrideWarning": "U overschrijft uw systeemvoorkeur.",
+    "animationsEnabled": "Animaties zijn ingeschakeld, ook al heeft uw systeem beweging verminderen ingeschakeld.",
+    "motionReduced": "Beweging verminderen is ingeschakeld, ook al heeft uw systeem dit uitgeschakeld.",
+    "enabledUsingSystem": "Beweging verminderen ingeschakeld - gebruikt systeemvoorkeur",
+    "disabledAnimations": "Beweging verminderen uitgeschakeld - animaties ingeschakeld",
+    "disabledUsingSystem": "Beweging verminderen uitgeschakeld - gebruikt systeemvoorkeur",
+    "enabledNoAnimations": "Beweging verminderen ingeschakeld - animaties uitgeschakeld"
+  },
+  "textSize": {
+    "title": "Tekstgrootte",
+    "description": "U kunt de tekstgrootte eenvoudig aanpassen met de ingebouwde zoomfunctie van uw browser. Dit schaalt de hele pagina proportioneel met behoud van de lay-out.",
+    "shortcutsTitle": "Browser zoomsnelkoppelingen:",
+    "zoomIn": "Inzoomen (tekst groter maken)",
+    "zoomOut": "Uitzoomen (tekst kleiner maken)",
+    "resetZoom": "Terugzetten naar standaardgrootte",
+    "modifierHint": "Op Windows en Linux, gebruik <strong>Ctrl</strong>. Op macOS, gebruik <strong>Command (⌘)</strong>."
+  },
+  "appearance": {
+    "title": "Weergave",
+    "description": "Kies hoe WCAG Wayfinder eruitziet. Klik op een themakaart om een voorbeeld te bekijken en selecteer vervolgens \"Thema toepassen\" om uw keuze op te slaan.",
+    "active": "Actief",
+    "preview": "Voorbeeld",
+    "applyTheme": "Thema toepassen",
+    "currentTheme": "Dit is uw huidige thema",
+    "clickToPreview": "Klik voor voorbeeld",
+    "previewingLabel": "Voorbeeld: {{theme}}",
+    "previewHint": "Klik op \"Thema toepassen\" op de themakaart om deze weergave op te slaan, of klik op een ander thema voor een voorbeeld.",
+    "cancelPreview": "Voorbeeld annuleren",
+    "announce": "Overgeschakeld naar {{theme}} thema"
+  },
+  "footer": {
+    "dataFrom": "Gegevens van",
+    "wcag22": "W3C WCAG 2.2",
+    "builtWith": "Gebouwd met toegankelijkheid in gedachten."
+  }
+}

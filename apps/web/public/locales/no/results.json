@@ -1,0 +1,31 @@
+{
+  "error": {
+    "title": "Feil",
+    "generic": "Noe gikk galt. Vennligst prøv igjen."
+  },
+  "empty": {
+    "searchTitle": "Vi fant ingen sider som samsvarer med \"{{query}}\"",
+    "noResults": "Ingen resultater funnet",
+    "suggestions": "Kanskje du leter etter en av disse?",
+    "adjustFilters": "Prøv å justere filtrene eller søket ditt"
+  },
+  "criterion": {
+    "showDetails": "Vis detaljer",
+    "hideDetails": "Skjul detaljer",
+    "level": "Nivå",
+    "version": "Versjon",
+    "principle": "Prinsipp",
+    "guideline": "Retningslinje",
+    "tags": "Tagger",
+    "affects": "Påvirker",
+    "responsibility": "Ansvar",
+    "technologies": "Teknologier",
+    "howToMeet": "Hvordan oppfylle",
+    "understanding": "Forståelse"
+  },
+  "announcements": {
+    "pageLoaded": "Side {{page}} av {{total}} lastet",
+    "resultsUpdated": "{{count}} resultater funnet",
+    "jumpedToFirst": "Hoppet til første resultat"
+  }
+}

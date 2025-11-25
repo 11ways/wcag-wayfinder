@@ -1,0 +1,379 @@
+import { useState, memo } from 'react';
+import { useTranslation } from 'react-i18next';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import CriterionDetails from './CriterionDetails';
+import Modal from './Modal';
+import ShareButton from './ShareButton';
+import StarButton from './StarButton';
+import { TranslationFallbackIcon } from './TranslationFallbackBadge';
+import { getIconForEmoji, faWandMagicSparkles } from '../lib/iconMapper';
+import { truncateOnWordBoundary, generateCriterionId } from '../lib/textUtils';
+import { getPrincipleColor } from '../lib/principleUtils';
+import { getLevelClass, getLevelShape } from '../lib/levelUtils';
+
+import type { Criterion, Term } from '../lib/types';
+
+interface CriterionCardProps {
+  criterion: Criterion;
+  isFavorite: boolean;
+  onToggleFavorite: () => void;
+  showTrash?: boolean;
+  selectedTags: number[];
+  onTagToggle: (tagId: number) => void;
+  terms?: Term[];
+}
+
+/**
+ * Card view for displaying a single criterion
+ * Wrapped in React.memo to prevent unnecessary re-renders
+ */
+function CriterionCard({
+  criterion,
+  isFavorite,
+  onToggleFavorite,
+  showTrash = false,
+  selectedTags,
+  onTagToggle,
+  terms = [],
+}: CriterionCardProps) {
+  const { i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+
+  // Check if criterion has any selected tags
+  const hasSelectedTag =
+    selectedTags.length === 0 ||
+    (criterion.tags &&
+      criterion.tags.some((tag) => selectedTags.includes(tag.id)));
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [isWandModalOpen, setIsWandModalOpen] = useState(false);
+
+  // Use translated content when available, fall back to English
+  const displayTitle = criterion.translated_title || criterion.title;
+  const displayGuidelineTitle = criterion.translated_guideline_handle || criterion.guideline_title;
+  const displayPrinciple = criterion.translated_principle_handle || criterion.principle;
+  const hasTranslation = criterion.has_translation ?? true; // Default to true for English
+
+  // Level badge class and shape for accessibility
+  const levelClass = getLevelClass(criterion.level);
+  const levelShape = getLevelShape(criterion.level);
+
+  // Truncate guideline title for breadcrumb (use translated content when available)
+  const guidelineText = `${criterion.guideline_id} ${displayGuidelineTitle}`;
+  const { truncated, wasTruncated, remaining } = truncateOnWordBoundary(
+    guidelineText,
+    40
+  );
+
+  // Principle colors for page curl (use original principle for color mapping)
+  const principleColor = getPrincipleColor(criterion.principle);
+
+  return (
+    <article
+      className={`card relative transition-all duration-500 ${!hasSelectedTag ? 'opacity-50 blur-sm' : ''}`}
+      aria-label={`${criterion.num} ${criterion.title}, Level ${criterion.level}, WCAG ${criterion.version}`}
+      id={generateCriterionId(criterion.num)}
+      {...(!hasSelectedTag && { inert: '' as any })}
+    >
+      <div className="absolute right-4 top-4 flex gap-2">
+        <ShareButton
+          criterionNum={criterion.num}
+          criterionTitle={criterion.title}
+        />
+        <StarButton
+          isFavorite={isFavorite}
+          onToggle={onToggleFavorite}
+          criterionNum={criterion.num}
+          showTrash={showTrash}
+        />
+      </div>
+      <div className="mb-2 flex items-start justify-between gap-4 pr-20">
+        <h2
+          className="flex-1 text-lg font-semibold"
+          tabIndex={-1}
+          aria-label={`${criterion.num} — ${displayTitle}, Level ${criterion.level}, WCAG ${criterion.version}`}
+        >
+          <span className="text-blue-600 dark:text-blue-400" aria-hidden="true">
+            {criterion.num}
+          </span>
+          <span aria-hidden="true">{` — ${displayTitle}`}</span>
+          <TranslationFallbackIcon
+            hasTranslation={hasTranslation}
+            currentLanguage={currentLanguage}
+            className="ml-2 inline-block align-middle"
+          />
+        </h2>
+        <div className="flex flex-shrink-0 gap-2" aria-hidden="true">
+          {criterion.level && (
+            <span className={levelClass}>
+              <span className="mr-1">{levelShape}</span>
+              {criterion.level}
+            </span>
+          )}
+          <span className="badge border border-gray-300 bg-gray-100 text-gray-700 dark:border-gray-600 dark:bg-gray-700 dark:text-gray-300">
+            {criterion.version}
+          </span>
+        </div>
+      </div>
+
+      <nav
+        aria-label="You are here"
+        className="mb-3 text-sm text-gray-600 dark:text-gray-400"
+      >
+        <ol className="inline-flex items-center">
+          <li className="font-medium">{displayPrinciple}</li>
+          <li aria-hidden="true" className="mx-1">
+            ›
+          </li>
+          <li>
+            {truncated}
+            {wasTruncated && (
+              <>
+                <span className="sr-only">{` ${remaining}`}</span>
+                <span aria-hidden="true"> (…)</span>
+              </>
+            )}
+          </li>
+        </ol>
+      </nav>
+
+      <button
+        onClick={() => setIsExpanded(!isExpanded)}
+        aria-expanded={isExpanded}
+        aria-controls={`details-${criterion.id}`}
+        className="btn btn-secondary flex w-full items-center justify-between"
+      >
+        <span>{isExpanded ? 'Hide' : 'Show'} Details</span>
+        <span aria-hidden="true">{isExpanded ? '▲' : '▼'}</span>
+      </button>
+
+      {isExpanded && (
+        <div id={`details-${criterion.id}`} className="mt-4 space-y-4">
+          <CriterionDetails detailsJson={criterion.details_json} terms={terms} />
+
+          <div className="flex flex-wrap gap-3 border-t border-gray-200 pt-2 dark:border-gray-700">
+            {(criterion.localized_how_to_meet_url || criterion.how_to_meet) && (
+              <a
+                href={criterion.localized_how_to_meet_url || criterion.how_to_meet!}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-400"
+              >
+                How to Meet {criterion.num}
+                <span className="sr-only">
+                  {' '}
+                  - {criterion.title} (opens in new window)
+                </span>
+              </a>
+            )}
+            {(criterion.localized_understanding_url || criterion.understanding) && (
+              <a
+                href={criterion.localized_understanding_url || criterion.understanding!}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-400"
+              >
+                Understanding {criterion.num}
+                <span className="sr-only">
+                  {' '}
+                  - {criterion.title} (opens in new window)
+                </span>
+              </a>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Metadata Section */}
+      {(criterion.tags && criterion.tags.length > 0) ||
+      (criterion.affected_users && criterion.affected_users.length > 0) ||
+      (criterion.assignees && criterion.assignees.length > 0) ||
+      (criterion.technologies && criterion.technologies.length > 0) ? (
+        <div
+          className="mt-4 space-y-3 border-t border-gray-200 pt-4 dark:border-gray-700"
+          data-easy-mode-hide="metadata"
+        >
+          {/* Tags */}
+          {criterion.tags && criterion.tags.length > 0 && (
+            <div>
+              <h3 className="mb-2 text-xs font-medium text-gray-500 dark:text-gray-400">
+                Tags
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {criterion.tags.map((tag) => {
+                  const icon = getIconForEmoji(tag.icon);
+                  const isSelected = selectedTags.includes(tag.id);
+                  const isAtMax = !isSelected && selectedTags.length >= 3;
+
+                  return (
+                    <button
+                      key={tag.id}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        if (!isAtMax) {
+                          onTagToggle(tag.id);
+                        }
+                      }}
+                      disabled={isAtMax}
+                      className={`inline-flex items-center rounded-full border-2 px-2.5 py-0.5 text-xs font-medium transition-colors ${
+                        isSelected
+                          ? 'border-yellow-500 bg-yellow-100 text-yellow-900 dark:bg-yellow-900 dark:text-yellow-100'
+                          : isAtMax
+                            ? 'cursor-not-allowed border-transparent bg-gray-100 text-gray-400 dark:bg-gray-700 dark:text-gray-500'
+                            : 'cursor-pointer border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600'
+                      }`}
+                      title={
+                        isAtMax
+                          ? 'Maximum 3 tags selected'
+                          : tag.description || tag.name
+                      }
+                      aria-pressed={isSelected}
+                      data-easy-mode-hide="tag"
+                    >
+                      {icon && (
+                        <FontAwesomeIcon
+                          icon={icon}
+                          className="mr-1.5"
+                          aria-hidden="true"
+                        />
+                      )}
+                      {tag.name}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* Affected Users */}
+          {criterion.affected_users && criterion.affected_users.length > 0 && (
+            <div>
+              <h3 className="mb-2 text-xs font-medium text-gray-500 dark:text-gray-400">
+                Affects
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {criterion.affected_users.map((user) => {
+                  const icon = getIconForEmoji(user.icon);
+                  return (
+                    <span
+                      key={user.id}
+                      className="inline-flex items-center rounded-full border border-blue-300 bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800 dark:border-blue-700 dark:bg-blue-900 dark:text-blue-200"
+                      title={user.description || user.name}
+                    >
+                      {icon && (
+                        <FontAwesomeIcon
+                          icon={icon}
+                          className="mr-1.5"
+                          aria-hidden="true"
+                        />
+                      )}
+                      {user.name}
+                    </span>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* Assignees */}
+          {criterion.assignees && criterion.assignees.length > 0 && (
+            <div>
+              <h3 className="mb-2 text-xs font-medium text-gray-500 dark:text-gray-400">
+                Responsibility
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {criterion.assignees.map((assignee) => {
+                  const icon = getIconForEmoji(assignee.icon);
+                  return (
+                    <span
+                      key={assignee.id}
+                      className="inline-flex items-center rounded-full border border-purple-300 bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:border-purple-700 dark:bg-purple-900 dark:text-purple-200"
+                      title={assignee.description || assignee.name}
+                    >
+                      {icon && (
+                        <FontAwesomeIcon
+                          icon={icon}
+                          className="mr-1.5"
+                          aria-hidden="true"
+                        />
+                      )}
+                      {assignee.name}
+                    </span>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* Technologies */}
+          {criterion.technologies && criterion.technologies.length > 0 && (
+            <div>
+              <h3 className="mb-2 text-xs font-medium text-gray-500 dark:text-gray-400">
+                Technologies
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {criterion.technologies.map((tech) => {
+                  const icon = getIconForEmoji(tech.icon);
+                  return (
+                    <span
+                      key={tech.id}
+                      className="inline-flex items-center rounded-full border border-green-300 bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:border-green-700 dark:bg-green-900 dark:text-green-200"
+                      title={tech.description || tech.name}
+                    >
+                      {icon && (
+                        <FontAwesomeIcon
+                          icon={icon}
+                          className="mr-1.5"
+                          aria-hidden="true"
+                        />
+                      )}
+                      {tech.name}
+                    </span>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+        </div>
+      ) : null}
+
+      {/* Page Curl with Magic Wand */}
+      <button
+        onClick={() => setIsWandModalOpen(true)}
+        className="absolute bottom-0 right-0 h-16 w-16 overflow-hidden transition-all duration-200 hover:h-20 hover:w-20"
+        aria-label="Open AI assistant for this criterion"
+        title="Open AI assistant"
+        data-easy-mode-hide="wand"
+      >
+        <div
+          className="absolute bottom-0 right-0 h-0 w-0"
+          style={{
+            borderBottom: `64px solid ${principleColor}`,
+            borderLeft: '64px solid transparent',
+          }}
+        ></div>
+        <FontAwesomeIcon
+          icon={faWandMagicSparkles}
+          className="absolute bottom-2 right-2 text-white transition-all duration-200"
+          size="lg"
+          aria-hidden="true"
+        />
+      </button>
+
+      {/* Modal for Magic Wand feature */}
+      <Modal
+        isOpen={isWandModalOpen}
+        onClose={() => setIsWandModalOpen(false)}
+        title="AI Assistant"
+      >
+        <p className="text-gray-700 dark:text-gray-300">
+          This feature is coming soon! It will provide AI-powered assistance for
+          understanding and implementing this success criterion.
+        </p>
+      </Modal>
+    </article>
+  );
+}
+
+export default memo(CriterionCard);

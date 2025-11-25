@@ -1,0 +1,1244 @@
+{
+  "metadata": {
+    "wcag_version": "2.2",
+    "language": "pt-BR",
+    "language_native": "Português do Brasil",
+    "authorization_type": "authorized",
+    "translator": "Ceweb.br",
+    "source_url": "https://www.w3.org/Translations/WCAG22-pt-BR/",
+    "fetch_date": "2025-11-25",
+    "translation_date": "27 March 2025"
+  },
+  "principles": [
+    {
+      "id": "perceivable",
+      "num": "1",
+      "handle": "Perceptível",
+      "title": "As informações e os componentes da interface do usuário devem ser apresentados em formas que possam ser percebidas pelo usuário.",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "guidelines": [
+        {
+          "id": "text-alternatives",
+          "num": "1.1",
+          "handle": "Alternativas em Texto",
+          "title": "Fornecer alternativas textuais para qualquer conteúdo não textual, para que possa ser transformado em outras formas de acordo com as necessidades dos usuários, tais como impressão com tamanho de fontes maiores, braille, fala, símbolos ou linguagem mais simples.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "non-text-content",
+              "num": "1.1.1",
+              "handle": "Conteúdo Não Textual",
+              "title": "Todo o  conteúdo não textual  que é exibido ao usuário tem uma alternativa textual que serve a um propósito equivalente, exceto para as situações indicadas abaixo.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "time-based-media",
+          "num": "1.2",
+          "handle": "Mídias com base em tempo",
+          "title": "Fornecer alternativas para mídias baseadas em tempo.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "audio-only-and-video-only-prerecorded",
+              "num": "1.2.1",
+              "handle": "Apenas Áudio e Apenas Vídeo (Pré-gravado)",
+              "title": "Para as mídias de apenas áudio | pré-gravados e mídias de vídeo (sem áudio) |  pré-gravados as regras seguintes são verdadeiras, exceto quando o áudio ou o vídeo é uma mídia alternativa para o texto e está claramente identificado como tal:",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "captions-prerecorded",
+              "num": "1.2.2",
+              "handle": "Legendas (Pré-gravadas)",
+              "title": "São fornecidas legendas para todo conteúdo\n                                        de áudio pré-gravado em mídia sincronizada, exceto quando a mídia for uma alternativa para texto  e for claramente identificada como tal.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "audio-description-or-media-alternative-prerecorded",
+              "num": "1.2.3",
+              "handle": "Audiodescrição ou Mídia Alternativa (Pré-gravada)",
+              "title": "Uma alternativa para mídia com base em tempo ou uma audiodescrição  do conteúdo em vídeo pré-gravado é fornecida para mídia sincronizada, exceto quando a mídia é uma alternativa ao texto  e for claramente identificada como tal.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "captions-live",
+              "num": "1.2.4",
+              "handle": "Legendas (Ao Vivo)",
+              "title": "São fornecidas legendas para todo o conteúdo do \n                                    áudio ao vivo em mídia sincronizada.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "audio-description-prerecorded",
+              "num": "1.2.5",
+              "handle": "Audiodescrição (Pré-gravada)",
+              "title": "É fornecida audiodescrição  para todo o conteúdo de vídeo pré-gravado em mídia sincronizada.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "sign-language-prerecorded",
+              "num": "1.2.6",
+              "handle": "Língua de sinais (Pré-gravada)",
+              "title": "É fornecida  interpretação em língua de sinais para todo o conteúdo de áudio pré-gravado em mídia sincronizada.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "extended-audio-description-prerecorded",
+              "num": "1.2.7",
+              "handle": "Audiodescrição Estendida (Pré-gravada)",
+              "title": "Quando as pausas no áudio de primeiro plano forem insuficientes para permitir que  as audiodescrições transmitam o sentido do vídeo, é fornecida uma  audiodescrição estendida  para todo o vídeo pré-gravado  no conteúdo em mídia sincronizada.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "media-alternative-prerecorded",
+              "num": "1.2.8",
+              "handle": "Mídia Alternativa (Pré-gravada)",
+              "title": "É fornecida uma alternativa para mídia com base em tempo  para todo o conteúdo em  mídia sincronizada   pré-gravada e em mídia de apenas vídeo  pré-gravado.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "audio-only-live",
+              "num": "1.2.9",
+              "handle": "Apenas Áudio (Ao Vivo)",
+              "title": "É fornecida uma  alternativa para mídia com base em tempo que apresenta informações equivalentes para conteúdo apenas de áudio   ao vivo .",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "adaptable",
+          "num": "1.3",
+          "handle": "Adaptável",
+          "title": "Criar conteúdo que possa ser apresentado de diferentes maneiras (por exemplo um layout simplificado) sem perder informação ou estrutura.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "info-and-relationships",
+              "num": "1.3.1",
+              "handle": "Informações e Relações",
+              "title": "As informações,  a estrutura,e os relacionamentos transmitidos através de apresentação podem ser determinadas programaticamente ou estão disponíveis no texto.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "meaningful-sequence",
+              "num": "1.3.2",
+              "handle": "Sequência com Significado",
+              "title": "Quando a sequência na qual o conteúdo é apresentado afeta o seu significado, uma  sequência de leitura correta  pode ser determinada programaticamente.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "sensory-characteristics",
+              "num": "1.3.3",
+              "handle": "Características Sensoriais",
+              "title": "As instruções fornecidas para compreender e utilizar o conteúdo não dependem somente das características sensoriais dos componentes, tais como forma, cor, tamanho, localização visual, orientação ou som.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "orientation",
+              "num": "1.3.4",
+              "handle": "Orientação",
+              "title": "O conteúdo não restringe sua visualização e operação a uma única orientação de exibição, como retrato ou paisagem, a menos que uma orientação de exibição específica seja  essencial.",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "identify-input-purpose",
+              "num": "1.3.5",
+              "handle": "Identificar o Propósito de Entrada",
+              "title": "A finalidade de cada campo de entrada que coleta informações sobre o usuário pode ser determinada programaticamente quando:",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "identify-purpose",
+              "num": "1.3.6",
+              "handle": "Identificar o Propósito",
+              "title": "Em conteúdo implementado com linguagens de marcação, a finalidade dos  componentes de interface de usuário, ícones e regiões podem ser determinados programaticamente.",
+              "level": "AAA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "distinguishable",
+          "num": "1.4",
+          "handle": "Discernível",
+          "title": "Facilitar a audição e a visualização de conteúdo aos usuários, incluindo a separação entre o primeiro plano e o plano de fundo.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "use-of-color",
+              "num": "1.4.1",
+              "handle": "Uso de Cores",
+              "title": "A cor não é utilizada como o único meio visual de transmitir informações, indicar uma ação, pedir uma resposta ou distinguir um elemento visual.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "audio-control",
+              "num": "1.4.2",
+              "handle": "Controle de Áudio",
+              "title": "Se qualquer áudio em uma página web tocar automaticamente durante mais de 3 segundos, deve estar disponível um mecanismo para fazer uma pausa ou parar o áudio, ou um mecanismo para controlar o volume do áudio, \n                            independentemente do nível de volume total do sistema.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "contrast-minimum",
+              "num": "1.4.3",
+              "handle": "Contraste (Mínimo)",
+              "title": "A apresentação visual de texto e  imagens de texto tem uma relação de contraste de, no mínimo, 4.5:1, exceto para o seguinte:",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "resize-text",
+              "num": "1.4.4",
+              "handle": "Redimensionar Texto",
+              "title": "Exceto para legendas e imagens de texto, o texto pode ser redimensionado sem tecnologia assistiva até 200 por cento sem perda de conteúdo ou funcionalidade.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "images-of-text",
+              "num": "1.4.5",
+              "handle": "Imagens de Texto",
+              "title": "Se as tecnologias que estiverem sendo utilizadas puderem proporcionar a apresentação visual, é utilizado  texto para transmitir informações em vez de  imagens de texto exceto para o seguinte:",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "contrast-enhanced",
+              "num": "1.4.6",
+              "handle": "Contraste (Melhorado)",
+              "title": "A apresentação visual do texto e  imagens de texto tem uma  relação de contraste de, no mínimo, 7:1, exceto para as seguintes situações:",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "low-or-no-background-audio",
+              "num": "1.4.7",
+              "handle": "Áudio de fundo baixo ou sem Áudio de fundo",
+              "title": "Para conteúdo composto por  apenas áudio pré-gravado que (1) contenha essencialmente fala em primeiro plano, (2) não seja um\n                         CAPTCHA de áudio ou logotipo de áudio, e (3) não seja vocalização com o objetivo de ser, essencialmente, expressão musical, tal como canto ou canto rítmico (rapping), no mínimo, uma das seguintes afirmações é verdadeira:",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "visual-presentation",
+              "num": "1.4.8",
+              "handle": "Apresentação Visual",
+              "title": "Para a apresentação visual de blocos de texto, um mecanismo está disponível para se obter o seguinte:",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "images-of-text-no-exception",
+              "num": "1.4.9",
+              "handle": "Imagens de Texto (sem exceção)",
+              "title": "As imagens de texto só são utilizadas por questões meramente decorativas ou quando uma determinada apresentação de texto é essencial para a informação que está sendo transmitida.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "reflow",
+              "num": "1.4.10",
+              "handle": "Realinhar",
+              "title": "O conteúdo pode ser apresentado sem perda de informação ou funcionalidade e sem exigir rolagem em duas dimensões para:",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "non-text-contrast",
+              "num": "1.4.11",
+              "handle": "Contraste Não textual",
+              "title": "A apresentação visual a seguir tem uma  relação de contraste de pelo menos 3:1 contra cor(es) adjacente(s):",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "text-spacing",
+              "num": "1.4.12",
+              "handle": "Espaçamento de Texto",
+              "title": "No conteúdo implementado usando linguagens de marcação que suportam as seguintes  propriedades de estilo  de texto, nenhuma perda de conteúdo ou funcionalidade ocorre pela configuração de todos os itens a seguir e pela alteração de nenhuma outra propriedade de estilo:",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "content-on-hover-or-focus",
+              "num": "1.4.13",
+              "handle": "Conteúdo em foco por mouse ou teclado",
+              "title": "Quando a ação de receber e então remover o ponteiro do mouse ou o foco do teclado aciona conteúdo adicional tornando-o visível e então oculto, os itens a seguir são verdadeiros:",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "operable",
+      "num": "2",
+      "handle": "Operável",
+      "title": "Os componentes de interface de usuário e a navegação devem ser operáveis.",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "guidelines": [
+        {
+          "id": "keyboard-accessible",
+          "num": "2.1",
+          "handle": "Acessível por Teclado",
+          "title": "Fazer com que toda funcionalidade fique disponível a partir de um teclado.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "keyboard",
+              "num": "2.1.1",
+              "handle": "Teclado",
+              "title": "Toda a funcionalidade do conteúdo é operável através de uma  interface de teclado sem exigir o pressionamento de teclas individuais em tempos específicos, exceto quando a função subjacente requer entrada de dados que dependa do caminho do movimento do usuário e não apenas dos pontos finais.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "no-keyboard-trap",
+              "num": "2.1.2",
+              "handle": "Sem Bloqueio do Teclado",
+              "title": "Se o foco do teclado puder ser movido para um componente da página utilizando uma  interface de teclado, então o foco pode ser retirado desse componente utilizando apenas uma interface de teclado e, se for necessário mais do que as setas do cursor ou tabulação ou outros métodos de saída normalmente utilizados, o usuário deve ser informado sobre o método para retirar o foco.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "keyboard-no-exception",
+              "num": "2.1.3",
+              "handle": "Teclado (Sem Exceção)",
+              "title": "Toda a funcionalidade do conteúdo é operável através de uma interface de teclado sem exigir o pressionamento de teclas individuais em tempos específicos.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "character-key-shortcuts",
+              "num": "2.1.4",
+              "handle": "Atalhos de teclado por caractere",
+              "title": "Se um atalho de teclado é implementado no conteúdo utilizando apenas letras (incluindo letras maiúsculas e minúsculas), pontuação, números ou símbolos, então ao menos um dos itens é verdadeiro:",
+              "level": "A",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "enough-time",
+          "num": "2.2",
+          "handle": "Tempo Suficiente",
+          "title": "Fornecer aos usuários tempo suficiente para ler e utilizar o conteúdo.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "timing-adjustable",
+              "num": "2.2.1",
+              "handle": "Tempo ajustável",
+              "title": "Para cada limite de tempo definido pelo conteúdo, ao menos um dos itens é verdadeiro:",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "pause-stop-hide",
+              "num": "2.2.2",
+              "handle": "Colocar em Pausa, Parar, Ocultar",
+              "title": "Para informações em movimento, em modo intermitente ou piscando, rolando ou em atualização automática, todas as seguintes afirmativas são verdadeiras:",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "no-timing",
+              "num": "2.2.3",
+              "handle": "Sem limite de tempo",
+              "title": "O limite de tempo não é uma parte essencial do evento ou da atividade apresentada pelo conteúdo, exceto para\n              mídia sincronizada não interativa e eventos em tempo real.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "interruptions",
+              "num": "2.2.4",
+              "handle": "Interrupções",
+              "title": "As interrupções podem ser adiadas ou suprimidas pelo usuário, exceto interrupções que envolvam uma emergência.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "re-authenticating",
+              "num": "2.2.5",
+              "handle": "Reautenticação",
+              "title": "Quando uma sessão autenticada expira, o usuário pode continuar a atividade sem perder dados após a Reautenticação.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "timeouts",
+              "num": "2.2.6",
+              "handle": "Limites de Tempo",
+              "title": "Os usuários são avisados sobre a duração de qualquer inatividade do usuário que possa causar perda de dados, a menos que os dados sejam preservados por mais de 20 horas quando o usuário não realizar nenhuma ação.",
+              "level": "AAA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seizures-and-physical-reactions",
+          "num": "2.3",
+          "handle": "Convulsões e Reações Físicas",
+          "title": "Não criar conteúdo de uma forma conhecida por causar convulsões e reações físicas.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "three-flashes-or-below-threshold",
+              "num": "2.3.1",
+              "handle": "Três Flashes ou Abaixo do Limite",
+              "title": "As páginas web não incluem nenhum conteúdo com flash que pisca mais de três vezes no período de um segundo, ou o flash encontra-se abaixo dos limites de flash universal e flash vermelho.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "three-flashes",
+              "num": "2.3.2",
+              "handle": "Três Flashes",
+              "title": "As páginas web não incluem qualquer conteúdo com flash que  pisca mais de três vezes no período de um segundo.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "animation-from-interactions",
+              "num": "2.3.3",
+              "handle": "Animação de Interações",
+              "title": "A animação de movimento acionada por interação pode ser desativada, a menos que a animação seja  essencial  para a funcionalidade ou para as informações que estão sendo transmitidas.",
+              "level": "AAA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "navigable",
+          "num": "2.4",
+          "handle": "Navegável",
+          "title": "Fornecer maneiras de ajudar os usuários a navegar, localizar conteúdos e determinar onde se encontram.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "bypass-blocks",
+              "num": "2.4.1",
+              "handle": "Contornar Blocos",
+              "title": "Um mecanismo está disponível para contornar blocos de conteúdo que são repetidos em várias páginas web.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "page-titled",
+              "num": "2.4.2",
+              "handle": "Página com Título",
+              "title": "As páginas web têm títulos que descrevem o tópico ou a finalidade.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "focus-order",
+              "num": "2.4.3",
+              "handle": "Ordem do Foco",
+              "title": "Se uma  página web  puder ser  navegada de forma sequencial e as sequências de navegação afetarem o significado ou a operação, os componentes que podem ser focados recebem o foco em uma ordem que preserva o significado e a operabilidade.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "link-purpose-in-context",
+              "num": "2.4.4",
+              "handle": "Finalidade do Link (Em contexto)",
+              "title": "O propósito de cada link pode ser determinado a partir do link sozinho \n        ou a partir do texto do link em conjunto com seu respectivo contexto de link \n        determinado programaticamente, exceto quando o propósito do link for ambíguo para os usuários em geral.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "multiple-ways",
+              "num": "2.4.5",
+              "handle": "Várias Formas",
+              "title": "Está disponível mais de uma forma para localizar uma página web em um conjunto de páginas web, exceto quando a página web for o resultado ou uma etapa de um processo.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "headings-and-labels",
+              "num": "2.4.6",
+              "handle": "Cabeçalhos e Rótulos",
+              "title": "Os cabeçalhos e os rótulos descrevem o tópico ou a finalidade.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "focus-visible",
+              "num": "2.4.7",
+              "handle": "Foco Visível",
+              "title": "Qualquer interface de usuário operável por teclado dispõe de um modo de operação onde o indicador de foco do teclado fica visível.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "location",
+              "num": "2.4.8",
+              "handle": "Localização",
+              "title": "Informação sobre a localização do usuário dentro de um conjunto de páginas web está disponível.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "link-purpose-link-only",
+              "num": "2.4.9",
+              "handle": "Finalidade do Link (Apenas o Link)",
+              "title": "Um mecanismo está disponível para permitir que o propósito de cada link \n      seja identificado apenas pelo texto do link, exceto quando seu propósito for ambíguo para os usuários em geral.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "section-headings",
+              "num": "2.4.10",
+              "handle": "Cabeçalhos da Seção",
+              "title": "Os cabeçalhos da seção são utilizados para organizar o conteúdo.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "focus-not-obscured-minimum",
+              "num": "2.4.11",
+              "handle": "Foco não Obscurecido (Mínimo)",
+              "title": "[Novo]",
+              "level": "AA",
+              "versions": [
+                "2.2"
+              ]
+            },
+            {
+              "id": "focus-not-obscured-enhanced",
+              "num": "2.4.12",
+              "handle": "Foco não Obscurecido (Melhorado)",
+              "title": "[Novo]",
+              "level": "AAA",
+              "versions": [
+                "2.2"
+              ]
+            },
+            {
+              "id": "focus-appearance",
+              "num": "2.4.13",
+              "handle": "Aparência do Foco",
+              "title": "[Novo]",
+              "level": "AAA",
+              "versions": [
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "input-modalities",
+          "num": "2.5",
+          "handle": "Modalidades de Entrada",
+          "title": "Torna mais fácil para os usuários operar a funcionalidade por meio de várias entradas além do teclado.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "pointer-gestures",
+              "num": "2.5.1",
+              "handle": "Gestos de Acionamento",
+              "title": "Todas as  funcionalidades  que usam gestos multiponto ou baseados em caminhos para operação podem ser operadas com um ponteiro único sem um gesto baseado em caminho, a menos que um gesto multiponto ou baseado em caminho seja essencial.",
+              "level": "A",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "pointer-cancellation",
+              "num": "2.5.2",
+              "handle": "Cancelamento de Acionamento",
+              "title": "Para funcionalidade que pode ser operada usando um ponteiro único, pelo menos um dos seguintes itens é verdadeiro:",
+              "level": "A",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "label-in-name",
+              "num": "2.5.3",
+              "handle": "Rótulo em Nome",
+              "title": "Para componentes de interface de usuário  com rótulos  que incluem  texto  ou imagens de texto, o  nome  contém o texto que é apresentado visualmente.",
+              "level": "A",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "motion-actuation",
+              "num": "2.5.4",
+              "handle": "Atuação em Movimento",
+              "title": "A funcionalidade  que pode ser operada por movimento do dispositivo ou movimento do usuário pode também ser operada por componentes de interface de usuário e a resposta ao movimento pode ser desabilitada para evitar acionamento acidental, exceto quando:",
+              "level": "A",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "target-size-enhanced",
+              "num": "2.5.5",
+              "handle": "Tamanho do Alvo (Melhorado)",
+              "title": "O tamanho do  alvo para  entradas de ponteiro é de pelo menos 44 por 44 pixels CSS exceto onde:",
+              "level": "AAA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "concurrent-input-mechanisms",
+              "num": "2.5.6",
+              "handle": "Mecanismos de Entrada Simultâneos",
+              "title": "O conteúdo da Web não restringe o uso de modalidades de entrada disponíveis em uma plataforma, exceto quando a restrição é essencial, necessária para garantir a segurança do conteúdo ou obrigatória para respeitar as configurações do usuário.",
+              "level": "AAA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "dragging-movements",
+              "num": "2.5.7",
+              "handle": "Movimentos de Arrastar",
+              "title": "[Novo]",
+              "level": "AA",
+              "versions": [
+                "2.2"
+              ]
+            },
+            {
+              "id": "target-size-minimum",
+              "num": "2.5.8",
+              "handle": "Tamanho do Alvo (Mínimo)",
+              "title": "[Novo]",
+              "level": "AA",
+              "versions": [
+                "2.2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "understandable",
+      "num": "3",
+      "handle": "Compreensível",
+      "title": "A informação e a operação da interface de usuário devem ser compreensíveis.",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "guidelines": [
+        {
+          "id": "readable",
+          "num": "3.1",
+          "handle": "Legível",
+          "title": "Tornar o conteúdo do texto legível e compreensível.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "language-of-page",
+              "num": "3.1.1",
+              "handle": "Idioma da Página",
+              "title": "O idioma  padrão de cada página web  pode ser determinado programaticamente.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "language-of-parts",
+              "num": "3.1.2",
+              "handle": "Idioma das Partes",
+              "title": "O idioma  de cada passagem ou frase no conteúdo pode ser determinado programaticamente, exceto para nomes próprios, termos técnicos, palavras de idioma indeterminado e palavras ou frases que se tornaram parte do vernáculo do texto que as envolve.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "unusual-words",
+              "num": "3.1.3",
+              "handle": "Palavras Incomuns",
+              "title": "Um mecanismo está disponível para identificar definições específicas de \n      palavras ou frases utilizadas de forma incomum ou restrita, incluindo expressões idiomáticas e  jargões.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "abbreviations",
+              "num": "3.1.4",
+              "handle": "Abreviaturas",
+              "title": "Um mecanismo está disponível para identificar a forma expandida ou o significado das abreviaturas.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "reading-level",
+              "num": "3.1.5",
+              "handle": "Nível de Leitura",
+              "title": "Quando o texto exigir uma capacidade de leitura mais avançada do que o  nível de educação secundário inferior, após a remoção dos títulos e nomes próprios, está disponível um conteúdo suplementar, ou uma versão que não exija uma capacidade de leitura mais avançada do que o nível de educação secundário inferior.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "pronunciation",
+              "num": "3.1.6",
+              "handle": "Pronúncia",
+              "title": "Um mecanismo está disponível para identificar a pronúncia específica de palavras, onde o significado das mesmas, no contexto, é ambíguo se a pronúncia não for conhecida.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "predictable",
+          "num": "3.2",
+          "handle": "Previsível",
+          "title": "Fazer com que as páginas web apareçam e funcionem de modo previsível.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "on-focus",
+              "num": "3.2.1",
+              "handle": "Em Foco",
+              "title": "Quando qualquer  componente de interface do usuário recebe o foco, não inicia uma mudança de contexto.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "on-input",
+              "num": "3.2.2",
+              "handle": "Em Entrada",
+              "title": "Alterar a definição de qualquer  componente de interface de usuário não provoca automaticamente uma mudança de contexto, a menos que o usuário tenha sido avisado sobre esse comportamento antes de utilizar o componente.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "consistent-navigation",
+              "num": "3.2.3",
+              "handle": "Navegação Consistente",
+              "title": "Os mecanismos de navegação que são repetidos em múltiplas  páginas web dentro de um  conjunto de páginas web ocorrem na  mesma ordem relativa a cada vez que são repetidos, a menos que uma mudança seja iniciada pelo usuário.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "consistent-identification",
+              "num": "3.2.4",
+              "handle": "Identificação Consistente",
+              "title": "Os componentes que têm a mesma funcionalidade em um  conjunto de páginas web são identificados de forma consistente.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "change-on-request",
+              "num": "3.2.5",
+              "handle": "Mudança Mediante Solicitação",
+              "title": "As alterações de contexto  são iniciadas apenas a pedido do usuário ou \n    está disponível um  mecanismo   para desativar essas mudanças.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "consistent-help",
+              "num": "3.2.6",
+              "handle": "Ajuda Consistente",
+              "title": "[Novo]",
+              "level": "A",
+              "versions": [
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "input-assistance",
+          "num": "3.3",
+          "handle": "Assistência de Entrada",
+          "title": "Ajudar os usuários a evitar e corrigir erros.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "error-identification",
+              "num": "3.3.1",
+              "handle": "Identificação do Erro",
+              "title": "Se um  erro de entrada for automaticamente detectado, o item que apresenta erro é identificado e o erro é descrito para o usuário em texto.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "labels-or-instructions",
+              "num": "3.3.2",
+              "handle": "Rótulos ou Instruções",
+              "title": "Rótulos  ou instruções são fornecidos quando o conteúdo exigir a entrada de dados por parte do usuário.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "error-suggestion",
+              "num": "3.3.3",
+              "handle": "Sugestão de Erro",
+              "title": "Se um   erro de entrada for automaticamente detectado e forem conhecidas sugestões de correção, então as sugestões são fornecidas ao usuário, a menos que coloque em risco a segurança ou o propósito do conteúdo.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "error-prevention-legal-financial-data",
+              "num": "3.3.4",
+              "handle": "Prevenção de erros (legais, financeiros, de dados)",
+              "title": "Para páginas web que façam com que ocorram responsabilidades jurídicas  ou transações financeiras para o usuário, que modificam ou eliminam dados controláveis pelo usuário em sistemas de armazenamento de dados, ou que enviem respostas de teste do usuário, no mínimo, uma das seguintes afirmações é verdadeira:",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "help",
+              "num": "3.3.5",
+              "handle": "Ajuda",
+              "title": "Está disponível ajuda contextual.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "error-prevention-all",
+              "num": "3.3.6",
+              "handle": "Prevenção de Erros (Todos)",
+              "title": "Para páginas web que exijam que o usuário envie informações, no mínimo, uma das seguintes afirmações é verdadeira:",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "redundant-entry",
+              "num": "3.3.7",
+              "handle": "Entrada Redundante",
+              "title": "[Novo]",
+              "level": "A",
+              "versions": [
+                "2.2"
+              ]
+            },
+            {
+              "id": "accessible-authentication-minimum",
+              "num": "3.3.8",
+              "handle": "Autenticação Acessível (Mínimo)",
+              "title": "[Novo]",
+              "level": "AA",
+              "versions": [
+                "2.2"
+              ]
+            },
+            {
+              "id": "accessible-authentication-enhanced",
+              "num": "3.3.9",
+              "handle": "Autenticação Acessível (Melhorado)",
+              "title": "[Novo]",
+              "level": "AAA",
+              "versions": [
+                "2.2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "robust",
+      "num": "4",
+      "handle": "Robusto",
+      "title": "O conteúdo deve ser robusto o suficiente para poder ser interpretado de forma confiável por uma ampla variedade de agentes de usuário, incluindo tecnologias assistivas.",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "guidelines": [
+        {
+          "id": "compatible",
+          "num": "4.1",
+          "handle": "Compatível",
+          "title": "Maximizar a compatibilidade com agentes de usuários atuais e futuros, incluindo tecnologias assistivas.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "parsing",
+              "num": "4.1.1",
+              "handle": "Análise  (Obsoleto e removido)",
+              "title": "Análise  (Obsoleto e removido)",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "name-role-value",
+              "num": "4.1.2",
+              "handle": "Nome, Função, Valor",
+              "title": "Para todos os  componentes de interface de usuário (incluindo, mas não se limitando a: elementos de formulário, links e componentes gerados por scripts),\n      o nome e a  função  podem ser determinados programaticamente;  os estados, as propriedades e os valores, que possam ser definidos pelo usuário, podem ser definidos programaticamente; e a notificação sobre alterações destes itens está disponível para os agentes de usuário, incluindo as tecnologias assistivas.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "status-messages",
+              "num": "4.1.3",
+              "handle": "Mensagens de Status",
+              "title": "Em conteúdo implementado que usa linguagens de marcação, as mensagens de status podem ser determinadas programaticamente  por meio da função ou de propriedades, de modo que possam ser apresentadas ao usuário por tecnologias assistivas  sem receber foco.",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

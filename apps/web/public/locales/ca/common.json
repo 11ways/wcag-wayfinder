@@ -1,0 +1,105 @@
+{
+  "app": {
+    "title": "WCAG Wayfinder",
+    "beta": "Beta",
+    "skipToSearch": "Vés a la cerca",
+    "skipToFilters": "Vés als filtres",
+    "skipToResults": "Vés als resultats"
+  },
+  "header": {
+    "hideFilters": "Amaga els filtres",
+    "showFilters": "Mostra els filtres",
+    "searchLabel": "Cerca criteris",
+    "searchPlaceholder": "Cerca títol/descripció...",
+    "searchHelp": "Cerca entre els títols i les descripcions dels criteris d'èxit WCAG",
+    "startTour": "Inicia el tour guiat",
+    "favorites": "{{count}} favorit",
+    "favorites_other": "{{count}} favorits",
+    "clearFavorites": "Esborra tots els favorits"
+  },
+  "navigation": {
+    "previous": "Anterior",
+    "next": "Següent",
+    "pageOf": "Pàgina {{page}} de {{total}}",
+    "pageLabel": "Pàgina {{page}}"
+  },
+  "views": {
+    "list": "Vista de llista",
+    "card": "Vista de targetes",
+    "grid": "Vista de graella"
+  },
+  "actions": {
+    "clearAll": "Esborra tot",
+    "reset": "Restableix",
+    "cancel": "Cancel·la",
+    "confirm": "Confirma",
+    "expand": "Expandeix",
+    "collapse": "Contrau",
+    "close": "Tanca"
+  },
+  "status": {
+    "loading": "Carregant…",
+    "error": "Error",
+    "noResults": "No s'han trobat resultats",
+    "resultsFound": "{{count}} resultat trobat",
+    "resultsFound_other": "{{count}} resultats trobats",
+    "pageLoaded": "Pàgina {{page}} de {{total}} carregada"
+  },
+  "language": {
+    "select": "Selecciona l'idioma",
+    "switching": "Canviant a {{language}}...",
+    "changed": "Idioma canviat a {{language}}"
+  },
+  "favorites": {
+    "add": "Afegeix {{criterion}} als favorits",
+    "remove": "Elimina {{criterion}} dels favorits",
+    "addShort": "Afegeix als favorits",
+    "removeShort": "Elimina dels favorits"
+  },
+  "share": {
+    "link": "Comparteix l'enllaç a {{criterion}}",
+    "linkShort": "Comparteix l'enllaç",
+    "copied": "Enllaç copiat",
+    "copiedMessage": "L'enllaç a **{{criterion}}** {{title}} s'ha copiat al porta-retalls."
+  },
+  "theme": {
+    "label": "Aparença:",
+    "select": "Selecciona el tema d'aparença",
+    "changed": "Canviat al tema {{theme}}",
+    "system": "Predeterminat del sistema",
+    "light": "Mode clar",
+    "dark": "Mode fosc",
+    "solarizedLight": "Solarized Light",
+    "solarizedDark": "Solarized Dark",
+    "dracula": "Dracula",
+    "highContrast": "Alt contrast"
+  },
+  "modal": {
+    "close": "Tanca",
+    "dialogClosed": "Diàleg tancat"
+  },
+  "footer": {
+    "translationCredits": "Crèdits de traducció",
+    "copyright": "© {{year}} WCAG Wayfinder",
+    "madeWith": "Fet amb ♥ per l'accessibilitat"
+  },
+  "translationCredits": {
+    "title": "Crèdits de traducció",
+    "intro": "Les traduccions dels criteris d'èxit WCAG són proporcionades per traductors autoritzats d'arreu del món.",
+    "language": "Idioma",
+    "translator": "Traductor",
+    "organization": "Organització",
+    "publicationDate": "Data de publicació",
+    "source": "Font",
+    "authorization": "Autorització",
+    "w3cAuthorized": "Traducció autoritzada W3C",
+    "communityTranslation": "Traducció de la comunitat",
+    "noTranslator": "Traductor desconegut",
+    "viewSource": "Veure la font original"
+  },
+  "pageTitles": {
+    "home": "Criteris d'èxit WCAG",
+    "favorites": "Els meus favorits",
+    "criterion": "{{num}} {{title}}"
+  }
+}

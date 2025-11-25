@@ -1,0 +1,52 @@
+{
+  "title": "Filtres",
+  "reset": "Restableix els filtres",
+  "resetLabel": "Restableix tots els filtres als valors predeterminats",
+  "clearAll": "Esborra tots els filtres",
+  "clearAllLabel": "Esborra tots els filtres i restableix als valors predeterminats",
+  "backToAll": "Torna a tots els criteris",
+  "showingFavorites": "Mostrant {{count}} favorit",
+  "showingFavorites_other": "Mostrant {{count}} favorits",
+  "version": {
+    "label": "Versió",
+    "help": "Més informació sobre les versions WCAG",
+    "modalTitle": "Sobre les versions WCAG"
+  },
+  "level": {
+    "label": "Nivell",
+    "help": "Més informació sobre els nivells de conformitat",
+    "modalTitle": "Sobre els nivells de conformitat"
+  },
+  "principle": {
+    "label": "Principi",
+    "help": "Més informació sobre els principis WCAG",
+    "modalTitle": "Sobre els principis WCAG",
+    "selectedCount": "{{principle}} ({{checked}} de {{total}} pautes seleccionades)",
+    "customizeLabel": "Personalitza les pautes de {{principle}}",
+    "guidelinesLabel": "Pautes de {{principle}}"
+  },
+  "guideline": {
+    "search": "Cerca pautes",
+    "searchPlaceholder": "Cerca pautes...",
+    "notFound": "No s'han trobat pautes",
+    "found": "{{count}} pauta trobada",
+    "found_other": "{{count}} pautes trobades",
+    "clear": "Esborra el filtre de pauta",
+    "count": "{{checked}}/{{total}}"
+  },
+  "customize": "Personalitza",
+  "tags": {
+    "active": "{{count}} etiqueta activa",
+    "active_other": "{{count}} etiquetes actives",
+    "shown": "{{count}} criteri mostrat",
+    "shown_other": "{{count}} criteris mostrats",
+    "hidden": "{{count}} ocults",
+    "expandHidden": "Expandeix els criteris ocults",
+    "expandHiddenShort": "Expandeix ocults",
+    "collapseHidden": "Contrau els criteris ocults",
+    "collapseHiddenShort": "Contrau ocults",
+    "clearAll": "Esborra tot",
+    "remove": "Elimina l'etiqueta {{tag}}",
+    "maxReached": "Màxim 3 etiquetes seleccionades"
+  }
+}

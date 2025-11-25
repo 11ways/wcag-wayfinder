@@ -1,0 +1,52 @@
+{
+  "title": "Suodattimet",
+  "reset": "Palauta suodattimet",
+  "resetLabel": "Palauta kaikki suodattimet oletusarvoihin",
+  "clearAll": "Tyhjennä kaikki suodattimet",
+  "clearAllLabel": "Tyhjennä kaikki suodattimet ja palauta oletusasetukset",
+  "backToAll": "Takaisin kaikkiin kriteereihin",
+  "showingFavorites": "Näytetään {{count}} suosikki",
+  "showingFavorites_other": "Näytetään {{count}} suosikkia",
+  "version": {
+    "label": "Versio",
+    "help": "Lue lisää WCAG-versioista",
+    "modalTitle": "Tietoa WCAG-versioista"
+  },
+  "level": {
+    "label": "Taso",
+    "help": "Lue lisää vaatimustenmukaisuustasoista",
+    "modalTitle": "Tietoa vaatimustenmukaisuustasoista"
+  },
+  "principle": {
+    "label": "Periaate",
+    "help": "Lue lisää WCAG-periaatteista",
+    "modalTitle": "Tietoa WCAG-periaatteista",
+    "selectedCount": "{{principle}} ({{checked}} / {{total}} ohjetta valittu)",
+    "customizeLabel": "Mukauta {{principle}}-ohjeita",
+    "guidelinesLabel": "{{principle}}-ohjeet"
+  },
+  "guideline": {
+    "search": "Hae ohjeita",
+    "searchPlaceholder": "Hae ohjeita...",
+    "notFound": "Ohjeita ei löytynyt",
+    "found": "{{count}} ohje löytyi",
+    "found_other": "{{count}} ohjetta löytyi",
+    "clear": "Tyhjennä ohjesuodatin",
+    "count": "{{checked}}/{{total}}"
+  },
+  "customize": "Mukauta",
+  "tags": {
+    "active": "{{count}} aktiivinen tunniste",
+    "active_other": "{{count}} aktiivista tunnistetta",
+    "shown": "{{count}} kriteeri näkyvillä",
+    "shown_other": "{{count}} kriteeriä näkyvillä",
+    "hidden": "{{count}} piilotettu",
+    "expandHidden": "Laajenna piilotetut kriteerit",
+    "expandHiddenShort": "Laajenna piilotetut",
+    "collapseHidden": "Supista piilotetut kriteerit",
+    "collapseHiddenShort": "Supista piilotetut",
+    "clearAll": "Tyhjennä kaikki",
+    "remove": "Poista tunniste {{tag}}",
+    "maxReached": "Enintään 3 tunnistetta valittu"
+  }
+}

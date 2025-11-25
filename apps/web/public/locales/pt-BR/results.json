@@ -1,0 +1,31 @@
+{
+  "error": {
+    "title": "Erro",
+    "generic": "Algo deu errado. Por favor, tente novamente."
+  },
+  "empty": {
+    "searchTitle": "Não encontramos páginas correspondentes a \"{{query}}\"",
+    "noResults": "Nenhum resultado encontrado",
+    "suggestions": "Talvez você esteja procurando por um destes?",
+    "adjustFilters": "Tente ajustar os filtros ou a consulta de busca"
+  },
+  "criterion": {
+    "showDetails": "Mostrar detalhes",
+    "hideDetails": "Ocultar detalhes",
+    "level": "Nível",
+    "version": "Versão",
+    "principle": "Princípio",
+    "guideline": "Diretriz",
+    "tags": "Etiquetas",
+    "affects": "Afeta",
+    "responsibility": "Responsabilidade",
+    "technologies": "Tecnologias",
+    "howToMeet": "Como cumprir",
+    "understanding": "Compreender"
+  },
+  "announcements": {
+    "pageLoaded": "Página {{page}} de {{total}} carregada",
+    "resultsUpdated": "{{count}} resultados encontrados",
+    "jumpedToFirst": "Saltou para o primeiro resultado"
+  }
+}

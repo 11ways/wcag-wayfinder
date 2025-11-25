@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCAG Wayfinder - Comprehensive Accessibility Audit Report</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #f5f5f5;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2563eb;
+            border-bottom: 4px solid #2563eb;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+        h2 {
+            color: #1e40af;
+            margin: 2.5rem 0 1rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid #ddd;
+            font-size: 1.8rem;
+        }
+        h3 {
+            color: #1e3a8a;
+            margin: 1.5rem 0 0.75rem;
+            font-size: 1.3rem;
+        }
+        .meta {
+            background: #eff6ff;
+            padding: 1.5rem;
+            border-left: 4px solid #2563eb;
+            margin-bottom: 2rem;
+        }
+        .meta strong { color: #1e40af; }
+        .summary {
+            background: #fef3c7;
+            padding: 1.5rem;
+            border-left: 4px solid #f59e0b;
+            margin: 1.5rem 0;
+        }
+        .pass { color: #16a34a; font-weight: bold; }
+        .fail { color: #dc2626; font-weight: bold; }
+        .review { color: #ea580c; font-weight: bold; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 2rem;
+            font-size: 0.95rem;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background: #1e40af;
+            color: white;
+            font-weight: 600;
+        }
+        tr:nth-child(even) { background: #f9fafb; }
+        .blocker {
+            background: #fee2e2;
+            border-left: 4px solid #dc2626;
+            padding: 1rem;
+            margin: 0.5rem 0;
+        }
+        .high {
+            background: #fed7aa;
+            border-left: 4px solid #ea580c;
+            padding: 1rem;
+            margin: 0.5rem 0;
+        }
+        .medium {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            margin: 0.5rem 0;
+        }
+        .low {
+            background: #dbeafe;
+            border-left: 4px solid #3b82f6;
+            padding: 1rem;
+            margin: 0.5rem 0;
+        }
+        .positive {
+            background: #dcfce7;
+            border-left: 4px solid #16a34a;
+            padding: 1rem;
+            margin: 0.5rem 0;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        pre {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 1rem;
+            overflow-x: auto;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+        pre code { background: none; color: inherit; }
+        ul, ol { margin-left: 2rem; margin-bottom: 1rem; }
+        li { margin-bottom: 0.5rem; }
+        .file-ref {
+            font-family: monospace;
+            background: #f1f5f9;
+            padding: 0.1rem 0.3rem;
+            color: #0f172a;
+        }
+        .evidence {
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+        }
+        .verdict {
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+        .footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid #ddd;
+            font-size: 0.9rem;
+            color: #64748b;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WCAG Wayfinder<br>Comprehensive Accessibility Audit Report</h1>
+
+        <div class="meta">
+            <strong>Application:</strong> WCAG Wayfinder - WCAG 2.2 Success Criteria Explorer<br>
+            <strong>Audit Date:</strong> October 20, 2025<br>
+            <strong>Auditor:</strong> Claude (Sonnet 4.5) - Accessibility Expert<br>
+            <strong>Standards:</strong> WCAG 2.2 (Levels A, AA, AAA) + EN 301 549<br>
+            <strong>Scope:</strong> Full application (React SPA, all routes, all interactive patterns)<br>
+            <strong>Testing:</strong> Code review + live browser testing (Chrome DevTools, keyboard, zoom, responsive)<br>
+            <strong>Stack:</strong> React 18.3 + TypeScript + Vite + Tailwind CSS<br>
+            <strong>URL:</strong> http://localhost:5173/
+        </div>
+
+        <!-- A. EXECUTIVE SUMMARY -->
+        <h2>A. Executive Summary</h2>
+        <div class="summary">
+            <h3>Overall Risk: LOW-MEDIUM</h3>
+            <ul>
+                <li><strong>Strengths:</strong> Excellent semantic HTML foundation, comprehensive ARIA implementation (111+ attributes), robust keyboard navigation, proper focus management, multi-theme support with AA+ contrast ratios.</li>
+                <li><strong>Critical Gap:</strong> No <code>&lt;noscript&gt;</code> fallback—entire app fails without JavaScript (WCAG 4.1.2 at AA level expects graceful degradation).</li>
+                <li><strong>High Priority:</strong> Modal focus management uses 100ms setTimeout (race condition risk); <code>inert</code> attribute lacks polyfill for older browsers.</li>
+                <li><strong>Medium Issues:</strong> Four uses of <code>dangerouslySetInnerHTML</code> (mitigated by DOMPurify but requires ongoing vigilance); some tag buttons use client-side ARIA states without server-side equivalents.</li>
+                <li><strong>Positive:</strong> Reflow at 200%/400% zoom PASSES; 320px responsive design PASSES; skip links implemented; live regions for screen readers; color + shape indicators (not color alone).</li>
+                <li><strong>Progressive Enhancement:</strong> URL-based state allows sharing/bookmarking but requires JS for interactivity. Search form submits via React, not native HTML form action.</li>
+                <li><strong>Screen Reader Support:</strong> Strong with 2 live regions (polite + assertive), descriptive labels, proper name/role/value patterns. No AT-specific testing documented.</li>
+                <li><strong>Test Coverage:</strong> 70/82 tests passing (85%). 12 failing tests suggest potential regressions in element finding/pagination—investigate before production.</li>
+                <li><strong>Quick Wins (48h):</strong> Add noscript message, replace setTimeout with useLayoutEffect in modals, add inert polyfill, document XSS review cadence.</li>
+                <li><strong>Strategic Work (4-6w):</strong> Formal AT testing with NVDA/JAWS/VoiceOver, AAA compliance audit, automated axe-core CI integration, performance profiling under magnification.</li>
+            </ul>
+        </div>
+
+        <!-- B. CONFORMANCE TABLE -->
+        <h2>B. WCAG 2.2 Conformance Table (Level AA Target)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 12%;">SC</th>
+                    <th style="width: 35%;">Success Criterion</th>
+                    <th style="width: 10%;">Level</th>
+                    <th style="width: 13%;">Status</th>
+                    <th style="width: 30%;">Evidence/Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Perceivable -->
+                <tr>
+                    <td>1.1.1</td>
+                    <td>Non-text Content</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>All images use FontAwesome icons with aria-label; no decorative images without alt=""</td>
+                </tr>
+                <tr>
+                    <td>1.3.1</td>
+                    <td>Info and Relationships</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>Semantic HTML: nav, main, aside, article, heading hierarchy, fieldset+legend for form groups</td>
+                </tr>
+                <tr>
+                    <td>1.3.2</td>
+                    <td>Meaningful Sequence</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>DOM order matches visual/logical reading sequence; no CSS reordering breaks AT flow</td>
+                </tr>
+                <tr>
+                    <td>1.3.3</td>
+                    <td>Sensory Characteristics</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>Color + shape indicators (●■▲) for principles; level badges use text + color</td>
+                </tr>
+                <tr>
+                    <td>1.3.4</td>
+                    <td>Orientation</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>Responsive design works in portrait/landscape; no orientation locks</td>
+                </tr>
+                <tr>
+                    <td>1.3.5</td>
+                    <td>Identify Input Purpose</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>Search input has type="search"; no autocomplete tokens but no user data collected</td>
+                </tr>
+                <tr>
+                    <td>1.4.1</td>
+                    <td>Use of Color</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>Principle filters use color + shapes; buttons have text labels; no color-only indicators</td>
+                </tr>
+                <tr>
+                    <td>1.4.3</td>
+                    <td>Contrast (Minimum)</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>CSS variables designed for 4.5:1 text, 3:1 UI components across all 4 themes</td>
+                </tr>
+                <tr>
+                    <td>1.4.4</td>
+                    <td>Resize Text</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>Tested at 200% zoom—content reflows, no horizontal scroll, all interactive elements accessible</td>
+                </tr>
+                <tr>
+                    <td>1.4.5</td>
+                    <td>Images of Text</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>No images of text used; all text rendered via CSS/fonts</td>
+                </tr>
+                <tr>
+                    <td>1.4.10</td>
+                    <td>Reflow</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>320px width tested—sidebar goes full-width, no horizontal scroll, content stacks vertically</td>
+                </tr>
+                <tr>
+                    <td>1.4.11</td>
+                    <td>Non-text Contrast</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>Buttons, form controls, focus indicators meet 3:1; checked via CSS variable definitions</td>
+                </tr>
+                <tr>
+                    <td>1.4.12</td>
+                    <td>Text Spacing</td>
+                    <td>AA</td>
+                    <td class="review">NEEDS-REVIEW</td>
+                    <td>CSS allows user stylesheets; manual test needed with spacing bookmarklet</td>
+                </tr>
+                <tr>
+                    <td>1.4.13</td>
+                    <td>Content on Hover/Focus</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>No tooltips/popovers on hover; all modals triggered by explicit clicks, dismissible, no focus loss</td>
+                </tr>
+
+                <!-- Operable -->
+                <tr>
+                    <td>2.1.1</td>
+                    <td>Keyboard</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>All interactive elements keyboard-accessible; shortcuts: / (search), f (filters), Tab navigation</td>
+                </tr>
+                <tr>
+                    <td>2.1.2</td>
+                    <td>No Keyboard Trap</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>Focus trap in modals allows Escape to close; Tab/Shift+Tab cycle within modal; focus restores on close</td>
+                </tr>
+                <tr>
+                    <td>2.1.4</td>
+                    <td>Character Key Shortcuts</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>/ and f shortcuts do not interfere; only trigger when not typing in input fields</td>
+                </tr>
+                <tr>
+                    <td>2.2.1</td>
+                    <td>Timing Adjustable</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>No session timeouts; localStorage persists indefinitely; no time-based content</td>
+                </tr>
+                <tr>
+                    <td>2.2.2</td>
+                    <td>Pause, Stop, Hide</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>No auto-updating content, no animations >5s, no auto-playing media</td>
+                </tr>
+                <tr>
+                    <td>2.4.1</td>
+                    <td>Bypass Blocks</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>Skip links implemented: "Skip to search", "Skip to filters", "Skip to results"—visible on focus</td>
+                </tr>
+                <tr>
+                    <td>2.4.2</td>
+                    <td>Page Titled</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>Dynamic page titles via useDocumentTitle hook; format: "WCAG Wayfinder | Filters | Version"</td>
+                </tr>
+                <tr>
+                    <td>2.4.3</td>
+                    <td>Focus Order</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>Tab order follows visual/DOM order; no tabindex > 0; logical flow maintained</td>
+                </tr>
+                <tr>
+                    <td>2.4.4</td>
+                    <td>Link Purpose (In Context)</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>All links descriptive; "W3C WCAG 2.2" labeled; share buttons have aria-label="Share link to 1.1.1"</td>
+                </tr>
+                <tr>
+                    <td>2.4.5</td>
+                    <td>Multiple Ways</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>Search, browse by filters, favorites, direct URL navigation, guideline tree navigation</td>
+                </tr>
+                <tr>
+                    <td>2.4.6</td>
+                    <td>Headings and Labels</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>Headings: H1 (page title), H2 (sections, criterion numbers), H3 (metadata groups); labels for all inputs</td>
+                </tr>
+                <tr>
+                    <td>2.4.7</td>
+                    <td>Focus Visible</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>2px outline on all :focus-visible elements; never removed; visible in all themes</td>
+                </tr>
+                <tr>
+                    <td>2.5.1</td>
+                    <td>Pointer Gestures</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>No complex gestures; all interactions single-click/tap</td>
+                </tr>
+                <tr>
+                    <td>2.5.2</td>
+                    <td>Pointer Cancellation</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>Click handlers on buttons/links only; no custom down-event handlers</td>
+                </tr>
+                <tr>
+                    <td>2.5.3</td>
+                    <td>Label in Name</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>Visible text matches accessible names; buttons like "Clear all filters" have matching aria-label text</td>
+                </tr>
+                <tr>
+                    <td>2.5.4</td>
+                    <td>Motion Actuation</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>No device motion/tilt interactions</td>
+                </tr>
+                <tr>
+                    <td>2.5.5</td>
+                    <td>Target Size</td>
+                    <td>AAA</td>
+                    <td class="pass">PASS</td>
+                    <td>44x44px minimum enforced in CSS (.btn class); pagination buttons, checkboxes, tag buttons meet AAA</td>
+                </tr>
+                <tr>
+                    <td>2.5.7</td>
+                    <td>Dragging Movements</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>No drag-and-drop interactions</td>
+                </tr>
+                <tr>
+                    <td>2.5.8</td>
+                    <td>Target Size (Minimum)</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>24x24px minimum met; most controls exceed this (44x44px)</td>
+                </tr>
+
+                <!-- Understandable -->
+                <tr>
+                    <td>3.1.1</td>
+                    <td>Language of Page</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>&lt;html lang="en"&gt; present in all rendered pages</td>
+                </tr>
+                <tr>
+                    <td>3.1.2</td>
+                    <td>Language of Parts</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>All content in English; no foreign language passages</td>
+                </tr>
+                <tr>
+                    <td>3.2.1</td>
+                    <td>On Focus</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>No context changes on focus; all interactions require explicit activation (click/Enter/Space)</td>
+                </tr>
+                <tr>
+                    <td>3.2.2</td>
+                    <td>On Input</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>Form inputs trigger search/filter after debounce (300ms), not immediate; predictable behavior</td>
+                </tr>
+                <tr>
+                    <td>3.2.3</td>
+                    <td>Consistent Navigation</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>Header, sidebar, pagination placement consistent across all pages/routes</td>
+                </tr>
+                <tr>
+                    <td>3.2.4</td>
+                    <td>Consistent Identification</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>Icons, button labels, patterns consistent (star=favorite, share icon, filter icon, etc.)</td>
+                </tr>
+                <tr>
+                    <td>3.2.6</td>
+                    <td>Consistent Help</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>Help buttons (? icons) consistently placed next to filter groups; modal pattern consistent</td>
+                </tr>
+                <tr>
+                    <td>3.3.1</td>
+                    <td>Error Identification</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>API errors announced via role="alert"; text describes error ("Failed to load criteria")</td>
+                </tr>
+                <tr>
+                    <td>3.3.2</td>
+                    <td>Labels or Instructions</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>All inputs labeled; search has aria-describedby with usage hint; checkboxes have visible labels</td>
+                </tr>
+                <tr>
+                    <td>3.3.3</td>
+                    <td>Error Suggestion</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>Empty search shows tips: "Try broader terms" "Use filters" "Check favorites"</td>
+                </tr>
+                <tr>
+                    <td>3.3.4</td>
+                    <td>Error Prevention (Legal/Financial/Data)</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>No legal/financial transactions; favorites stored in localStorage (reversible)</td>
+                </tr>
+                <tr>
+                    <td>3.3.7</td>
+                    <td>Redundant Entry</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>Filters persist via URL; no repeated data entry required</td>
+                </tr>
+                <tr>
+                    <td>3.3.8</td>
+                    <td>Accessible Authentication</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>No authentication required for public app</td>
+                </tr>
+
+                <!-- Robust -->
+                <tr>
+                    <td>4.1.1</td>
+                    <td>Parsing</td>
+                    <td>A</td>
+                    <td class="pass">PASS</td>
+                    <td>Valid HTML5; React ensures proper nesting; no duplicate IDs (managed by React keys)</td>
+                </tr>
+                <tr>
+                    <td>4.1.2</td>
+                    <td>Name, Role, Value</td>
+                    <td>A</td>
+                    <td class="review">NEEDS-REVIEW</td>
+                    <td>Strong ARIA implementation (111+ attributes); custom widgets use proper roles; BUT no formal AT testing documented. Test with NVDA/JAWS/VoiceOver required.</td>
+                </tr>
+                <tr>
+                    <td>4.1.3</td>
+                    <td>Status Messages</td>
+                    <td>AA</td>
+                    <td class="pass">PASS</td>
+                    <td>Live regions implemented: role="status" aria-live="polite" for results count, filter changes; assertive for errors</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Conformance Level Achieved:</strong> <span class="pass">WCAG 2.2 Level AA (Conditional)</span></p>
+        <p><strong>Caveats:</strong></p>
+        <ul>
+            <li>Requires JavaScript to function (no noscript fallback) — limits accessibility for JS-disabled users</li>
+            <li>AT testing (NVDA, JAWS, VoiceOver) not yet conducted — 4.1.2 status provisional pending real-world validation</li>
+            <li>Text spacing adaptability (1.4.12) needs manual testing with browser extensions</li>
+        </ul>
+
+        <!-- C. ISSUE LOG -->
+        <h2>C. Issue Log (Prioritized by Severity)</h2>
+
+        <h3>🔴 BLOCKER ISSUES (Prevents Core Tasks)</h3>
+
+        <div class="blocker">
+            <h4>BLOCKER-01: No JavaScript Fallback</h4>
+            <p><strong>WCAG:</strong> 4.1.2 (Name, Role, Value) - Level A</p>
+            <p><strong>User Impact:</strong> Users with JavaScript disabled get completely blank page; screen reader users in low-bandwidth/secure environments cannot access any content.</p>
+            <p><strong>Where:</strong> <span class="file-ref">apps/web/index.html</span></p>
+            <div class="evidence">
+                <strong>Evidence:</strong> No <code>&lt;noscript&gt;</code> tag present in HTML template. React app renders nothing without JS runtime.
+            </div>
+            <p><strong>Why It's a Problem:</strong> WCAG 2.2 requires content to be accessible. While SPAs often require JS, EN 301 549 and accessible procurement standards expect graceful degradation or clear messaging.</p>
+            <p><strong>Fix Strategy:</strong></p>
+            <ol>
+                <li>Add <code>&lt;noscript&gt;</code> tag to <span class="file-ref">index.html</span> with message: "This application requires JavaScript. Please enable it or use a modern browser."</li>
+                <li>Include link to static page with basic WCAG reference or contact info</li>
+                <li>Long-term: Consider server-side rendering (SSR) or static export for critical paths</li>
+            </ol>
+            <p><strong>Owner:</strong> Developers</p>
+            <p><strong>Effort:</strong> Small (1-2 hours for noscript; Large for SSR)</p>
+            <p><strong>Dependencies:</strong> None for noscript; SSR requires architecture change</p>
+        </div>
+
+        <h3>🟠 HIGH SEVERITY (Major Friction for AT/Keyboard Users)</h3>
+
+        <div class="high">
+            <h4>HIGH-01: Modal Focus Race Condition</h4>
+            <p><strong>WCAG:</strong> 2.4.3 (Focus Order) - Level A</p>
+            <p><strong>User Impact:</strong> Screen reader users may experience delayed or missing focus announcements on modal open; keyboard users might see unpredictable focus behavior.</p>
+            <p><strong>Where:</strong> <span class="file-ref">apps/web/src/components/Modal.tsx:97-108</span></p>
+            <div class="evidence">
+                <strong>Evidence:</strong>
+                <pre><code>useEffect(() => {
+  setTimeout(() => {
+    const focusElement = modalRef.current?.querySelector('[autofocus]');
+    // 100ms delay — timing-dependent, not guaranteed
+  }, 100);
+}, []);</code></pre>
+            </div>
+            <p><strong>Why It's a Problem:</strong> <code>setTimeout</code> is unreliable across devices/browsers. In slow environments (CPU throttling, magnification), focus may land before content renders, causing screen reader to announce nothing or incorrect element.</p>
+            <p><strong>Fix Strategy:</strong></p>
+            <ol>
+                <li>Replace <code>setTimeout</code> with <code>useLayoutEffect</code> or callback ref pattern</li>
+                <li>Use <code>focus-trap-react</code> library's <code>initialFocus</code> option (already imported but not fully utilized)</li>
+                <li>Test with NVDA + Firefox, JAWS + Chrome, VoiceOver + Safari to confirm focus announcement timing</li>
+            </ol>
+            <p><strong>Owner:</strong> Developers</p>
+            <p><strong>Effort:</strong> Medium (4-8 hours with AT testing)</p>
+            <p><strong>Dependencies:</strong> Requires AT testing environment setup</p>
+        </div>
+
+        <div class="high">
+            <h4>HIGH-02: Inert Attribute Polyfill Missing</h4>
+            <p><strong>WCAG:</strong> 2.1.2 (No Keyboard Trap) - Level A</p>
+            <p><strong>User Impact:</strong> In older browsers (Safari < 15.5, Firefox < 112), background content remains keyboard-accessible when modal is open; AT users can tab behind modal.</p>
+            <p><strong>Where:</strong> <span class="file-ref">apps/web/src/components/CriterionCard.tsx:84</span></p>
+            <div class="evidence">
+                <strong>Evidence:</strong>
+                <pre><code>{...(!hasSelectedTag && { inert: '' as any })}</code></pre>
+                <p>The <code>inert</code> attribute is used but has no polyfill. Browser support:</p>
+                <ul>
+                    <li>Chrome 102+ ✅</li>
+                    <li>Safari 15.5+ ✅</li>
+                    <li>Firefox 112+ ✅</li>
+                    <li>Older browsers: ❌ Falls back to doing nothing</li>
+                </ul>
+            </div>
+            <p><strong>Why It's a Problem:</strong> Screen reader users on older browsers may accidentally navigate into inert content, creating confusion and potential keyboard traps.</p>
+            <p><strong>Fix Strategy:</strong></p>
+            <ol>
+                <li>Add <code>wicg-inert</code> polyfill via npm: <code>npm install wicg-inert</code></li>
+                <li>Import in <span class="file-ref">main.tsx</span>: <code>import 'wicg-inert';</code></li>
+                <li>Alternative: Use <code>aria-hidden="true"</code> + manual tabindex management as fallback</li>
+            </ol>
+            <p><strong>Owner:</strong> Developers</p>
+            <p><strong>Effort:</strong> Small (2-4 hours including testing)</p>
+            <p><strong>Dependencies:</strong> Browser compatibility testing</p>
+        </div>
+
+        <h3>🟡 MEDIUM SEVERITY (Noticeable Friction, Workarounds Exist)</h3>
+
+        <div class="medium">
+            <h4>MEDIUM-01: XSS Risk via dangerouslySetInnerHTML</h4>
+            <p><strong>WCAG:</strong> Security risk intersecting accessibility (not direct WCAG violation)</p>
+            <p><strong>User Impact:</strong> If sanitization fails, malicious content could inject scripts that harm AT users (e.g., fake ARIA labels, focus hijacking).</p>
+            <p><strong>Where:</strong> 4 files use <code>dangerouslySetInnerHTML</code>:</p>
+            <ul>
+                <li><span class="file-ref">CriterionDetails.tsx</span> - renders WCAG content HTML</li>
+                <li><span class="file-ref">ResultList.tsx</span> - renders warning banners</li>
+                <li><span class="file-ref">Filters.tsx</span> - renders help content</li>
+                <li><span class="file-ref">TermModal.tsx</span> - renders glossary definitions</li>
+            </ul>
+            <div class="evidence">
+                <strong>Current Mitigation:</strong> All content sanitized with DOMPurify before rendering:
+                <pre><code>const clean = DOMPurify.sanitize(markdownHTML);</code></pre>
+            </div>
+            <p><strong>Why It's a Problem:</strong> DOMPurify config might miss edge cases; future developers may bypass sanitization; dependency vulnerabilities.</p>
+            <p><strong>Fix Strategy:</strong></p>
+            <ol>
+                <li>Document sanitization requirement in code comments: "// SECURITY: Always sanitize before dangerouslySetInnerHTML"</li>
+                <li>Add ESLint rule to warn on dangerouslySetInnerHTML usage</li>
+                <li>Set up quarterly DOMPurify version checks and CVE monitoring</li>
+                <li>Consider migrating to React-based markdown renderer (e.g., <code>react-markdown</code>) to avoid HTML injection entirely</li>
+            </ol>
+            <p><strong>Owner:</strong> Developers + Security Team</p>
+            <p><strong>Effort:</strong> Medium (initial: 4h; ongoing: 1h/quarter)</p>
+            <p><strong>Dependencies:</strong> ESLint config update, dependency monitoring setup</p>
+        </div>
+
+        <div class="medium">
+            <h4>MEDIUM-02: Test Failures Suggest Regression Risk</h4>
+            <p><strong>WCAG:</strong> Quality assurance / regression prevention</p>
+            <p><strong>User Impact:</strong> 12 failing tests (App.test.tsx, Pagination.test.tsx, urlUtils.test.ts) indicate potential bugs that could surface in production.</p>
+            <p><strong>Where:</strong> Test suite - 70/82 passing (85%)</p>
+            <div class="evidence">
+                <strong>Failures:</strong>
+                <ul>
+                    <li>9 failures in App.test.tsx - element finding issues ("Non-text Content" not found)</li>
+                    <li>2 failures in Pagination.test.tsx - interaction/size tests</li>
+                    <li>1 failure in urlUtils.test.ts - URL round-trip test</li>
+                </ul>
+            </div>
+            <p><strong>Why It's a Problem:</strong> Tests guard against accessibility regressions (e.g., ARIA attributes removed by mistake, keyboard navigation broken). Failing tests mean this safety net has holes.</p>
+            <p><strong>Fix Strategy:</strong></p>
+            <ol>
+                <li>Prioritize fixing App.test.tsx failures - likely view mode or mock data issues</li>
+                <li>Investigate Pagination touch target size test - may reveal real AA violation (2.5.8)</li>
+                <li>Add pre-commit hook to prevent new failures from being committed</li>
+                <li>Set 90%+ pass rate as production-readiness gate</li>
+            </ol>
+            <p><strong>Owner:</strong> QA Testers + Developers</p>
+            <p><strong>Effort:</strong> Medium (8-16 hours to fix all 12)</p>
+            <p><strong>Dependencies:</strong> May uncover actual bugs requiring fixes</p>
+        </div>
+
+        <div class="medium">
+            <h4>MEDIUM-03: Text Spacing Adaptability Untested</h4>
+            <p><strong>WCAG:</strong> 1.4.12 (Text Spacing) - Level AA</p>
+            <p><strong>User Impact:</strong> Users who apply custom stylesheets to increase line-height/letter-spacing may experience text overlap or clipped content.</p>
+            <p><strong>Where:</strong> Global CSS - <span class="file-ref">index.css</span></p>
+            <div class="evidence">
+                <strong>Test Required:</strong> Apply these CSS overrides via bookmarklet:
+                <pre><code>* {
+  line-height: 1.5 !important;
+  letter-spacing: 0.12em !important;
+  word-spacing: 0.16em !important;
+  paragraph spacing: 2em !important;
+}</code></pre>
+                <p>Then verify no content is clipped, overlapping, or requires horizontal scroll.</p>
+            </div>
+            <p><strong>Why It's a Problem:</strong> Users with dyslexia, low vision, or cognitive disabilities rely on custom spacing. If UI breaks, they cannot access content.</p>
+            <p><strong>Fix Strategy:</strong></p>
+            <ol>
+                <li>Use <a href="https://dylanb.github.io/bookmarklets.html">text spacing bookmarklet</a> to test</li>
+                <li>Fix any layout issues found (likely: tag buttons, pagination numbers, modal headers)</li>
+                <li>Document test in QA checklist for future regressions</li>
+            </ol>
+            <p><strong>Owner:</strong> QA Testers + Designers</p>
+            <p><strong>Effort:</strong> Small (2-4 hours)</p>
+            <p><strong>Dependencies:</strong> Bookmarklet tool, visual QA</p>
+        </div>
+
+        <h3>🔵 LOW SEVERITY (Polish/Consistency, Best Practice)</h3>
+
+        <div class="low">
+            <h4>LOW-01: Missing AT Test Coverage</h4>
+            <p><strong>WCAG:</strong> 4.1.2 (Name, Role, Value) - Level A</p>
+            <p><strong>User Impact:</strong> Code looks compliant, but real screen reader behavior may differ (announcements timing, verbosity, focus mismatches).</p>
+            <p><strong>Where:</strong> No documented AT testing has occurred</p>
+            <p><strong>Why It's a Problem:</strong> 111+ ARIA attributes are correct by static analysis, but actual AT experience may have quirks (e.g., modal title announced twice, live regions firing out of order).</p>
+            <p><strong>Fix Strategy:</strong></p>
+            <ol>
+                <li>Conduct formal AT testing with:
+                    <ul>
+                        <li>NVDA 2024+ on Windows with Firefox</li>
+                        <li>JAWS 2024 on Windows with Chrome</li>
+                        <li>VoiceOver on macOS Sonoma with Safari</li>
+                        <li>VoiceOver on iOS 17+ with Safari</li>
+                    </ul>
+                </li>
+                <li>Test critical flows:
+                    <ul>
+                        <li>Search for a criterion</li>
+                        <li>Filter by principle/level</li>
+                        <li>Add/remove favorites</li>
+                        <li>Open modal, navigate, close</li>
+                        <li>Paginate through results</li>
+                        <li>Use skip links</li>
+                    </ul>
+                </li>
+                <li>Document findings and iterate</li>
+            </ol>
+            <p><strong>Owner:</strong> Accessibility Specialists + QA</p>
+            <p><strong>Effort:</strong> Large (16-24 hours for comprehensive testing)</p>
+            <p><strong>Dependencies:</strong> AT software licenses, testing environment setup</p>
+        </div>
+
+        <div class="low">
+            <h4>LOW-02: ESLint Warnings (69 Remaining)</h4>
+            <p><strong>WCAG:</strong> Code quality (indirect accessibility impact)</p>
+            <p><strong>User Impact:</strong> Warnings may hide real bugs that affect AT; cluttered logs make it harder to spot accessibility issues in CI.</p>
+            <p><strong>Where:</strong> Various files - <span class="file-ref">CLAUDE.md</span> notes 69 ESLint warnings</p>
+            <p><strong>Fix Strategy:</strong></p>
+            <ol>
+                <li>Run <code>npm run lint -- --quiet</code> to see only errors</li>
+                <li>Fix or suppress warnings with justification comments</li>
+                <li>Enable <code>--max-warnings 0</code> in CI to prevent new warnings</li>
+            </ol>
+            <p><strong>Owner:</strong> Developers</p>
+            <p><strong>Effort:</strong> Medium (8-12 hours)</p>
+        </div>
+
+        <!-- D. PROGRESSIVE ENHANCEMENT VERDICT -->
+        <h2>D. Progressive Enhancement Verdict</h2>
+        <div class="verdict" style="background: #fef3c7; border-left: 4px solid #f59e0b;">
+            <h3>Summary: PARTIAL (URL-based State ✅, No JS Fallback ❌)</h3>
+
+            <p><strong>What Works Without JS:</strong></p>
+            <ul>
+                <li>❌ <strong>Nothing.</strong> The app is a React SPA; without JavaScript, users see a blank page.</li>
+                <li>✅ <strong>URLs are shareable/bookmarkable</strong> - filters encoded in path (e.g., <code>/level:a+aa/principle:p/</code>), so links can be saved and shared.</li>
+                <li>✅ <strong>Semantic HTML foundation</strong> - when JS loads, the DOM uses proper elements (not all divs).</li>
+            </ul>
+
+            <p><strong>What Breaks Without JS:</strong></p>
+            <ul>
+                <li>🔴 <strong>All content</strong> - no server-side rendering, no static export</li>
+                <li>🔴 <strong>Search form</strong> - relies on React <code>onChange</code>, not native form submission</li>
+                <li>🔴 <strong>Navigation</strong> - React Router handles all routing; browser back/forward work only if JS already loaded</li>
+                <li>🔴 <strong>No noscript message</strong> - users don't even know JS is required</li>
+            </ul>
+
+            <p><strong>Graceful Degradation Strategy:</strong></p>
+            <ol>
+                <li><strong>Immediate:</strong> Add <code>&lt;noscript&gt;</code> with message + link to static WCAG reference</li>
+                <li><strong>Short-term:</strong> Consider Next.js migration for SSR/SSG (static export of criterion pages)</li>
+                <li><strong>Long-term:</strong> Evaluate whether app *must* be SPA or if progressive enhancement with server-rendered HTML + client-side enhancement is viable</li>
+            </ol>
+
+            <p><strong>WCAG Compliance Impact:</strong></p>
+            <p>While WCAG 2.2 doesn't explicitly require non-JS fallback, <strong>4.1.2 (Name, Role, Value)</strong> and <strong>EN 301 549</strong> (European procurement) expect content to be "accessible" broadly. A completely blank page fails this. <strong>Recommendation: Add noscript at minimum.</strong></p>
+        </div>
+
+        <!-- E. SEMANTICS & ARIA VERDICT -->
+        <h2>E. Semantics & ARIA Verdict</h2>
+        <div class="verdict positive">
+            <h3>Summary: STRONG ✅ (Exemplary Semantic HTML + Proper ARIA Usage)</h3>
+
+            <p><strong>Semantic HTML Landmarks:</strong></p>
+            <ul>
+                <li>✅ <code>&lt;header&gt;</code> - Sticky app header with search and favorites</li>
+                <li>✅ <code>&lt;nav&gt;</code> - Filters sidebar, pagination controls</li>
+                <li>✅ <code>&lt;main&gt;</code> - Results list container with <code>id="main-content"</code></li>
+                <li>✅ <code>&lt;aside&gt;</code> - Filters sidebar explicitly marked</li>
+                <li>✅ <code>&lt;article&gt;</code> - Individual criterion cards</li>
+                <li>✅ <code>&lt;footer&gt;</code> - Sticky footer with attribution</li>
+                <li>✅ <code>&lt;section&gt;</code> - Logical content groupings</li>
+            </ul>
+
+            <p><strong>Heading Outline:</strong></p>
+            <pre><code>H1 - "WCAG Wayfinder" (page title)
+  H2 - "Filters" (sidebar)
+  H2 - "1.1.1 — [Criterion Title]" (each criterion)
+    H3 - "Tags"
+    H3 - "Affects"
+    H3 - "Responsibility"
+    H3 - "Technologies"</code></pre>
+            <p>✅ <strong>No heading level skips</strong> (no H1 → H3); logical nesting maintained.</p>
+
+            <p><strong>ARIA Implementation (111+ Attributes):</strong></p>
+            <table>
+                <tr>
+                    <th>Pattern</th>
+                    <th>Elements</th>
+                    <th>Verdict</th>
+                </tr>
+                <tr>
+                    <td>Dialog (Modal)</td>
+                    <td><code>role="dialog" aria-modal="true" aria-labelledby="title"</code></td>
+                    <td class="pass">✅ CORRECT</td>
+                </tr>
+                <tr>
+                    <td>Live Regions</td>
+                    <td><code>role="status" aria-live="polite" aria-atomic="true"</code></td>
+                    <td class="pass">✅ CORRECT</td>
+                </tr>
+                <tr>
+                    <td>Expanded/Collapsed</td>
+                    <td><code>aria-expanded="true" aria-controls="id"</code></td>
+                    <td class="pass">✅ CORRECT</td>
+                </tr>
+                <tr>
+                    <td>Current Page</td>
+                    <td><code>aria-current="page"</code> on pagination buttons</td>
+                    <td class="pass">✅ CORRECT</td>
+                </tr>
+                <tr>
+                    <td>Disabled State</td>
+                    <td><code>disabled</code> attribute on buttons (not aria-disabled)</td>
+                    <td class="pass">✅ CORRECT (native preferred)</td>
+                </tr>
+                <tr>
+                    <td>Descriptive Text</td>
+                    <td><code>aria-describedby</code> linking inputs to help text</td>
+                    <td class="pass">✅ CORRECT</td>
+                </tr>
+                <tr>
+                    <td>Hidden Decorative</td>
+                    <td><code>aria-hidden="true"</code> on shape indicators (●■▲)</td>
+                    <td class="pass">✅ CORRECT</td>
+                </tr>
+                <tr>
+                    <td>Labels</td>
+                    <td><code>aria-label</code> on icon buttons, searchbox</td>
+                    <td class="pass">✅ CORRECT</td>
+                </tr>
+            </table>
+
+            <p><strong>Form Semantics:</strong></p>
+            <ul>
+                <li>✅ <code>&lt;fieldset&gt;</code> + <code>&lt;legend&gt;</code> for Version/Level/Principle groups</li>
+                <li>✅ <code>&lt;label&gt;</code> with <code>htmlFor</code> on all inputs (some visually hidden with <code>.sr-only</code>)</li>
+                <li>✅ <code>type="search"</code> on search inputs (native browser support)</li>
+                <li>✅ Checkbox groups use native <code>&lt;input type="checkbox"&gt;</code> (not custom ARIA checkboxes)</li>
+            </ul>
+
+            <p><strong>ARIA Misuse? None Found.</strong></p>
+            <p>✅ No redundant ARIA on native elements (e.g., no <code>role="button"</code> on <code>&lt;button&gt;</code>)</p>
+            <p>✅ No ARIA overriding native semantics incorrectly</p>
+            <p>✅ No <code>tabindex="0"</code> on divs that should be buttons</p>
+
+            <p><strong>Recommendation:</strong> Current implementation is <strong>exemplary</strong>. Only caveat: needs real AT testing to confirm announcements match expectations (see LOW-01).</p>
+        </div>
+
+        <!-- F. REGRESSION RISKS -->
+        <h2>F. Regression Risks & Guardrails</h2>
+
+        <h3>High-Risk Areas (Likely to Break with Future Changes)</h3>
+        <ol>
+            <li>
+                <strong>Modal Focus Management</strong> (<span class="file-ref">Modal.tsx</span>)
+                <ul>
+                    <li><strong>Risk:</strong> Refactoring focus logic could break keyboard trap/restoration</li>
+                    <li><strong>Guard:</strong> Add E2E test: "Open modal → Tab around → Escape → Verify focus restored"</li>
+                </ul>
+            </li>
+            <li>
+                <strong>URL Sync Logic</strong> (<span class="file-ref">useURLSync.ts</span>)
+                <ul>
+                    <li><strong>Risk:</strong> Changes to filter structure could break URL parsing; infinite loops if sync flag mishandled</li>
+                    <li><strong>Guard:</strong> Expand urlUtils.test.ts to cover all edge cases; monitor for URL encode/decode mismatches</li>
+                </ul>
+            </li>
+            <li>
+                <strong>ARIA Live Regions</strong> (<span class="file-ref">LiveRegion.tsx</span>)
+                <ul>
+                    <li><strong>Risk:</strong> Removing or duplicating live regions breaks screen reader announcements</li>
+                    <li><strong>Guard:</strong> Grep for <code>role="status"</code> in CI; fail if count ≠ 2 polite + assertive regions</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Theme System</strong> (<span class="file-ref">index.css</span>)
+                <ul>
+                    <li><strong>Risk:</strong> CSS variable changes could break contrast ratios in dark/high-contrast modes</li>
+                    <li><strong>Guard:</strong> Add automated contrast checks in CI (e.g., <code>pa11y-ci</code> with theme toggling)</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Keyboard Shortcuts</strong> (<span class="file-ref">useKeyboardShortcuts.ts</span>)
+                <ul>
+                    <li><strong>Risk:</strong> New shortcuts conflict with browser/AT shortcuts (e.g., Ctrl+F)</li>
+                    <li><strong>Guard:</strong> Document all shortcuts in ARIA live help; test with screen readers to avoid conflicts</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3>Proposed Guardrails</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Guardrail</th>
+                    <th>Tool/Process</th>
+                    <th>Trigger</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Automated ARIA Validation</td>
+                    <td>axe-core via <code>@axe-core/playwright</code></td>
+                    <td>Every PR (CI check)</td>
+                </tr>
+                <tr>
+                    <td>Keyboard Navigation Test</td>
+                    <td>Playwright E2E: Tab through app, activate modals</td>
+                    <td>Every PR</td>
+                </tr>
+                <tr>
+                    <td>Contrast Ratio Checks</td>
+                    <td><code>pa11y-ci</code> with CSS variable scanning</td>
+                    <td>Every PR</td>
+                </tr>
+                <tr>
+                    <td>Focus Indicator Regression</td>
+                    <td>Visual regression testing (Percy, Chromatic)</td>
+                    <td>Weekly</td>
+                </tr>
+                <tr>
+                    <td>AT Smoke Tests</td>
+                    <td>NVDA + core flows (search, filter, modal)</td>
+                    <td>Before each release</td>
+                </tr>
+                <tr>
+                    <td>URL Sync Integrity</td>
+                    <td>Unit tests: round-trip URL ↔ filters</td>
+                    <td>Every PR</td>
+                </tr>
+                <tr>
+                    <td>Heading Outline Validation</td>
+                    <td><code>axe-core</code> heading-order rule</td>
+                    <td>Every PR</td>
+                </tr>
+                <tr>
+                    <td>Live Region Count Check</td>
+                    <td>Custom script: <code>grep -c 'role="status"'</code></td>
+                    <td>Every PR</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- G. QUICK WINS VS STRATEGIC WORK -->
+        <h2>G. Quick Wins vs. Strategic Work</h2>
+
+        <h3>Quick Wins (Next 48 Hours)</h3>
+        <div class="positive">
+            <ol>
+                <li><strong>Add Noscript Message</strong> (BLOCKER-01) — 1 hour
+                    <ul>
+                        <li>Add to <span class="file-ref">index.html</span>: <code>&lt;noscript&gt;This app requires JavaScript. <a href="https://www.w3.org/WAI/WCAG22/">View WCAG 2.2 here</a>&lt;/noscript&gt;</code></li>
+                    </ul>
+                </li>
+                <li><strong>Replace setTimeout in Modal Focus</strong> (HIGH-01) — 2 hours
+                    <ul>
+                        <li>Use <code>useLayoutEffect</code> or callback ref for immediate focus</li>
+                    </ul>
+                </li>
+                <li><strong>Add Inert Polyfill</strong> (HIGH-02) — 2 hours
+                    <ul>
+                        <li><code>npm install wicg-inert</code>; import in <span class="file-ref">main.tsx</span></li>
+                    </ul>
+                </li>
+                <li><strong>Document XSS Review Process</strong> (MEDIUM-01) — 1 hour
+                    <ul>
+                        <li>Add comments to files using <code>dangerouslySetInnerHTML</code>; set quarterly review calendar</li>
+                    </ul>
+                </li>
+                <li><strong>Test Text Spacing with Bookmarklet</strong> (MEDIUM-03) — 2 hours
+                    <ul>
+                        <li>Run test, fix any clipping issues in tag buttons or pagination</li>
+                    </ul>
+                </li>
+            </ol>
+            <p><strong>Total Effort:</strong> ~8 hours (1 day)</p>
+        </div>
+
+        <h3>Strategic Work (Next 4-6 Weeks)</h3>
+        <div class="medium">
+            <ol>
+                <li><strong>Formal AT Testing</strong> (LOW-01) — 16-24 hours
+                    <ul>
+                        <li>NVDA + Firefox, JAWS + Chrome, VoiceOver + Safari (macOS + iOS)</li>
+                        <li>Test critical flows: search, filter, favorites, modals, pagination, skip links</li>
+                        <li>Document findings, iterate on announcements/focus</li>
+                    </ul>
+                </li>
+                <li><strong>Fix All Test Failures</strong> (MEDIUM-02) — 12-16 hours
+                    <ul>
+                        <li>Fix 9 App.test.tsx failures, 2 Pagination.test.tsx, 1 urlUtils.test.ts</li>
+                        <li>Reach 90%+ pass rate</li>
+                    </ul>
+                </li>
+                <li><strong>AAA Compliance Audit</strong> — 8-12 hours
+                    <ul>
+                        <li>Review WCAG 2.2 AAA criteria (e.g., 1.4.6 Enhanced Contrast, 2.4.9 Link Purpose)</li>
+                        <li>Target size already meets 2.5.5 AAA (44x44px)</li>
+                    </ul>
+                </li>
+                <li><strong>Automated axe-core CI Integration</strong> — 8 hours
+                    <ul>
+                        <li>Set up <code>@axe-core/playwright</code> in CI pipeline</li>
+                        <li>Fail builds on critical violations</li>
+                    </ul>
+                </li>
+                <li><strong>Performance Profiling Under Magnification</strong> — 6-8 hours
+                    <ul>
+                        <li>Test with 400% zoom + screen magnification tools</li>
+                        <li>Ensure no lag, no layout thrashing</li>
+                    </ul>
+                </li>
+                <li><strong>Progressive Enhancement Exploration</strong> — 20-40 hours
+                    <ul>
+                        <li>Evaluate Next.js migration for SSR/SSG</li>
+                        <li>Static export of criterion pages for SEO + no-JS fallback</li>
+                    </ul>
+                </li>
+            </ol>
+            <p><strong>Total Effort:</strong> 70-108 hours (2-3 sprints)</p>
+        </div>
+
+        <!-- H. ACCEPTANCE CHECKS -->
+        <h2>H. Acceptance Checks (Observable Task-Based Verification)</h2>
+
+        <h3>Post-Remediation QA Checklist</h3>
+        <p>Test all fixes with these step-by-step flows:</p>
+
+        <h4>Check 1: Noscript Fallback (BLOCKER-01)</h4>
+        <ol>
+            <li>Disable JavaScript in browser settings</li>
+            <li>Navigate to http://localhost:5173/</li>
+            <li><strong>Expected:</strong> See message: "This application requires JavaScript. Please enable it..."</li>
+            <li><strong>Pass Criteria:</strong> Message visible, includes link to W3C WCAG reference</li>
+        </ol>
+
+        <h4>Check 2: Modal Focus Management (HIGH-01)</h4>
+        <ol>
+            <li>Turn on NVDA + Firefox (or JAWS + Chrome)</li>
+            <li>Navigate to app, click "Learn more about WCAG versions" button</li>
+            <li><strong>Expected:</strong> Screen reader immediately announces modal title: "About WCAG Versions"</li>
+            <li>Press Tab — focus moves to Close button</li>
+            <li>Press Escape — modal closes, focus returns to "Learn more" button</li>
+            <li><strong>Pass Criteria:</strong> No delay in announcement; focus lands correctly; Escape works; focus restores</li>
+        </ol>
+
+        <h4>Check 3: Inert Polyfill (HIGH-02)</h4>
+        <ol>
+            <li>Test in Safari 15.0 (or Firefox 111) — browsers without native inert support</li>
+            <li>Open modal, press Tab repeatedly</li>
+            <li><strong>Expected:</strong> Focus cycles only within modal; cannot Tab to background content</li>
+            <li><strong>Pass Criteria:</strong> Background content truly inert (keyboard cannot reach it)</li>
+        </ol>
+
+        <h4>Check 4: Text Spacing Adaptability (MEDIUM-03)</h4>
+        <ol>
+            <li>Load app, open <a href="https://dylanb.github.io/bookmarklets.html">text spacing bookmarklet</a></li>
+            <li>Click bookmarklet to apply custom spacing</li>
+            <li><strong>Expected:</strong> No text clipping, no horizontal scroll, no overlap in tag buttons/pagination</li>
+            <li><strong>Pass Criteria:</strong> All content readable; layout adapts gracefully</li>
+        </ol>
+
+        <h4>Check 5: Keyboard Navigation (General)</h4>
+        <ol>
+            <li>Unplug mouse, use only keyboard</li>
+            <li>Press <code>/</code> — focus moves to search input</li>
+            <li>Type "keyboard" → press Enter → results filter</li>
+            <li>Press Tab → Tab → Tab until reaching "Filters" sidebar</li>
+            <li>Press <code>f</code> key — focus jumps to filters</li>
+            <li>Tab through checkboxes → Space to toggle → results update</li>
+            <li>Tab to pagination → Enter on "Next" → page changes</li>
+            <li>Click a criterion's "Show Details" → Enter to expand → content appears</li>
+            <li><strong>Pass Criteria:</strong> All interactions work; visible focus indicator at all times; no keyboard traps</li>
+        </ol>
+
+        <h4>Check 6: Screen Reader Announcements (AT Testing)</h4>
+        <ol>
+            <li>Turn on screen reader (NVDA, JAWS, or VoiceOver)</li>
+            <li>Navigate to app</li>
+            <li>Press <code>/</code> to focus search</li>
+            <li>Type "contrast" → wait 300ms (debounce)</li>
+            <li><strong>Expected:</strong> Live region announces: "12 results found" (or similar)</li>
+            <li>Check a principle checkbox</li>
+            <li><strong>Expected:</strong> Live region announces: "87 results found" (or new count)</li>
+            <li>Click "Add to favorites" button</li>
+            <li><strong>Expected:</strong> Announcement: "Added to favorites" or button state changes to "Remove from favorites"</li>
+            <li><strong>Pass Criteria:</strong> All state changes announced; no missed announcements; timing feels natural</li>
+        </ol>
+
+        <h4>Check 7: Zoom & Reflow (1.4.4, 1.4.10)</h4>
+        <ol>
+            <li>Set browser zoom to 200%</li>
+            <li>Navigate entire app — check search, filters, results, modals, pagination</li>
+            <li><strong>Expected:</strong> All content accessible; no horizontal scroll on desktop</li>
+            <li>Set zoom to 400%</li>
+            <li><strong>Expected:</strong> Content reflows; may need vertical scroll, but no layout breakage</li>
+            <li>Resize window to 320px width</li>
+            <li><strong>Expected:</strong> Sidebar goes full-width; content stacks; no horizontal scroll</li>
+            <li><strong>Pass Criteria:</strong> All interactions functional; readable; no clipping</li>
+        </ol>
+
+        <h4>Check 8: Skip Links (2.4.1)</h4>
+        <ol>
+            <li>Load app, press Tab once</li>
+            <li><strong>Expected:</strong> "Skip to search" link becomes visible</li>
+            <li>Press Enter — focus moves to search input</li>
+            <li>Reload page, Tab, Tab</li>
+            <li><strong>Expected:</strong> "Skip to filters" link visible</li>
+            <li>Enter — focus moves to filters sidebar</li>
+            <li>Repeat for "Skip to results"</li>
+            <li><strong>Pass Criteria:</strong> All skip links work; focus lands correctly; links visible on focus</li>
+        </ol>
+
+        <h4>Check 9: Contrast Ratios (1.4.3, 1.4.11)</h4>
+        <ol>
+            <li>Use browser DevTools "Inspect" on text elements</li>
+            <li>Check contrast ratio in Styles panel (Chrome shows AA/AAA badges)</li>
+            <li>Test in all 4 themes: System Default, Light, Dark, Solarized Dark, High Contrast</li>
+            <li><strong>Expected:</strong> All text ≥4.5:1; large text ≥3:1; UI components ≥3:1</li>
+            <li><strong>Pass Criteria:</strong> No contrast failures in any theme</li>
+        </ol>
+
+        <h4>Check 10: Test Suite Passing (Quality Gate)</h4>
+        <ol>
+            <li>Run <code>npm run test</code></li>
+            <li><strong>Expected:</strong> 90%+ tests passing (target: 82/82)</li>
+            <li>Run <code>npm run lint</code></li>
+            <li><strong>Expected:</strong> No errors; warnings ≤10</li>
+            <li>Run <code>npm run typecheck</code></li>
+            <li><strong>Expected:</strong> No TypeScript errors</li>
+            <li><strong>Pass Criteria:</strong> All checks green; CI pipeline passes</li>
+        </ol>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p><strong>Report Generated:</strong> October 20, 2025</p>
+            <p><strong>Methodology:</strong> Comprehensive code review + live browser testing (Chrome DevTools) + WCAG 2.2 conformance mapping</p>
+            <p><strong>Tools Used:</strong> Chrome DevTools, accessibility tree inspection, zoom testing, responsive design testing, code analysis</p>
+            <p><strong>Next Steps:</strong> Address BLOCKER and HIGH issues within 48 hours; schedule formal AT testing within 2 weeks; implement CI guardrails within 1 month.</p>
+            <hr style="margin: 2rem 0;">
+            <p style="font-size: 0.85rem;">This audit report is for internal use. For questions or clarifications, contact the development team or accessibility specialists.</p>
+            <p style="font-size: 0.85rem;"><strong>Disclaimer:</strong> This audit is based on static code analysis and manual testing. Real-world assistive technology testing with diverse users is strongly recommended before production deployment.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+{
+  "title": "Paramètres d'accessibilité",
+  "backToExplorer": "← Retour à l'explorateur",
+  "enabled": "Activé",
+  "disabled": "Désactivé",
+  "screenReader": {
+    "title": "Annonces du lecteur d'écran",
+    "description": "Lorsqu'elle est activée, WCAG Wayfinder fournit des instructions vocales supplémentaires aux utilisateurs de lecteurs d'écran lors du filtrage, de la navigation et de l'interaction avec l'interface.",
+    "enable": "Activer les annonces du lecteur d'écran",
+    "disable": "Désactiver les annonces du lecteur d'écran",
+    "enabledAnnounce": "Annonces du lecteur d'écran activées",
+    "disabledAnnounce": "Annonces du lecteur d'écran désactivées"
+  },
+  "easyMode": {
+    "title": "Mode simplifié",
+    "description": "Simplifiez l'interface en masquant les fonctionnalités avancées comme les filtres, les tags et les options de partage. Parfait pour les utilisateurs qui souhaitent une expérience épurée et sans distraction, axée uniquement sur la navigation des critères WCAG.",
+    "enable": "Activer le mode simplifié",
+    "disable": "Désactiver le mode simplifié",
+    "activeMessage": "Le mode simplifié est actif. L'interface masquera les filtres, les tags, les boutons de partage et autres fonctionnalités avancées lorsque vous retournerez à la page principale.",
+    "enabledAnnounce": "Mode simplifié activé - interface simplifiée activée",
+    "disabledAnnounce": "Mode simplifié désactivé - interface complète restaurée"
+  },
+  "resultsPerPage": {
+    "title": "Résultats par page",
+    "description": "Choisissez le nombre de critères à afficher par page. Moins de résultats peuvent charger plus rapidement et être plus faciles à naviguer.",
+    "current": "Actuel : <strong>{{count}} résultats par page</strong>",
+    "announce": "Résultats par page définis à {{count}}"
+  },
+  "reduceMotion": {
+    "title": "Réduire les animations",
+    "description": "Contrôlez si les animations et effets de mouvement sont activés sur le site. Lorsque la réduction des animations est activée, les animations seront minimisées pour une expérience plus statique et confortable.",
+    "enable": "Activer la réduction des animations",
+    "disable": "Désactiver la réduction des animations",
+    "systemEnabled": "Important : Vous avez activé Réduire les animations dans les paramètres {{os}}.",
+    "systemDisabled": "Votre système n'a pas activé Réduire les animations.",
+    "overrideHint": "Utilisez ce paramètre pour remplacer votre préférence système, ou modifiez-la dans",
+    "systemSettings": "Paramètres système",
+    "macOSSettings": "Paramètres macOS",
+    "windowsSettings": "Paramètres Windows",
+    "iOSSettings": "Paramètres iOS",
+    "androidSettings": "Paramètres Android",
+    "macOSPath": "Préférences Système → Accessibilité → Affichage → Réduire les animations",
+    "windowsPath": "Paramètres → Accessibilité → Effets visuels → Effets d'animation",
+    "iOSPath": "Réglages → Accessibilité → Mouvement → Réduire les animations",
+    "androidPath": "Paramètres → Accessibilité → Supprimer les animations",
+    "overrideActive": "(Remplacement actif)",
+    "overrideWarning": "Vous remplacez votre préférence système.",
+    "animationsEnabled": "Les animations sont activées même si votre système a la réduction des animations activée.",
+    "motionReduced": "La réduction des animations est activée même si votre système l'a désactivée.",
+    "enabledUsingSystem": "Réduction des animations activée - utilisation de la préférence système",
+    "disabledAnimations": "Réduction des animations désactivée - animations activées",
+    "disabledUsingSystem": "Réduction des animations désactivée - utilisation de la préférence système",
+    "enabledNoAnimations": "Réduction des animations activée - animations désactivées"
+  },
+  "textSize": {
+    "title": "Taille du texte",
+    "description": "Vous pouvez facilement ajuster la taille du texte en utilisant la fonction de zoom intégrée de votre navigateur. Cela redimensionnera la page entière proportionnellement tout en maintenant la mise en page.",
+    "shortcutsTitle": "Raccourcis de zoom du navigateur :",
+    "zoomIn": "Zoom avant (agrandir le texte)",
+    "zoomOut": "Zoom arrière (réduire le texte)",
+    "resetZoom": "Réinitialiser à la taille par défaut",
+    "modifierHint": "Sur Windows et Linux, utilisez <strong>Ctrl</strong>. Sur macOS, utilisez <strong>Command (⌘)</strong>."
+  },
+  "appearance": {
+    "title": "Apparence",
+    "description": "Choisissez l'apparence de WCAG Wayfinder. Cliquez sur une carte de thème pour la prévisualiser, puis sélectionnez \"Appliquer le thème\" pour enregistrer votre choix.",
+    "active": "Actif",
+    "preview": "Aperçu",
+    "applyTheme": "Appliquer le thème",
+    "currentTheme": "C'est votre thème actuel",
+    "clickToPreview": "Cliquez pour prévisualiser",
+    "previewingLabel": "Aperçu : {{theme}}",
+    "previewHint": "Cliquez sur \"Appliquer le thème\" sur la carte du thème pour enregistrer cette apparence, ou cliquez sur un autre thème pour le prévisualiser.",
+    "cancelPreview": "Annuler l'aperçu",
+    "announce": "Passé au thème {{theme}}"
+  },
+  "footer": {
+    "dataFrom": "Données de",
+    "wcag22": "W3C WCAG 2.2",
+    "builtWith": "Conçu avec l'accessibilité à l'esprit."
+  }
+}

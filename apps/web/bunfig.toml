@@ -1,0 +1,49 @@
+# Bun configuration file
+# https://bun.sh/docs/runtime/bunfig
+
+[install]
+# Configure package installation behavior
+cache = true
+registry = "https://registry.npmjs.org/"
+lockfile = true
+
+# Install peerDependencies by default
+auto = true
+
+# Install optional dependencies
+optional = true
+
+# Freeze lockfile in CI
+freeze = false
+
+[install.scopes]
+# Configure scoped registries if needed
+# "@myorg" = "https://registry.myorg.com/"
+
+[test]
+# Test runner configuration
+# Note: Coverage and other test settings are configured in vitest.config.ts
+# Bun's test runner config is minimal here
+
+[run]
+# Runtime configuration
+bun = true
+hot = true
+
+[define]
+# Define compile-time constants
+# "process.env.NODE_ENV" = "\"development\""
+
+[loader]
+# Configure how files are loaded
+".svg" = "file"
+".png" = "file"
+".jpg" = "file"
+".jpeg" = "file"
+".gif" = "file"
+".webp" = "file"
+
+[performance]
+# Performance optimization settings
+# Preload modules for faster startup
+preload = []

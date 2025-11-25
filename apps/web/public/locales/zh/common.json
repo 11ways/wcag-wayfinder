@@ -1,0 +1,105 @@
+{
+  "app": {
+    "title": "WCAG Wayfinder",
+    "beta": "测试版",
+    "skipToSearch": "跳转到搜索",
+    "skipToFilters": "跳转到筛选",
+    "skipToResults": "跳转到结果"
+  },
+  "header": {
+    "hideFilters": "隐藏筛选",
+    "showFilters": "显示筛选",
+    "searchLabel": "搜索准则",
+    "searchPlaceholder": "搜索标题/描述...",
+    "searchHelp": "搜索 WCAG 成功准则的标题和描述",
+    "startTour": "开始导览",
+    "favorites": "{{count}} 个收藏",
+    "favorites_other": "{{count}} 个收藏",
+    "clearFavorites": "清除所有收藏"
+  },
+  "navigation": {
+    "previous": "上一页",
+    "next": "下一页",
+    "pageOf": "第 {{page}} 页，共 {{total}} 页",
+    "pageLabel": "第 {{page}} 页"
+  },
+  "views": {
+    "list": "列表视图",
+    "card": "卡片视图",
+    "grid": "网格视图"
+  },
+  "actions": {
+    "clearAll": "全部清除",
+    "reset": "重置",
+    "cancel": "取消",
+    "confirm": "确认",
+    "expand": "展开",
+    "collapse": "收起",
+    "close": "关闭"
+  },
+  "status": {
+    "loading": "加载中…",
+    "error": "错误",
+    "noResults": "未找到结果",
+    "resultsFound": "找到 {{count}} 条结果",
+    "resultsFound_other": "找到 {{count}} 条结果",
+    "pageLoaded": "已加载第 {{page}} 页，共 {{total}} 页"
+  },
+  "language": {
+    "select": "选择语言",
+    "switching": "正在切换到 {{language}}...",
+    "changed": "语言已更改为 {{language}}"
+  },
+  "favorites": {
+    "add": "将 {{criterion}} 添加到收藏",
+    "remove": "从收藏中移除 {{criterion}}",
+    "addShort": "添加到收藏",
+    "removeShort": "从收藏中移除"
+  },
+  "share": {
+    "link": "分享 {{criterion}} 的链接",
+    "linkShort": "分享链接",
+    "copied": "链接已复制",
+    "copiedMessage": "**{{criterion}}** {{title}} 的链接已复制到剪贴板。"
+  },
+  "theme": {
+    "label": "外观：",
+    "select": "选择外观主题",
+    "changed": "已切换到 {{theme}} 主题",
+    "system": "系统默认",
+    "light": "浅色模式",
+    "dark": "深色模式",
+    "solarizedLight": "Solarized 浅色",
+    "solarizedDark": "Solarized 深色",
+    "dracula": "Dracula",
+    "highContrast": "高对比度"
+  },
+  "modal": {
+    "close": "关闭",
+    "dialogClosed": "对话框已关闭"
+  },
+  "footer": {
+    "translationCredits": "翻译致谢",
+    "copyright": "© {{year}} WCAG Wayfinder",
+    "madeWith": "为无障碍访问 ♥ 精心打造"
+  },
+  "translationCredits": {
+    "title": "翻译致谢",
+    "intro": "WCAG 成功准则的翻译由全球授权翻译人员提供。",
+    "language": "语言",
+    "translator": "翻译者",
+    "organization": "组织",
+    "publicationDate": "发布日期",
+    "source": "来源",
+    "authorization": "授权",
+    "w3cAuthorized": "W3C 授权翻译",
+    "communityTranslation": "社区翻译",
+    "noTranslator": "未知翻译者",
+    "viewSource": "查看原始来源"
+  },
+  "pageTitles": {
+    "home": "WCAG 成功准则",
+    "favorites": "我的收藏",
+    "criterion": "{{num}} {{title}}"
+  }
+}

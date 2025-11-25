@@ -1,0 +1,457 @@
+/**
+ * Walkthrough Mode - Styles
+ * Framework-agnostic CSS for onboarding tours
+ */
+
+/* ============================================
+   CSS Custom Properties (Theming)
+   ============================================ */
+
+:root {
+  /* Colors */
+  --wt-color-primary: #3b82f6;
+  --wt-color-primary-hover: #2563eb;
+  --wt-color-secondary: #6b7280;
+  --wt-color-secondary-hover: #4b5563;
+  --wt-color-text: #1f2937;
+  --wt-color-text-light: #6b7280;
+  --wt-color-bg: #ffffff;
+  --wt-color-border: #e5e7eb;
+  --wt-color-scrim: rgba(0, 0, 0, 0.5);
+  --wt-color-highlight: #3b82f6;
+
+  /* Spacing */
+  --wt-spacing-xs: 0.5rem;
+  --wt-spacing-sm: 0.75rem;
+  --wt-spacing-md: 1rem;
+  --wt-spacing-lg: 1.5rem;
+  --wt-spacing-xl: 2rem;
+
+  /* Typography */
+  --wt-font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue',
+    Arial, sans-serif;
+  --wt-font-size-base: 1rem;
+  --wt-font-size-sm: 0.875rem;
+  --wt-font-size-lg: 1.125rem;
+  --wt-font-weight-normal: 400;
+  --wt-font-weight-medium: 500;
+  --wt-font-weight-semibold: 600;
+  --wt-line-height-tight: 1.25;
+  --wt-line-height-normal: 1.5;
+
+  /* Shadows */
+  --wt-shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --wt-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --wt-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --wt-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  /* Borders */
+  --wt-border-radius: 0.5rem;
+  --wt-border-radius-sm: 0.25rem;
+  --wt-border-width: 1px;
+
+  /* Dimensions */
+  --wt-tooltip-width: 24rem;
+  --wt-tooltip-max-width: 90vw;
+  --wt-highlight-offset: 0.5rem;
+  --wt-highlight-border-width: 3px;
+
+  /* Z-index */
+  --wt-z-scrim: 9998;
+  --wt-z-highlight: 9999;
+  --wt-z-tooltip: 10000;
+
+  /* Animation */
+  --wt-transition-duration: 0.2s;
+  --wt-transition-easing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --wt-color-text: #f9fafb;
+    --wt-color-text-light: #d1d5db;
+    --wt-color-bg: #1f2937;
+    --wt-color-border: #374151;
+    --wt-color-scrim: rgba(0, 0, 0, 0.75);
+    --wt-color-secondary: #9ca3af;
+    --wt-color-secondary-hover: #d1d5db;
+  }
+}
+
+/* RTL support */
+[dir='rtl'] {
+  /* RTL-specific overrides can go here */
+}
+
+/* ============================================
+   Screen Reader Only
+   ============================================ */
+
+.walkthrough-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ============================================
+   Scrim (Page Overlay)
+   ============================================ */
+
+.walkthrough-scrim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--wt-color-scrim);
+  z-index: var(--wt-z-scrim);
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity var(--wt-transition-duration) var(--wt-transition-easing);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .walkthrough-scrim {
+    transition: none;
+  }
+}
+
+/* Respect user override via body data attribute */
+body[data-reduce-motion='true'] .walkthrough-scrim {
+  transition: none;
+}
+
+body[data-reduce-motion='false'] .walkthrough-scrim {
+  transition: opacity var(--wt-transition-duration) var(--wt-transition-easing);
+}
+
+/* ============================================
+   Highlight (Target Outline)
+   ============================================ */
+
+.walkthrough-highlight {
+  position: fixed;
+  z-index: var(--wt-z-highlight);
+  pointer-events: none;
+  border: var(--wt-highlight-border-width) solid var(--wt-color-highlight);
+  border-radius: var(--wt-border-radius-sm);
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2),
+    0 0 0 var(--wt-highlight-offset) var(--wt-color-scrim);
+  outline: 4px solid rgba(59, 130, 246, 0.3);
+  outline-offset: -4px;
+}
+
+.walkthrough-highlight--animate {
+  transition: all var(--wt-transition-duration) var(--wt-transition-easing);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .walkthrough-highlight--animate {
+    transition: none;
+  }
+}
+
+/* Respect user override via body data attribute */
+body[data-reduce-motion='true'] .walkthrough-highlight--animate {
+  transition: none;
+}
+
+body[data-reduce-motion='false'] .walkthrough-highlight--animate {
+  transition: all var(--wt-transition-duration) var(--wt-transition-easing);
+}
+
+/* ============================================
+   Tooltip (Coachmark Dialog)
+   ============================================ */
+
+.walkthrough-tooltip {
+  position: fixed;
+  z-index: var(--wt-z-tooltip);
+  width: var(--wt-tooltip-width);
+  max-width: var(--wt-tooltip-max-width);
+  background-color: var(--wt-color-bg);
+  border: var(--wt-border-width) solid var(--wt-color-border);
+  border-radius: var(--wt-border-radius);
+  box-shadow: var(--wt-shadow-xl);
+  font-family: var(--wt-font-family);
+  color: var(--wt-color-text);
+  transition: all var(--wt-transition-duration) var(--wt-transition-easing);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .walkthrough-tooltip {
+    transition: none;
+  }
+}
+
+/* Respect user override via body data attribute */
+body[data-reduce-motion='true'] .walkthrough-tooltip {
+  transition: none;
+}
+
+body[data-reduce-motion='false'] .walkthrough-tooltip {
+  transition: all var(--wt-transition-duration) var(--wt-transition-easing);
+}
+
+/* Tooltip Content */
+.walkthrough-tooltip__content {
+  padding: var(--wt-spacing-lg);
+}
+
+/* Tooltip Header */
+.walkthrough-tooltip__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--wt-spacing-md);
+  margin-bottom: var(--wt-spacing-md);
+}
+
+.walkthrough-tooltip__title {
+  margin: 0;
+  font-size: var(--wt-font-size-lg);
+  font-weight: var(--wt-font-weight-semibold);
+  line-height: var(--wt-line-height-tight);
+  color: var(--wt-color-text);
+}
+
+.walkthrough-tooltip__exit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: var(--wt-border-radius-sm);
+  color: var(--wt-color-text-light);
+  cursor: pointer;
+  transition: background-color var(--wt-transition-duration)
+      var(--wt-transition-easing),
+    color var(--wt-transition-duration) var(--wt-transition-easing);
+  flex-shrink: 0;
+}
+
+.walkthrough-tooltip__exit:hover {
+  background-color: var(--wt-color-border);
+  color: var(--wt-color-text);
+}
+
+.walkthrough-tooltip__exit:focus-visible {
+  outline: 2px solid var(--wt-color-primary);
+  outline-offset: 2px;
+}
+
+/* Tooltip Body */
+.walkthrough-tooltip__body {
+  margin-bottom: var(--wt-spacing-lg);
+  font-size: var(--wt-font-size-base);
+  line-height: var(--wt-line-height-normal);
+  color: var(--wt-color-text);
+}
+
+/* Markdown content styling */
+.walkthrough-tooltip__body h1,
+.walkthrough-tooltip__body h2,
+.walkthrough-tooltip__body h3 {
+  margin-top: var(--wt-spacing-md);
+  margin-bottom: var(--wt-spacing-sm);
+  font-weight: var(--wt-font-weight-semibold);
+  line-height: var(--wt-line-height-tight);
+}
+
+.walkthrough-tooltip__body h1:first-child,
+.walkthrough-tooltip__body h2:first-child,
+.walkthrough-tooltip__body h3:first-child {
+  margin-top: 0;
+}
+
+.walkthrough-tooltip__body p {
+  margin-top: 0;
+  margin-bottom: var(--wt-spacing-sm);
+}
+
+.walkthrough-tooltip__body p:last-child {
+  margin-bottom: 0;
+}
+
+.walkthrough-tooltip__body ul,
+.walkthrough-tooltip__body ol {
+  margin: var(--wt-spacing-sm) 0;
+  padding-left: var(--wt-spacing-lg);
+}
+
+.walkthrough-tooltip__body li {
+  margin-bottom: var(--wt-spacing-xs);
+}
+
+.walkthrough-tooltip__body a {
+  color: var(--wt-color-primary);
+  text-decoration: underline;
+}
+
+.walkthrough-tooltip__body a:hover {
+  color: var(--wt-color-primary-hover);
+}
+
+.walkthrough-tooltip__body code {
+  padding: 0.125rem 0.25rem;
+  background-color: var(--wt-color-border);
+  border-radius: var(--wt-border-radius-sm);
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', Consolas, 'Liberation Mono',
+    Menlo, monospace;
+  font-size: 0.875em;
+}
+
+/* Tooltip Footer */
+.walkthrough-tooltip__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--wt-spacing-md);
+  padding-top: var(--wt-spacing-md);
+  border-top: var(--wt-border-width) solid var(--wt-color-border);
+}
+
+.walkthrough-tooltip__progress {
+  font-size: var(--wt-font-size-sm);
+  font-weight: var(--wt-font-weight-medium);
+  color: var(--wt-color-text-light);
+}
+
+.walkthrough-tooltip__controls {
+  display: flex;
+  gap: var(--wt-spacing-sm);
+}
+
+.walkthrough-tooltip__button {
+  min-width: 5rem;
+  padding: var(--wt-spacing-sm) var(--wt-spacing-md);
+  font-size: var(--wt-font-size-sm);
+  font-weight: var(--wt-font-weight-medium);
+  line-height: var(--wt-line-height-tight);
+  border-radius: var(--wt-border-radius-sm);
+  border: var(--wt-border-width) solid transparent;
+  cursor: pointer;
+  transition: all var(--wt-transition-duration) var(--wt-transition-easing);
+}
+
+.walkthrough-tooltip__button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.walkthrough-tooltip__button--primary {
+  background-color: var(--wt-color-primary);
+  color: white;
+}
+
+.walkthrough-tooltip__button--primary:hover:not(:disabled) {
+  background-color: var(--wt-color-primary-hover);
+}
+
+.walkthrough-tooltip__button--primary:focus-visible {
+  outline: 2px solid var(--wt-color-primary);
+  outline-offset: 2px;
+}
+
+.walkthrough-tooltip__button--secondary {
+  background-color: transparent;
+  color: var(--wt-color-secondary);
+  border-color: var(--wt-color-border);
+}
+
+.walkthrough-tooltip__button--secondary:hover:not(:disabled) {
+  background-color: var(--wt-color-border);
+  color: var(--wt-color-secondary-hover);
+}
+
+.walkthrough-tooltip__button--secondary:focus-visible {
+  outline: 2px solid var(--wt-color-primary);
+  outline-offset: 2px;
+}
+
+/* ============================================
+   Touch Target Sizes (WCAG 2.2)
+   ============================================ */
+
+@media (pointer: coarse) {
+  .walkthrough-tooltip__button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .walkthrough-tooltip__exit {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+@media (max-width: 640px) {
+  :root {
+    --wt-tooltip-width: 100%;
+    --wt-tooltip-max-width: calc(100vw - 2rem);
+  }
+
+  .walkthrough-tooltip__content {
+    padding: var(--wt-spacing-md);
+  }
+
+  .walkthrough-tooltip__footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .walkthrough-tooltip__controls {
+    width: 100%;
+  }
+
+  .walkthrough-tooltip__button {
+    flex: 1;
+  }
+}
+
+/* ============================================
+   High Contrast Mode
+   ============================================ */
+
+@media (prefers-contrast: high) {
+  .walkthrough-highlight {
+    border-width: 4px;
+  }
+
+  .walkthrough-tooltip {
+    border-width: 2px;
+  }
+
+  .walkthrough-tooltip__button {
+    border-width: 2px;
+  }
+}
+
+/* ============================================
+   Print Styles
+   ============================================ */
+
+@media print {
+  .walkthrough-scrim,
+  .walkthrough-highlight,
+  .walkthrough-tooltip {
+    display: none !important;
+  }
+}

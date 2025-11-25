@@ -1,0 +1,82 @@
+{
+  "title": "Ustawienia dostępności",
+  "backToExplorer": "← Powrót do Explorera",
+  "enabled": "Włączone",
+  "disabled": "Wyłączone",
+  "screenReader": {
+    "title": "Komunikaty czytnika ekranu",
+    "description": "Po włączeniu WCAG Wayfinder dostarcza dodatkowe instrukcje głosowe dla użytkowników czytników ekranu podczas filtrowania, nawigacji i interakcji z interfejsem.",
+    "enable": "Włącz komunikaty czytnika ekranu",
+    "disable": "Wyłącz komunikaty czytnika ekranu",
+    "enabledAnnounce": "Komunikaty czytnika ekranu włączone",
+    "disabledAnnounce": "Komunikaty czytnika ekranu wyłączone"
+  },
+  "easyMode": {
+    "title": "Tryb prosty",
+    "description": "Uprość interfejs, ukrywając zaawansowane funkcje, takie jak filtry, tagi i opcje udostępniania. Idealny dla użytkowników, którzy chcą usprawnionego, wolnego od rozpraszania doświadczenia, skupionego tylko na przeglądaniu kryteriów WCAG.",
+    "enable": "Włącz tryb prosty",
+    "disable": "Wyłącz tryb prosty",
+    "activeMessage": "Tryb prosty jest aktywny. Interfejs ukryje filtry, tagi, przyciski udostępniania i inne zaawansowane funkcje po powrocie na stronę główną.",
+    "enabledAnnounce": "Tryb prosty włączony - uproszczony interfejs aktywny",
+    "disabledAnnounce": "Tryb prosty wyłączony - pełny interfejs przywrócony"
+  },
+  "resultsPerPage": {
+    "title": "Wyników na stronę",
+    "description": "Wybierz, ile kryteriów wyświetlać na stronie. Mniej wyników może ładować się szybciej i być łatwiejsze do nawigacji.",
+    "current": "Obecnie: <strong>{{count}} wyników na stronę</strong>",
+    "announce": "Wyników na stronę ustawiono na {{count}}"
+  },
+  "reduceMotion": {
+    "title": "Ogranicz ruch",
+    "description": "Kontroluj, czy animacje i efekty ruchu są włączone na stronie. Gdy ogranicz ruch jest włączone, animacje zostaną zminimalizowane dla bardziej statycznego, komfortowego doświadczenia.",
+    "enable": "Włącz ogranicz ruch",
+    "disable": "Wyłącz ogranicz ruch",
+    "systemEnabled": "Ważne: Masz włączoną opcję Ogranicz ruch w ustawieniach {{os}}.",
+    "systemDisabled": "Twój system nie ma włączonej opcji Ogranicz ruch.",
+    "overrideHint": "Użyj tego ustawienia, aby nadpisać preferencje systemowe, lub zmień je w",
+    "systemSettings": "Ustawieniach systemowych",
+    "macOSSettings": "Ustawieniach macOS",
+    "windowsSettings": "Ustawieniach Windows",
+    "iOSSettings": "Ustawieniach iOS",
+    "androidSettings": "Ustawieniach Android",
+    "macOSPath": "Preferencje systemowe → Dostępność → Wyświetlacz → Ogranicz ruch",
+    "windowsPath": "Ustawienia → Dostępność → Efekty wizualne → Efekty animacji",
+    "iOSPath": "Ustawienia → Dostępność → Ruch → Ogranicz ruch",
+    "androidPath": "Ustawienia → Dostępność → Usuń animacje",
+    "overrideActive": "(Nadpisanie aktywne)",
+    "overrideWarning": "Nadpisujesz swoje preferencje systemowe.",
+    "animationsEnabled": "Animacje są włączone, mimo że twój system ma włączoną opcję ogranicz ruch.",
+    "motionReduced": "Ogranicz ruch jest włączone, mimo że twój system ma to wyłączone.",
+    "enabledUsingSystem": "Ogranicz ruch włączone - używam preferencji systemowych",
+    "disabledAnimations": "Ogranicz ruch wyłączone - animacje włączone",
+    "disabledUsingSystem": "Ogranicz ruch wyłączone - używam preferencji systemowych",
+    "enabledNoAnimations": "Ogranicz ruch włączone - animacje wyłączone"
+  },
+  "textSize": {
+    "title": "Rozmiar tekstu",
+    "description": "Możesz łatwo dostosować rozmiar tekstu za pomocą wbudowanej funkcji powiększania przeglądarki. Spowoduje to proporcjonalne skalowanie całej strony przy zachowaniu układu.",
+    "shortcutsTitle": "Skróty powiększania przeglądarki:",
+    "zoomIn": "Powiększ (zwiększ tekst)",
+    "zoomOut": "Pomniejsz (zmniejsz tekst)",
+    "resetZoom": "Przywróć domyślny rozmiar",
+    "modifierHint": "W systemie Windows i Linux użyj <strong>Ctrl</strong>. W macOS użyj <strong>Command (⌘)</strong>."
+  },
+  "appearance": {
+    "title": "Wygląd",
+    "description": "Wybierz, jak wygląda WCAG Wayfinder. Kliknij kartę motywu, aby go podejrzeć, a następnie wybierz \"Zastosuj motyw\", aby zapisać swój wybór.",
+    "active": "Aktywny",
+    "preview": "Podgląd",
+    "applyTheme": "Zastosuj motyw",
+    "currentTheme": "To jest twój obecny motyw",
+    "clickToPreview": "Kliknij, aby podejrzeć",
+    "previewingLabel": "Podgląd: {{theme}}",
+    "previewHint": "Kliknij \"Zastosuj motyw\" na karcie motywu, aby zapisać ten wygląd, lub kliknij inny motyw, aby go podejrzeć.",
+    "cancelPreview": "Anuluj podgląd",
+    "announce": "Przełączono na motyw {{theme}}"
+  },
+  "footer": {
+    "dataFrom": "Dane z",
+    "wcag22": "W3C WCAG 2.2",
+    "builtWith": "Zbudowane z myślą o dostępności."
+  }
+}

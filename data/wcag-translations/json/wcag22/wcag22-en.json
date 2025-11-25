@@ -1,0 +1,1244 @@
+{
+  "metadata": {
+    "wcag_version": "2.2",
+    "language": "en",
+    "language_native": "English",
+    "authorization_type": "authorized",
+    "translator": "W3C",
+    "source_url": "https://www.w3.org/TR/WCAG22/",
+    "fetch_date": "2025-11-25",
+    "translation_date": "2023-10-05"
+  },
+  "principles": [
+    {
+      "id": "perceivable",
+      "num": "1",
+      "handle": "Perceivable",
+      "title": "Information and user interface components must be presentable to users in ways they can perceive.",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "guidelines": [
+        {
+          "id": "text-alternatives",
+          "num": "1.1",
+          "handle": "Text Alternatives",
+          "title": "Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "non-text-content",
+              "num": "1.1.1",
+              "handle": "Non-text Content",
+              "title": "All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "time-based-media",
+          "num": "1.2",
+          "handle": "Time-based Media",
+          "title": "Provide alternatives for time-based media.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "audio-only-and-video-only-prerecorded",
+              "num": "1.2.1",
+              "handle": "Audio-only and Video-only (Prerecorded)",
+              "title": "For prerecorded\n      audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such:",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "captions-prerecorded",
+              "num": "1.2.2",
+              "handle": "Captions (Prerecorded)",
+              "title": "Captions are provided for all prerecorded\n      audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "audio-description-or-media-alternative-prerecorded",
+              "num": "1.2.3",
+              "handle": "Audio Description or Media Alternative (Prerecorded)",
+              "title": "An alternative for time-based media or audio description of the prerecorded\n      video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "captions-live",
+              "num": "1.2.4",
+              "handle": "Captions (Live)",
+              "title": "Captions are provided for all live\n      audio content in synchronized media.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "audio-description-prerecorded",
+              "num": "1.2.5",
+              "handle": "Audio Description (Prerecorded)",
+              "title": "Audio description is provided for all prerecorded\n      video content in synchronized media.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "sign-language-prerecorded",
+              "num": "1.2.6",
+              "handle": "Sign Language (Prerecorded)",
+              "title": "Sign language interpretation is provided for all prerecorded\n      audio content in synchronized media.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "extended-audio-description-prerecorded",
+              "num": "1.2.7",
+              "handle": "Extended Audio Description (Prerecorded)",
+              "title": "Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description is provided for all prerecorded\n      video content in synchronized media.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "media-alternative-prerecorded",
+              "num": "1.2.8",
+              "handle": "Media Alternative (Prerecorded)",
+              "title": "An alternative for time-based media is provided for all prerecorded\n      synchronized media and for all prerecorded video-only media.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "audio-only-live",
+              "num": "1.2.9",
+              "handle": "Audio-only (Live)",
+              "title": "An alternative for time-based media that presents equivalent information for live\n      audio-only content is provided.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "adaptable",
+          "num": "1.3",
+          "handle": "Adaptable",
+          "title": "Create content that can be presented in different ways (for example simpler layout) without losing information or structure.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "info-and-relationships",
+              "num": "1.3.1",
+              "handle": "Info and Relationships",
+              "title": "Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "meaningful-sequence",
+              "num": "1.3.2",
+              "handle": "Meaningful Sequence",
+              "title": "When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "sensory-characteristics",
+              "num": "1.3.3",
+              "handle": "Sensory Characteristics",
+              "title": "Instructions provided for understanding and operating content do not rely solely on\n      sensory characteristics of components such as shape, color, size, visual location, orientation,\n      or sound.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "orientation",
+              "num": "1.3.4",
+              "handle": "Orientation",
+              "title": "Content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is essential.",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "identify-input-purpose",
+              "num": "1.3.5",
+              "handle": "Identify Input Purpose",
+              "title": "The purpose of each input field collecting information about the user can be programmatically determined when:",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "identify-purpose",
+              "num": "1.3.6",
+              "handle": "Identify Purpose",
+              "title": "In content implemented using markup languages, the purpose of user interface components, icons, and regions can be programmatically determined.",
+              "level": "AAA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "distinguishable",
+          "num": "1.4",
+          "handle": "Distinguishable",
+          "title": "Make it easier for users to see and hear content including separating foreground from background.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "use-of-color",
+              "num": "1.4.1",
+              "handle": "Use of Color",
+              "title": "Color is not used as the only visual means of conveying information, indicating an\n      action, prompting a response, or distinguishing a visual element.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "audio-control",
+              "num": "1.4.2",
+              "handle": "Audio Control",
+              "title": "If any audio on a web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio\n      volume independently from the overall system volume level.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "contrast-minimum",
+              "num": "1.4.3",
+              "handle": "Contrast (Minimum)",
+              "title": "The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "resize-text",
+              "num": "1.4.4",
+              "handle": "Resize Text",
+              "title": "Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "images-of-text",
+              "num": "1.4.5",
+              "handle": "Images of Text",
+              "title": "If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text except for the following:",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "contrast-enhanced",
+              "num": "1.4.6",
+              "handle": "Contrast (Enhanced)",
+              "title": "The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following:",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "low-or-no-background-audio",
+              "num": "1.4.7",
+              "handle": "Low or No Background Audio",
+              "title": "For prerecorded\n      audio-only content that (1) contains primarily speech in the foreground, (2) is not an audio\n      CAPTCHA or audio logo, and (3) is not vocalization intended to be primarily musical expression\n      such as singing or rapping, at least one of the following is true:",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "visual-presentation",
+              "num": "1.4.8",
+              "handle": "Visual Presentation",
+              "title": "For the visual presentation of blocks of text, a mechanism is available to achieve the following:",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "images-of-text-no-exception",
+              "num": "1.4.9",
+              "handle": "Images of Text (No Exception)",
+              "title": "Images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "reflow",
+              "num": "1.4.10",
+              "handle": "Reflow",
+              "title": "Content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for:",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "non-text-contrast",
+              "num": "1.4.11",
+              "handle": "Non-text Contrast",
+              "title": "The visual presentation of the following have a contrast ratio of at least 3:1 against adjacent color(s):",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "text-spacing",
+              "num": "1.4.12",
+              "handle": "Text Spacing",
+              "title": "In content implemented using markup languages that support the following text style properties, no loss of content or functionality occurs by setting all of the following and by changing no other style property:",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "content-on-hover-or-focus",
+              "num": "1.4.13",
+              "handle": "Content on Hover or Focus",
+              "title": "Where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true:",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "operable",
+      "num": "2",
+      "handle": "Operable",
+      "title": "User interface components and navigation must be operable.",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "guidelines": [
+        {
+          "id": "keyboard-accessible",
+          "num": "2.1",
+          "handle": "Keyboard Accessible",
+          "title": "Make all functionality available from a keyboard.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "keyboard",
+              "num": "2.1.1",
+              "handle": "Keyboard",
+              "title": "All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying\n      function requires input that depends on the path of the user's movement and not just\n      the endpoints.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "no-keyboard-trap",
+              "num": "2.1.2",
+              "handle": "No Keyboard Trap",
+              "title": "If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface,\n      and, if it requires more than unmodified arrow or tab keys or other standard exit\n      methods, the user is advised of the method for moving focus away.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "keyboard-no-exception",
+              "num": "2.1.3",
+              "handle": "Keyboard (No Exception)",
+              "title": "All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "character-key-shortcuts",
+              "num": "2.1.4",
+              "handle": "Character Key Shortcuts",
+              "title": "If a keyboard shortcut is implemented in content using only letter (including upper- and lower-case letters), punctuation, number, or symbol characters, then at least one of the following is true:",
+              "level": "A",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "enough-time",
+          "num": "2.2",
+          "handle": "Enough Time",
+          "title": "Provide users enough time to read and use content.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "timing-adjustable",
+              "num": "2.2.1",
+              "handle": "Timing Adjustable",
+              "title": "For each time limit that is set by the content, at least one of the following is true:",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "pause-stop-hide",
+              "num": "2.2.2",
+              "handle": "Pause, Stop, Hide",
+              "title": "For moving, blinking, scrolling, or auto-updating information, all of the following are true:",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "no-timing",
+              "num": "2.2.3",
+              "handle": "No Timing",
+              "title": "Timing is not an essential part of the event or activity presented by the content, except for non-interactive\n      synchronized media and real-time events.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "interruptions",
+              "num": "2.2.4",
+              "handle": "Interruptions",
+              "title": "Interruptions can be postponed or suppressed by the user, except interruptions involving\n      an emergency.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "re-authenticating",
+              "num": "2.2.5",
+              "handle": "Re-authenticating",
+              "title": "When an authenticated session expires, the user can continue the activity without\n      loss of data after re-authenticating.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "timeouts",
+              "num": "2.2.6",
+              "handle": "Timeouts",
+              "title": "Users are warned of the duration of any user inactivity that could cause data loss, unless the data is preserved for more than 20 hours when the user does not take any actions.",
+              "level": "AAA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "seizures-and-physical-reactions",
+          "num": "2.3",
+          "handle": "Seizures and Physical Reactions",
+          "title": "Do not design content in a way that is known to cause seizures or physical reactions.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "three-flashes-or-below-threshold",
+              "num": "2.3.1",
+              "handle": "Three Flashes or Below Threshold",
+              "title": "Web pages do not contain anything that flashes more than three times in any one second period,\n      or the flash is below the general flash and red flash thresholds.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "three-flashes",
+              "num": "2.3.2",
+              "handle": "Three Flashes",
+              "title": "Web pages do not contain anything that flashes more than three times in any one second period.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "animation-from-interactions",
+              "num": "2.3.3",
+              "handle": "Animation from Interactions",
+              "title": "Motion animation triggered by interaction can be disabled, unless the animation is essential to the functionality or the information being conveyed.",
+              "level": "AAA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "navigable",
+          "num": "2.4",
+          "handle": "Navigable",
+          "title": "Provide ways to help users navigate, find content, and determine where they are.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "bypass-blocks",
+              "num": "2.4.1",
+              "handle": "Bypass Blocks",
+              "title": "A mechanism is available to bypass blocks of content that are repeated on multiple web pages.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "page-titled",
+              "num": "2.4.2",
+              "handle": "Page Titled",
+              "title": "Web pages have titles that describe topic or purpose.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "focus-order",
+              "num": "2.4.3",
+              "handle": "Focus Order",
+              "title": "If a web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive\n      focus in an order that preserves meaning and operability.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "link-purpose-in-context",
+              "num": "2.4.4",
+              "handle": "Link Purpose (In Context)",
+              "title": "The purpose of each link can be determined from the link text alone or from the link text together with its\n      programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "multiple-ways",
+              "num": "2.4.5",
+              "handle": "Multiple Ways",
+              "title": "More than one way is available to locate a web page within a set of web pages except where the web page is the result of, or a step in, a process.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "headings-and-labels",
+              "num": "2.4.6",
+              "handle": "Headings and Labels",
+              "title": "Headings and labels describe topic or purpose.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "focus-visible",
+              "num": "2.4.7",
+              "handle": "Focus Visible",
+              "title": "Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "location",
+              "num": "2.4.8",
+              "handle": "Location",
+              "title": "Information about the user's location within a set of web pages is available.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "link-purpose-link-only",
+              "num": "2.4.9",
+              "handle": "Link Purpose (Link Only)",
+              "title": "A mechanism is available to allow the purpose of each link to be identified from link text alone,\n      except where the purpose of the link would be ambiguous to users in general.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "section-headings",
+              "num": "2.4.10",
+              "handle": "Section Headings",
+              "title": "Section headings are used to organize the content.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "focus-not-obscured-minimum",
+              "num": "2.4.11",
+              "handle": "Focus Not Obscured (Minimum)",
+              "title": "New",
+              "level": "AA",
+              "versions": [
+                "2.2"
+              ]
+            },
+            {
+              "id": "focus-not-obscured-enhanced",
+              "num": "2.4.12",
+              "handle": "Focus Not Obscured (Enhanced)",
+              "title": "New",
+              "level": "AAA",
+              "versions": [
+                "2.2"
+              ]
+            },
+            {
+              "id": "focus-appearance",
+              "num": "2.4.13",
+              "handle": "Focus Appearance",
+              "title": "New",
+              "level": "AAA",
+              "versions": [
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "input-modalities",
+          "num": "2.5",
+          "handle": "Input Modalities",
+          "title": "Make it easier for users to operate functionality through various inputs beyond keyboard.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "pointer-gestures",
+              "num": "2.5.1",
+              "handle": "Pointer Gestures",
+              "title": "All functionality that uses multipoint or path-based gestures for operation can be operated with a single pointer without a path-based gesture, unless a multipoint or path-based gesture is essential.",
+              "level": "A",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "pointer-cancellation",
+              "num": "2.5.2",
+              "handle": "Pointer Cancellation",
+              "title": "For functionality that can be operated using a single pointer, at least one of the following is true:",
+              "level": "A",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "label-in-name",
+              "num": "2.5.3",
+              "handle": "Label in Name",
+              "title": "For user interface components with labels that include text or images of text, the name contains the text that is presented visually.",
+              "level": "A",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "motion-actuation",
+              "num": "2.5.4",
+              "handle": "Motion Actuation",
+              "title": "Functionality that can be operated by device motion or user motion can also be operated by user interface components and responding to the motion can be disabled to prevent accidental actuation, except when:",
+              "level": "A",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "target-size-enhanced",
+              "num": "2.5.5",
+              "handle": "Target Size (Enhanced)",
+              "title": "The size of the target for pointer inputs is at least 44 by 44 CSS pixels except when:",
+              "level": "AAA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "concurrent-input-mechanisms",
+              "num": "2.5.6",
+              "handle": "Concurrent Input Mechanisms",
+              "title": "Web content does not restrict use of input modalities available on a platform except where the restriction is essential, required to ensure the security of the content, or required to respect user settings.",
+              "level": "AAA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "dragging-movements",
+              "num": "2.5.7",
+              "handle": "Dragging Movements",
+              "title": "New",
+              "level": "AA",
+              "versions": [
+                "2.2"
+              ]
+            },
+            {
+              "id": "target-size-minimum",
+              "num": "2.5.8",
+              "handle": "Target Size (Minimum)",
+              "title": "New",
+              "level": "AA",
+              "versions": [
+                "2.2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "understandable",
+      "num": "3",
+      "handle": "Understandable",
+      "title": "Information and the operation of the user interface must be understandable.",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "guidelines": [
+        {
+          "id": "readable",
+          "num": "3.1",
+          "handle": "Readable",
+          "title": "Make text content readable and understandable.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "language-of-page",
+              "num": "3.1.1",
+              "handle": "Language of Page",
+              "title": "The default human language of each web page can be programmatically determined.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "language-of-parts",
+              "num": "3.1.2",
+              "handle": "Language of Parts",
+              "title": "The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words\n      or phrases that have become part of the vernacular of the immediately surrounding\n     text.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "unusual-words",
+              "num": "3.1.3",
+              "handle": "Unusual Words",
+              "title": "A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "abbreviations",
+              "num": "3.1.4",
+              "handle": "Abbreviations",
+              "title": "A mechanism for identifying the expanded form or meaning of abbreviations is available.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "reading-level",
+              "num": "3.1.5",
+              "handle": "Reading Level",
+              "title": "When text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower\n      secondary education level, is available.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "pronunciation",
+              "num": "3.1.6",
+              "handle": "Pronunciation",
+              "title": "A mechanism is available for identifying specific pronunciation of words where meaning of the\n      words, in context, is ambiguous without knowing the pronunciation.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "predictable",
+          "num": "3.2",
+          "handle": "Predictable",
+          "title": "Make web pages appear and operate in predictable ways.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "on-focus",
+              "num": "3.2.1",
+              "handle": "On Focus",
+              "title": "When any user interface component receives focus, it does not initiate a change of context.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "on-input",
+              "num": "3.2.2",
+              "handle": "On Input",
+              "title": "Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "consistent-navigation",
+              "num": "3.2.3",
+              "handle": "Consistent Navigation",
+              "title": "Navigational mechanisms that are repeated on multiple web pages within a set of web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "consistent-identification",
+              "num": "3.2.4",
+              "handle": "Consistent Identification",
+              "title": "Components that have the same functionality within a set of web pages are identified consistently.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "change-on-request",
+              "num": "3.2.5",
+              "handle": "Change on Request",
+              "title": "Changes of context are initiated only by user request or a mechanism is available to turn off such changes.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "consistent-help",
+              "num": "3.2.6",
+              "handle": "Consistent Help",
+              "title": "New",
+              "level": "A",
+              "versions": [
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "input-assistance",
+          "num": "3.3",
+          "handle": "Input Assistance",
+          "title": "Help users avoid and correct mistakes.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "error-identification",
+              "num": "3.3.1",
+              "handle": "Error Identification",
+              "title": "If an input error is automatically detected, the item that is in error is identified and the error\n      is described to the user in text.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "labels-or-instructions",
+              "num": "3.3.2",
+              "handle": "Labels or Instructions",
+              "title": "Labels or instructions are provided when content requires user input.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "error-suggestion",
+              "num": "3.3.3",
+              "handle": "Error Suggestion",
+              "title": "If an input error is automatically detected and suggestions for correction are known, then the suggestions\n      are provided to the user, unless it would jeopardize the security or purpose of the\n      content.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "error-prevention-legal-financial-data",
+              "num": "3.3.4",
+              "handle": "Error Prevention (Legal, Financial, Data)",
+              "title": "For web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of\n      the following is true:",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "help",
+              "num": "3.3.5",
+              "handle": "Help",
+              "title": "Context-sensitive help is available.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "error-prevention-all",
+              "num": "3.3.6",
+              "handle": "Error Prevention (All)",
+              "title": "For web pages that require the user to submit information, at least one of the following is true:",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "redundant-entry",
+              "num": "3.3.7",
+              "handle": "Redundant Entry",
+              "title": "New",
+              "level": "A",
+              "versions": [
+                "2.2"
+              ]
+            },
+            {
+              "id": "accessible-authentication-minimum",
+              "num": "3.3.8",
+              "handle": "Accessible Authentication (Minimum)",
+              "title": "New",
+              "level": "AA",
+              "versions": [
+                "2.2"
+              ]
+            },
+            {
+              "id": "accessible-authentication-enhanced",
+              "num": "3.3.9",
+              "handle": "Accessible Authentication (Enhanced)",
+              "title": "New",
+              "level": "AAA",
+              "versions": [
+                "2.2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "robust",
+      "num": "4",
+      "handle": "Robust",
+      "title": "Content must be robust enough that it can be interpreted by a wide variety of user agents, including assistive technologies.",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "guidelines": [
+        {
+          "id": "compatible",
+          "num": "4.1",
+          "handle": "Compatible",
+          "title": "Maximize compatibility with current and future user agents, including assistive technologies.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "parsing",
+              "num": "4.1.1",
+              "handle": "Parsing (Obsolete and removed)",
+              "title": "Parsing (Obsolete and removed)",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "name-role-value",
+              "num": "4.1.2",
+              "handle": "Name, Role, Value",
+              "title": "For all user interface components (including but not limited to: form elements, links and components generated by scripts),\n     the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "status-messages",
+              "num": "4.1.3",
+              "handle": "Status Messages",
+              "title": "In content implemented using markup languages, status messages can be programmatically determined through role or properties such that they can be presented to the user by assistive technologies without receiving focus.",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

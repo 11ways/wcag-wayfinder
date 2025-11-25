@@ -1,0 +1,31 @@
+{
+  "error": {
+    "title": "Error",
+    "generic": "Something went wrong. Please try again."
+  },
+  "empty": {
+    "searchTitle": "We found no pages matching \"{{query}}\"",
+    "noResults": "No results found",
+    "suggestions": "Maybe you're looking for one of these?",
+    "adjustFilters": "Try adjusting your filters or search query"
+  },
+  "criterion": {
+    "showDetails": "Show Details",
+    "hideDetails": "Hide Details",
+    "level": "Level",
+    "version": "Version",
+    "principle": "Principle",
+    "guideline": "Guideline",
+    "tags": "Tags",
+    "affects": "Affects",
+    "responsibility": "Responsibility",
+    "technologies": "Technologies",
+    "howToMeet": "How to Meet",
+    "understanding": "Understanding"
+  },
+  "announcements": {
+    "pageLoaded": "Page {{page}} of {{total}} loaded",
+    "resultsUpdated": "{{count}} results found",
+    "jumpedToFirst": "Jumped to first result"
+  }
+}

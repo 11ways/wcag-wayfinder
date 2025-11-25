@@ -1,0 +1,82 @@
+{
+  "title": "Configuració d'accessibilitat",
+  "backToExplorer": "← Tornar a l'Explorer",
+  "enabled": "Activat",
+  "disabled": "Desactivat",
+  "screenReader": {
+    "title": "Anuncis del lector de pantalla",
+    "description": "Quan està activat, WCAG Wayfinder proporciona instruccions parlades addicionals per als usuaris de lectors de pantalla quan filtren, naveguen i interactuen amb la interfície.",
+    "enable": "Activa els anuncis del lector de pantalla",
+    "disable": "Desactiva els anuncis del lector de pantalla",
+    "enabledAnnounce": "Anuncis del lector de pantalla activats",
+    "disabledAnnounce": "Anuncis del lector de pantalla desactivats"
+  },
+  "easyMode": {
+    "title": "Mode senzill",
+    "description": "Simplifica la interfície amagant funcions avançades com filtres, etiquetes i opcions de compartir. Perfecte per a usuaris que volen una experiència simplificada i sense distraccions, centrada només en navegar pels criteris WCAG.",
+    "enable": "Activa el mode senzill",
+    "disable": "Desactiva el mode senzill",
+    "activeMessage": "El mode senzill està actiu. La interfície amagarà filtres, etiquetes, botons de compartir i altres funcions avançades quan tornis a la pàgina principal.",
+    "enabledAnnounce": "Mode senzill activat - interfície simplificada activada",
+    "disabledAnnounce": "Mode senzill desactivat - interfície completa restaurada"
+  },
+  "resultsPerPage": {
+    "title": "Resultats per pàgina",
+    "description": "Tria quants criteris mostrar per pàgina. Menys resultats poden carregar més ràpid i ser més fàcils de navegar.",
+    "current": "Actual: <strong>{{count}} resultats per pàgina</strong>",
+    "announce": "Resultats per pàgina establerts a {{count}}"
+  },
+  "reduceMotion": {
+    "title": "Reduir moviment",
+    "description": "Controla si les animacions i efectes de moviment estan activats al lloc. Quan reduir moviment està activat, les animacions es minimitzaran per a una experiència més estàtica i còmoda.",
+    "enable": "Activa reduir moviment",
+    "disable": "Desactiva reduir moviment",
+    "systemEnabled": "Important: Tens Reduir moviment activat a la configuració de {{os}}.",
+    "systemDisabled": "El teu sistema no té Reduir moviment activat.",
+    "overrideHint": "Utilitza aquesta configuració per anul·lar la teva preferència del sistema, o canvia-la a",
+    "systemSettings": "Configuració del sistema",
+    "macOSSettings": "Configuració de macOS",
+    "windowsSettings": "Configuració de Windows",
+    "iOSSettings": "Configuració d'iOS",
+    "androidSettings": "Configuració d'Android",
+    "macOSPath": "Preferències del Sistema → Accessibilitat → Pantalla → Reduir moviment",
+    "windowsPath": "Configuració → Accessibilitat → Efectes visuals → Efectes d'animació",
+    "iOSPath": "Configuració → Accessibilitat → Moviment → Reduir moviment",
+    "androidPath": "Configuració → Accessibilitat → Eliminar animacions",
+    "overrideActive": "(Anul·lació activa)",
+    "overrideWarning": "Estàs anul·lant la teva preferència del sistema.",
+    "animationsEnabled": "Les animacions estan activades tot i que el teu sistema té reduir moviment activat.",
+    "motionReduced": "Reduir moviment està activat tot i que el teu sistema ho té desactivat.",
+    "enabledUsingSystem": "Reduir moviment activat - usant preferència del sistema",
+    "disabledAnimations": "Reduir moviment desactivat - animacions activades",
+    "disabledUsingSystem": "Reduir moviment desactivat - usant preferència del sistema",
+    "enabledNoAnimations": "Reduir moviment activat - animacions desactivades"
+  },
+  "textSize": {
+    "title": "Mida del text",
+    "description": "Pots ajustar fàcilment la mida del text utilitzant la funció de zoom integrada del teu navegador. Això escalarà tota la pàgina proporcionalment mantenint el disseny.",
+    "shortcutsTitle": "Dreceres de zoom del navegador:",
+    "zoomIn": "Zoom endavant (fer el text més gran)",
+    "zoomOut": "Zoom enrere (fer el text més petit)",
+    "resetZoom": "Restablir a la mida predeterminada",
+    "modifierHint": "A Windows i Linux, utilitza <strong>Ctrl</strong>. A macOS, utilitza <strong>Command (⌘)</strong>."
+  },
+  "appearance": {
+    "title": "Aparença",
+    "description": "Tria com es veu WCAG Wayfinder. Fes clic en una targeta de tema per previsualitzar-la, després selecciona \"Aplicar tema\" per desar la teva elecció.",
+    "active": "Actiu",
+    "preview": "Previsualització",
+    "applyTheme": "Aplicar tema",
+    "currentTheme": "Aquest és el teu tema actual",
+    "clickToPreview": "Fes clic per previsualitzar",
+    "previewingLabel": "Previsualitzant: {{theme}}",
+    "previewHint": "Fes clic a \"Aplicar tema\" a la targeta del tema per desar aquesta aparença, o fes clic en un altre tema per previsualitzar-lo.",
+    "cancelPreview": "Cancel·lar previsualització",
+    "announce": "Canviat al tema {{theme}}"
+  },
+  "footer": {
+    "dataFrom": "Dades de",
+    "wcag22": "W3C WCAG 2.2",
+    "builtWith": "Construït amb l'accessibilitat en ment."
+  }
+}

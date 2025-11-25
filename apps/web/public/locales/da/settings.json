@@ -1,0 +1,82 @@
+{
+  "title": "Tilgængelighedsindstillinger",
+  "backToExplorer": "← Tilbage til Explorer",
+  "enabled": "Aktiveret",
+  "disabled": "Deaktiveret",
+  "screenReader": {
+    "title": "Skærmlæser-meddelelser",
+    "description": "Når aktiveret, giver WCAG Wayfinder ekstra talte instruktioner til skærmlæserbrugere ved filtrering, navigation og interaktion med grænsefladen.",
+    "enable": "Aktivér skærmlæser-meddelelser",
+    "disable": "Deaktivér skærmlæser-meddelelser",
+    "enabledAnnounce": "Skærmlæser-meddelelser aktiveret",
+    "disabledAnnounce": "Skærmlæser-meddelelser deaktiveret"
+  },
+  "easyMode": {
+    "title": "Enkel tilstand",
+    "description": "Forenkl grænsefladen ved at skjule avancerede funktioner som filtre, tags og delingsindstillinger. Perfekt til brugere, der ønsker en strømlinet, distraktionsfri oplevelse fokuseret kun på at gennemse WCAG-kriterier.",
+    "enable": "Aktivér enkel tilstand",
+    "disable": "Deaktivér enkel tilstand",
+    "activeMessage": "Enkel tilstand er aktiv. Grænsefladen vil skjule filtre, tags, delingsknapper og andre avancerede funktioner, når du vender tilbage til hovedsiden.",
+    "enabledAnnounce": "Enkel tilstand aktiveret - forenklet grænseflade aktiveret",
+    "disabledAnnounce": "Enkel tilstand deaktiveret - fuld grænseflade gendannet"
+  },
+  "resultsPerPage": {
+    "title": "Resultater pr. side",
+    "description": "Vælg hvor mange kriterier der skal vises pr. side. Færre resultater kan indlæses hurtigere og være lettere at navigere.",
+    "current": "Nuværende: <strong>{{count}} resultater pr. side</strong>",
+    "announce": "Resultater pr. side sat til {{count}}"
+  },
+  "reduceMotion": {
+    "title": "Reducer bevægelse",
+    "description": "Kontrollér om animationer og bevægelseseffekter er aktiveret på siden. Når reducer bevægelse er aktiveret, vil animationer blive minimeret for en mere statisk, behagelig oplevelse.",
+    "enable": "Aktivér reducer bevægelse",
+    "disable": "Deaktivér reducer bevægelse",
+    "systemEnabled": "Vigtigt: Du har Reducer bevægelse aktiveret i dine {{os}}-indstillinger.",
+    "systemDisabled": "Dit system har ikke Reducer bevægelse aktiveret.",
+    "overrideHint": "Brug denne indstilling til at tilsidesætte din systempræference, eller ændr den i",
+    "systemSettings": "Systemindstillinger",
+    "macOSSettings": "macOS-indstillinger",
+    "windowsSettings": "Windows-indstillinger",
+    "iOSSettings": "iOS-indstillinger",
+    "androidSettings": "Android-indstillinger",
+    "macOSPath": "Systemindstillinger → Tilgængelighed → Skærm → Reducer bevægelse",
+    "windowsPath": "Indstillinger → Tilgængelighed → Visuelle effekter → Animationseffekter",
+    "iOSPath": "Indstillinger → Tilgængelighed → Bevægelse → Reducer bevægelse",
+    "androidPath": "Indstillinger → Tilgængelighed → Fjern animationer",
+    "overrideActive": "(Tilsidesættelse aktiv)",
+    "overrideWarning": "Du tilsidesætter din systempræference.",
+    "animationsEnabled": "Animationer er aktiveret, selvom dit system har reducer bevægelse aktiveret.",
+    "motionReduced": "Reducer bevægelse er aktiveret, selvom dit system har det deaktiveret.",
+    "enabledUsingSystem": "Reducer bevægelse aktiveret - bruger systempræference",
+    "disabledAnimations": "Reducer bevægelse deaktiveret - animationer aktiveret",
+    "disabledUsingSystem": "Reducer bevægelse deaktiveret - bruger systempræference",
+    "enabledNoAnimations": "Reducer bevægelse aktiveret - animationer deaktiveret"
+  },
+  "textSize": {
+    "title": "Tekststørrelse",
+    "description": "Du kan nemt justere tekststørrelsen ved hjælp af din browsers indbyggede zoom-funktion. Dette skalerer hele siden proportionelt og bevarer layoutet.",
+    "shortcutsTitle": "Browser zoom-genveje:",
+    "zoomIn": "Zoom ind (gør tekst større)",
+    "zoomOut": "Zoom ud (gør tekst mindre)",
+    "resetZoom": "Nulstil til standardstørrelse",
+    "modifierHint": "På Windows og Linux, brug <strong>Ctrl</strong>. På macOS, brug <strong>Command (⌘)</strong>."
+  },
+  "appearance": {
+    "title": "Udseende",
+    "description": "Vælg hvordan WCAG Wayfinder ser ud. Klik på et tema-kort for at forhåndsvise det, vælg derefter \"Anvend tema\" for at gemme dit valg.",
+    "active": "Aktiv",
+    "preview": "Forhåndsvisning",
+    "applyTheme": "Anvend tema",
+    "currentTheme": "Dette er dit nuværende tema",
+    "clickToPreview": "Klik for at forhåndsvise",
+    "previewingLabel": "Forhåndsviser: {{theme}}",
+    "previewHint": "Klik på \"Anvend tema\" på tema-kortet for at gemme dette udseende, eller klik på et andet tema for at forhåndsvise det.",
+    "cancelPreview": "Annullér forhåndsvisning",
+    "announce": "Skiftet til {{theme}} tema"
+  },
+  "footer": {
+    "dataFrom": "Data fra",
+    "wcag22": "W3C WCAG 2.2",
+    "builtWith": "Bygget med tilgængelighed i tankerne."
+  }
+}

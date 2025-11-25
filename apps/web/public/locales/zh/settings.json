@@ -1,0 +1,82 @@
+{
+  "title": "无障碍设置",
+  "backToExplorer": "← 返回探索器",
+  "enabled": "已启用",
+  "disabled": "已禁用",
+  "screenReader": {
+    "title": "屏幕阅读器公告",
+    "description": "启用后，WCAG Wayfinder 会在过滤、导航和与界面交互时为屏幕阅读器用户提供额外的语音说明。",
+    "enable": "启用屏幕阅读器公告",
+    "disable": "禁用屏幕阅读器公告",
+    "enabledAnnounce": "屏幕阅读器公告已启用",
+    "disabledAnnounce": "屏幕阅读器公告已禁用"
+  },
+  "easyMode": {
+    "title": "简易模式",
+    "description": "通过隐藏过滤器、标签和分享选项等高级功能来简化界面。非常适合希望获得简洁、无干扰体验、只专注于浏览 WCAG 标准的用户。",
+    "enable": "启用简易模式",
+    "disable": "禁用简易模式",
+    "activeMessage": "简易模式已激活。当您返回主页时，界面将隐藏过滤器、标签、分享按钮和其他高级功能。",
+    "enabledAnnounce": "简易模式已启用 - 简化界面已激活",
+    "disabledAnnounce": "简易模式已禁用 - 完整界面已恢复"
+  },
+  "resultsPerPage": {
+    "title": "每页结果数",
+    "description": "选择每页显示多少条标准。较少的结果可能加载更快，更容易导航。",
+    "current": "当前：<strong>每页 {{count}} 条结果</strong>",
+    "announce": "每页结果数已设置为 {{count}}"
+  },
+  "reduceMotion": {
+    "title": "减少动画",
+    "description": "控制网站上的动画和动效是否启用。启用减少动画后，动画将被最小化，以获得更静态、更舒适的体验。",
+    "enable": "启用减少动画",
+    "disable": "禁用减少动画",
+    "systemEnabled": "重要提示：您已在 {{os}} 设置中启用了减少动画。",
+    "systemDisabled": "您的系统未启用减少动画。",
+    "overrideHint": "使用此设置来覆盖您的系统偏好，或在以下位置更改它",
+    "systemSettings": "系统设置",
+    "macOSSettings": "macOS 设置",
+    "windowsSettings": "Windows 设置",
+    "iOSSettings": "iOS 设置",
+    "androidSettings": "Android 设置",
+    "macOSPath": "系统偏好设置 → 辅助功能 → 显示 → 减少动态效果",
+    "windowsPath": "设置 → 辅助功能 → 视觉效果 → 动画效果",
+    "iOSPath": "设置 → 辅助功能 → 动态效果 → 减少动态效果",
+    "androidPath": "设置 → 辅助功能 → 移除动画",
+    "overrideActive": "（覆盖已激活）",
+    "overrideWarning": "您正在覆盖系统偏好设置。",
+    "animationsEnabled": "即使您的系统已启用减少动画，动画仍然启用。",
+    "motionReduced": "即使您的系统已禁用减少动画，减少动画仍然启用。",
+    "enabledUsingSystem": "减少动画已启用 - 使用系统偏好设置",
+    "disabledAnimations": "减少动画已禁用 - 动画已启用",
+    "disabledUsingSystem": "减少动画已禁用 - 使用系统偏好设置",
+    "enabledNoAnimations": "减少动画已启用 - 动画已禁用"
+  },
+  "textSize": {
+    "title": "文字大小",
+    "description": "您可以使用浏览器内置的缩放功能轻松调整文字大小。这将按比例缩放整个页面，同时保持布局。",
+    "shortcutsTitle": "浏览器缩放快捷键：",
+    "zoomIn": "放大（使文字变大）",
+    "zoomOut": "缩小（使文字变小）",
+    "resetZoom": "重置为默认大小",
+    "modifierHint": "在 Windows 和 Linux 上，使用 <strong>Ctrl</strong>。在 macOS 上，使用 <strong>Command (⌘)</strong>。"
+  },
+  "appearance": {
+    "title": "外观",
+    "description": "选择 WCAG Wayfinder 的外观。点击主题卡片预览，然后选择"应用主题"保存您的选择。",
+    "active": "当前",
+    "preview": "预览",
+    "applyTheme": "应用主题",
+    "currentTheme": "这是您当前的主题",
+    "clickToPreview": "点击预览",
+    "previewingLabel": "预览中：{{theme}}",
+    "previewHint": "点击主题卡片上的"应用主题"保存此外观，或点击其他主题进行预览。",
+    "cancelPreview": "取消预览",
+    "announce": "已切换到 {{theme}} 主题"
+  },
+  "footer": {
+    "dataFrom": "数据来自",
+    "wcag22": "W3C WCAG 2.2",
+    "builtWith": "以无障碍为理念构建。"
+  }
+}

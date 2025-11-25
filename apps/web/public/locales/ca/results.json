@@ -1,0 +1,31 @@
+{
+  "error": {
+    "title": "Error",
+    "generic": "Hi ha hagut un problema. Torna-ho a provar."
+  },
+  "empty": {
+    "searchTitle": "No s'han trobat pàgines per a \"{{query}}\"",
+    "noResults": "No s'han trobat resultats",
+    "suggestions": "Potser estàs buscant algun d'aquests?",
+    "adjustFilters": "Prova d'ajustar els filtres o la consulta de cerca"
+  },
+  "criterion": {
+    "showDetails": "Mostra els detalls",
+    "hideDetails": "Amaga els detalls",
+    "level": "Nivell",
+    "version": "Versió",
+    "principle": "Principi",
+    "guideline": "Pauta",
+    "tags": "Etiquetes",
+    "affects": "Afecta",
+    "responsibility": "Responsabilitat",
+    "technologies": "Tecnologies",
+    "howToMeet": "Com complir",
+    "understanding": "Comprendre"
+  },
+  "announcements": {
+    "pageLoaded": "Pàgina {{page}} de {{total}} carregada",
+    "resultsUpdated": "{{count}} resultats trobats",
+    "jumpedToFirst": "Saltat al primer resultat"
+  }
+}

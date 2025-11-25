@@ -1,0 +1,105 @@
+{
+  "app": {
+    "title": "WCAG Wayfinder",
+    "beta": "Beta",
+    "skipToSearch": "Siirry hakuun",
+    "skipToFilters": "Siirry suodattimiin",
+    "skipToResults": "Siirry tuloksiin"
+  },
+  "header": {
+    "hideFilters": "Piilota suodattimet",
+    "showFilters": "Näytä suodattimet",
+    "searchLabel": "Hae kriteereitä",
+    "searchPlaceholder": "Hae otsikkoa/kuvausta...",
+    "searchHelp": "Hae WCAG-onnistumiskriteerien otsikoista ja kuvauksista",
+    "startTour": "Aloita opaskierros",
+    "favorites": "{{count}} suosikki",
+    "favorites_other": "{{count}} suosikkia",
+    "clearFavorites": "Tyhjennä kaikki suosikit"
+  },
+  "navigation": {
+    "previous": "Edellinen",
+    "next": "Seuraava",
+    "pageOf": "Sivu {{page}} / {{total}}",
+    "pageLabel": "Sivu {{page}}"
+  },
+  "views": {
+    "list": "Listanäkymä",
+    "card": "Korttinäkymä",
+    "grid": "Ruudukkonäkymä"
+  },
+  "actions": {
+    "clearAll": "Tyhjennä kaikki",
+    "reset": "Palauta",
+    "cancel": "Peruuta",
+    "confirm": "Vahvista",
+    "expand": "Laajenna",
+    "collapse": "Supista",
+    "close": "Sulje"
+  },
+  "status": {
+    "loading": "Ladataan…",
+    "error": "Virhe",
+    "noResults": "Tuloksia ei löytynyt",
+    "resultsFound": "{{count}} tulos löytyi",
+    "resultsFound_other": "{{count}} tulosta löytyi",
+    "pageLoaded": "Sivu {{page}} / {{total}} ladattu"
+  },
+  "language": {
+    "select": "Valitse kieli",
+    "switching": "Vaihdetaan kieleen {{language}}...",
+    "changed": "Kieli vaihdettu: {{language}}"
+  },
+  "favorites": {
+    "add": "Lisää {{criterion}} suosikkeihin",
+    "remove": "Poista {{criterion}} suosikeista",
+    "addShort": "Lisää suosikkeihin",
+    "removeShort": "Poista suosikeista"
+  },
+  "share": {
+    "link": "Jaa linkki kohteeseen {{criterion}}",
+    "linkShort": "Jaa linkki",
+    "copied": "Linkki kopioitu",
+    "copiedMessage": "Linkki kohteeseen **{{criterion}}** {{title}} on kopioitu leikepöydälle."
+  },
+  "theme": {
+    "label": "Ulkoasu:",
+    "select": "Valitse ulkoasuteema",
+    "changed": "Vaihdettu teemaan {{theme}}",
+    "system": "Järjestelmän oletus",
+    "light": "Vaalea tila",
+    "dark": "Tumma tila",
+    "solarizedLight": "Solarized Light",
+    "solarizedDark": "Solarized Dark",
+    "dracula": "Dracula",
+    "highContrast": "Korkea kontrasti"
+  },
+  "modal": {
+    "close": "Sulje",
+    "dialogClosed": "Valintaikkuna suljettu"
+  },
+  "footer": {
+    "translationCredits": "Käännöskiitokset",
+    "copyright": "© {{year}} WCAG Wayfinder",
+    "madeWith": "Tehty ♥ saavutettavuutta varten"
+  },
+  "translationCredits": {
+    "title": "Käännöskiitokset",
+    "intro": "WCAG-onnistumiskriteerien käännökset tarjoavat valtuutetut kääntäjät ympäri maailmaa.",
+    "language": "Kieli",
+    "translator": "Kääntäjä",
+    "organization": "Organisaatio",
+    "publicationDate": "Julkaisupäivä",
+    "source": "Lähde",
+    "authorization": "Valtuutus",
+    "w3cAuthorized": "W3C:n valtuuttama käännös",
+    "communityTranslation": "Yhteisökäännös",
+    "noTranslator": "Tuntematon kääntäjä",
+    "viewSource": "Näytä alkuperäinen lähde"
+  },
+  "pageTitles": {
+    "home": "WCAG-onnistumiskriteerit",
+    "favorites": "Omat suosikit",
+    "criterion": "{{num}} {{title}}"
+  }
+}

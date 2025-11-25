@@ -1,0 +1,105 @@
+{
+  "app": {
+    "title": "WCAG Wayfinder",
+    "beta": "Beta",
+    "skipToSearch": "Przejdź do wyszukiwania",
+    "skipToFilters": "Przejdź do filtrów",
+    "skipToResults": "Przejdź do wyników"
+  },
+  "header": {
+    "hideFilters": "Ukryj filtry",
+    "showFilters": "Pokaż filtry",
+    "searchLabel": "Szukaj kryteriów",
+    "searchPlaceholder": "Szukaj tytułu/opisu...",
+    "searchHelp": "Szukaj w tytułach i opisach kryteriów sukcesu WCAG",
+    "startTour": "Rozpocznij przewodnik",
+    "favorites": "{{count}} ulubiony",
+    "favorites_other": "{{count}} ulubionych",
+    "clearFavorites": "Wyczyść wszystkie ulubione"
+  },
+  "navigation": {
+    "previous": "Poprzednia",
+    "next": "Następna",
+    "pageOf": "Strona {{page}} z {{total}}",
+    "pageLabel": "Strona {{page}}"
+  },
+  "views": {
+    "list": "Widok listy",
+    "card": "Widok kart",
+    "grid": "Widok siatki"
+  },
+  "actions": {
+    "clearAll": "Wyczyść wszystko",
+    "reset": "Resetuj",
+    "cancel": "Anuluj",
+    "confirm": "Potwierdź",
+    "expand": "Rozwiń",
+    "collapse": "Zwiń",
+    "close": "Zamknij"
+  },
+  "status": {
+    "loading": "Ładowanie…",
+    "error": "Błąd",
+    "noResults": "Nie znaleziono wyników",
+    "resultsFound": "Znaleziono {{count}} wynik",
+    "resultsFound_other": "Znaleziono {{count}} wyników",
+    "pageLoaded": "Załadowano stronę {{page}} z {{total}}"
+  },
+  "language": {
+    "select": "Wybierz język",
+    "switching": "Przełączanie na {{language}}...",
+    "changed": "Język zmieniony na {{language}}"
+  },
+  "favorites": {
+    "add": "Dodaj {{criterion}} do ulubionych",
+    "remove": "Usuń {{criterion}} z ulubionych",
+    "addShort": "Dodaj do ulubionych",
+    "removeShort": "Usuń z ulubionych"
+  },
+  "share": {
+    "link": "Udostępnij link do {{criterion}}",
+    "linkShort": "Udostępnij link",
+    "copied": "Link skopiowany",
+    "copiedMessage": "Link do **{{criterion}}** {{title}} został skopiowany do schowka."
+  },
+  "theme": {
+    "label": "Wygląd:",
+    "select": "Wybierz motyw wyglądu",
+    "changed": "Zmieniono na motyw {{theme}}",
+    "system": "Domyślny systemowy",
+    "light": "Tryb jasny",
+    "dark": "Tryb ciemny",
+    "solarizedLight": "Solarized Light",
+    "solarizedDark": "Solarized Dark",
+    "dracula": "Dracula",
+    "highContrast": "Wysoki kontrast"
+  },
+  "modal": {
+    "close": "Zamknij",
+    "dialogClosed": "Okno dialogowe zamknięte"
+  },
+  "footer": {
+    "translationCredits": "Informacje o tłumaczeniu",
+    "copyright": "© {{year}} WCAG Wayfinder",
+    "madeWith": "Stworzone z ♥ dla dostępności"
+  },
+  "translationCredits": {
+    "title": "Informacje o tłumaczeniu",
+    "intro": "Tłumaczenia kryteriów sukcesu WCAG są dostarczane przez autoryzowanych tłumaczy z całego świata.",
+    "language": "Język",
+    "translator": "Tłumacz",
+    "organization": "Organizacja",
+    "publicationDate": "Data publikacji",
+    "source": "Źródło",
+    "authorization": "Autoryzacja",
+    "w3cAuthorized": "Autoryzowane tłumaczenie W3C",
+    "communityTranslation": "Tłumaczenie społecznościowe",
+    "noTranslator": "Nieznany tłumacz",
+    "viewSource": "Zobacz oryginalne źródło"
+  },
+  "pageTitles": {
+    "home": "Kryteria sukcesu WCAG",
+    "favorites": "Moje ulubione",
+    "criterion": "{{num}} {{title}}"
+  }
+}

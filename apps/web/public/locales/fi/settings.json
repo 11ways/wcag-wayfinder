@@ -1,0 +1,82 @@
+{
+  "title": "Esteettömyysasetukset",
+  "backToExplorer": "← Takaisin Exploreriin",
+  "enabled": "Käytössä",
+  "disabled": "Pois käytöstä",
+  "screenReader": {
+    "title": "Ruudunlukijan ilmoitukset",
+    "description": "Kun käytössä, WCAG Wayfinder tarjoaa ylimääräisiä puhuttuja ohjeita ruudunlukijan käyttäjille suodatettaessa, navigoitaessa ja käyttöliittymän kanssa toimiessa.",
+    "enable": "Ota ruudunlukijan ilmoitukset käyttöön",
+    "disable": "Poista ruudunlukijan ilmoitukset käytöstä",
+    "enabledAnnounce": "Ruudunlukijan ilmoitukset käytössä",
+    "disabledAnnounce": "Ruudunlukijan ilmoitukset pois käytöstä"
+  },
+  "easyMode": {
+    "title": "Helppo tila",
+    "description": "Yksinkertaista käyttöliittymää piilottamalla edistyneet ominaisuudet kuten suodattimet, tunnisteet ja jakamisvaihtoehdot. Täydellinen käyttäjille, jotka haluavat virtaviivaistetun, häiriöttömän kokemuksen keskittyen vain WCAG-kriteerien selaamiseen.",
+    "enable": "Ota helppo tila käyttöön",
+    "disable": "Poista helppo tila käytöstä",
+    "activeMessage": "Helppo tila on käytössä. Käyttöliittymä piilottaa suodattimet, tunnisteet, jakamispainikkeet ja muut edistyneet ominaisuudet kun palaat pääsivulle.",
+    "enabledAnnounce": "Helppo tila käytössä - yksinkertaistettu käyttöliittymä aktivoitu",
+    "disabledAnnounce": "Helppo tila pois käytöstä - täysi käyttöliittymä palautettu"
+  },
+  "resultsPerPage": {
+    "title": "Tuloksia sivulla",
+    "description": "Valitse kuinka monta kriteeriä näytetään sivulla. Vähemmän tuloksia voi latautua nopeammin ja olla helpompi navigoida.",
+    "current": "Nykyinen: <strong>{{count}} tulosta sivulla</strong>",
+    "announce": "Tuloksia sivulla asetettu {{count}}"
+  },
+  "reduceMotion": {
+    "title": "Vähennä liikettä",
+    "description": "Hallitse ovatko animaatiot ja liiketehosteet käytössä sivustolla. Kun vähennä liikettä on käytössä, animaatiot minimoidaan staattisemman, mukavamman kokemuksen saamiseksi.",
+    "enable": "Ota vähennä liikettä käyttöön",
+    "disable": "Poista vähennä liikettä käytöstä",
+    "systemEnabled": "Tärkeää: Sinulla on Vähennä liikettä käytössä {{os}}-asetuksissasi.",
+    "systemDisabled": "Järjestelmässäsi ei ole Vähennä liikettä käytössä.",
+    "overrideHint": "Käytä tätä asetusta ohittaaksesi järjestelmäasetuksesi, tai muuta sitä kohdassa",
+    "systemSettings": "Järjestelmäasetukset",
+    "macOSSettings": "macOS-asetukset",
+    "windowsSettings": "Windows-asetukset",
+    "iOSSettings": "iOS-asetukset",
+    "androidSettings": "Android-asetukset",
+    "macOSPath": "Järjestelmäasetukset → Esteettömyys → Näyttö → Vähennä liikettä",
+    "windowsPath": "Asetukset → Esteettömyys → Visuaaliset tehosteet → Animaatiotehosteet",
+    "iOSPath": "Asetukset → Esteettömyys → Liike → Vähennä liikettä",
+    "androidPath": "Asetukset → Esteettömyys → Poista animaatiot",
+    "overrideActive": "(Ohitus aktiivinen)",
+    "overrideWarning": "Ohitat järjestelmäasetuksesi.",
+    "animationsEnabled": "Animaatiot ovat käytössä vaikka järjestelmässäsi on vähennä liikettä käytössä.",
+    "motionReduced": "Vähennä liikettä on käytössä vaikka järjestelmäsi on sen poistanut käytöstä.",
+    "enabledUsingSystem": "Vähennä liikettä käytössä - käytetään järjestelmäasetusta",
+    "disabledAnimations": "Vähennä liikettä pois käytöstä - animaatiot käytössä",
+    "disabledUsingSystem": "Vähennä liikettä pois käytöstä - käytetään järjestelmäasetusta",
+    "enabledNoAnimations": "Vähennä liikettä käytössä - animaatiot pois käytöstä"
+  },
+  "textSize": {
+    "title": "Tekstin koko",
+    "description": "Voit helposti säätää tekstin kokoa käyttämällä selaimesi sisäänrakennettua zoomaustoimintoa. Tämä skaalaa koko sivun suhteellisesti säilyttäen asettelun.",
+    "shortcutsTitle": "Selaimen zoomaus-pikanäppäimet:",
+    "zoomIn": "Lähennä (suurenna tekstiä)",
+    "zoomOut": "Loitonna (pienennä tekstiä)",
+    "resetZoom": "Palauta oletuskokoon",
+    "modifierHint": "Windowsissa ja Linuxissa käytä <strong>Ctrl</strong>. macOS:ssä käytä <strong>Command (⌘)</strong>."
+  },
+  "appearance": {
+    "title": "Ulkoasu",
+    "description": "Valitse miltä WCAG Wayfinder näyttää. Napsauta teemakorttia esikatsellaksesi sitä, valitse sitten \"Käytä teemaa\" tallentaaksesi valintasi.",
+    "active": "Aktiivinen",
+    "preview": "Esikatselu",
+    "applyTheme": "Käytä teemaa",
+    "currentTheme": "Tämä on nykyinen teemasi",
+    "clickToPreview": "Napsauta esikatsellaksesi",
+    "previewingLabel": "Esikatselussa: {{theme}}",
+    "previewHint": "Napsauta \"Käytä teemaa\" teemakortissa tallentaaksesi tämän ulkoasun, tai napsauta toista teemaa esikatsellaksesi sitä.",
+    "cancelPreview": "Peruuta esikatselu",
+    "announce": "Vaihdettu teemaan {{theme}}"
+  },
+  "footer": {
+    "dataFrom": "Data lähteestä",
+    "wcag22": "W3C WCAG 2.2",
+    "builtWith": "Rakennettu esteettömyys mielessä."
+  }
+}

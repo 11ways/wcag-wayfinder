@@ -1,0 +1,31 @@
+{
+  "error": {
+    "title": "Błąd",
+    "generic": "Coś poszło nie tak. Spróbuj ponownie."
+  },
+  "empty": {
+    "searchTitle": "Nie znaleziono stron pasujących do \"{{query}}\"",
+    "noResults": "Nie znaleziono wyników",
+    "suggestions": "Może szukasz jednego z tych?",
+    "adjustFilters": "Spróbuj dostosować filtry lub zapytanie wyszukiwania"
+  },
+  "criterion": {
+    "showDetails": "Pokaż szczegóły",
+    "hideDetails": "Ukryj szczegóły",
+    "level": "Poziom",
+    "version": "Wersja",
+    "principle": "Zasada",
+    "guideline": "Wytyczna",
+    "tags": "Tagi",
+    "affects": "Dotyczy",
+    "responsibility": "Odpowiedzialność",
+    "technologies": "Technologie",
+    "howToMeet": "Jak spełnić",
+    "understanding": "Zrozumienie"
+  },
+  "announcements": {
+    "pageLoaded": "Załadowano stronę {{page}} z {{total}}",
+    "resultsUpdated": "Znaleziono {{count}} wyników",
+    "jumpedToFirst": "Przeskoczono do pierwszego wyniku"
+  }
+}

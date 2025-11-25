@@ -1,0 +1,105 @@
+{
+  "app": {
+    "title": "WCAG Wayfinder",
+    "beta": "Beta",
+    "skipToSearch": "Ga naar zoeken",
+    "skipToFilters": "Ga naar filters",
+    "skipToResults": "Ga naar resultaten"
+  },
+  "header": {
+    "hideFilters": "Filters verbergen",
+    "showFilters": "Filters tonen",
+    "searchLabel": "Zoek criteria",
+    "searchPlaceholder": "Zoek op titel/beschrijving...",
+    "searchHelp": "Doorzoek WCAG succescriteria titels en beschrijvingen",
+    "startTour": "Start rondleiding",
+    "favorites": "{{count}} favoriet",
+    "favorites_other": "{{count}} favorieten",
+    "clearFavorites": "Alle favorieten wissen"
+  },
+  "navigation": {
+    "previous": "Vorige",
+    "next": "Volgende",
+    "pageOf": "Pagina {{page}} van {{total}}",
+    "pageLabel": "Pagina {{page}}"
+  },
+  "views": {
+    "list": "Lijstweergave",
+    "card": "Kaartweergave",
+    "grid": "Rasterweergave"
+  },
+  "actions": {
+    "clearAll": "Alles wissen",
+    "reset": "Herstellen",
+    "cancel": "Annuleren",
+    "confirm": "Bevestigen",
+    "expand": "Uitvouwen",
+    "collapse": "Invouwen",
+    "close": "Sluiten"
+  },
+  "status": {
+    "loading": "Laden…",
+    "error": "Fout",
+    "noResults": "Geen resultaten gevonden",
+    "resultsFound": "{{count}} resultaat gevonden",
+    "resultsFound_other": "{{count}} resultaten gevonden",
+    "pageLoaded": "Pagina {{page}} van {{total}} geladen"
+  },
+  "language": {
+    "select": "Selecteer taal",
+    "switching": "Wisselen naar {{language}}...",
+    "changed": "Taal gewijzigd naar {{language}}"
+  },
+  "favorites": {
+    "add": "{{criterion}} toevoegen aan favorieten",
+    "remove": "{{criterion}} verwijderen uit favorieten",
+    "addShort": "Toevoegen aan favorieten",
+    "removeShort": "Verwijderen uit favorieten"
+  },
+  "share": {
+    "link": "Link delen naar {{criterion}}",
+    "linkShort": "Link delen",
+    "copied": "Link gekopieerd",
+    "copiedMessage": "De link naar **{{criterion}}** {{title}} is gekopieerd naar je klembord."
+  },
+  "theme": {
+    "label": "Weergave:",
+    "select": "Selecteer weergavethema",
+    "changed": "Thema gewijzigd naar {{theme}}",
+    "system": "Systeemstandaard",
+    "light": "Lichte modus",
+    "dark": "Donkere modus",
+    "solarizedLight": "Solarized Light",
+    "solarizedDark": "Solarized Dark",
+    "dracula": "Dracula",
+    "highContrast": "Hoog contrast"
+  },
+  "modal": {
+    "close": "Sluiten",
+    "dialogClosed": "Dialoogvenster gesloten"
+  },
+  "footer": {
+    "translationCredits": "Vertaalcredits",
+    "copyright": "© {{year}} WCAG Wayfinder",
+    "madeWith": "Gemaakt met ♥ voor toegankelijkheid"
+  },
+  "translationCredits": {
+    "title": "Vertaalcredits",
+    "intro": "WCAG-succescriteria vertalingen worden geleverd door geautoriseerde vertalers van over de hele wereld.",
+    "language": "Taal",
+    "translator": "Vertaler",
+    "organization": "Organisatie",
+    "publicationDate": "Publicatiedatum",
+    "source": "Bron",
+    "authorization": "Autorisatie",
+    "w3cAuthorized": "W3C Geautoriseerde Vertaling",
+    "communityTranslation": "Community Vertaling",
+    "noTranslator": "Onbekende vertaler",
+    "viewSource": "Bekijk originele bron"
+  },
+  "pageTitles": {
+    "home": "WCAG Succescriteria",
+    "favorites": "Mijn Favorieten",
+    "criterion": "{{num}} {{title}}"
+  }
+}

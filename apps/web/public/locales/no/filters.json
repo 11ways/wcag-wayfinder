@@ -1,0 +1,52 @@
+{
+  "title": "Filtre",
+  "reset": "Tilbakestill filtre",
+  "resetLabel": "Tilbakestill alle filtre til standardverdier",
+  "clearAll": "Fjern alle filtre",
+  "clearAllLabel": "Fjern alle filtre og tilbakestill til standardverdier",
+  "backToAll": "Tilbake til alle kriterier",
+  "showingFavorites": "Viser {{count}} favoritt",
+  "showingFavorites_other": "Viser {{count}} favoritter",
+  "version": {
+    "label": "Versjon",
+    "help": "Les mer om WCAG-versjoner",
+    "modalTitle": "Om WCAG-versjoner"
+  },
+  "level": {
+    "label": "Nivå",
+    "help": "Les mer om samsvarsnivåer",
+    "modalTitle": "Om samsvarsnivåer"
+  },
+  "principle": {
+    "label": "Prinsipp",
+    "help": "Les mer om WCAG-prinsipper",
+    "modalTitle": "Om WCAG-prinsipper",
+    "selectedCount": "{{principle}} ({{checked}} av {{total}} retningslinjer valgt)",
+    "customizeLabel": "Tilpass {{principle}}-retningslinjer",
+    "guidelinesLabel": "{{principle}}-retningslinjer"
+  },
+  "guideline": {
+    "search": "Søk retningslinjer",
+    "searchPlaceholder": "Søk retningslinjer...",
+    "notFound": "Ingen retningslinjer funnet",
+    "found": "{{count}} retningslinje funnet",
+    "found_other": "{{count}} retningslinjer funnet",
+    "clear": "Fjern retningslinjefilter",
+    "count": "{{checked}}/{{total}}"
+  },
+  "customize": "Tilpass",
+  "tags": {
+    "active": "{{count}} aktiv tagg",
+    "active_other": "{{count}} aktive tagger",
+    "shown": "{{count}} kriterium vist",
+    "shown_other": "{{count}} kriterier vist",
+    "hidden": "{{count}} skjulte",
+    "expandHidden": "Utvid skjulte kriterier",
+    "expandHiddenShort": "Utvid skjulte",
+    "collapseHidden": "Skjul skjulte kriterier",
+    "collapseHiddenShort": "Skjul skjulte",
+    "clearAll": "Fjern alt",
+    "remove": "Fjern {{tag}}-tagg",
+    "maxReached": "Maksimalt 3 tagger valgt"
+  }
+}

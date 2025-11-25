@@ -1,0 +1,31 @@
+{
+  "error": {
+    "title": "Fout",
+    "generic": "Er is iets misgegaan. Probeer het opnieuw."
+  },
+  "empty": {
+    "searchTitle": "Geen pagina's gevonden voor \"{{query}}\"",
+    "noResults": "Geen resultaten gevonden",
+    "suggestions": "Misschien zoek je een van deze?",
+    "adjustFilters": "Probeer je filters of zoekopdracht aan te passen"
+  },
+  "criterion": {
+    "showDetails": "Details tonen",
+    "hideDetails": "Details verbergen",
+    "level": "Niveau",
+    "version": "Versie",
+    "principle": "Principe",
+    "guideline": "Richtlijn",
+    "tags": "Tags",
+    "affects": "Betreft",
+    "responsibility": "Verantwoordelijkheid",
+    "technologies": "Technologieën",
+    "howToMeet": "Hoe te voldoen",
+    "understanding": "Begrip"
+  },
+  "announcements": {
+    "pageLoaded": "Pagina {{page}} van {{total}} geladen",
+    "resultsUpdated": "{{count}} resultaten gevonden",
+    "jumpedToFirst": "Naar eerste resultaat gesprongen"
+  }
+}

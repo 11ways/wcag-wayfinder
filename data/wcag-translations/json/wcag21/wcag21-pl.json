@@ -1,0 +1,1154 @@
+{
+  "metadata": {
+    "wcag_version": "2.1",
+    "language": "pl",
+    "language_native": "polski",
+    "authorization_type": "authorized",
+    "translator": "Fundacja Instytut Rozwoju Regionalnego",
+    "source_url": "https://www.w3.org/Translations/WCAG21-pl/",
+    "fetch_date": "2025-11-25",
+    "translation_date": "13 April 2021"
+  },
+  "principles": [
+    {
+      "id": "perceivable",
+      "num": "1",
+      "handle": "Postrzegalność",
+      "title": "Przedstawiaj użytkownikom informacje i komponenty interfejsu w sposób dostrzegalny dla ich zmysłów.",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "guidelines": [
+        {
+          "id": "alternatywa-tekstowa",
+          "num": "1.1",
+          "handle": "Wytyczna 1.1 \n                Alternatywa tekstowa",
+          "title": "Zapewnij tekstowe zamienniki wszystkich treści nietekstowych, aby można je było zamienić na inne formy (np. powiększony druk, brajl, mowa syntetyczna, symbole lub prostszy język).",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "tresc-nietekstowa",
+              "num": "1.1.1",
+              "handle": "Kryterium sukcesu 1.1.1 \n                    Treść nietekstowa",
+              "title": "Wszelkie \n                    treści nietekstowe\n                     przedstawione użytkownikowi mają swoją \n                    tekstową alternatywę\n                    , która służy tym samym celom, z wyjątkiem sytuacji opisanych poniżej:",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "multimedia",
+          "num": "1.2",
+          "handle": "Wytyczna 1.2 \n                Multimedia",
+          "title": "Zapewnij rozwiązania alternatywne dla mediów opartych na czasie.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "tylko-audio-lub-tylko-wideo-nagranie",
+              "num": "1.2.1",
+              "handle": "Kryterium sukcesu 1.2.1 \n                    Tylko audio lub tylko wideo (nagranie)",
+              "title": "Dla mediów \n                    nagranych\n                     w systemie \n                    tylko audio\n                     lub \n                    tylko wideo\n                     stosuje się następujące zasady, z wyjątkiem sytuacji, kiedy nagranie audio lub wideo jest \n                    alternatywą dla tekstu\n                     i w taki sposób jest oznaczone:",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "napisy-rozszerzone-nagranie",
+              "num": "1.2.2",
+              "handle": "Kryterium sukcesu 1.2.2 \n                    Napisy rozszerzone (nagranie)",
+              "title": "Do wszystkich nagrań \n                    audio\n                     w \n                    multimediach zsynchronizowanych\n                     (dźwięk i obraz), z wyjątkiem sytuacji, kiedy są one \n                    alternatywami dla tekstu\n                     i w taki sposób są oznaczone, zapewnione są \n                    napisy rozszerzone\n                    .",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "audiodeskrypcja-lub-alternatywa-tekstowa-dla-mediow-nagranie",
+              "num": "1.2.3",
+              "handle": "Kryterium sukcesu 1.2.3 \n                    Audiodeskrypcja lub alternatywa tekstowa dla mediów (nagranie)",
+              "title": "Zapewniona jest \n                    alternatywa dla multimediów\n                     lub \n                    audiodeskrypcja\n                     dla \n                    nagrań\n                    wideo\n                     w \n                    multimediach zsynchronizowanych\n                     (dźwięk i obraz), z wyjątkiem sytuacji, kiedy są one \n                    alternatywami dla tekstu\n                     i w taki sposób są oznaczone.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "napisy-rozszerzone-na-zywo",
+              "num": "1.2.4",
+              "handle": "Kryterium sukcesu 1.2.4 \n                    Napisy rozszerzone (na żywo)",
+              "title": "Do wszystkich treści \n                    audio\n                     w \n                    multimediach zsynchronizowanych\n                     (dźwięk i obraz) przekazywanych \n                    na żywo\n                     zapewnione są \n                    napisy rozszerzone\n                    .",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "audiodeskrypcja-nagranie",
+              "num": "1.2.5",
+              "handle": "Kryterium sukcesu 1.2.5 \n                    Audiodeskrypcja (nagranie)",
+              "title": "Zapewniona jest \n                    audiodeskrypcja\n                     dla wszystkich \n                    nagrań\n                    wideo\n                     w \n                    multimediach zsynchronizowanych\n                    .",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "jezyk-migowy-nagranie",
+              "num": "1.2.6",
+              "handle": "Kryterium sukcesu 1.2.6 \n                    Język migowy (nagranie)",
+              "title": "Zapewnione jest \n                    tłumaczenie w języku migowym\n                     wszystkich nagrań \n                    audio\n                     w \n                    multimediach zsynchronizowanych\n                     (dźwięk i obraz).",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "rozszerzona-audiodeskrypcja-nagranie",
+              "num": "1.2.7",
+              "handle": "Kryterium sukcesu 1.2.7 \n                    Rozszerzona audiodeskrypcja (nagranie)",
+              "title": "Jeśli przerwy w ścieżce dźwiękowej nagrania nie pozwalają na zamieszczenie \n                    audiodeskrypcji\n                     przekazującej sens treści w wystarczającym stopniu, dla wszystkich \n                    nagrań\n                    wideo\n                     w \n                    multimediach zsynchronizowanych\n                     (dźwięk i obraz) zapewniona jest rozszerzona \n                    audiodeskrypcja\n                    .",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "alternatywa-dla-mediow-nagranie",
+              "num": "1.2.8",
+              "handle": "Kryterium sukcesu 1.2.8 \n                    Alternatywa dla mediów (nagranie)",
+              "title": "Zapewniona jest alternatywa dla wszystkich \n                    nagrań\n                     w \n                    multimediach zsynchronizowanych\n                     (dźwięk i obraz) oraz dla wszystkich nagrań \n                    tylko wideo\n                     (sam obraz).",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "tylko-audio-na-zywo",
+              "num": "1.2.9",
+              "handle": "Kryterium sukcesu 1.2.9 \n                    Tylko audio (na żywo)",
+              "title": "Zapewniona jest \n                    alternatywa dla multimediów\n                     przedstawiająca informacje takie same, jak w przekazie \n                    tylko audio\n                    na żywo\n                    .",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mozliwosc-adaptacji",
+          "num": "1.3",
+          "handle": "Wytyczna 1.3 \n                Możliwość adaptacji",
+          "title": "Twórz treści, które mogą być prezentowane na różne sposoby bez utraty informacji czy struktury.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "informacje-i-relacje",
+              "num": "1.3.1",
+              "handle": "Kryterium sukcesu 1.3.1 \n                    Informacje i relacje",
+              "title": "Informacje, \n                    struktura\n                     oraz \n                    relacje\n                     między treściami przekazywane poprzez \n                    prezentację\n                     mogą być \n                    odczytane przez program komputerowy\n                     lub istnieją w postaci tekstu.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "zrozumia-a-kolejnosc",
+              "num": "1.3.2",
+              "handle": "Kryterium sukcesu 1.3.2 \n                    Zrozumiała kolejność",
+              "title": "Jeśli kolejność, w jakiej przedstawiona jest treść, ma znaczenie dla zrozumienia treści — \n                    prawidłowa kolejność odczytu\n                     musi być \n                    określona programowo\n                    .",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "w-asciwosci-zmys-owe",
+              "num": "1.3.3",
+              "handle": "Kryterium sukcesu 1.3.3 \n                    Właściwości zmysłowe",
+              "title": "Instrukcje co do zrozumienia i operowania treścią nie opierają się wyłącznie na właściwościach zmysłowych, takich jak: kształt, rozmiar, wzrokowa lokalizacja, orientacja w przestrzeni lub dźwięk.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "orientacja",
+              "num": "1.3.4",
+              "handle": "Kryterium sukcesu 1.3.4 \n                    Orientacja",
+              "title": "Treść nie ogranicza swojego widoku i działania do jednej orientacji wyświetlania, takiej jak pionowa lub pozioma, chyba że określona orientacja wyświetlania jest \n                    istotna\n                    .",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "okreslenie-pozadanej-wartosci",
+              "num": "1.3.5",
+              "handle": "Kryterium sukcesu 1.3.5 \n                    Określenie pożądanej wartości",
+              "title": "Cel każdego pola zbierającego informacje o użytkowniku może być \n                    programowo określony\n                    , gdy:",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "okreslenie-przeznaczenia",
+              "num": "1.3.6",
+              "handle": "Kryterium sukcesu 1.3.6 \n                    Określenie przeznaczenia",
+              "title": "W treściach zaimplementowanych przy użyciu języków znaczników przeznaczenie \n                    komponentów interfejsu użytkownika\n                    , ikon i \n                    obszarów kluczowych\n                     może zostać \n                    określone programowo\n                    .",
+              "level": "AAA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "rozroznialnosc",
+          "num": "1.4",
+          "handle": "Wytyczna 1.4 \n                Rozróżnialność",
+          "title": "Ułatwiaj oglądanie i słuchanie treści oraz oddzielanie informacji od tła.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "uzycie-koloru",
+              "num": "1.4.1",
+              "handle": "Kryterium sukcesu 1.4.1 \n                    Użycie koloru",
+              "title": "Kolor nie jest wykorzystywany jako jedyny wizualny sposób przekazywania informacji, wskazywania czynności do wykonania lub oczekiwania na odpowiedź, czy też wyróżniania elementów wizualnych.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "kontrola-odtwarzania-dzwieku",
+              "num": "1.4.2",
+              "handle": "Kryterium sukcesu 1.4.2 \n                    Kontrola odtwarzania dźwięku",
+              "title": "Jeśli jakieś nagranie audio włącza się automatycznie na danej stronie i jest odtwarzane przez okres dłuższy niż 3 sekundy, istnieje \n                    mechanizm\n                     umożliwiający przerwanie lub wyłączenie nagrania albo mechanizm kontrolujący poziom głośności niezależnie od poziomu głośności całego systemu.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "kontrast-minimum",
+              "num": "1.4.3",
+              "handle": "Kryterium sukcesu 1.4.3 \n                    Kontrast (minimum)",
+              "title": "Wizualna prezentacja \n                    tekstu\n                     lub \n                    obrazu tekstu\n                     posiada \n                    współczynnik kontrastu\n                     wynoszący przynajmniej 4.5:1, poza następującymi wyjątkami:",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "zmiana-rozmiaru-tekstu",
+              "num": "1.4.4",
+              "handle": "Kryterium sukcesu 1.4.4 \n                    Zmiana rozmiaru tekstu",
+              "title": "Oprócz \n                    napisów rozszerzonych\n                     oraz \n                    obrazów tekstu\n                    , rozmiar \n                    tekstu\n                     może zostać powiększony do 200% bez użycia \n                    technologii wspomagających\n                     oraz bez utraty treści lub funkcjonalności.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "obrazy-tekstu",
+              "num": "1.4.5",
+              "handle": "Kryterium sukcesu 1.4.5 \n                    Obrazy tekstu",
+              "title": "Jeśli wykorzystywane technologie mogą przedstawiać treść wizualnie, do przekazywania informacji wykorzystuje się \n                    tekst\n                    , a nie \n                    obraz tekstu\n                    , z wyjątkiem następujących sytuacji:",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "kontrast-wzmocniony",
+              "num": "1.4.6",
+              "handle": "Kryterium sukcesu 1.4.6 \n                    Kontrast (wzmocniony)",
+              "title": "Wizualna prezentacja \n                    tekstu\n                     lub \n                    obrazu tekstu\n                     posiada \n                    współczynnik kontrastu\n                     wynoszący przynajmniej 7:1, poza następującymi wyjątkami:",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "niska-g-osnosc-lub-bez-dzwiekow-w-tle",
+              "num": "1.4.7",
+              "handle": "Kryterium sukcesu 1.4.7 \n                    Niska głośność lub bez dźwięków w tle",
+              "title": "Dla nagranej treści \n                    tylko audio\n                    , która (1) na pierwszym planie zawiera głównie mowę, (2) nie jest dźwiękową \n                    CAPTCHA\n                     lub logo w postaci dźwiękowej, oraz (3) nie jest wokalizacją mającą na celu głównie ekspresję muzyczną, np. w przypadku śpiewu lub rapu, przynajmniej jedno z poniższych założeń jest spełnione:",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "prezentacja-wizualna",
+              "num": "1.4.8",
+              "handle": "Kryterium sukcesu 1.4.8 \n                    Prezentacja wizualna",
+              "title": "Dla wizualnego przedstawienia \n                    bloków tekstu\n                    , istnieje \n                    mechanizm\n                    , za pomocą którego można osiągnąć, co następuje:",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "obrazy-tekstu-bez-wyjatkow",
+              "num": "1.4.9",
+              "handle": "Kryterium sukcesu 1.4.9 \n                    Obrazy tekstu (bez wyjątków)",
+              "title": "Obrazy tekstu\n                     są wykorzystywane jedynie w celach \n                    czysto dekoracyjnych\n                     lub też w przypadkach, gdy taka prezentacja \n                    tekstu\n                     jest \n                    istotna\n                     dla przekazywanej informacji.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "dopasowanie-do-ekranu",
+              "num": "1.4.10",
+              "handle": "Kryterium sukcesu 1.4.10 \n                    Dopasowanie do ekranu",
+              "title": "Treść może być prezentowana bez utraty informacji lub funkcjonalności, bez konieczności przewijania w dwóch wymiarach dla:",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "kontrast-elementow-nietekstowych",
+              "num": "1.4.11",
+              "handle": "Kryterium sukcesu 1.4.11 \n                    Kontrast elementów nietekstowych",
+              "title": "Wizualna \n                    prezentacja\n                     następujących elementów ma \n                    współczynnik kontrastu\n                     co najmniej 3:1 względem sąsiednich kolorów:",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "odstepy-w-tekscie",
+              "num": "1.4.12",
+              "handle": "Kryterium sukcesu 1.4.12 \n                    Odstępy w tekście",
+              "title": "W treściach tworzonych za pomocą języków znaczników, umożliwiających ustawienie poniższych \n                    właściwości stylu\n                    , nie następuje utrata żadnych treści lub funkcjonalności, gdy \n                    tekst\n                     ustawiony zostanie tak, aby uwzględniał wszystkie poniższe parametry oraz gdy wprowadzone zostaną zmiany w jakiejkolwiek innej właściwości stylu:",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "tresc-spod-kursora-lub-fokusu",
+              "num": "1.4.13",
+              "handle": "Kryterium sukcesu 1.4.13 \n                    Treść spod kursora lub fokusu",
+              "title": "Gdy jakaś treść staje się widoczna po otrzymaniu kursora lub fokusu klawiatury, a po ich usunięciu znika, spełnione są poniższe warunki:",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "operable",
+      "num": "2",
+      "handle": "Funkcjonalność",
+      "title": "Zapewnij, aby komponenty interfejsu użytkownika i nawigacja były możliwe do użycia.",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "guidelines": [
+        {
+          "id": "dostepnosc-z-klawiatury",
+          "num": "2.1",
+          "handle": "Wytyczna 2.1 \n                Dostępność z klawiatury",
+          "title": "Zapewnij dostępność wszystkich funkcjonalności za pomocą klawiatury.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "klawiatura",
+              "num": "2.1.1",
+              "handle": "Kryterium sukcesu 2.1.1 \n                    Klawiatura",
+              "title": "Wszystkie \n                    funkcjonalności\n                     w treści są obsługiwane za pomocą interfejsu klawiatury, bez wymogu określonego czasu użycia poszczególnych klawiszy, z wyjątkiem sytuacji, kiedy dana funkcja wymaga wprowadzenia informacji przez użytkownika w oparciu o ścieżkę ruchów, a nie w oparciu o punkty końcowe wejścia.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "bez-pu-apki-na-klawiature",
+              "num": "2.1.2",
+              "handle": "Kryterium sukcesu 2.1.2 \n                    Bez pułapki na klawiaturę",
+              "title": "Jeśli fokus klawiatury można przemieścić do danego komponentu treści za pomocą \n                    interfejsu klawiatury\n                    , to może on być z niego usunięty również za pomocą interfejsu klawiatury, a jeśli wymagane jest użycie czegoś więcej niż tylko strzałek, tabulatora lub innych standardowych metod wyjścia, użytkownik musi otrzymać odpowiednią podpowiedź, w jaki sposób usunąć fokus z danego komponentu.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "klawiatura-bez-wyjatkow",
+              "num": "2.1.3",
+              "handle": "Kryterium sukcesu 2.1.3 \n                    Klawiatura (bez wyjątków)",
+              "title": "Wszystkie \n                    funkcjonalności\n                     w treści są obsługiwane za pomocą interfejsu klawiatury, bez wymogu określonego czasu użycia poszczególnych klawiszy.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "jednoznakowe-skroty-klawiaturowe",
+              "num": "2.1.4",
+              "handle": "Kryterium sukcesu 2.1.4 \n                    Jednoznakowe skróty klawiaturowe",
+              "title": "Jeśli \n                    skrót klawiaturowy\n                     jest zaimplementowany w treści tylko przy użyciu jednego znaku (litery, w tym wielkiej i małej, cyfry lub symbolu), to przynajmniej jedno z poniższych jest prawdziwe:",
+              "level": "A",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wystarczajacy-czas",
+          "num": "2.2",
+          "handle": "Wytyczna 2.2 \n                Wystarczający czas",
+          "title": "Zapewnij użytkownikom wystarczająco dużo czasu na przeczytanie i skorzystanie z treści.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "dostosowanie-czasu",
+              "num": "2.2.1",
+              "handle": "Kryterium sukcesu 2.2.1 \n                    Dostosowanie czasu",
+              "title": "Gdy czas korzystania z treści jest ograniczany, spełniony jest przynajmniej jeden z poniższych warunków:",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "pauza-zatrzymanie-ukrycie",
+              "num": "2.2.2",
+              "handle": "Kryterium sukcesu 2.2.2 \n                    Pauza, zatrzymanie, ukrycie",
+              "title": "Gdy treść się porusza, \n                    migocze\n                    , przesuwa lub jest automatycznie aktualizowana, spełnione są wszystkie poniższe warunki:",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "bez-ograniczen-czasowych",
+              "num": "2.2.3",
+              "handle": "Kryterium sukcesu 2.2.3 \n                    Bez ograniczeń czasowych",
+              "title": "Ograniczenie czasowe nie jest \n                    istotną\n                     częścią czynności prezentowanej na stronie, chyba, że są to nieinteraktywne \n                    multimedia zsynchronizowane\n                     lub \n                    wydarzenia w czasie rzeczywistym\n                    .",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "przerywanie",
+              "num": "2.2.4",
+              "handle": "Kryterium sukcesu 2.2.4 \n                    Przerywanie",
+              "title": "Przerywanie pracy może być odłożone w czasie lub odrzucone przez użytkownika, chyba że jest to \n                    sytuacja wyjątkowa\n                    .",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "ponowne-potwierdzenie-autentycznosci",
+              "num": "2.2.5",
+              "handle": "Kryterium sukcesu 2.2.5 \n                    Ponowne potwierdzenie autentyczności",
+              "title": "Kiedy kończy się czas sesji autoryzowanej przez użytkownika, może on kontynuować czynność bez utraty danych po ponownej autoryzacji.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "ostrzezenie-o-limicie-czasu",
+              "num": "2.2.6",
+              "handle": "Kryterium sukcesu 2.2.6 \n                    Ostrzeżenie o limicie czasu",
+              "title": "Użytkownicy muszą być ostrzeżeni o limicie czasu \n                    bezczynności użytkownika\n                    , którego przekroczenie mogłoby spowodować utratę danych, chyba że dane te są przechowywane przez ponad 20 godzin, gdy uczestnik nie podejmie żadnych działań.",
+              "level": "AAA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ataki-padaczki",
+          "num": "2.3",
+          "handle": "Wytyczna 2.3 \n                Ataki padaczki",
+          "title": "Prezentuj treść tak, aby nie wywoływała napadów padaczkowych.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "trzy-b-yski-lub-wartosci-ponizej-progu",
+              "num": "2.3.1",
+              "handle": "Kryterium sukcesu 2.3.1 \n                    Trzy błyski lub wartości poniżej progu",
+              "title": "Strony internetowe\n                     nie zawierają w swojej treści niczego, co \n                    błyska\n                     częściej niż trzy razy w ciągu jednej sekundy, lub też \n                    błysk\n                     nie przekracza \n                    wartości granicznych dla błysków ogólnych i czerwonych\n                    .",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "trzy-b-yski",
+              "num": "2.3.2",
+              "handle": "Kryterium sukcesu 2.3.2 \n                    Trzy błyski",
+              "title": "Strony internetowe\n                     nie zawierają w swojej treści niczego, co \n                    błyska\n                     częściej niż trzy razy w ciągu jednej sekundy.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "animacja-po-interakcji",
+              "num": "2.3.3",
+              "handle": "Kryterium sukcesu 2.3.3 \n                    Animacja po interakcji",
+              "title": "Animacja ruchowa\n                     wyzwalana przez interakcję może być wyłączona, chyba że animacja jest \n                    istotna\n                     dla funkcjonalności lub przekazywanych informacji.",
+              "level": "AAA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mozliwosc-nawigacji",
+          "num": "2.4",
+          "handle": "Wytyczna 2.4 \n                Możliwość nawigacji",
+          "title": "Zapewnij użytkownikowi narzędzia pomagające w nawigacji, znalezieniu treści i określeniu, gdzie się aktualnie znajduje.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "mozliwosc-pominiecia-blokow",
+              "num": "2.4.1",
+              "handle": "Kryterium sukcesu 2.4.1 \n                    Możliwość pominięcia bloków",
+              "title": "Istnieje \n                    mechanizm\n                    , który umożliwia pominięcie bloków treści powtarzanych na wielu \n                    stronach internetowych\n                    .",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "tytu-strony",
+              "num": "2.4.2",
+              "handle": "Kryterium sukcesu 2.4.2 \n                    Tytuł strony",
+              "title": "Strony internetowe\n                     mają tytuły, które opisują ich cel lub przedstawiają ich temat.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "kolejnosc-fokusu",
+              "num": "2.4.3",
+              "handle": "Kryterium sukcesu 2.4.3 \n                    Kolejność fokusu",
+              "title": "Jeśli \n                    strona internetowa\n                     może być \n                    nawigowana sekwencyjnie\n                    , a kolejność nawigacji wpływa na zrozumienie lub funkcjonalność strony, komponenty przyjmują fokus w kolejności, dzięki której zachowany jest sens i funkcjonalność treści.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "cel-acza-w-kontekscie",
+              "num": "2.4.4",
+              "handle": "Kryterium sukcesu 2.4.4 \n                    Cel łącza (w kontekście)",
+              "title": "Cel każdego łącza\n                     może wynikać z samej treści łącza lub z treści tekstu powiązanego z \n                    kontekstem łącza określonym programowo\n                    , poza tymi przypadkami, kiedy cel łącza i tak byłby \n                    niejasny dla użytkowników\n                    .",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "wiele-drog",
+              "num": "2.4.5",
+              "handle": "Kryterium sukcesu 2.4.5 \n                    Wiele dróg",
+              "title": "Istnieje więcej niż jeden sposób umożliwiający zlokalizowanie  \n                    strony internetowej\n                     w \n                    zestawie stron internetowych\n                    , z wyjątkiem sytuacji, kiedy dana strona jest wynikiem jakiejś \n                    procedury\n                     lub jednym z jej etapów.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "nag-owki-i-etykiety",
+              "num": "2.4.6",
+              "handle": "Kryterium sukcesu 2.4.6 \n                    Nagłówki i etykiety",
+              "title": "Nagłówki i \n                    etykiety\n                     opisują temat lub cel treści.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "widoczny-fokus",
+              "num": "2.4.7",
+              "handle": "Kryterium sukcesu 2.4.7 \n                    Widoczny fokus",
+              "title": "Każdy interfejs posiadający możliwość obsługi przy pomocy klawiatury ma tryb obsługi, w którym fokus klawiatury jest stale widoczny.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "lokalizacja",
+              "num": "2.4.8",
+              "handle": "Kryterium sukcesu 2.4.8 \n                    Lokalizacja",
+              "title": "Zapewniona jest informacja, w którym miejscu w \n                    zestawie stron internetowych\n                     znajduje się użytkownik.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "cel-acza-z-samego-acza",
+              "num": "2.4.9",
+              "handle": "Kryterium sukcesu 2.4.9 \n                    Cel łącza (z samego łącza)",
+              "title": "Istnieje \n                    mechanizm\n                     umożliwiający zidentyfikowanie celu każdego łącza z samej jego treści, poza tymi przypadkami, kiedy cel łącza i tak byłby \n                    niejasny dla użytkowników\n                    .",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "nag-owki-sekcji",
+              "num": "2.4.10",
+              "handle": "Kryterium sukcesu 2.4.10 \n                    Nagłówki sekcji",
+              "title": "Nagłówki \n                    sekcji\n                     są używane do porządkowania treści.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "metody-obs-ugi",
+          "num": "2.5",
+          "handle": "Wytyczna 2.5 \n                Metody obsługi",
+          "title": "Ułatwiaj użytkownikom obsługę funkcji za pomocą różnych sposobów poza klawiaturą.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "gesty-dotykowe",
+              "num": "2.5.1",
+              "handle": "Kryterium sukcesu 2.5.1 \n                    Gesty dotykowe",
+              "title": "Wszystkie \n                    funkcjonalności\n                     wykorzystujące do obsługi gesty wielopunktowe lub oparte na ścieżkach mogą być obsługiwane za pomocą \n                    dotyku jednopunktowego\n                     bez gestu opartego na ścieżce, chyba że \n                    istotny\n                     jest gest wielopunktowy lub oparty na ścieżce.",
+              "level": "A",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "rezygnacja-ze-wskazania",
+              "num": "2.5.2",
+              "handle": "Kryterium sukcesu 2.5.2 \n                    Rezygnacja ze wskazania",
+              "title": "W przypadku \n                    funkcjonalności\n                    , które są wywoływane za pomocą \n                    dotyku jednopunktowego\n                    , co najmniej jedno z poniższych twierdzeń jest prawdziwe:",
+              "level": "A",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "etykieta-w-nazwie",
+              "num": "2.5.3",
+              "handle": "Kryterium sukcesu 2.5.3 \n                    Etykieta w nazwie",
+              "title": "W przypadku \n                    komponentów interfejsu użytkownika\n                     z \n                    etykietami\n                     zawierającymi \n                    tekst\n                     lub \n                    obrazy tekstu\n                    , \n                    nazwa\n                     zawiera tekst, który jest prezentowany wizualnie.",
+              "level": "A",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "aktywowanie-ruchem",
+              "num": "2.5.4",
+              "handle": "Kryterium sukcesu 2.5.4 \n                    Aktywowanie ruchem",
+              "title": "Funkcjonalność\n                    , którą można obsługiwać za pomocą ruchu urządzenia lub ruchu użytkownika, można również obsługiwać za pomocą \n                    komponentów interfejsu użytkownika\n                    , a reagowanie na ruch można wyłączyć, aby zapobiec przypadkowemu uruchomieniu, z wyjątkiem sytuacji, gdy:",
+              "level": "A",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "rozmiar-celu-dotykowego",
+              "num": "2.5.5",
+              "handle": "Kryterium sukcesu 2.5.5 \n                    Rozmiar celu dotykowego",
+              "title": "Rozmiar \n                    celu\n                    punktu dotykowego\n                     wynosi co najmniej 44 na 44 \n                    piksele CSS\n                    , chyba że:",
+              "level": "AAA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "rownoleg-y-mechanizm-wprowadzania-danych",
+              "num": "2.5.6",
+              "handle": "Kryterium sukcesu 2.5.6 \n                    Równoległy mechanizm wprowadzania danych",
+              "title": "Treści internetowe nie ograniczają możliwości korzystania z trybów wprowadzania danych dostępnych na platformie, z wyjątkiem sytuacji, w których ograniczenie jest \n                    istotne\n                    , wymagane do zapewnienia bezpieczeństwa treści lub wymagane do przestrzegania ustawień użytkownika.",
+              "level": "AAA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "understandable",
+      "num": "3",
+      "handle": "Zrozumiałość",
+      "title": "Zadbaj o to, aby informacje i obsługa interfejsu były zrozumiałe.",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "guidelines": [
+        {
+          "id": "mozliwosc-odczytania",
+          "num": "3.1",
+          "handle": "Wytyczna 3.1 \n                Możliwość odczytania",
+          "title": "Twórz treści możliwe do odczytania i zrozumienia.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "jezyk-strony",
+              "num": "3.1.1",
+              "handle": "Kryterium sukcesu 3.1.1 \n                    Język strony",
+              "title": "Domyślny \n                    język naturalny\n                     każdej \n                    strony internetowej\n                     może zostać \n                    odczytany przez program komputerowy\n                    .",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "jezyk-czesci",
+              "num": "3.1.2",
+              "handle": "Kryterium sukcesu 3.1.2 \n                    Język części",
+              "title": "Język naturalny\n                     każdej części lub frazy zawartej w treści może zostać \n                    odczytany przez program komputerowy\n                    , z wyjątkiem nazw własnych, wyrażeń technicznych, słów w nieokreślonym języku oraz słów i fraz, które stanowią część żargonu w bezpośrednio otaczającym je tekście.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "nietypowe-s-owa",
+              "num": "3.1.3",
+              "handle": "Kryterium sukcesu 3.1.3 \n                    Nietypowe słowa",
+              "title": "Istnieje \n                    mechanizm\n                    , za pomocą którego można sprawdzić definicje słów \n                    użytych w nietypowy lub ograniczony sposób\n                    , w tym \n                    idiomów\n                     i \n                    żargonu\n                    .",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "skroty",
+              "num": "3.1.4",
+              "handle": "Kryterium sukcesu 3.1.4 \n                    Skróty",
+              "title": "Istnieje \n                    mechanizm\n                    , za pomocą którego można sprawdzić znaczenie \n                    skrótów\n                    .",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "poziom-umiejetnosci-czytania",
+              "num": "3.1.5",
+              "handle": "Kryterium sukcesu 3.1.5 \n                    Poziom umiejętności czytania",
+              "title": "Jeśli dany tekst, po usunięciu nazw własnych i tytułów, wymaga umiejętności czytania na poziomie wyższym niż \n                    poziom gimnazjalny\n                    , istnieje \n                    dodatkowa treść\n                     wyjaśniająca lub oddzielna wersja, która nie wymaga większych umiejętności czytania.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "wymowa",
+              "num": "3.1.6",
+              "handle": "Kryterium sukcesu 3.1.6 \n                    Wymowa",
+              "title": "Istnieje \n                    mechanizm\n                    , za pomocą którego można sprawdzić wymowę słów, których znaczenie jest niejasne w danym kontekście bez znajomości ich wymowy.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "przewidywalnosc",
+          "num": "3.2",
+          "handle": "Wytyczna 3.2 \n                Przewidywalność",
+          "title": "Twórz strony internetowe tak, aby otwierały się, wyglądały i działały w sposób przewidywalny.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "po-otrzymaniu-fokusu",
+              "num": "3.2.1",
+              "handle": "Kryterium sukcesu 3.2.1 \n                    Po otrzymaniu fokusu",
+              "title": "Przyjęcie fokusu przez dowolny \n                    komponent interfejsu użytkownika\n                     nie powoduje nieoczekiwanej \n                    zmiany kontekstu\n                    .",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "podczas-wprowadzania-danych",
+              "num": "3.2.2",
+              "handle": "Kryterium sukcesu 3.2.2 \n                    Podczas wprowadzania danych",
+              "title": "Zmiana ustawień jakiegokolwiek \n                    komponentu interfejsu użytkownika\n                     nie powoduje automatycznej \n                    zmiany kontekstu\n                    , chyba, że użytkownik został poinformowany o takim działaniu, zanim zaczął korzystać z komponentu.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "spojna-nawigacja",
+              "num": "3.2.3",
+              "handle": "Kryterium sukcesu 3.2.3 \n                    Spójna nawigacja",
+              "title": "Mechanizmy nawigacji, które powtarzają się na wielu \n                    stronach internetowych\n                     w ramach jednego \n                    zestawu stron internetowych\n                    , występują w \n                    tej samej względnej kolejności\n                     za każdym razem, gdy są powtarzane, chyba że zmiana jest inicjowana przez użytkownika.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "spojna-identyfikacja",
+              "num": "3.2.4",
+              "handle": "Kryterium sukcesu 3.2.4 \n                    Spójna identyfikacja",
+              "title": "Komponenty, które mają \n                    tę samą funkcjonalność\n                     w ramach jednego \n                    zestawu stron internetowych\n                    , są w taki sam sposób zidentyfikowane.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "zmiana-na-zadanie",
+              "num": "3.2.5",
+              "handle": "Kryterium sukcesu 3.2.5 \n                    Zmiana na żądanie",
+              "title": "Zmiany kontekstu\n                     inicjowane są tylko na żądanie użytkownika lub istnieje \n                    mechanizm\n                     pozwalający na wyłączenie takich zmian.",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pomoc-przy-wprowadzaniu-informacji",
+          "num": "3.3",
+          "handle": "Wytyczna 3.3 \n                Pomoc przy wprowadzaniu informacji",
+          "title": "Pomagaj użytkownikom unikać błędów i je korygować.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "identyfikacja-b-edu",
+              "num": "3.3.1",
+              "handle": "Kryterium sukcesu 3.3.1 \n                    Identyfikacja błędu",
+              "title": "Jeśli automatycznie zostanie wykryty \n                    błąd wprowadzania danych\n                    , system wskazuje błędny element, a użytkownik otrzymuje opis błędu w postaci tekstu.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "etykiety-lub-instrukcje",
+              "num": "3.3.2",
+              "handle": "Kryterium sukcesu 3.3.2 \n                    Etykiety lub instrukcje",
+              "title": "Gdy w treści wymagane jest wprowadzenie danych przez użytkownika, zapewnione są \n                    etykiety\n                     lub instrukcje.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "sugestie-korekty-b-edow",
+              "num": "3.3.3",
+              "handle": "Kryterium sukcesu 3.3.3 \n                    Sugestie korekty błędów",
+              "title": "Jeśli automatycznie zostanie wykryty \n                    błąd wprowadzania danych\n                     i znane są sugestie korekty, wtedy użytkownik otrzymuje takie sugestie, chyba, że zagrażałoby to bezpieczeństwu treści lub zmieniło jej cel.",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "zapobieganie-b-edom-prawnym-finansowym-w-danych",
+              "num": "3.3.4",
+              "handle": "Kryterium sukcesu 3.3.4 \n                    Zapobieganie błędom (prawnym, finansowym, w danych)",
+              "title": "W przypadku stron internetowych, które powodują zobowiązania prawne, albo na których użytkownik przeprowadza transakcje finansowe, modyfikuje lub usuwa dane w systemach przechowywania danych, nad którymi ma kontrolę, albo udziela odpowiedzi na testy, co najmniej jedna z poniższych informacji jest prawdziwa:",
+              "level": "AA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "pomoc",
+              "num": "3.3.5",
+              "handle": "Kryterium sukcesu 3.3.5 \n                    Pomoc",
+              "title": "Istnieje \n                    pomoc kontekstowa\n                    .",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "zapobieganie-b-edom-wszystkim",
+              "num": "3.3.6",
+              "handle": "Kryterium sukcesu 3.3.6 \n                    Zapobieganie błędom (wszystkim)",
+              "title": "Dla \n                    stron internetowych\n                     , które wymagają od użytkownika wprowadzania informacji, przynajmniej jedno z poniższych założeń jest prawdziwe:",
+              "level": "AAA",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "robust",
+      "num": "4",
+      "handle": "Solidność",
+      "title": "Twórz treści solidnie, aby mogły być skutecznie interpretowane przez różne programy użytkownika, w tym technologie wspomagające.",
+      "versions": [
+        "2.0",
+        "2.1",
+        "2.2"
+      ],
+      "guidelines": [
+        {
+          "id": "kompatybilnosc",
+          "num": "4.1",
+          "handle": "Wytyczna 4.1 \n                Kompatybilność",
+          "title": "Zapewnij jak największą zgodność z aktualnymi i przyszłymi programami użytkownika, w tym z technologiami asystującymi.",
+          "versions": [
+            "2.0",
+            "2.1",
+            "2.2"
+          ],
+          "successcriteria": [
+            {
+              "id": "poprawnosc-kodu",
+              "num": "4.1.1",
+              "handle": "Kryterium sukcesu 4.1.1 \n                    Poprawność kodu",
+              "title": "W treści wprowadzonej przy użyciu języka znaczników, elementy posiadają kompletne znaczniki początkowe i końcowe, elementy są zagnieżdżane według swoich specyfikacji, nie posiadają zduplikowanych atrybutów, a wszystkie ID są unikalne, z wyjątkiem przypadków, kiedy specyfikacja zezwala na wyżej wymienione cechy.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "nazwa-rola-wartosc",
+              "num": "4.1.2",
+              "handle": "Kryterium sukcesu 4.1.2 \n                    Nazwa, rola, wartość",
+              "title": "Dla wszystkich \n                    komponentów interfejsu użytkownika\n                     (w tym, ale nie tylko, elementów formularzy, łączy oraz komponentów wygenerowanych przez skrypty) \n                    nazwa\n                     oraz \n                    rola\n                     mogą być \n                    określone programowo\n                    ; stan, właściwości oraz wartości, które mogą być ustawione przez użytkownika, mogą również być \n                    ustawione programowo\n                    ; powiadomienie o zmianach w tych elementach dostępne jest dla \n                    programów użytkownika\n                    , w tym technologii wspomagających.",
+              "level": "A",
+              "versions": [
+                "2.0",
+                "2.1",
+                "2.2"
+              ]
+            },
+            {
+              "id": "komunikaty-o-stanie",
+              "num": "4.1.3",
+              "handle": "Kryterium sukcesu 4.1.3 \n                    Komunikaty o stanie",
+              "title": "W treści wprowadzonej przy użyciu języka znaczników \n                    komunikaty o stanie\n                     mogą być \n                    programowo określane\n                     poprzez \n                    role\n                     lub właściwości, dzięki czemu mogą być prezentowane użytkownikowi za pomocą \n                    technologii wspomagających\n                     bez uzyskiwania fokusu.",
+              "level": "AA",
+              "versions": [
+                "2.1",
+                "2.2"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "title": "Accessibility Settings",
+  "backToExplorer": "← Back to Explorer",
+  "enabled": "Enabled",
+  "disabled": "Disabled",
+  "screenReader": {
+    "title": "Screen Reader Announcements",
+    "description": "When enabled, WCAG Wayfinder provides extra spoken instructions for screen reader users when filtering, navigating, and interacting with the interface.",
+    "enable": "Enable screen reader announcements",
+    "disable": "Disable screen reader announcements",
+    "enabledAnnounce": "Screen reader announcements enabled",
+    "disabledAnnounce": "Screen reader announcements disabled"
+  },
+  "easyMode": {
+    "title": "Easy Mode",
+    "description": "Simplify the interface by hiding advanced features like filters, tags, and sharing options. Perfect for users who want a streamlined, distraction-free experience focused only on browsing WCAG criteria.",
+    "enable": "Enable Easy Mode",
+    "disable": "Disable Easy Mode",
+    "activeMessage": "Easy Mode is active. The interface will hide filters, tags, share buttons, and other advanced features when you return to the main page.",
+    "enabledAnnounce": "Easy Mode enabled - simplified interface activated",
+    "disabledAnnounce": "Easy Mode disabled - full interface restored"
+  },
+  "resultsPerPage": {
+    "title": "Results Per Page",
+    "description": "Choose how many criteria to display per page. Fewer results may load faster and be easier to navigate.",
+    "current": "Current: <strong>{{count}} results per page</strong>",
+    "announce": "Results per page set to {{count}}"
+  },
+  "reduceMotion": {
+    "title": "Reduce Motion",
+    "description": "Control whether animations and motion effects are enabled across the site. When reduce motion is enabled, animations will be minimized for a more static, comfortable experience.",
+    "enable": "Enable reduce motion",
+    "disable": "Disable reduce motion",
+    "systemEnabled": "Important: You have Reduce Motion enabled in your {{os}} Settings.",
+    "systemDisabled": "Your system does not have Reduce Motion enabled.",
+    "overrideHint": "Use this setting to override your system preference, or change it in",
+    "systemSettings": "System Settings",
+    "macOSSettings": "macOS Settings",
+    "windowsSettings": "Windows Settings",
+    "iOSSettings": "iOS Settings",
+    "androidSettings": "Android Settings",
+    "macOSPath": "System Settings → Accessibility → Display → Reduce motion",
+    "windowsPath": "Settings → Accessibility → Visual effects → Animation effects",
+    "iOSPath": "Settings → Accessibility → Motion → Reduce Motion",
+    "androidPath": "Settings → Accessibility → Remove animations",
+    "overrideActive": "(Override active)",
+    "overrideWarning": "You are overriding your system preference.",
+    "animationsEnabled": "Animations are enabled even though your system has reduce motion turned on.",
+    "motionReduced": "Reduce motion is enabled even though your system has it turned off.",
+    "enabledUsingSystem": "Reduce motion enabled - using system preference",
+    "disabledAnimations": "Reduce motion disabled - animations enabled",
+    "disabledUsingSystem": "Reduce motion disabled - using system preference",
+    "enabledNoAnimations": "Reduce motion enabled - animations disabled"
+  },
+  "textSize": {
+    "title": "Text Size",
+    "description": "You can easily adjust text size using your browser's built-in zoom feature. This will scale the entire page proportionally while maintaining the layout.",
+    "shortcutsTitle": "Browser Zoom Shortcuts:",
+    "zoomIn": "Zoom in (make text larger)",
+    "zoomOut": "Zoom out (make text smaller)",
+    "resetZoom": "Reset to default size",
+    "modifierHint": "On Windows and Linux, use <strong>Ctrl</strong>. On macOS, use <strong>Command (⌘)</strong>."
+  },
+  "appearance": {
+    "title": "Appearance",
+    "description": "Choose how WCAG Wayfinder looks. Click on a theme card to preview it, then select \"Apply Theme\" to save your choice.",
+    "active": "Active",
+    "preview": "Preview",
+    "applyTheme": "Apply Theme",
+    "currentTheme": "This is your current theme",
+    "clickToPreview": "Click to preview",
+    "previewingLabel": "Previewing: {{theme}}",
+    "previewHint": "Click \"Apply Theme\" on the theme card to save this appearance, or click another theme to preview it.",
+    "cancelPreview": "Cancel preview",
+    "announce": "Switched to {{theme}} theme"
+  },
+  "footer": {
+    "dataFrom": "Data from",
+    "wcag22": "W3C WCAG 2.2",
+    "builtWith": "Built with accessibility in mind."
+  }
+}

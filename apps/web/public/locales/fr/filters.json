@@ -1,0 +1,52 @@
+{
+  "title": "Filtres",
+  "reset": "Réinitialiser les filtres",
+  "resetLabel": "Réinitialiser tous les filtres par défaut",
+  "clearAll": "Effacer tous les filtres",
+  "clearAllLabel": "Effacer tous les filtres et réinitialiser par défaut",
+  "backToAll": "Retour à tous les critères",
+  "showingFavorites": "Affichage de {{count}} favori",
+  "showingFavorites_other": "Affichage de {{count}} favoris",
+  "version": {
+    "label": "Version",
+    "help": "En savoir plus sur les versions WCAG",
+    "modalTitle": "À propos des versions WCAG"
+  },
+  "level": {
+    "label": "Niveau",
+    "help": "En savoir plus sur les niveaux de conformité",
+    "modalTitle": "À propos des niveaux de conformité"
+  },
+  "principle": {
+    "label": "Principe",
+    "help": "En savoir plus sur les principes WCAG",
+    "modalTitle": "À propos des principes WCAG",
+    "selectedCount": "{{principle}} ({{checked}} sur {{total}} règles sélectionnées)",
+    "customizeLabel": "Personnaliser les règles {{principle}}",
+    "guidelinesLabel": "Règles {{principle}}"
+  },
+  "guideline": {
+    "search": "Rechercher des règles",
+    "searchPlaceholder": "Rechercher des règles...",
+    "notFound": "Aucune règle trouvée",
+    "found": "{{count}} règle trouvée",
+    "found_other": "{{count}} règles trouvées",
+    "clear": "Effacer le filtre de règle",
+    "count": "{{checked}}/{{total}}"
+  },
+  "customize": "Personnaliser",
+  "tags": {
+    "active": "{{count}} tag actif",
+    "active_other": "{{count}} tags actifs",
+    "shown": "{{count}} critère affiché",
+    "shown_other": "{{count}} critères affichés",
+    "hidden": "{{count}} masqué(s)",
+    "expandHidden": "Développer les critères masqués",
+    "expandHiddenShort": "Développer",
+    "collapseHidden": "Réduire les critères masqués",
+    "collapseHiddenShort": "Réduire",
+    "clearAll": "Tout effacer",
+    "remove": "Supprimer le tag {{tag}}",
+    "maxReached": "Maximum 3 tags sélectionnés"
+  }
+}

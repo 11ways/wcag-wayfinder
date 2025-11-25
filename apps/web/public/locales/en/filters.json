@@ -1,0 +1,52 @@
+{
+  "title": "Filters",
+  "reset": "Reset filters",
+  "resetLabel": "Reset all filters to defaults",
+  "clearAll": "Clear all filters",
+  "clearAllLabel": "Clear all filters and reset to defaults",
+  "backToAll": "Back to all criteria",
+  "showingFavorites": "Showing {{count}} favorite",
+  "showingFavorites_other": "Showing {{count}} favorites",
+  "version": {
+    "label": "Version",
+    "help": "Learn more about WCAG versions",
+    "modalTitle": "About WCAG Versions"
+  },
+  "level": {
+    "label": "Level",
+    "help": "Learn more about conformance levels",
+    "modalTitle": "About Conformance Levels"
+  },
+  "principle": {
+    "label": "Principle",
+    "help": "Learn more about WCAG principles",
+    "modalTitle": "About WCAG Principles",
+    "selectedCount": "{{principle}} ({{checked}} of {{total}} guidelines selected)",
+    "customizeLabel": "Customize {{principle}} guidelines",
+    "guidelinesLabel": "{{principle}} guidelines"
+  },
+  "guideline": {
+    "search": "Search Guidelines",
+    "searchPlaceholder": "Search guidelines...",
+    "notFound": "No guidelines found",
+    "found": "{{count}} guideline found",
+    "found_other": "{{count}} guidelines found",
+    "clear": "Clear guideline filter",
+    "count": "{{checked}}/{{total}}"
+  },
+  "customize": "Customize",
+  "tags": {
+    "active": "{{count}} active tag",
+    "active_other": "{{count}} active tags",
+    "shown": "{{count}} criterion shown",
+    "shown_other": "{{count}} criteria shown",
+    "hidden": "{{count}} hidden",
+    "expandHidden": "Expand hidden criteria",
+    "expandHiddenShort": "Expand Hidden",
+    "collapseHidden": "Collapse hidden criteria",
+    "collapseHiddenShort": "Collapse Hidden",
+    "clearAll": "Clear All",
+    "remove": "Remove {{tag}} tag",
+    "maxReached": "Maximum 3 tags selected"
+  }
+}

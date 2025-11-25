@@ -1,0 +1,105 @@
+{
+  "app": {
+    "title": "WCAG Wayfinder",
+    "beta": "Beta",
+    "skipToSearch": "Skip to search",
+    "skipToFilters": "Skip to filters",
+    "skipToResults": "Skip to results"
+  },
+  "header": {
+    "hideFilters": "Hide filters",
+    "showFilters": "Show filters",
+    "searchLabel": "Search criteria",
+    "searchPlaceholder": "Search title/description...",
+    "searchHelp": "Search across WCAG success criteria titles and descriptions",
+    "startTour": "Start walkthrough tour",
+    "favorites": "{{count}} Favorite",
+    "favorites_other": "{{count}} Favorites",
+    "clearFavorites": "Clear all favorites"
+  },
+  "navigation": {
+    "previous": "Previous",
+    "next": "Next",
+    "pageOf": "Page {{page}} of {{total}}",
+    "pageLabel": "Page {{page}}"
+  },
+  "views": {
+    "list": "List view",
+    "card": "Card view",
+    "grid": "Grid view"
+  },
+  "actions": {
+    "clearAll": "Clear all",
+    "reset": "Reset",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "expand": "Expand",
+    "collapse": "Collapse",
+    "close": "Close"
+  },
+  "status": {
+    "loading": "Loading…",
+    "error": "Error",
+    "noResults": "No results found",
+    "resultsFound": "{{count}} result found",
+    "resultsFound_other": "{{count}} results found",
+    "pageLoaded": "Page {{page}} of {{total}} loaded"
+  },
+  "language": {
+    "select": "Select language",
+    "switching": "Switching to {{language}}...",
+    "changed": "Language changed to {{language}}"
+  },
+  "favorites": {
+    "add": "Add {{criterion}} to favorites",
+    "remove": "Remove {{criterion}} from favorites",
+    "addShort": "Add to favorites",
+    "removeShort": "Remove from favorites"
+  },
+  "share": {
+    "link": "Share link to {{criterion}}",
+    "linkShort": "Share link",
+    "copied": "Link Copied",
+    "copiedMessage": "The link to **{{criterion}}** {{title}} has been copied to your clipboard."
+  },
+  "theme": {
+    "label": "Appearance:",
+    "select": "Select appearance theme",
+    "changed": "Switched to {{theme}} theme",
+    "system": "System Default",
+    "light": "Light Mode",
+    "dark": "Dark Mode",
+    "solarizedLight": "Solarized Light",
+    "solarizedDark": "Solarized Dark",
+    "dracula": "Dracula",
+    "highContrast": "High Contrast"
+  },
+  "modal": {
+    "close": "Close",
+    "dialogClosed": "Dialog closed"
+  },
+  "footer": {
+    "translationCredits": "Translation credits",
+    "copyright": "© {{year}} WCAG Wayfinder",
+    "madeWith": "Made with ♥ for accessibility"
+  },
+  "translationCredits": {
+    "title": "Translation Credits",
+    "intro": "WCAG success criteria translations are provided by authorized translators from around the world.",
+    "language": "Language",
+    "translator": "Translator",
+    "organization": "Organization",
+    "publicationDate": "Publication date",
+    "source": "Source",
+    "authorization": "Authorization",
+    "w3cAuthorized": "W3C Authorized Translation",
+    "communityTranslation": "Community Translation",
+    "noTranslator": "Unknown translator",
+    "viewSource": "View original source"
+  },
+  "pageTitles": {
+    "home": "WCAG Success Criteria",
+    "favorites": "My Favorites",
+    "criterion": "{{num}} {{title}}"
+  }
+}

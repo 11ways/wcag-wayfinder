@@ -1,0 +1,52 @@
+{
+  "title": "Filters",
+  "reset": "Filters herstellen",
+  "resetLabel": "Alle filters naar standaard herstellen",
+  "clearAll": "Alle filters wissen",
+  "clearAllLabel": "Alle filters wissen en naar standaard herstellen",
+  "backToAll": "Terug naar alle criteria",
+  "showingFavorites": "{{count}} favoriet wordt getoond",
+  "showingFavorites_other": "{{count}} favorieten worden getoond",
+  "version": {
+    "label": "Versie",
+    "help": "Meer informatie over WCAG-versies",
+    "modalTitle": "Over WCAG-versies"
+  },
+  "level": {
+    "label": "Niveau",
+    "help": "Meer informatie over conformiteitsniveaus",
+    "modalTitle": "Over conformiteitsniveaus"
+  },
+  "principle": {
+    "label": "Principe",
+    "help": "Meer informatie over WCAG-principes",
+    "modalTitle": "Over WCAG-principes",
+    "selectedCount": "{{principle}} ({{checked}} van {{total}} richtlijnen geselecteerd)",
+    "customizeLabel": "{{principle}} richtlijnen aanpassen",
+    "guidelinesLabel": "{{principle}} richtlijnen"
+  },
+  "guideline": {
+    "search": "Zoek richtlijnen",
+    "searchPlaceholder": "Zoek richtlijnen...",
+    "notFound": "Geen richtlijnen gevonden",
+    "found": "{{count}} richtlijn gevonden",
+    "found_other": "{{count}} richtlijnen gevonden",
+    "clear": "Richtlijnfilter wissen",
+    "count": "{{checked}}/{{total}}"
+  },
+  "customize": "Aanpassen",
+  "tags": {
+    "active": "{{count}} actieve tag",
+    "active_other": "{{count}} actieve tags",
+    "shown": "{{count}} criterium getoond",
+    "shown_other": "{{count}} criteria getoond",
+    "hidden": "{{count}} verborgen",
+    "expandHidden": "Verborgen criteria uitvouwen",
+    "expandHiddenShort": "Uitvouwen",
+    "collapseHidden": "Verborgen criteria invouwen",
+    "collapseHiddenShort": "Invouwen",
+    "clearAll": "Alles wissen",
+    "remove": "Tag {{tag}} verwijderen",
+    "maxReached": "Maximaal 3 tags geselecteerd"
+  }
+}

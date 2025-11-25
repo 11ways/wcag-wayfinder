@@ -1,0 +1,8 @@
+{
+  "name": "@wcag-explorer/db",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./src/client.ts",
+  "dependencies": {},
+  "devDependencies": {}
+}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Walkthrough Mode - Demo</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.6;
+        color: #1f2937;
+        background-color: #f9fafb;
+      }
+
+      .demo-header {
+        background-color: white;
+        border-bottom: 1px solid #e5e7eb;
+        padding: 1rem 2rem;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      }
+
+      .demo-header h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .demo-controls {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .demo-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        border-radius: 0.375rem;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+
+      .demo-button-primary {
+        background-color: #3b82f6;
+        color: white;
+      }
+
+      .demo-button-primary:hover {
+        background-color: #2563eb;
+      }
+
+      .demo-button-secondary {
+        background-color: white;
+        color: #374151;
+        border: 1px solid #d1d5db;
+      }
+
+      .demo-button-secondary:hover {
+        background-color: #f3f4f6;
+      }
+
+      .demo-main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .demo-section {
+        background-color: white;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+      }
+
+      .demo-section h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #111827;
+      }
+
+      .demo-section p {
+        color: #6b7280;
+        margin-bottom: 0.75rem;
+      }
+
+      .demo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .demo-card {
+        background-color: #f9fafb;
+        border: 1px solid #e5e7eb;
+        border-radius: 0.375rem;
+        padding: 1rem;
+      }
+
+      .demo-card h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #374151;
+      }
+
+      .demo-footer {
+        background-color: white;
+        border-top: 1px solid #e5e7eb;
+        padding: 1.5rem 2rem;
+        margin-top: 3rem;
+        text-align: center;
+        color: #6b7280;
+        font-size: 0.875rem;
+      }
+
+      .demo-status {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        background-color: #dbeafe;
+        color: #1e40af;
+        border-radius: 0.25rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+        margin-left: 1rem;
+      }
+
+      .keyboard-shortcuts {
+        background-color: #fef3c7;
+        border: 1px solid #fbbf24;
+        border-radius: 0.375rem;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .keyboard-shortcuts h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: #92400e;
+      }
+
+      .keyboard-shortcuts ul {
+        list-style: none;
+        color: #78350f;
+        font-size: 0.875rem;
+      }
+
+      .keyboard-shortcuts li {
+        margin-bottom: 0.25rem;
+      }
+
+      .keyboard-shortcuts kbd {
+        background-color: white;
+        border: 1px solid #d97706;
+        border-radius: 0.25rem;
+        padding: 0.125rem 0.375rem;
+        font-family: monospace;
+        font-size: 0.75rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="demo-header walkthrough-1">
+      <h1>
+        Walkthrough Mode Demo
+        <span class="demo-status" id="status">Not Started</span>
+      </h1>
+      <p>
+        This demo showcases the reusable Walkthrough Mode system. Click "Start
+        Tour" to begin!
+      </p>
+      <div class="demo-controls">
+        <button
+          id="startTour"
+          class="demo-button demo-button-primary"
+          aria-label="Start the walkthrough tour"
+        >
+          Start Tour
+        </button>
+        <button
+          id="resumeTour"
+          class="demo-button demo-button-secondary"
+          aria-label="Resume the walkthrough tour"
+        >
+          Resume Tour
+        </button>
+        <button
+          id="exitTour"
+          class="demo-button demo-button-secondary"
+          aria-label="Exit the walkthrough tour"
+        >
+          Exit Tour
+        </button>
+        <button
+          id="clearProgress"
+          class="demo-button demo-button-secondary"
+          aria-label="Clear walkthrough progress"
+        >
+          Clear Progress
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="demo-main">
+      <!-- Keyboard Shortcuts -->
+      <div class="keyboard-shortcuts">
+        <h3>⌨️ Keyboard Shortcuts</h3>
+        <ul>
+          <li><kbd>Enter</kbd> or <kbd>Space</kbd> - Next step</li>
+          <li><kbd>Shift</kbd> + <kbd>Enter</kbd> - Previous step</li>
+          <li><kbd>Esc</kbd> - Exit walkthrough</li>
+          <li><kbd>Tab</kbd> - Navigate focusable elements</li>
+        </ul>
+      </div>
+
+      <!-- Navigation Section -->
+      <section class="demo-section walkthrough-2">
+        <h2>Navigation and Features</h2>
+        <p>
+          This section demonstrates the second step of the walkthrough. The
+          tooltip will automatically position itself to avoid viewport overflow.
+        </p>
+        <div class="demo-grid">
+          <div class="demo-card">
+            <h3>Search</h3>
+            <p>Find what you're looking for quickly and easily.</p>
+          </div>
+          <div class="demo-card">
+            <h3>Favorites</h3>
+            <p>Save your favorite items for quick access later.</p>
+          </div>
+          <div class="demo-card">
+            <h3>Filters</h3>
+            <p>Narrow down results with powerful filtering options.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Results Section -->
+      <section class="demo-section walkthrough-3">
+        <h2>Results and Content</h2>
+        <p>
+          This is the final step. The walkthrough will complete when you click
+          "Finish" or navigate to the end.
+        </p>
+        <div class="demo-grid">
+          <div class="demo-card">
+            <h3>List View</h3>
+            <p>View results in a detailed table format.</p>
+          </div>
+          <div class="demo-card">
+            <h3>Card View</h3>
+            <p>Browse results as visual cards.</p>
+          </div>
+          <div class="demo-card">
+            <h3>Grid View</h3>
+            <p>See results in a compact grid layout.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Additional Content -->
+      <section class="demo-section">
+        <h2>Additional Information</h2>
+        <p>
+          The Walkthrough Mode system is designed to be framework-agnostic and
+          fully accessible. It includes:
+        </p>
+        <ul style="margin-left: 1.5rem; color: #6b7280">
+          <li>ARIA live regions for screen reader announcements</li>
+          <li>Keyboard navigation with focus trapping</li>
+          <li>Automatic scroll and positioning</li>
+          <li>Responsive design for mobile devices</li>
+          <li>Dark mode and high contrast support</li>
+          <li>Session storage for progress tracking</li>
+          <li>Reduced motion support</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="demo-footer">
+      <p>
+        Built with the Walkthrough Mode system - A fully accessible, reusable
+        onboarding tour component
+      </p>
+    </footer>
+
+    <!-- Import Walkthrough Styles -->
+    <link rel="stylesheet" href="/src/walkthrough/styles.css" />
+
+    <!-- Import and Initialize Walkthrough -->
+    <script type="module">
+      import { walkthrough } from '/src/walkthrough/index.ts';
+
+      // Update status indicator
+      function updateStatus(text, color) {
+        const status = document.getElementById('status');
+        status.textContent = text;
+        status.style.backgroundColor = color;
+        status.style.color = color === '#dcfce7' ? '#166534' : '#1e40af';
+      }
+
+      // Start Tour button
+      document.getElementById('startTour').addEventListener('click', () => {
+        walkthrough.start({
+          selectorPrefix: 'walkthrough-',
+          startAt: 1,
+          onStart: (total) => {
+            console.log(`Tour started with ${total} steps`);
+            updateStatus('In Progress', '#fef08a');
+          },
+          onStepChange: (current, total) => {
+            console.log(`Step ${current} of ${total}`);
+            updateStatus(`Step ${current}/${total}`, '#fef08a');
+          },
+          onExit: (completed) => {
+            console.log('Tour exited. Completed:', completed);
+            updateStatus(completed ? 'Completed' : 'Not Started', completed ? '#dcfce7' : '#dbeafe');
+          },
+        });
+      });
+
+      // Resume Tour button
+      document.getElementById('resumeTour').addEventListener('click', () => {
+        if (walkthrough.isActive()) {
+          console.log('Tour is already active');
+          return;
+        }
+
+        walkthrough.start({
+          selectorPrefix: 'walkthrough-',
+          // Will auto-resume from saved progress
+          onStart: (total) => {
+            console.log(`Tour resumed with ${total} steps`);
+            updateStatus('In Progress', '#fef08a');
+          },
+          onStepChange: (current, total) => {
+            console.log(`Step ${current} of ${total}`);
+            updateStatus(`Step ${current}/${total}`, '#fef08a');
+          },
+          onExit: (completed) => {
+            console.log('Tour exited. Completed:', completed);
+            updateStatus(completed ? 'Completed' : 'Not Started', completed ? '#dcfce7' : '#dbeafe');
+          },
+        });
+      });
+
+      // Exit Tour button
+      document.getElementById('exitTour').addEventListener('click', () => {
+        if (walkthrough.isActive()) {
+          walkthrough.exit();
+        } else {
+          console.log('No active tour to exit');
+        }
+      });
+
+      // Clear Progress button
+      document.getElementById('clearProgress').addEventListener('click', () => {
+        sessionStorage.removeItem('walkthrough-progress');
+        console.log('Progress cleared');
+        alert('Walkthrough progress has been cleared!');
+      });
+
+      // Log state changes
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'l' && e.ctrlKey) {
+          e.preventDefault();
+          console.log('Current state:', walkthrough.getState());
+        }
+      });
+    </script>
+  </body>
+</html>

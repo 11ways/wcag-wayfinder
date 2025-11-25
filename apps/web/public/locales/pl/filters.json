@@ -1,0 +1,52 @@
+{
+  "title": "Filtry",
+  "reset": "Resetuj filtry",
+  "resetLabel": "Przywróć wszystkie filtry do wartości domyślnych",
+  "clearAll": "Wyczyść wszystkie filtry",
+  "clearAllLabel": "Wyczyść wszystkie filtry i przywróć wartości domyślne",
+  "backToAll": "Wróć do wszystkich kryteriów",
+  "showingFavorites": "Wyświetlanie {{count}} ulubionego",
+  "showingFavorites_other": "Wyświetlanie {{count}} ulubionych",
+  "version": {
+    "label": "Wersja",
+    "help": "Dowiedz się więcej o wersjach WCAG",
+    "modalTitle": "O wersjach WCAG"
+  },
+  "level": {
+    "label": "Poziom",
+    "help": "Dowiedz się więcej o poziomach zgodności",
+    "modalTitle": "O poziomach zgodności"
+  },
+  "principle": {
+    "label": "Zasada",
+    "help": "Dowiedz się więcej o zasadach WCAG",
+    "modalTitle": "O zasadach WCAG",
+    "selectedCount": "{{principle}} (wybrano {{checked}} z {{total}} wytycznych)",
+    "customizeLabel": "Dostosuj wytyczne {{principle}}",
+    "guidelinesLabel": "Wytyczne {{principle}}"
+  },
+  "guideline": {
+    "search": "Szukaj wytycznych",
+    "searchPlaceholder": "Szukaj wytycznych...",
+    "notFound": "Nie znaleziono wytycznych",
+    "found": "Znaleziono {{count}} wytyczną",
+    "found_other": "Znaleziono {{count}} wytycznych",
+    "clear": "Wyczyść filtr wytycznych",
+    "count": "{{checked}}/{{total}}"
+  },
+  "customize": "Dostosuj",
+  "tags": {
+    "active": "{{count}} aktywny tag",
+    "active_other": "{{count}} aktywnych tagów",
+    "shown": "Wyświetlane {{count}} kryterium",
+    "shown_other": "Wyświetlanych {{count}} kryteriów",
+    "hidden": "{{count}} ukrytych",
+    "expandHidden": "Rozwiń ukryte kryteria",
+    "expandHiddenShort": "Rozwiń ukryte",
+    "collapseHidden": "Zwiń ukryte kryteria",
+    "collapseHiddenShort": "Zwiń ukryte",
+    "clearAll": "Wyczyść wszystko",
+    "remove": "Usuń tag {{tag}}",
+    "maxReached": "Wybrano maksymalnie 3 tagi"
+  }
+}

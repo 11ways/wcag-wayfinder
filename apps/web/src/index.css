@@ -1,0 +1,694 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* CSS Variables for theming */
+  :root {
+    /* Light theme colors (default) */
+    --color-bg-primary: 255 255 255; /* white */
+    --color-bg-secondary: 249 250 251; /* gray-50 */
+    --color-bg-tertiary: 243 244 246; /* gray-100 */
+    --color-bg-card: 255 255 255; /* white */
+    --color-bg-input: 255 255 255; /* white */
+
+    --color-text-primary: 17 24 39; /* gray-900 */
+    --color-text-secondary: 75 85 99; /* gray-600 */
+    --color-text-tertiary: 156 163 175; /* gray-400 */
+
+    --color-border-primary: 229 231 235; /* gray-200 */
+    --color-border-secondary: 209 213 219; /* gray-300 */
+    --color-border-input: 209 213 219; /* gray-300 */
+
+    --color-accent-primary: 37 99 235; /* blue-600 */
+    --color-accent-hover: 29 78 216; /* blue-700 */
+    --color-accent-light: 219 234 254; /* blue-100 */
+    --color-accent-text: 30 64 175; /* blue-800 */
+    --color-accent-link: 37 99 235; /* blue-600 - for link text on light backgrounds */
+
+    --color-success: 22 163 74; /* green-600 */
+    --color-success-bg: 220 252 231; /* green-100 */
+    --color-success-text: 22 101 52; /* green-800 */
+    --color-success-border: 134 239 172; /* green-300 */
+
+    --color-purple: 147 51 234; /* purple-600 */
+    --color-purple-bg: 243 232 255; /* purple-100 */
+    --color-purple-text: 107 33 168; /* purple-800 */
+    --color-purple-border: 216 180 254; /* purple-300 */
+
+    --color-yellow: 234 179 8; /* yellow-500 */
+
+    --color-danger: 220 38 38; /* red-600 */
+    --color-danger-hover: 185 28 28; /* red-700 */
+
+    --color-focus: 37 99 235; /* blue-600 */
+
+    --color-highlight: 234 179 8 / 0.8; /* yellow-500 with opacity */
+  }
+
+  /* System dark mode */
+  @media (prefers-color-scheme: dark) {
+    :root:not(.theme-light):not(.theme-solarized-light):not(.theme-solarized-dark):not(.theme-dracula):not(
+        .theme-high-contrast
+      ) {
+      --color-bg-primary: 17 24 39; /* gray-900 */
+      --color-bg-secondary: 31 41 55; /* gray-800 */
+      --color-bg-tertiary: 55 65 81; /* gray-700 */
+      --color-bg-card: 31 41 55; /* gray-800 */
+      --color-bg-input: 31 41 55; /* gray-800 */
+
+      --color-text-primary: 243 244 246; /* gray-100 */
+      --color-text-secondary: 156 163 175; /* gray-400 */
+      --color-text-tertiary: 107 114 128; /* gray-500 */
+
+      --color-border-primary: 55 65 81; /* gray-700 */
+      --color-border-secondary: 75 85 99; /* gray-600 */
+      --color-border-input: 75 85 99; /* gray-600 */
+
+      --color-accent-primary: 37 99 235; /* blue-600 - meets 4.5:1 contrast with white */
+      --color-accent-hover: 29 78 216; /* blue-700 */
+      --color-accent-light: 30 58 138; /* blue-900 */
+      --color-accent-text: 191 219 254; /* blue-200 */
+      --color-accent-link: 96 165 250; /* blue-400 - for link text on dark backgrounds, meets 6.29:1 */
+
+      --color-success-bg: 6 78 59; /* green-900 */
+      --color-success-text: 167 243 208; /* green-200 */
+      --color-success-border: 4 120 87; /* green-700 */
+
+      --color-purple-bg: 88 28 135; /* purple-900 */
+      --color-purple-text: 233 213 255; /* purple-200 */
+      --color-purple-border: 126 34 206; /* purple-700 */
+
+      --color-focus: 96 165 250; /* blue-400 */
+    }
+  }
+
+  /* Explicit light theme */
+  .theme-light {
+    --color-bg-primary: 255 255 255;
+    --color-bg-secondary: 249 250 251;
+    --color-bg-tertiary: 243 244 246;
+    --color-bg-card: 255 255 255;
+    --color-bg-input: 255 255 255;
+
+    --color-text-primary: 17 24 39;
+    --color-text-secondary: 75 85 99;
+    --color-text-tertiary: 156 163 175;
+
+    --color-border-primary: 229 231 235;
+    --color-border-secondary: 209 213 219;
+    --color-border-input: 209 213 219;
+
+    --color-accent-primary: 37 99 235;
+    --color-accent-hover: 29 78 216;
+    --color-accent-light: 219 234 254;
+    --color-accent-text: 30 64 175;
+    --color-accent-link: 37 99 235; /* blue-600 */
+
+    --color-success-bg: 220 252 231;
+    --color-success-text: 22 101 52;
+    --color-success-border: 134 239 172;
+
+    --color-purple-bg: 243 232 255;
+    --color-purple-text: 107 33 168;
+    --color-purple-border: 216 180 254;
+
+    --color-focus: 37 99 235;
+  }
+
+  /* Explicit dark theme */
+  .theme-dark {
+    --color-bg-primary: 17 24 39;
+    --color-bg-secondary: 31 41 55;
+    --color-bg-tertiary: 55 65 81;
+    --color-bg-card: 31 41 55;
+    --color-bg-input: 31 41 55;
+
+    --color-text-primary: 243 244 246;
+    --color-text-secondary: 156 163 175;
+    --color-text-tertiary: 107 114 128;
+
+    --color-border-primary: 55 65 81;
+    --color-border-secondary: 75 85 99;
+    --color-border-input: 75 85 99;
+
+    --color-accent-primary: 37 99 235; /* blue-600 - meets 4.5:1 contrast with white */
+    --color-accent-hover: 29 78 216; /* blue-700 */
+    --color-accent-light: 30 58 138;
+    --color-accent-text: 191 219 254;
+    --color-accent-link: 96 165 250; /* blue-400 - for link text on dark backgrounds */
+
+    --color-success-bg: 6 78 59;
+    --color-success-text: 167 243 208;
+    --color-success-border: 4 120 87;
+
+    --color-purple-bg: 88 28 135;
+    --color-purple-text: 233 213 255;
+    --color-purple-border: 126 34 206;
+
+    --color-focus: 96 165 250;
+  }
+
+  /* Solarized Dark theme */
+  .theme-solarized-dark {
+    --color-bg-primary: 0 43 54; /* base03 */
+    --color-bg-secondary: 7 54 66; /* base02 */
+    --color-bg-tertiary: 88 110 117; /* base01 */
+    --color-bg-card: 7 54 66;
+    --color-bg-input: 7 54 66;
+
+    --color-text-primary: 131 148 150; /* base0 */
+    --color-text-secondary: 147 161 161; /* base1 */
+    --color-text-tertiary: 101 123 131; /* base00 */
+
+    --color-border-primary: 88 110 117; /* base01 */
+    --color-border-secondary: 101 123 131; /* base00 */
+    --color-border-input: 88 110 117;
+
+    --color-accent-primary: 38 139 210; /* blue */
+    --color-accent-hover: 42 161 152; /* cyan */
+    --color-accent-light: 7 54 66;
+    --color-accent-text: 147 161 161;
+    --color-accent-link: 38 139 210; /* blue - solarized blue */
+
+    --color-success-bg: 7 54 66;
+    --color-success-text: 133 153 0; /* green */
+    --color-success-border: 88 110 117;
+
+    --color-purple-bg: 7 54 66;
+    --color-purple-text: 211 54 130; /* magenta */
+    --color-purple-border: 88 110 117;
+
+    --color-focus: 38 139 210;
+  }
+
+  /* Solarized Light theme */
+  .theme-solarized-light {
+    --color-bg-primary: 253 246 227; /* base3 */
+    --color-bg-secondary: 238 232 213; /* base2 */
+    --color-bg-tertiary: 147 161 161; /* base1 */
+    --color-bg-card: 238 232 213;
+    --color-bg-input: 238 232 213;
+
+    --color-text-primary: 101 123 131; /* base00 */
+    --color-text-secondary: 88 110 117; /* base01 */
+    --color-text-tertiary: 147 161 161; /* base1 */
+
+    --color-border-primary: 238 232 213; /* base2 */
+    --color-border-secondary: 147 161 161; /* base1 */
+    --color-border-input: 147 161 161;
+
+    --color-accent-primary: 38 139 210; /* blue */
+    --color-accent-hover: 42 161 152; /* cyan */
+    --color-accent-light: 238 232 213;
+    --color-accent-text: 38 139 210;
+    --color-accent-link: 38 139 210; /* blue - solarized blue */
+
+    --color-success-bg: 238 232 213;
+    --color-success-text: 133 153 0; /* green */
+    --color-success-border: 147 161 161;
+
+    --color-purple-bg: 238 232 213;
+    --color-purple-text: 211 54 130; /* magenta */
+    --color-purple-border: 147 161 161;
+
+    --color-focus: 38 139 210;
+  }
+
+  /* High Contrast theme */
+  .theme-high-contrast {
+    --color-bg-primary: 0 0 0;
+    --color-bg-secondary: 0 0 0;
+    --color-bg-tertiary: 51 51 51;
+    --color-bg-card: 0 0 0;
+    --color-bg-input: 0 0 0;
+
+    --color-text-primary: 255 255 255;
+    --color-text-secondary: 255 255 255;
+    --color-text-tertiary: 204 204 204;
+
+    --color-border-primary: 255 255 255;
+    --color-border-secondary: 255 255 255;
+    --color-border-input: 255 255 255;
+
+    --color-accent-primary: 255 255 0; /* bright yellow */
+    --color-accent-hover: 255 204 0;
+    --color-accent-light: 0 0 0;
+    --color-accent-text: 255 255 0;
+    --color-accent-link: 255 255 0; /* bright yellow for max contrast */
+
+    --color-success-bg: 0 0 0;
+    --color-success-text: 0 255 0; /* bright green */
+    --color-success-border: 255 255 255;
+
+    --color-purple-bg: 0 0 0;
+    --color-purple-text: 255 0 255; /* bright magenta */
+    --color-purple-border: 255 255 255;
+
+    --color-focus: 255 255 0;
+  }
+
+  /* Dracula theme */
+  .theme-dracula {
+    --color-bg-primary: 40 42 54; /* background */
+    --color-bg-secondary: 68 71 90; /* current line */
+    --color-bg-tertiary: 98 114 164; /* comment */
+    --color-bg-card: 68 71 90;
+    --color-bg-input: 68 71 90;
+
+    --color-text-primary: 248 248 242; /* foreground */
+    --color-text-secondary: 189 147 249; /* purple */
+    --color-text-tertiary: 98 114 164; /* comment */
+
+    --color-border-primary: 68 71 90; /* current line */
+    --color-border-secondary: 98 114 164; /* comment */
+    --color-border-input: 98 114 164;
+
+    --color-accent-primary: 189 147 249; /* purple */
+    --color-accent-hover: 255 121 198; /* pink */
+    --color-accent-light: 68 71 90;
+    --color-accent-text: 139 233 253; /* cyan */
+    --color-accent-link: 139 233 253; /* cyan - good contrast on dark */
+
+    --color-success-bg: 68 71 90;
+    --color-success-text: 80 250 123; /* green */
+    --color-success-border: 98 114 164;
+
+    --color-purple-bg: 68 71 90;
+    --color-purple-text: 255 121 198; /* pink */
+    --color-purple-border: 98 114 164;
+
+    --color-focus: 189 147 249;
+  }
+
+  /* Support system color-scheme */
+  :root {
+    color-scheme: light dark;
+  }
+
+  /* Apply theme colors */
+  body {
+    background-color: rgb(var(--color-bg-primary));
+    color: rgb(var(--color-text-primary));
+  }
+
+  /* Visible focus rings - never remove! */
+  *:focus-visible {
+    outline: 2px solid rgb(var(--color-focus));
+    outline-offset: 2px;
+  }
+
+  /* Reduce motion for those who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Skip links container */
+  .skip-links {
+    @apply fixed left-0 top-0 z-50;
+  }
+
+  /* Skip link - all links overlap in same position */
+  .skip-link {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(var(--color-accent-primary));
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transform: translateY(-100%);
+    z-index: 50;
+  }
+
+  .skip-link:focus {
+    transform: translateY(0);
+    outline: none;
+    box-shadow: 0 0 0 3px white, 0 0 0 6px rgb(var(--color-accent-primary));
+  }
+
+  /* Large touch targets (minimum 44x44px) */
+  .btn {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+
+  .btn:focus-visible {
+    outline: 2px solid rgb(var(--color-focus));
+    outline-offset: 2px;
+  }
+
+  .btn-primary {
+    background-color: rgb(var(--color-accent-primary));
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: rgb(var(--color-accent-hover));
+  }
+
+  .btn-secondary {
+    background-color: rgb(var(--color-bg-tertiary));
+    color: rgb(var(--color-text-primary));
+  }
+
+  .btn-secondary:hover {
+    background-color: rgb(var(--color-border-secondary));
+  }
+
+  .btn-danger {
+    background-color: rgb(var(--color-danger));
+    color: white;
+  }
+
+  .btn-danger:hover {
+    background-color: rgb(var(--color-danger-hover));
+  }
+
+  /* Form controls with proper labels */
+  .form-label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+  }
+
+  .form-input {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid rgb(var(--color-border-input));
+    border-radius: 0.375rem;
+    background-color: rgb(var(--color-bg-input));
+    color: rgb(var(--color-text-primary));
+  }
+
+  .form-input:focus-visible {
+    border-color: rgb(var(--color-accent-primary));
+  }
+
+  .form-checkbox {
+    min-width: 24px;
+    min-height: 24px;
+    border-radius: 0.25rem;
+    border: 1px solid rgb(var(--color-border-input));
+    background-color: rgb(var(--color-bg-input));
+  }
+
+  .form-checkbox:checked {
+    background-color: rgb(var(--color-accent-primary));
+    border-color: rgb(var(--color-accent-primary));
+  }
+
+  .form-checkbox:focus {
+    box-shadow: 0 0 0 3px rgb(var(--color-accent-primary) / 0.3);
+  }
+
+  /* High contrast badges */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.125rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  .badge-a {
+    background-color: rgb(var(--color-success-bg));
+    color: rgb(var(--color-success-text));
+    border: 1px solid rgb(var(--color-success-border));
+  }
+
+  .badge-aa {
+    background-color: rgb(var(--color-accent-light));
+    color: rgb(var(--color-accent-text));
+    border: 1px solid rgb(var(--color-accent-primary));
+  }
+
+  .badge-aaa {
+    background-color: rgb(var(--color-purple-bg));
+    color: rgb(var(--color-purple-text));
+    border: 1px solid rgb(var(--color-purple-border));
+  }
+
+  /* Card with good contrast */
+  .card {
+    background-color: rgb(var(--color-bg-card));
+    border: 1px solid rgb(var(--color-border-primary));
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  }
+
+  /* Highlight animation for linked criteria */
+  @keyframes highlight-fade {
+    0% {
+      box-shadow: 0 0 0 4px rgb(var(--color-yellow) / 0.8);
+    }
+    100% {
+      box-shadow: 0 0 0 4px rgb(var(--color-yellow) / 0);
+    }
+  }
+
+  .highlight-fade {
+    animation: highlight-fade 2s ease-out;
+  }
+
+  /* Sidebar slide-in animation */
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .sidebar-slide-in {
+    animation: slide-in 0.3s ease-out;
+  }
+
+  /* Sticky header with vibrancy effect */
+  .header-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    background-color: rgba(var(--color-bg-primary), 0.995);
+    border-bottom: 1px solid rgb(var(--color-border-primary));
+    backdrop-filter: blur(40px) saturate(180%);
+    -webkit-backdrop-filter: blur(40px) saturate(180%);
+  }
+
+  /* Disable transparency and blur in high contrast mode */
+  .theme-high-contrast .header-sticky {
+    background-color: rgb(var(--color-bg-primary));
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom: 2px solid rgb(var(--color-border-primary));
+  }
+
+  /* Sticky footer with vibrancy effect */
+  .footer-sticky {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    background-color: rgba(var(--color-bg-primary), 0.995);
+    border-top: 1px solid rgb(var(--color-border-primary));
+    backdrop-filter: blur(40px) saturate(180%);
+    -webkit-backdrop-filter: blur(40px) saturate(180%);
+  }
+
+  /* Disable transparency and blur in high contrast mode */
+  .theme-high-contrast .footer-sticky {
+    background-color: rgb(var(--color-bg-primary));
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-top: 2px solid rgb(--color-border-primary));
+  }
+
+  /* Term links */
+  a.term {
+    color: rgb(var(--color-accent-primary));
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 2px;
+    transition: color 0.2s;
+  }
+
+  a.term:hover {
+    color: rgb(var(--color-accent-hover));
+    text-decoration-style: solid;
+  }
+
+  a.term:focus-visible {
+    outline: 2px solid rgb(var(--color-focus));
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* Make term link icon inline */
+  a.term svg {
+    vertical-align: baseline;
+  }
+
+  /* BETA ribbon in top-left corner */
+  .beta-ribbon {
+    position: fixed;
+    top: 2rem;
+    left: -2rem;
+    z-index: 1000;
+    transform: rotate(-45deg);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.375rem 4rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  /* Respect reduce motion */
+  @media (prefers-reduced-motion: no-preference) {
+    body:not([data-reduce-motion='true']) .beta-ribbon {
+      transition: transform 0.3s ease;
+    }
+  }
+}
+
+@layer utilities {
+  /* Screen reader only */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  /* Themed background colors */
+  .bg-primary {
+    background-color: rgb(var(--color-bg-primary));
+  }
+
+  .bg-secondary {
+    background-color: rgb(var(--color-bg-secondary));
+  }
+
+  .bg-card {
+    background-color: rgb(var(--color-bg-card));
+  }
+
+  /* Themed text colors */
+  .text-primary {
+    color: rgb(var(--color-text-primary));
+  }
+
+  .text-secondary {
+    color: rgb(var(--color-text-secondary));
+  }
+
+  .text-accent {
+    color: rgb(var(--color-accent-link));
+  }
+
+  .text-accent:hover {
+    text-decoration: underline;
+  }
+
+  /* Themed border colors */
+  .border-primary {
+    border-color: rgb(var(--color-border-primary));
+  }
+
+  .border-secondary {
+    border-color: rgb(var(--color-border-secondary));
+  }
+}
+
+/* Easy Mode - Simplified interface for users who want less complexity */
+/* Uses data attributes for stable selectors that won't break if aria-labels change */
+.easy-mode {
+  /* Hide elements by data attribute - stable and explicit */
+  [data-easy-mode-hide="filters"] {
+    display: none !important;
+  }
+
+  [data-easy-mode-hide="sidebar-toggle"] {
+    display: none !important;
+  }
+
+  [data-easy-mode-hide="view-toggle"] {
+    display: none !important;
+  }
+
+  [data-easy-mode-hide="share"] {
+    display: none !important;
+  }
+
+  [data-easy-mode-hide="favorite"] {
+    display: none !important;
+  }
+
+  [data-easy-mode-hide="tag"] {
+    display: none !important;
+  }
+
+  [data-easy-mode-hide="metadata"] {
+    display: none !important;
+  }
+
+  [data-easy-mode-hide="wand"] {
+    display: none !important;
+  }
+
+  /* Hide the TAGS column header in table view */
+  table th:last-child {
+    display: none !important;
+  }
+
+  /* Hide the TAGS column cells in table view */
+  table td:last-child {
+    display: none !important;
+  }
+
+  /* Ensure main content takes full width when sidebar is hidden */
+  main {
+    max-width: 100% !important;
+  }
+
+  /* Center the main content */
+  main > div {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

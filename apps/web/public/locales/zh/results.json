@@ -1,0 +1,31 @@
+{
+  "error": {
+    "title": "错误",
+    "generic": "出了点问题。请重试。"
+  },
+  "empty": {
+    "searchTitle": "未找到与"{{query}}"匹配的页面",
+    "noResults": "未找到结果",
+    "suggestions": "也许您在寻找以下内容？",
+    "adjustFilters": "请尝试调整筛选条件或搜索查询"
+  },
+  "criterion": {
+    "showDetails": "显示详情",
+    "hideDetails": "隐藏详情",
+    "level": "级别",
+    "version": "版本",
+    "principle": "原则",
+    "guideline": "指南",
+    "tags": "标签",
+    "affects": "影响",
+    "responsibility": "责任",
+    "technologies": "技术",
+    "howToMeet": "如何满足",
+    "understanding": "理解"
+  },
+  "announcements": {
+    "pageLoaded": "已加载第 {{page}} 页，共 {{total}} 页",
+    "resultsUpdated": "找到 {{count}} 条结果",
+    "jumpedToFirst": "已跳转到第一个结果"
+  }
+}

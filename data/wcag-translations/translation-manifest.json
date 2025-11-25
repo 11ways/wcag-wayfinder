@@ -1,0 +1,231 @@
+{
+  "generated_at": "2025-11-25T14:00:00Z",
+  "wcag_22": [
+    {
+      "language": "en",
+      "language_native": "English",
+      "wcag_version": "2.2",
+      "authorization_type": "authorized",
+      "translator": "W3C",
+      "source_url": "https://www.w3.org/TR/WCAG22/",
+      "json_file": "json/wcag22/wcag22-en.json",
+      "fetch_date": "2025-11-25",
+      "translation_date": "2023-10-05",
+      "stats": {
+        "principleCount": 4,
+        "guidelineCount": 13,
+        "criterionCount": 87,
+        "missingTranslations": 0
+      }
+    },
+    {
+      "language": "nl",
+      "language_native": "Nederlands",
+      "wcag_version": "2.2",
+      "authorization_type": "authorized",
+      "translator": "Accessibility Foundation",
+      "source_url": "https://www.w3.org/Translations/WCAG22-nl/",
+      "json_file": "json/wcag22/wcag22-nl.json",
+      "fetch_date": "2025-11-25",
+      "translation_date": "12 June 2024",
+      "stats": {
+        "principleCount": 4,
+        "guidelineCount": 13,
+        "criterionCount": 87,
+        "missingTranslations": 0
+      }
+    },
+    {
+      "language": "fr",
+      "language_native": "français",
+      "wcag_version": "2.2",
+      "authorization_type": "authorized",
+      "translator": "Access42",
+      "source_url": "https://www.w3.org/Translations/WCAG22-fr/",
+      "json_file": "json/wcag22/wcag22-fr.json",
+      "fetch_date": "2025-11-25",
+      "translation_date": "17 March 2025",
+      "stats": {
+        "principleCount": 4,
+        "guidelineCount": 13,
+        "criterionCount": 87,
+        "missingTranslations": 0
+      }
+    },
+    {
+      "language": "it",
+      "language_native": "Italiano",
+      "wcag_version": "2.2",
+      "authorization_type": "authorized",
+      "translator": "International Web Association (IWA)",
+      "source_url": "https://www.w3.org/Translations/WCAG22-it/",
+      "json_file": "json/wcag22/wcag22-it.json",
+      "fetch_date": "2025-11-25",
+      "translation_date": "5 December 2023",
+      "stats": {
+        "principleCount": 4,
+        "guidelineCount": 13,
+        "criterionCount": 87,
+        "missingTranslations": 0
+      }
+    },
+    {
+      "language": "ca",
+      "language_native": "Català",
+      "wcag_version": "2.2",
+      "authorization_type": "authorized",
+      "translator": "Universitat de Barcelona",
+      "source_url": "https://www.w3.org/Translations/WCAG22-ca/",
+      "json_file": "json/wcag22/wcag22-ca.json",
+      "fetch_date": "2025-11-25",
+      "translation_date": "22 May 2024",
+      "stats": {
+        "principleCount": 4,
+        "guidelineCount": 13,
+        "criterionCount": 87,
+        "missingTranslations": 0
+      }
+    },
+    {
+      "language": "pt-BR",
+      "language_native": "Português do Brasil",
+      "wcag_version": "2.2",
+      "authorization_type": "authorized",
+      "translator": "Ceweb.br",
+      "source_url": "https://www.w3.org/Translations/WCAG22-pt-BR/",
+      "json_file": "json/wcag22/wcag22-pt-BR.json",
+      "fetch_date": "2025-11-25",
+      "translation_date": "27 March 2025",
+      "stats": {
+        "principleCount": 4,
+        "guidelineCount": 13,
+        "criterionCount": 87,
+        "missingTranslations": 0
+      }
+    }
+  ],
+  "wcag_21": [
+    {
+      "language": "zh",
+      "language_native": "简体中文",
+      "wcag_version": "2.1",
+      "authorization_type": "authorized",
+      "translator": "Zhejiang University",
+      "source_url": "https://www.w3.org/Translations/WCAG21-zh/",
+      "json_file": "json/wcag21/wcag21-zh.json",
+      "fetch_date": "2025-11-25",
+      "translation_date": "11 March 2019",
+      "stats": {
+        "principleCount": 4,
+        "guidelineCount": 13,
+        "criterionCount": 78,
+        "missingTranslations": 0
+      }
+    },
+    {
+      "language": "da",
+      "language_native": "dansk",
+      "wcag_version": "2.1",
+      "authorization_type": "authorized",
+      "translator": "Digitaliseringsstyrelsen",
+      "source_url": "https://www.w3.org/Translations/WCAG21-da/",
+      "json_file": "json/wcag21/wcag21-da.json",
+      "fetch_date": "2025-11-25",
+      "translation_date": "11 December 2019",
+      "stats": {
+        "principleCount": 4,
+        "guidelineCount": 13,
+        "criterionCount": 78,
+        "missingTranslations": 0
+      }
+    },
+    {
+      "language": "fi",
+      "language_native": "suomi",
+      "wcag_version": "2.1",
+      "authorization_type": "authorized",
+      "translator": "Kehitysvammaliitto ry",
+      "source_url": "https://www.w3.org/Translations/WCAG21-fi/",
+      "json_file": "json/wcag21/wcag21-fi.json",
+      "fetch_date": "2025-11-25",
+      "translation_date": "22 November 2019",
+      "stats": {
+        "principleCount": 4,
+        "guidelineCount": 13,
+        "criterionCount": 78,
+        "missingTranslations": 0
+      }
+    },
+    {
+      "language": "no",
+      "language_native": "Norsk",
+      "wcag_version": "2.1",
+      "authorization_type": "authorized",
+      "translator": "Digitaliseringsdirektoratet",
+      "source_url": "https://www.w3.org/Translations/WCAG21-no/",
+      "json_file": "json/wcag21/wcag21-no.json",
+      "fetch_date": "2025-11-25",
+      "translation_date": "18 June 2021",
+      "stats": {
+        "principleCount": 4,
+        "guidelineCount": 13,
+        "criterionCount": 78,
+        "missingTranslations": 0
+      }
+    },
+    {
+      "language": "pl",
+      "language_native": "polski",
+      "wcag_version": "2.1",
+      "authorization_type": "authorized",
+      "translator": "Fundacja Instytut Rozwoju Regionalnego",
+      "source_url": "https://www.w3.org/Translations/WCAG21-pl/",
+      "json_file": "json/wcag21/wcag21-pl.json",
+      "fetch_date": "2025-11-25",
+      "translation_date": "13 April 2021",
+      "stats": {
+        "principleCount": 4,
+        "guidelineCount": 13,
+        "criterionCount": 78,
+        "missingTranslations": 0
+      }
+    },
+    {
+      "language": "ar",
+      "language_native": "العربية",
+      "wcag_version": "2.1",
+      "authorization_type": "authorized",
+      "translator": "Mada Center (Qatar)",
+      "source_url": "https://www.w3.org/Translations/WCAG21-ar/",
+      "json_file": "json/wcag21/wcag21-ar.json",
+      "fetch_date": "2025-11-25",
+      "translation_date": "11 November 2021",
+      "stats": {
+        "principleCount": 4,
+        "guidelineCount": 10,
+        "criterionCount": 61,
+        "missingTranslations": 17
+      },
+      "notes": "Incomplete - missing 17 SC due to HTML structure issues"
+    },
+    {
+      "language": "uk",
+      "language_native": "українська",
+      "wcag_version": "2.1",
+      "authorization_type": "authorized",
+      "translator": "UNDP Ukraine",
+      "source_url": "https://www.w3.org/Translations/WCAG21-ua/",
+      "json_file": "json/wcag21/wcag21-uk.json",
+      "fetch_date": "2025-11-25",
+      "translation_date": "20 February 2023",
+      "stats": {
+        "principleCount": 5,
+        "guidelineCount": 15,
+        "criterionCount": 85,
+        "missingTranslations": 0
+      },
+      "notes": "Parsing issues - conformance section included as 5th principle"
+    }
+  ],
+  "wcag_20": []
+}

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Search and explore WCAG accessibility criteria" />
+    <title>WCAG Wayfinder - Search Accessibility Guidelines</title>
+  </head>
+  <body>
+    <noscript>
+      <style>
+        .noscript-container {
+          max-width: 800px;
+          margin: 0 auto;
+          padding: 2rem;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+            'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+            sans-serif;
+          line-height: 1.6;
+          color: #1f2937;
+        }
+        .noscript-container h1 {
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
+          color: #111827;
+        }
+        .noscript-container h2 {
+          font-size: 1.5rem;
+          font-weight: 600;
+          margin-top: 2rem;
+          margin-bottom: 0.75rem;
+          color: #374151;
+        }
+        .noscript-container p {
+          margin-bottom: 1rem;
+          color: #4b5563;
+        }
+        .noscript-container ul {
+          margin-bottom: 1.5rem;
+          padding-left: 1.5rem;
+        }
+        .noscript-container li {
+          margin-bottom: 0.5rem;
+          color: #4b5563;
+        }
+        .noscript-container a {
+          color: #2563eb;
+          text-decoration: underline;
+        }
+        .noscript-container a:hover {
+          color: #1d4ed8;
+        }
+        .noscript-callout {
+          background-color: #dbeafe;
+          border-left: 4px solid #2563eb;
+          padding: 1rem;
+          margin: 1.5rem 0;
+          border-radius: 0.25rem;
+        }
+        .noscript-callout p {
+          margin: 0;
+          color: #1e40af;
+        }
+        @media (prefers-color-scheme: dark) {
+          .noscript-container {
+            background-color: #111827;
+            color: #e5e7eb;
+          }
+          .noscript-container h1 {
+            color: #f9fafb;
+          }
+          .noscript-container h2 {
+            color: #d1d5db;
+          }
+          .noscript-container p,
+          .noscript-container li {
+            color: #9ca3af;
+          }
+          .noscript-container a {
+            color: #60a5fa;
+          }
+          .noscript-container a:hover {
+            color: #93c5fd;
+          }
+          .noscript-callout {
+            background-color: #1e3a8a;
+            border-left-color: #3b82f6;
+          }
+          .noscript-callout p {
+            color: #bfdbfe;
+          }
+        }
+      </style>
+      <div class="noscript-container">
+        <h1>WCAG Wayfinder</h1>
+        <p><strong>JavaScript is required to run this application.</strong></p>
+
+        <p>
+          WCAG Wayfinder is an interactive tool for searching and exploring WCAG 2.2
+          success criteria. This application requires JavaScript to provide advanced
+          filtering, search, favorites, and an enhanced accessible experience.
+        </p>
+
+        <div class="noscript-callout">
+          <p>
+            <strong>Note on Accessibility:</strong> WCAG 2.0 and later versions do not
+            require websites to work without JavaScript. In fact, JavaScript-enhanced
+            applications often provide <em>more accessible</em> experiences through
+            dynamic ARIA announcements, enhanced keyboard navigation, and improved
+            screen reader support.
+          </p>
+        </div>
+
+        <h2>Alternative Resources</h2>
+        <p>If you cannot enable JavaScript, these official W3C resources are available:</p>
+        <ul>
+          <li>
+            <a href="https://www.w3.org/WAI/WCAG22/quickref/"
+               rel="noopener noreferrer">
+              WCAG 2.2 Quick Reference Guide
+            </a>
+          </li>
+          <li>
+            <a href="https://www.w3.org/TR/WCAG22/"
+               rel="noopener noreferrer">
+              WCAG 2.2 Complete Specification
+            </a>
+          </li>
+          <li>
+            <a href="https://www.w3.org/WAI/WCAG22/Understanding/"
+               rel="noopener noreferrer">
+              Understanding WCAG 2.2
+            </a>
+          </li>
+        </ul>
+
+        <h2>Features (with JavaScript enabled)</h2>
+        <ul>
+          <li><strong>Search:</strong> Full-text search across 87 WCAG 2.2 success criteria</li>
+          <li><strong>Smart Filtering:</strong> Filter by version (2.0, 2.1, 2.2), conformance level (A, AA, AAA), principles, and guidelines</li>
+          <li><strong>Tag System:</strong> Browse criteria by topics with 50+ categorization tags</li>
+          <li><strong>Favorites:</strong> Save and manage your frequently referenced criteria</li>
+          <li><strong>Accessible Navigation:</strong> Enhanced keyboard shortcuts, screen reader announcements, and ARIA live regions</li>
+          <li><strong>Multiple Views:</strong> Switch between list, card, and grid layouts</li>
+          <li><strong>Dark Mode:</strong> Multiple color themes for comfortable reading</li>
+        </ul>
+
+        <h2>Browser Requirements</h2>
+        <p>
+          This application works best with modern browsers (Chrome, Firefox, Safari, Edge)
+          with JavaScript enabled. All interactive features are built to WCAG 2.2 Level AA
+          standards with full keyboard navigation and screen reader support.
+        </p>
+
+        <p style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid #d1d5db; font-size: 0.875rem; color: #6b7280;">
+          Please enable JavaScript to continue using WCAG Wayfinder.
+        </p>
+      </div>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

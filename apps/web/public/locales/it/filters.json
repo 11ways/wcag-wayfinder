@@ -1,0 +1,52 @@
+{
+  "title": "Filtri",
+  "reset": "Reimposta filtri",
+  "resetLabel": "Reimposta tutti i filtri ai valori predefiniti",
+  "clearAll": "Cancella tutti i filtri",
+  "clearAllLabel": "Cancella tutti i filtri e ripristina i valori predefiniti",
+  "backToAll": "Torna a tutti i criteri",
+  "showingFavorites": "Visualizzazione di {{count}} preferito",
+  "showingFavorites_other": "Visualizzazione di {{count}} preferiti",
+  "version": {
+    "label": "Versione",
+    "help": "Scopri di più sulle versioni WCAG",
+    "modalTitle": "Informazioni sulle versioni WCAG"
+  },
+  "level": {
+    "label": "Livello",
+    "help": "Scopri di più sui livelli di conformità",
+    "modalTitle": "Informazioni sui livelli di conformità"
+  },
+  "principle": {
+    "label": "Principio",
+    "help": "Scopri di più sui principi WCAG",
+    "modalTitle": "Informazioni sui principi WCAG",
+    "selectedCount": "{{principle}} ({{checked}} di {{total}} linee guida selezionate)",
+    "customizeLabel": "Personalizza le linee guida di {{principle}}",
+    "guidelinesLabel": "Linee guida di {{principle}}"
+  },
+  "guideline": {
+    "search": "Cerca linee guida",
+    "searchPlaceholder": "Cerca linee guida...",
+    "notFound": "Nessuna linea guida trovata",
+    "found": "{{count}} linea guida trovata",
+    "found_other": "{{count}} linee guida trovate",
+    "clear": "Cancella filtro linea guida",
+    "count": "{{checked}}/{{total}}"
+  },
+  "customize": "Personalizza",
+  "tags": {
+    "active": "{{count}} tag attivo",
+    "active_other": "{{count}} tag attivi",
+    "shown": "{{count}} criterio visualizzato",
+    "shown_other": "{{count}} criteri visualizzati",
+    "hidden": "{{count}} nascosti",
+    "expandHidden": "Espandi criteri nascosti",
+    "expandHiddenShort": "Espandi nascosti",
+    "collapseHidden": "Comprimi criteri nascosti",
+    "collapseHiddenShort": "Comprimi nascosti",
+    "clearAll": "Cancella tutto",
+    "remove": "Rimuovi tag {{tag}}",
+    "maxReached": "Massimo 3 tag selezionati"
+  }
+}
