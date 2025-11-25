@@ -25,6 +25,8 @@ import {
   type TranslationMetadata,
   type TranslationCredits,
   type TranslationEntry,
+  type WcagDetail,
+  type WcagDetailItem,
   TARGET_LANGUAGES,
   getLanguageCode,
 } from './types.js';
@@ -199,6 +201,49 @@ function parseSuccessCriterion(
   // Determine WCAG versions (based on num)
   const versions = getVersionsForSC(num);
 
+  // Extract <dl> elements as details (exception lists, etc.)
+  const details: WcagDetail[] = [];
+
+  $el.find('> dl').each((_, dlEl) => {
+    const $dl = $(dlEl);
+    const items: WcagDetailItem[] = [];
+
+    $dl.find('dt').each((_, dtEl) => {
+      const $dt = $(dtEl);
+      const $dd = $dt.next('dd');
+
+      // Get the text content, preserving links as HTML
+      const ddHtml = $dd.find('p').first().html()?.trim() || $dd.html()?.trim() || '';
+
+      // Clean up the HTML - remove internal links but keep the text
+      const cleanedText = ddHtml
+        .replace(/<a[^>]*class="internalDFN"[^>]*>([^<]*)<\/a>/g, '$1')
+        .replace(/<a[^>]*href="#[^"]*"[^>]*>([^<]*)<\/a>/g, '$1')
+        .replace(/\s+/g, ' ')
+        .trim();
+
+      if (cleanedText) {
+        items.push({
+          handle: $dt.text().trim(),
+          text: cleanedText,
+        });
+      }
+    });
+
+    if (items.length > 0) {
+      details.push({ type: 'ulist', items });
+    }
+  });
+
+  // Also extract notes (div.note or p.note)
+  $el.find('.note').each((_, noteEl) => {
+    const $note = $(noteEl);
+    const noteText = $note.text().trim();
+    if (noteText) {
+      details.push({ type: 'note', text: noteText });
+    }
+  });
+
   return {
     id,
     num,
@@ -206,6 +251,7 @@ function parseSuccessCriterion(
     title,
     level,
     versions,
+    ...(details.length > 0 && { details }),
   };
 }
 

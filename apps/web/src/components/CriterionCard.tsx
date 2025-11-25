@@ -150,7 +150,7 @@ function CriterionCard({
 
       {isExpanded && (
         <div id={`details-${criterion.id}`} className="mt-4 space-y-4">
-          <CriterionDetails detailsJson={criterion.details_json} terms={terms} />
+          <CriterionDetails detailsJson={criterion.translated_details_json || criterion.details_json} terms={terms} />
 
           <div className="flex flex-wrap gap-3 border-t border-gray-200 pt-2 dark:border-gray-700">
             {(criterion.localized_how_to_meet_url || criterion.how_to_meet) && (

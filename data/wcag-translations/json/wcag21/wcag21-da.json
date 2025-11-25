@@ -42,6 +42,37 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Kontroller, input",
+                      "text": "Hvis ikke-tekstbaseret indhold er en kontrol, eller hvis det accepterer brugerinput, har det et navn, der beskriver dets formål. (Se Succeskriterium 4.1.2 vedrørende yderligere krav til kontroller samt indhold, der accepterer brugerinput)."
+                    },
+                    {
+                      "handle": "Tidsafhængige medier",
+                      "text": "Hvis ikke-tekstbaseret indhold er et tidsafhængigt medie, skal tekstbaserede alternativer som minimum give en beskrivende identifikation af det ikke-tekstbaserede indhold. (Se Retningslinje 1.2 for yderligere krav til medier)."
+                    },
+                    {
+                      "handle": "Test",
+                      "text": "Hvis ikke-tekstbaseret indhold er en test eller en øvelse, som ville være ugyldig, hvis den blev præsenteret som tekst, skal tekstbaserede alternativer som minimum give en beskrivende identifikation af det ikke-tekstbaserede indhold."
+                    },
+                    {
+                      "handle": "Sensorisk",
+                      "text": "Hvis den primære intention med ikke-tekstbaseret indhold er at skabe en specifik sensorisk oplevelse, skal tekstbaserede alternativer som minimum give en beskrivende identifikation af det ikke-tekstbaserede indhold."
+                    },
+                    {
+                      "handle": "CAPTCHA",
+                      "text": "Hvis formålet med ikke-tekstbaseret indhold er, at indhold anvendes af en person snarere end af en computer, skal der stilles tekstbaserede alternativer til rådighed, som identificerer og beskriver formålet med det ikke-tekstbaserede indhold, og der skal findes alternative former for CAPTCHA, som anvender output-præsentationer til forskellige typer af sensorisk perception med det formål at imødekomme forskellige handicap."
+                    },
+                    {
+                      "handle": "Udsmykning, formatering, usynlig",
+                      "text": "Hvis ikke-tekstbaseret indhold udelukkende fungerer som udsmykning, hvis det udelukkende anvendes som visuel formatering, eller hvis det ikke præsenteres for brugerne, skal det implementeres på en sådan måde, at det kan ignoreres af kompenserende teknologier."
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -67,6 +98,21 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Forudindspillet rent lydindhold",
+                      "text": "Der skal leveres et alternativ til tidsafhængige medier, som præsenterer information, der svarer til forudindspillet rent lydindhold."
+                    },
+                    {
+                      "handle": "Forudindspillet rent videoindhold",
+                      "text": "Der skal leveres enten et alternativ til tidsafhængige medier eller et lydspor, som præsenterer information, der svarer til forudindspillet rent videoindhold."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -212,6 +258,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NoteFor krav, der har med farve at gøre, se Retningslinje 1.4."
+                }
               ]
             },
             {
@@ -223,6 +275,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NoteEksempler, hvor en bestemt skærmorientering kan være nødvendig, er en bankcheck, en klaver-applikation, slides til projektor eller fjernsyn eller virtual reality-indhold, hvor skelnen mellem skærmretninger ikke er relevant."
+                }
               ]
             },
             {
@@ -270,6 +328,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NoteDette succeskriterium behandler farveperception specifikt. Andre former for perception belyses i Retningslinje 1.3, der også omfatter programmeringsmæssig adgang til farve og anden visuel præsentationskode."
+                }
               ]
             },
             {
@@ -282,6 +346,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Note\n       Eftersom enhver form for indhold, der ikke overholder dette succeskriterium, kan forringe brugerens evne til at anvende hele siden, skal alt indhold på siden overholde dette succeskriterium, uanset om det anvendes til at overholde andre succeskriterier. Se Forudsætning for overholdelse af krav 5: Non-interferens."
+                }
               ]
             },
             {
@@ -294,6 +364,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Stor skrift",
+                      "text": "Tekst og billeder af tekst i stor skrift har et kontrastforhold på mindst 3:1."
+                    },
+                    {
+                      "handle": "Ikke betydningsbærende",
+                      "text": "Tekst eller billeder af tekst, der udgør en del af en inaktiv brugergrænsefladekomponent, som udelukkende er ren udsmykning, som ikke er synlig for nogen, eller som udgør en del af et billede, der indeholder andet væsentligt visuelt indhold, er ikke underlagt et kontrastkrav."
+                    },
+                    {
+                      "handle": "Logotyper",
+                      "text": "Tekst, der udgør en del af et logo eller varemærkenavn, er ikke underlagt et kontrastkrav."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -318,6 +407,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Kan tilpasses",
+                      "text": "Billedet af tekst kan tilpasses visuelt til at imødekomme brugerens krav."
+                    },
+                    {
+                      "handle": "Nødvendig",
+                      "text": "En særlig præsentation af tekst er nødvendig for den information, der formidles."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "NoteLogotyper (tekst, der udgør en del af et logo eller varemærkenavn) opfattes som nødvendig."
+                }
               ]
             },
             {
@@ -330,6 +438,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Stor skrift",
+                      "text": "Tekst og billeder af tekst med stor skrift skal have et kontrastforhold på mindst 4,5:1."
+                    },
+                    {
+                      "handle": "Ikke betydningsbærende",
+                      "text": "Tekst eller billeder af tekst, der udgør en del af en inaktiv brugergrænsefladekomponent, som udelukkende er ren udsmykning, som ikke er synlig for nogen, eller som udgør en del af et billede, der indeholder andet væsentligt visuelt indhold, er ikke underlagt et kontrastkrav."
+                    },
+                    {
+                      "handle": "Logotyper",
+                      "text": "Tekst, der udgør en del af et logo eller varemærkenavn, er ikke underlagt et kontrastkrav."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -342,6 +469,29 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Ingen baggrund",
+                      "text": "Lydbilledet indeholder ikke baggrundslyd"
+                    },
+                    {
+                      "handle": "Slå fra",
+                      "text": "Baggrundslyden kan slås fra."
+                    },
+                    {
+                      "handle": "20 dB",
+                      "text": "Baggrundslydens lydstyrke er mindst 20 dB lavere end forgrundens taleindhold, undtaget er lejlighedsvise lyde, der kun varer 1 eller 2 sekunder."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "NoteIfølge definitionen af ”decibel” skal baggrundslyd, der overholder dette krav, være ca. 4 gange lavere end forgrundens taleindhold."
+                }
               ]
             },
             {
@@ -366,6 +516,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NoteLogotyper (tekst, der udgør en del af et logo eller varemærke) anses for nødvendig."
+                }
               ]
             },
             {
@@ -377,6 +533,16 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Note320 CSS-pixels svarer til et oprindeligt præsentationsområde (viewport) med en bredde på 1280 CSS-pixels ved 400% zoom. For webindhold, som er designet til at scrolle vandret (for eksempel med lodret tekst), svarer de 256 CSS-pixels til et oprindeligt præsentationsområde (viewport) med en højde på 1024 pixels ved 400% zoom."
+                },
+                {
+                  "type": "note",
+                  "text": "NoteEksempler på indhold, som kræver todimensionel scrollning, er billeder, kort, diagrammer, video, spil, præsentationer, datatabeller og interfaces, hvor det er nødvendigt at have værktøjslinjer i visningen samtidig med manipulation af indhold."
+                }
               ]
             },
             {
@@ -388,6 +554,21 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Brugergrænsefladekomponenter",
+                      "text": "Visuel information, som er nødvendig for at kunne identificere brugergrænsefladekomponenter og tilstande, undtagen for inaktive komponenter eller hvor udseendet af komponenten er bestemt af brugeragenten og ikke ændret af forfatteren."
+                    },
+                    {
+                      "handle": "Grafiske objekter",
+                      "text": "Dele af grafik, som er påkrævet for at forstå indholdet, undtagen når en bestemt præsentation af grafikken er nødvendig for den information, der formidles."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -410,6 +591,33 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Kan afvises",
+                      "text": "Der findes en mekanisme til at afvise det ekstra indhold uden at flytte svævemarkør <span lang=\"en\">(pointer hover)</span> eller tastaturfokus, medmindre det ekstra indhold formidler en inputfejl eller ikke dækker for eller erstatter andet indhold."
+                    },
+                    {
+                      "handle": "Svævepegning mulig (hoverable)",
+                      "text": "Hvis en svævemarkør <span lang=\"en\">(hover)</span> kan udløse det ekstra indhold, skal markøren kunne flyttes hen over det ekstra indhold, uden at det ekstra indhold forsvinder."
+                    },
+                    {
+                      "handle": "Blivende",
+                      "text": "Det ekstra indhold forbliver synligt indtil svæve- eller fokusudløseren er fjernet, brugeren afviser indholdet, eller informationen ikke længere er gyldig."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "NoteEksempler på ekstra indhold kontrolleret af brugeragenten inkluderer browserens værktøjstips skabt ved brug af HTML title-attributten."
+                },
+                {
+                  "type": "note",
+                  "text": "NoteBrugerdefinerede værktøjstips, undermenuer og andre ikke-blokerende (nonmodal) popups, som vises ved svævepegning (hover) og fokus, er eksempler på ekstra indhold, som dækkes af dette succeskriterium."
+                }
               ]
             }
           ]
@@ -448,6 +656,16 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NoteDenne undtagelse relaterer til den underliggende funktionalitet, ikke input-teknikken. Hvis der for eksempel anvendes håndskrift til indskrivning af tekst, kræver input-teknikken, (håndskrift) input, der er afhængigt af stien, men det gør den underliggende funktionalitet (indskrivning af tekst) ikke."
+                },
+                {
+                  "type": "note",
+                  "text": "NoteDette forhindrer ikke og bør ikke opfattes som en opfordring til at undlade at benytte museinput eller andre input-metoder ud over tastaturbetjening."
+                }
               ]
             },
             {
@@ -460,6 +678,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NoteEftersom indhold, der ikke overholder dette succeskriterium, kan forstyrre brugerens evne til at anvende hele siden, skal alt indhold på siden overholde dette succeskriterium, uanset om det anvendes til at overholde andre succeskriterier. Se Forudsætning for overholdelse af krav 5: Non-interferens."
+                }
               ]
             },
             {
@@ -483,6 +707,25 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Slå fra",
+                      "text": "Der findes en mekanisme til at slå genvejen fra."
+                    },
+                    {
+                      "handle": "Ændre",
+                      "text": "Der findes en mekanisme til at ændre genvejen, så den bruger en eller flere ikke-printbare tastaturtegn (for eksempel Ctrl, Alt og så videre)."
+                    },
+                    {
+                      "handle": "Kun aktiv ved fokus",
+                      "text": "Tastaturgenvejen til en brugergrænsefladekomponent er kun aktiv, når komponenten er i fokus."
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -508,6 +751,41 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Slå fra",
+                      "text": "Brugeren kan slukke for tidsbegrænsningen, før den udløber, eller"
+                    },
+                    {
+                      "handle": "Tilpasse",
+                      "text": "Brugeren kan tilpasse tidsbegrænsningen, før den udløber, over en bred skala, der er mindst ti gange varigheden af standardindstillingen, eller"
+                    },
+                    {
+                      "handle": "Udvide",
+                      "text": "Brugeren advares, før tiden udløber, og får mindst 20 sekunder til at forlænge tidsbegrænsningen ved hjælp af en simpel handling (for eksempel ”tryk på mellemrumstasten”), og brugeren har mulighed for at forlænge tiden mindst ti gange, eller"
+                    },
+                    {
+                      "handle": "Undtagelse ved realtid",
+                      "text": "Tidsbegrænsningen er en nødvendig del af en begivenhed i realtid (for eksempel en auktion), og der findes ikke noget muligt alternativ til tidsbegrænsningen, eller"
+                    },
+                    {
+                      "handle": "Nødvendig undtagelse",
+                      "text": "Tidsbegrænsningen er nødvendig, og en forlængelse vil gøre handlingen ugyldig, eller"
+                    },
+                    {
+                      "handle": "20 timers undtagelse",
+                      "text": "Tidsbegrænsningen varer længere end 20 timer."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "NoteDette succeskriterium er med til at sikre, at brugere kan udføre opgaver uden uforudsete ændringer i indhold eller kontekst forårsaget af en tidsbegrænsning. Dette succeskriterium bør overvejes i sammenhæng med Succeskriterium 3.2.1, som begrænser ændringer i indhold eller kontekst forårsaget af brugerhandlinger."
+                }
               ]
             },
             {
@@ -520,6 +798,37 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Bevægelse, blink, scrollning",
+                      "text": "Ved enhver form for bevægelse, blink eller scrollning af information, der (1) starter automatisk, (2) varer mere end fem sekunder og (3) præsenteres samtidigt med andet indhold, findes der en mekanisme, så brugeren kan stoppe, skjule eller sætte informationen på pause, medmindre bevægelsen, blinket eller scrollningen er en del af en handling, hvor dette er nødvendigt, og"
+                    },
+                    {
+                      "handle": "Automatisk opdatering",
+                      "text": "Ved enhver form for automatisk opdatering af information, der (1) starter automatisk og (2) præsenteres samtidigt med andet indhold, findes der en mekanisme, som gør det muligt for brugeren at stoppe, skjule eller sætte opdateringen på pause, eller at kontrollere opdateringsfrekvensen, medmindre den automatiske opdatering er en del af en aktivitet, hvor dette er nødvendigt."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "NoteFor krav, der relaterer til flimren eller glimt-indhold, se Retningslinje 2.3."
+                },
+                {
+                  "type": "note",
+                  "text": "NoteEftersom enhver form for indhold, der ikke overholder dette succeskriterium, kan forstyrre brugerens evne til at anvende hele siden, skal alt indhold på siden overholde dette succeskriterium, uanset om det anvendes til at overholde andre succeskriterier. Se Forudsætning for overholdelse af krav 5: Non-interferens."
+                },
+                {
+                  "type": "note",
+                  "text": "NoteIndhold, der opdateres periodisk af software, eller som bliver streamet til en brugeragent, skal ikke kunne gemme eller præsentere information, der er genereret eller modtaget fra pausens begyndelse til præsentationen genoptages, da dette muligvis ikke kan lade sig gøre teknisk, og det i mange situationer ville være misvisende at gøre det."
+                },
+                {
+                  "type": "note",
+                  "text": "NoteEn animation, der optræder som en del af en forudindlæst fase eller lignende, kan anses som essentiel, hvis ingen brugere er i stand til at interagere i denne fase, og hvis mangel på indikation kunne skabe forvirring for brugerne og få dem til at tro, at indholdet enten er frosset eller gået ned."
+                }
               ]
             },
             {
@@ -567,6 +876,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NoteLovgivning om databeskyttelse kan kræve udtrykkeligt samtykke fra brugeren før brugeridentifikation udføres og brugerdata gemmes. I tilfælde hvor brugeren er mindreårig, må udtrykkeligt samtykke ikke anmodes om i de fleste jurisdiktioner, lande eller regioner. Det anbefales at rådføre sig med databeskyttelseseksperter og at søge juridisk bistand, når det overvejes at foretage databevaring som en måde at opfylde dette succeskriterium."
+                }
               ]
             }
           ]
@@ -592,6 +907,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NoteEftersom enhver form for indhold, der ikke overholder dette succeskriterium, kan forstyrre brugerens evne til at anvende hele siden, skal alt indhold på websiden overholde dette succeskriterium, uanset om det anvendes til at overholde andre succeskriterier. Se Forudsætning for overholdelse af krav 5: Non-interferens."
+                }
               ]
             },
             {
@@ -748,6 +1069,16 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Note”Overskrift” anvendes her som generelt begreb og dækker både titler og andre måder at tilføje en overskrift til forskellige former for indhold på."
+                },
+                {
+                  "type": "note",
+                  "text": "NoteDette succeskriterium omfatter sektioner i tekst, ikke brugergrænsefladekomponenter. Brugergrænsefladekomponenter er omfattet af Succeskriterium 4.1.2."
+                }
               ]
             }
           ]
@@ -772,6 +1103,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NoteDette krav gælder for webindhold, som fortolker pegehandlinger (med andre ord, dette gælder ikke for handlinger, som er påkrævede for at betjene brugeragenten eller kompenserende teknologier)."
+                }
               ]
             },
             {
@@ -783,6 +1120,37 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Ingen tryk-handling (Down-Event)",
+                      "text": "Tryk-handlingen for pegebevægelsen bruges ikke til at udføre nogen del af funktionaliteten;"
+                    },
+                    {
+                      "handle": "Afbryd eller fortryd",
+                      "text": "Funktionaliteten udføres på <a href=\"#dfn-up-event\" class=\"internalDFN\" data-link-type=\"dfn\">slip-handlingen <span lang=\"en\">(Up-Event)</span></a>, og der findes en mekanisme til at afbryde funktionaliteten inden fuldførelse eller til at fortryde funktionaliteten efter udførelse;"
+                    },
+                    {
+                      "handle": "Slip-handling (Up-Event) medfører ophævning",
+                      "text": "Slip-handlingen <span lang=\"en\">(Up-Event)</span> tilbagefører ethvert resultat af den foregående tryk-handling <span lang=\"en\">(Down-Event)</span>;"
+                    },
+                    {
+                      "handle": "Nødvendig",
+                      "text": "Udførelse af funktionaliteten på tryk-handlingen <span lang=\"en\">(Down-Event)</span> er nødvendig."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "NoteFunktionaliteter, som efterligner tryk på tastatur eller numerisk tastatur, regnes for nødvendige."
+                },
+                {
+                  "type": "note",
+                  "text": "NoteDette krav gælder for webindhold, som fortolker pegehandlinger (med andre ord, det gælder ikke for handlinger, som er påkrævede for at betjene brugeragenten eller kompenserende teknologier)."
+                }
               ]
             },
             {
@@ -794,6 +1162,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Note\n    God praksis er at have etikettens tekst i starten af navnet."
+                }
               ]
             },
             {
@@ -805,6 +1179,21 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Understøttet brugergrænseflade",
+                      "text": "Bevægelsen bruges til at betjene funktionalitet gennem en tilgængelighedsunderstøttet brugergrænseflade."
+                    },
+                    {
+                      "handle": "Nødvendig",
+                      "text": "Bevægelsen er nødvendig for funktionaliteten, og at gøre dette vil ugyldiggøre aktiviteten."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -816,6 +1205,29 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Tilsvarende",
+                      "text": "Målet er tilgængeligt via et tilsvarende link eller en kontrol på den samme side, der er mindst 44 gange 44 CSS-pixels;"
+                    },
+                    {
+                      "handle": "Indlejret (inline)",
+                      "text": "Målet er i en sætning eller tekstblok;"
+                    },
+                    {
+                      "handle": "Kontrol styret af brugeragenten",
+                      "text": "Størrelsen på målet er bestemt af brugeragenten og er ikke blevet ændret af forfatteren;&nbsp;"
+                    },
+                    {
+                      "handle": "Nødvendig",
+                      "text": "En bestemt præsentation af målet er nødvendig for den information, som formidles."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -1059,6 +1471,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Reversibel",
+                      "text": "Det sendte er reversibelt."
+                    },
+                    {
+                      "handle": "Tjek",
+                      "text": "Data, der indtastes af brugeren, tjekkes for inputfejl, og brugeren får mulighed for at rette fejlene."
+                    },
+                    {
+                      "handle": "Bekræftelse",
+                      "text": "Der findes en mekanisme som gør det muligt at gennemse, bekræfte eller rette information, før forsendelsen afsluttes."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -1083,6 +1514,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Reversibel",
+                      "text": "Det sendte er reversibelt."
+                    },
+                    {
+                      "handle": "Tjek",
+                      "text": "Data, der indtastes af brugeren, tjekkes for inputfejl, og brugeren får mulighed for at rette fejlene."
+                    },
+                    {
+                      "handle": "Bekræftelse",
+                      "text": "Der findes en mekanisme, som gør det muligt at gennemse, bekræfte og rette information, før forsendelsen afsluttes."
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -1121,6 +1571,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Note\n     Start- og sluttags, der mangler et vigtigt tegn i formateringen, såsom en højre vinkelparentes, eller som indeholder attributværdi-anførelsestegn, der er parret forkert, er ikke afsluttede."
+                }
               ]
             },
             {
@@ -1133,6 +1589,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NoteDette succeskriterium er primært henvendt til webforfattere, der udvikler eller scripter deres egne brugergrænsefladekomponenter. Standard HTML-kontroller overholder for eksempel allerede dette succeskriterium, hvis de anvendes i overensstemmelse med specifikationen."
+                }
               ]
             },
             {

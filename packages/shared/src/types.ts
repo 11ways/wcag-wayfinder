@@ -51,6 +51,7 @@ export interface Criterion {
   translated_title?: string;
   translated_principle_handle?: string;
   translated_guideline_handle?: string;
+  translated_details_json?: string; // Translated details (exception lists, notes)
   has_translation?: boolean;
   translation_language?: string;
   translation_source_url?: string;

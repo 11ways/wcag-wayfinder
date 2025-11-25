@@ -42,6 +42,37 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Controls, entrada de dades",
+                      "text": "Si el contingut no textual és un control o accepta la introducció de dades, té un nom que en descriu la finalitat. (Vegeu el Criteri de conformitat 4.1.2 per conèixer els requisits addicionals dels controls i del contingut que accepta la introducció de dades.)"
+                    },
+                    {
+                      "handle": "Contingut multimèdia de base durativa",
+                      "text": "Si el contingut no textual és contingut multimèdia de base durativa, el text alternatiu proporciona com a mínim una identificació descriptiva del contingut no textual. (Vegeu la Directriu 1.2 per conèixer els requisits addicionals dels continguts multimèdia.)"
+                    },
+                    {
+                      "handle": "Avaluació",
+                      "text": "Si el contingut no textual és una avaluació o un exercici que no serien vàlids presentats com a text, el text alternatiu proporciona com a mínim una identificació descriptiva del contingut no textual."
+                    },
+                    {
+                      "handle": "Experiència sensorial",
+                      "text": "Si el contingut no textual té com a finalitat principal crear una experiència sensorial específica, el text alternatiu proporciona com a mínim una identificació descriptiva del contingut no textual."
+                    },
+                    {
+                      "handle": "CAPTCHA",
+                      "text": "Si la finalitat del contingut no textual és confirmar que qui accedeix al contingut és una persona i no un ordinador, es proporciona un text alternatiu que identifica i descriu la finalitat del contingut no textual i, a fi d'adaptar-se a les diferents discapacitats, inclou també formes alternatives de CAPTCHA amb modes de sortida per a diversos tipus de percepció sensorial."
+                    },
+                    {
+                      "handle": "Decoració, format, invisible",
+                      "text": "Si el contingut no textual és purament decoratiu, s'utilitza només per donar format visual o no és visible, s'implementa de manera que les ajudes tècniques el puguin ignorar."
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -67,6 +98,21 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Només àudio preenregistrat",
+                      "text": "Es proporciona un format alternatiu per a contingut multimèdia de base durativa que presenta informació equivalent al contingut en format de només àudio preenregistrat."
+                    },
+                    {
+                      "handle": "Només vídeo preenregistrat",
+                      "text": "Es proporciona o bé un format alternatiu per a contingut multimèdia de base durativa o bé una pista d'àudio, que presenta informació equivalent al contingut en format de només vídeo preenregistrat."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -212,6 +258,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota\n\t\t\t\n\t\t\tPer conèixer els requisits relacionats amb el color, vegeu la directriu 1.4."
+                }
               ]
             },
             {
@@ -223,6 +275,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota\n\t\t\t\n\t\t\tAlguns exemples en què una orientació de pantalla en particular pot ser essencial són un xec bancari, una aplicació per a piano, diapositives per a un projector o televisor, o contingut de realitat virtual en què no es pugui aplicar un canvi en l'orientació de la pantalla."
+                }
               ]
             },
             {
@@ -270,6 +328,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota\n\t\t\t\n\t\t\tAquest criteri de conformitat s'adreça específicament a la percepció del color. La directriu 1.3 tracta d'altres formes de percepció, com ara l'accés al color per programació i la codificació d'altres presentacions visuals."
+                }
               ]
             },
             {
@@ -282,6 +346,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota\n\t\t\t\n\t\t\tAtès que qualsevol contingut que no compleixi aquest criteri de conformitat pot impossibilitar l'ús de la pàgina completa, el contingut de qualsevol pàgina web ha de complir aquest criteri de conformitat (tant si s'utilitza per complir-ne d'altres com si no). Vegeu el requisit de conformitat 5 (no-interferència)."
+                }
               ]
             },
             {
@@ -294,6 +364,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Text gran",
+                      "text": "El text amb caràcters tipogràfics grans i les imatges del text amb caràcters tipogràfics grans tenen una relació de contrast com a mínim de 3:1."
+                    },
+                    {
+                      "handle": "Text accessori",
+                      "text": "El text o les imatges de text que formen part d'un component d'interfície d'usuari inactiu, que són purament decoratius, que no són visibles o que formen part d'una imatge que conté un altre contingut visual significatiu, no tenen cap requisit de contrast."
+                    },
+                    {
+                      "handle": "Logotips",
+                      "text": "El text que forma part d'un logotip o del nom d'una marca no té cap requisit de contrast."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -318,6 +407,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Personalitzable",
+                      "text": "La imatge de text es pot personalitzar visualment segons les necessitats de cadascú."
+                    },
+                    {
+                      "handle": "Essencial",
+                      "text": "Una presentació concreta del text és essencial per transmetre la informació."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Nota\n\t\t\t\n\t\t\tEls logotips (text que forma part d'un logotip o nom d'una marca) es consideren essencials."
+                }
               ]
             },
             {
@@ -330,6 +438,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Text gran",
+                      "text": "El text amb caràcters tipogràfics grans i les imatges de text amb caràcters tipogràfics grans tenen una relació de contrast d'almenys 4,5:1."
+                    },
+                    {
+                      "handle": "Text accessori",
+                      "text": "El text o les imatges de text que formen part d'un component d'interfície d'usuari inactiu, que són purament decoratius, que no són visibles o que formen part d'una imatge que conté un altre contingut visual significatiu, no tenen cap requisit de contrast mínim."
+                    },
+                    {
+                      "handle": "Logotips",
+                      "text": "El text que forma part d'un logotip o del nom d'una marca no té cap requisit de contrast mínim."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -342,6 +469,29 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Sense sons de fons",
+                      "text": "L'àudio no té sons de fons."
+                    },
+                    {
+                      "handle": "Desactivable",
+                      "text": "Els sons de fons es poden desactivar."
+                    },
+                    {
+                      "handle": "20 dB",
+                      "text": "Els sons de fons estan almenys vint decibels per sota de la veu de primer pla, amb l'excepció d'efectes sonors ocasionals que duren només un segon o dos."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Nota\n\t\t\t\n\t\t\tSegons la definició de decibel, el so de fons que compleix aquest requisit és aquell que és aproximadament quatre vegades més baix que la veu de primer pla."
+                }
               ]
             },
             {
@@ -354,6 +504,16 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota 1\n\t\t\t\n\t\t\tEl contingut no ha de complir aquests valors, sinó que cal disposar d'un mecanisme per canviar aquestes formes de presentació. Aquest mecanisme el pot oferir el navegador o l'agent d'usuari, no cal que l'ofereixi el contingut."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2\n\t\t\t\n\t\t\tEls sistemes d'escriptura d'algunes llengües usen altres formes de presentació per millorar la llegibilitat. Si una forma de presentació d'aquest criteri de conformitat no s'usa en un sistema d'escriptura, el contingut no ha de complir aquesta configuració de presentació i pot ser vàlid sense aquesta forma. Es recomana seguir les bones pràctiques per millorar la llegibilitat del text pròpies de cada sistema d'escriptura."
+                }
               ]
             },
             {
@@ -366,6 +526,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota\n\t\t\t\n\t\t\tEls logotips (text que forma part d'un logotip o nom d'una marca) es consideren essencials."
+                }
               ]
             },
             {
@@ -377,6 +543,16 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota 1\n\t\t\t\n\t\t\t320 píxels CSS equivalen a una amplada inicial de l'àrea de visualització de 1.280 píxels CSS amb un zoom del 400 %. Per a llocs web dissenyats per a desplaçaments horitzontals (per exemple, amb text vertical), 256 píxels CSS equivalen a una alçada inicial de l'àrea de visualització de 1.024 píxels CSS amb un zoom del 400 %."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2\n\t\t\t\n\t\t\tEls continguts que requereixen un disseny bidimensional són, per exemple, imatges, mapes, esquemes, vídeos, jocs, presentacions, taules de dades i interfícies on cal mantenir visibles les barres d'eines mentre se'n manipula el contingut. Per a aquests continguts és acceptable oferir desplaçament en dues dimensions."
+                }
               ]
             },
             {
@@ -388,6 +564,21 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Components de la interfície d'usuari",
+                      "text": "Informació visual necessària per identificar els components de la interfície d'usuari i els estats, excepte per a components inactius o quan l'aparença del component és identificada per l'agent d'usuari i no està modificada."
+                    },
+                    {
+                      "handle": "Objectes gràfics",
+                      "text": "Parts de gràfics necessàries per comprendre el contingut, excepte quan una presentació determinada de gràfics és essencial per transmetre la informació."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -399,6 +590,16 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota 1\n\t\t\t\n\t\t\tEl contingut no ha de complir aquests valors d'interlineat, sinó que cal garantir que, quan s'anul·la l'espaiat establert per defecte, no es perd ni contingut ni funcionalitat."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2\n\t\t\t\n\t\t\tEls sistemes d'escriptura d'algunes llengües usen configuracions d'interlineat diferents, com ara el sagnat d'inici de paràgraf. Es recomana seguir les bones pràctiques per millorar la llegibilitat del text pròpies de cada sistema d'escriptura."
+                }
               ]
             },
             {
@@ -410,6 +611,37 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Descartable",
+                      "text": "Es disposa d'un mecanisme per descartar el contingut addicional sense desplaçar el punter o el focus del teclat, tret que el contingut addicional informi sobre un error d'entrada o no amagui o substitueixi un altre contingut."
+                    },
+                    {
+                      "handle": "Desplaçable",
+                      "text": "Si el moviment del punter sobre el contingut pot activar contingut addicional, el punter es pot desplaçar per damunt d'aquest contingut addicional sense que el contingut addicional desaparegui."
+                    },
+                    {
+                      "handle": "Persistent",
+                      "text": "El contingut addicional es manté visible fins que es retiren el punter o el focus, es descarta o la informació ja no és vàlida."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 1\n\t\t\t\n\t\t\tEntre els exemples de contingut addicional controlat per l'agent d'usuari s'inclouen indicadors de funció del navegador creats en [HTML] mitjançant l'ús de l'atribut title."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2\n\t\t\t\n\t\t\tAlguns exemples de contingut addicional al qual s'aplica aquest criteri són els indicadors de funció personalitzats, els submenús i altres elements emergents no modals que es mostren mitjançant la superposició del punter i el focus del teclat."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 3\n\t\t\t\n\t\t\tAquest criteri és aplicable al contingut addicional que apareix juntament amb el component que l'activa. Com que els components amagats que es fan visibles quan tenen el focus del teclat (per exemple, els enllaços que porten a una altra part de la pàgina) no presenten contingut addicional, queden exclosos d'aquest criteri."
+                }
               ]
             }
           ]
@@ -448,6 +680,16 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota 1\n\t\t\t\n\t\t\tAquesta excepció es refereix a la funció subjacent, no a la tècnica d'entrada. Per exemple, si un text s'ha d'escriure manualment, la tècnica d'entrada (escriptura manual) requereix una entrada que depèn d'un traçat, però la funció subjacent (entrada de text) no la requereix."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2Això no prohibeix, i no hauria d'impedir, la utilització del ratolí o d'altres mètodes d'entrada, a més del teclat."
+                }
               ]
             },
             {
@@ -460,6 +702,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotaAtès que qualsevol contingut que no compleixi aquest criteri de conformitat pot impossibilitar l'ús de la pàgina completa, el contingut de qualsevol pàgina web ha de complir aquest criteri de conformitat (tant si s'utilitza per complir-ne d'altres com si no). Vegeu el requisit de conformitat 5: no-interferència."
+                }
               ]
             },
             {
@@ -483,6 +731,25 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Desactivar",
+                      "text": "Es disposa d'un mecanisme per desactivar la drecera."
+                    },
+                    {
+                      "handle": "Reassignar",
+                      "text": "Es disposa d'un mecanisme per tornar a assignar la drecera de manera que utilitzi un o més caràcters de teclat no imprimibles (per exemple, Ctrl, Alt, etc.)."
+                    },
+                    {
+                      "handle": "Activació només amb focus",
+                      "text": "La drecera del teclat per a un component de la interfície d'usuari només està activa quan el focus és al component."
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -508,6 +775,41 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Desactivar",
+                      "text": "Es pot desactivar el límit de temps abans que s'esgoti."
+                    },
+                    {
+                      "handle": "Ajustar",
+                      "text": "Es pot ajustar el límit de temps abans que s'esgoti dins d'un marge com a mínim deu vegades superior al temps fixat per defecte."
+                    },
+                    {
+                      "handle": "Ampliar",
+                      "text": "Hi ha un avís abans que el temps s'esgoti i es disposa d'almenys vint segons per ampliar el límit de temps mitjançant una acció simple (per exemple, prémer la barra espaiadora). Es pot ampliar el límit de temps com a mínim deu vegades."
+                    },
+                    {
+                      "handle": "Excepció per esdeveniments en temps real",
+                      "text": "El límit de temps és obligat en un esdeveniment en temps real (per exemple, una subhasta) i no és possible cap alternativa."
+                    },
+                    {
+                      "handle": "Excepció per condició essencial",
+                      "text": "Quan el límit de temps és essencial i ampliar-lo pot suposar invalidar l'activitat."
+                    },
+                    {
+                      "handle": "Excepció per durada de vint hores",
+                      "text": "El límit de temps és superior a vint hores."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "NotaAquest criteri de conformitat té com a finalitat assegurar que es puguin completar les diferents tasques sense canvis inesperats de contingut o de context que siguin el resultat d'un límit de temps. Aquest criteri de conformitat s'hauria de considerar en conjunció amb el criteri de conformitat 3.2.1, el qual limita els canvis de contingut o de context com a resultat d'una acció personal."
+                }
               ]
             },
             {
@@ -520,6 +822,37 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "En moviment, que parpelleja, que es desplaça",
+                      "text": "Per a qualsevol informació en moviment, que parpelleja o que es desplaça que (1) s'inicia automàticament, (2) dura més de cinc segons i (3) es presenta de manera paral·lela amb un altre contingut, es proporciona un mecanisme per posar en pausa, aturar o amagar la informació, tret que el moviment, el parpelleig o el desplaçament formin part essencial d'una activitat."
+                    },
+                    {
+                      "handle": "Actualització automàtica",
+                      "text": "Per a qualsevol informació que s'actualitza de manera automàtica que (1) s'inicia automàticament i (2) es presenta de manera paral·lela amb un altre contingut, es proporciona un mecanisme per posar en pausa, aturar o amagar la informació o per controlar-ne la freqüència d'actualització, tret que l'actualització automàtica sigui essencial per al desenvolupament d'una activitat."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 1Per conèixer els requisits relacionats amb contingut que parpelleja o que centelleja, vegeu la directriu 2.3."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2Atès que qualsevol contingut que no compleixi aquest criteri de conformitat pot impossibilitar l'ús de la pàgina completa, el contingut de qualsevol pàgina web ha de complir aquest criteri de conformitat (tant si s'utilitza per complir-ne d'altres com si no). Vegeu el requisit de conformitat 5 (no-interferència)."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 3El contingut que s'actualitza periòdicament amb programari o que es transmet a l'agent d'usuari no està obligat a conservar o presentar la informació generada o rebuda entre l'inici de la pausa o la represa de la informació, ja que això pot ser tècnicament impossible i, en moltes situacions, enganyós."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 4Una animació que es reprodueix com a part d'una fase de precàrrega o en una situació similar es pot considerar essencial si no s'hi pot interactuar durant aquesta fase o si, en cas de no indicar-se'n el progrés, pot confondre o fer pensar que el contingut està aturat o no és vàlid."
+                }
               ]
             },
             {
@@ -567,6 +900,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotaLes regulacions de privacitat poden requerir el consentiment explícit de qui interactua amb la pàgina web abans d'autenticar-se i abans d'emmagatzemar les seves dades. Pel que fa a menors d'edat, no s'ha de sol·licitar consentiment explícit a la majoria de jurisdiccions, països o regions. Es recomana consultar professionals de la privacitat i l'assessorament legal en cas de plantejar-se complir aquest criteri de conformitat mitjançant l'emmagatzematge de dades."
+                }
               ]
             }
           ]
@@ -592,6 +931,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotaAtès que qualsevol contingut que no compleixi aquest criteri de conformitat pot impossibilitar l'ús de la pàgina completa, el contingut de qualsevol pàgina web ha de complir aquest criteri de conformitat (tant si s'utilitza per complir-ne d'altres com si no). Vegeu el requisit de conformitat 5 (no-interferència)."
+                }
               ]
             },
             {
@@ -748,6 +1093,16 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota 1El terme encapçalament s'utilitza en sentit ampli, i inclou els títols i altres maneres d'afegir un encapçalament a diferents tipus de contingut."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2\n\t\t\tAquest criteri de conformitat afecta les seccions de text, i no els components d'interfície d'usuari. Aquests components es tracten al criteri de conformitat 4.1.2."
+                }
               ]
             },
             {
@@ -758,6 +1113,16 @@
               "level": "AA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota 1Si el contingut apareix en una interfície configurable i, per tant, es pot reposicionar, per a la prova i la conformitat d'aquest criteri només es tenen en compte les posicions inicials del contingut mòbil."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2\n\tÉs possible que el component que rep el focus quedi amagat quan es fa l'acció d'obrir un altre contingut. Si es pot mostrar el component enfocat sense avançar el focus del teclat, aquest component no es considera amagat a causa del contingut creat."
+                }
               ]
             },
             {
@@ -778,6 +1143,20 @@
               "level": "AAA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota 1El que es percep com a component o subcomponent de la interfície d'usuari (per determinar-ne la delimitació o la mida) depèn de la presentació visual. La presentació visual inclou el contingut visible, la vora i el fons del component. No inclou efectes d'ombra i brillantor externs al contingut, la vora o el fons del component."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2Alguns exemples de subcomponents que poden rebre un indicador de focus són els elements d'un menú desplegable obert o les cel·les enfocables d'una quadrícula."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 3Els càlculs de contrast es poden basar en colors definits dins de la tecnologia (com ara HTML, CSS i SVG). Els píxels modificats per les millores de resolució de l'agent d'usuari i l'antialiàsing es poden ignorar."
+                }
               ]
             }
           ]
@@ -802,6 +1181,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotaAquest requisit s'aplica al contingut web que interpreta les accions del dispositiu apuntador (és a dir, no s'aplica a les accions necessàries per a l'activació de l'agent d'usuari o de les ajudes tècniques)."
+                }
               ]
             },
             {
@@ -813,6 +1198,37 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Sense esdeveniment d'activació",
+                      "text": "L'esdeveniment d'activació del dispositiu apuntador no es fa servir per executar cap part de la funció."
+                    },
+                    {
+                      "handle": "Interrompre o desfer",
+                      "text": "L'esdeveniment de desactivació completa la funció, i es disposa d'un mecanisme per interrompre-la o desfer-la després de completar-la."
+                    },
+                    {
+                      "handle": "Inversió",
+                      "text": "L'esdeveniment de desactivació inverteix qualsevol resultat de l'esdeveniment d'activació precedent."
+                    },
+                    {
+                      "handle": "Essencial",
+                      "text": "És essencial completar la funció en l'esdeveniment d'activació."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 1Les funcions que imiten un teclat o un teclat numèric es consideren essencials."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2\n\t\t\tAquest requisit s'aplica al contingut web que interpreta les accions del dispositiu apuntador (és a dir, no s'aplica a les accions necessàries per a l'activació de l'agent d'usuari o de les ajudes tècniques)."
+                }
               ]
             },
             {
@@ -824,6 +1240,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotaEs considera una bona pràctica incloure el text de l'etiqueta al principi del nom."
+                }
               ]
             },
             {
@@ -835,6 +1257,21 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Interfície compatible",
+                      "text": "El moviment s'utilitza per activar la funcionalitat mitjançant una interfície compatible amb l'accessibilitat."
+                    },
+                    {
+                      "handle": "Essencial",
+                      "text": "El moviment és essencial per a la funció i no fer-lo invalida l'activitat."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -846,6 +1283,29 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Equivalent",
+                      "text": "L'objectiu està disponible mitjançant un enllaç o un control equivalent a la mateixa pàgina que fa com a mínim 44 per 44 píxels CSS."
+                    },
+                    {
+                      "handle": "Incorporat",
+                      "text": "L'objectiu és en una frase o en un bloc de text."
+                    },
+                    {
+                      "handle": "Control de l'agent d'usuari",
+                      "text": "La mida de l'objectiu està determinada per l'agent d'usuari i no s'ha modificat posteriorment."
+                    },
+                    {
+                      "handle": "Essencial",
+                      "text": "Una presentació concreta de l'objectiu és essencial per transmetre la informació."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -867,6 +1327,12 @@
               "level": "AA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotaAquest requisit s'aplica al contingut web que interpreta les accions del dispositiu apuntador (és a dir, no s'aplica a les accions necessàries per fer funcionar l'agent d'usuari o la tecnologia d'assistència)."
+                }
               ]
             },
             {
@@ -877,6 +1343,16 @@
               "level": "AA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota 1Els objectius que permeten seleccionar els valors espacialment en funció de la posició dins de l'objectiu es consideren un objectiu a efectes del criteri de conformitat. Els exemples inclouen controls lliscants, selectors de color que mostren un degradat de colors o àrees editables on es col·loca el cursor."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2Per als objectius en línia, l'alçada de la línia s'ha d'interpretar com a perpendicular al flux de text. Per exemple, en un idioma que es mostra verticalment, l'alçada de la línia seria horitzontal."
+                }
               ]
             }
           ]
@@ -1058,6 +1534,16 @@
               "level": "A",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota 1Els mecanismes d'ajuda es poden proporcionar directament a la pàgina o es poden proporcionar mitjançant un enllaç directe a una pàgina diferent que contingui la informació."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2Per a aquest criteri de conformitat, \"el mateix ordre en relació amb el contingut d'altres pàgines\" pot ser com s'ordena el contingut quan se serialitza la pàgina. És probable que la posició visual d'un mecanisme d'ajuda sigui coherent entre les pàgines per a la mateixa variació de pàgina (per exemple, el punt d'interrupció CSS). Els canvis que es facin, com ara modificar el zoom o l'orientació de la pàgina, poden provocar una variació de pàgina diferent. Aquest criteri es refereix a l'ordre relatiu entre les pàgines que es mostren en la mateixa variació de pàgina (per exemple, el mateix nivell de zoom i orientació)."
+                }
               ]
             }
           ]
@@ -1119,6 +1605,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Reversible",
+                      "text": "Qualsevol tramesa de dades és reversible."
+                    },
+                    {
+                      "handle": "Comprovable",
+                      "text": "Les dades introduïdes es comproven per detectar-hi possibles errors d'entrada i es dona l'oportunitat de corregir-les."
+                    },
+                    {
+                      "handle": "Confirmable",
+                      "text": "Es disposa d'un mecanisme que permet de revisar, confirmar o corregir la informació abans d'acabar la tramesa."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -1143,6 +1648,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Reversible",
+                      "text": "Qualsevol tramesa de dades és reversible."
+                    },
+                    {
+                      "handle": "Comprovable",
+                      "text": "Les dades introduïdes es comproven per detectar-hi possibles errors d'entrada i es dona l'oportunitat de corregir-les."
+                    },
+                    {
+                      "handle": "Confirmable",
+                      "text": "Es disposa d'un mecanisme que permeti de revisar, confirmar o corregir la informació abans d'acabar la tramesa."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -1163,6 +1687,37 @@
               "level": "AA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Alternativa",
+                      "text": "Hi ha un altre mètode d'autenticació que no es basa en una prova cognitiva."
+                    },
+                    {
+                      "handle": "Mecanisme",
+                      "text": "Hi ha un mecanisme disponible per ajudar a completar la prova cognitiva."
+                    },
+                    {
+                      "handle": "Reconeixement d'objectes",
+                      "text": "La prova cognitiva consisteix a reconèixer objectes."
+                    },
+                    {
+                      "handle": "Contingut personal",
+                      "text": "La prova cognitiva consisteix a identificar el contingut no textual que proporciona qui interactua amb el lloc web."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 1El \"Reconeixement d'objectes\" i el \"Contingut personal\" poden ser imatges, vídeos o àudios."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2Alguns exemples de mecanismes que compleixen aquest criteri són:\n\t\t\t\n\t\t\tPermetre l'entrada de contrasenyes amb gestors de contrasenyes per evitar haver-les de recordar.\n\t\t\tPermetre copiar i enganxar per reduir la càrrega cognitiva de tornar a escriure."
+                }
               ]
             },
             {
@@ -1173,6 +1728,21 @@
               "level": "AAA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Alternativa",
+                      "text": "Hi ha un altre mètode d'autenticació que no es basa en una prova cognitiva."
+                    },
+                    {
+                      "handle": "Mecanisme",
+                      "text": "Hi ha un mecanisme disponible per ajudar a completar la prova cognitiva."
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -1211,6 +1781,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotaAquest criteri es va adoptar per resoldre els problemes que presentaven algunes ajudes tècniques en relació amb l'anàlisi sintàctica d'HTML. Actualment, les ajudes tècniques ja no han d'analitzar sintàcticament l'HTML. Per tant, aquests problemes o ja no existeixen o es resolen per mitjà d'altres criteris. Aquest criteri ja no té utilitat i s'ha eliminat."
+                }
               ]
             },
             {
@@ -1223,6 +1799,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotaAquest criteri de conformitat està pensat principalment per a la creació de webs en què es desenvolupen o programen controls d'interfície d'usuari propis. Per exemple, els controls estàndard d'HTML ja compleixen aquest criteri de conformitat quan s'utilitzen d'acord amb l'especificació."
+                }
               ]
             },
             {

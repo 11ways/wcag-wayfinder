@@ -42,6 +42,37 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Controles, Entrada",
+                      "text": "Se o conteúdo não textual for um controle ou aceitar a entrada de dados por parte do usuário, então esse conteúdo não textual possui um nome que descreve a sua finalidade. (Consultar o Critério de Sucesso 4.1.2 para requisitos adicionais de controles e conteúdo que aceitam entrada de dados por parte do usuário)"
+                    },
+                    {
+                      "handle": "Mídias com base no tempo",
+                      "text": "Se o conteúdo não textual consiste em mídia baseada em tempo, então as alternativas textuais fornecem, no mínimo, uma identificação descritiva do conteúdo não textual (Consulte a Diretriz 1.2 para obter os requisitos adicionais para mídia)."
+                    },
+                    {
+                      "handle": "Teste",
+                      "text": "Se o conteúdo não textual for um teste ou um exercício, que ficaria inválido se fosse apresentado em texto, então as alternativas textuais fornecem, no mínimo, uma identificação descritiva do conteúdo não textual."
+                    },
+                    {
+                      "handle": "Sensorial",
+                      "text": "Se a finalidade do conteúdo não textual for, essencialmente, criar uma experiência sensorial específica, então as alternativas textuais fornecem, no mínimo, uma identificação descritiva do conteúdo não textual."
+                    },
+                    {
+                      "handle": "CAPTCHA",
+                      "text": "Se a finalidade do conteúdo não textual for confirmar que o conteúdo está sendo acessado por uma pessoa e não por um computador, então devem ser fornecidas alternativas textuais que identificam e descrevem a finalidade do conteúdo não textual. Formas alternativas de CAPTCHA, que utilizam modos de saída para diferentes tipos de percepção sensorial, devem ser apresentadas para atender diferentes deficiências."
+                    },
+                    {
+                      "handle": "Decoração, Formatação, Invisível",
+                      "text": "Se o conteúdo não textual for meramente decorativo, se for utilizado apenas para formatação visual, ou se não for exibido aos usuários, então esse conteúdo não textual deve ser implementado de uma forma que possa ser ignorado pelas tecnologias assistivas."
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -67,6 +98,21 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Apenas áudio pré-gravado",
+                      "text": "É fornecida uma alternativa para mídia com base em tempo que apresenta informação equivalente para o conteúdo composto por apenas áudio pré-gravado."
+                    },
+                    {
+                      "handle": "Apenas vídeo pré-gravado",
+                      "text": "É fornecida uma alternativa em mídia com base em tempo ou uma faixa de áudio que apresenta informação equivalente para o conteúdo apenas de vídeo pré-gravado."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -212,6 +258,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotaPara requisitos relacionados com a cor, consulte a Diretriz 1.4."
+                }
               ]
             },
             {
@@ -223,6 +275,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotaExemplos em que uma determinada orientação de exibição pode ser essencial são um cheque bancário, uma aplicação de piano, slides para projetor ou televisão ou conteúdo de realidade virtual em que o conteúdo não está necessariamente restrito à orientação de exibição paisagem ou retrato."
+                }
               ]
             },
             {
@@ -270,6 +328,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotaEste critério de sucesso aborda especificamente a percepção de cores. Outras formas de percepção são abordadas na  Diretriz 1.3 incluindo o acesso às cores por meio de código de programação e outras codificações de apresentação visual."
+                }
               ]
             },
             {
@@ -282,6 +346,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NOTAUma vez que qualquer conteúdo que não cumpra este critério de sucesso pode interferir na capacidade de um usuário de usar toda a página, todo o conteúdo da página web (quer seja ou não utilizado para cumprir outros critérios de sucesso) deve atender este critério de sucesso.  Consulte o  Requisito de Conformidade 5: Não-Interferência."
+                }
               ]
             },
             {
@@ -294,6 +364,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Texto Ampliado",
+                      "text": "Texto em tamanho grande e as imagens compostas por texto em tamanho grande têm uma relação de contraste de, no mínimo, 3:1;"
+                    },
+                    {
+                      "handle": "Texto em plano Secundário",
+                      "text": "O texto ou imagens de texto que fazem parte de um componente de interface de usuário inativo, que são meramente decorativos, que não estão visíveis para ninguém, ou que são parte de uma imagem que inclui outro conteúdo visual significativo, não têm requisito de contraste."
+                    },
+                    {
+                      "handle": "Logotipos",
+                      "text": "O texto que faz parte de um logotipo ou marca comercial não tem requisito mínimo de contraste."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -318,6 +407,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Personalizável",
+                      "text": "A imagem de texto pode ser visualmente personalizada de acordo com os requisitos do usuário;"
+                    },
+                    {
+                      "handle": "Essencial",
+                      "text": "Uma determinada apresentação de texto é essencial para as informações que serão transmitidas."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "NotaOs logotipos (texto que faz parte de um logotipo ou marca comercial) são considerados essenciais."
+                }
               ]
             },
             {
@@ -330,6 +438,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Texto Ampliado",
+                      "text": "Texto em tamanho grande e as imagens compostas por texto em tamanho grande têm uma relação de contraste de, no mínimo, 4.5:1;"
+                    },
+                    {
+                      "handle": "Texto em plano Secundário",
+                      "text": "O texto ou as imagens de texto que fazem parte de um componente de interface de usuário inativo, que são meramente decorativos, que não estão visíveis para ninguém, ou que fazem parte de uma imagem que inclui outro conteúdo visual significativo, não têm requisito de contraste."
+                    },
+                    {
+                      "handle": "Logotipos",
+                      "text": "O texto que faz parte de um logotipo ou marca comercial não tem requisito de contraste."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -342,6 +469,29 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Sem Fundo",
+                      "text": "O áudio não contém sons de fundo."
+                    },
+                    {
+                      "handle": "Desligar",
+                      "text": "Os sons de fundo podem ser desligados."
+                    },
+                    {
+                      "handle": "20 dB",
+                      "text": "Os sons de fundo são, no mínimo, 20 decibéis mais baixos que o conteúdo da voz em primeiro plano, com a exceção de sons ocasionais que duram apenas um ou dois segundos."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "NotaDe acordo com a definição de \"decibel\", o som de fundo que cumprir este requisito será, aproximadamente, quatro vezes mais baixo do que o conteúdo de voz em primeiro plano."
+                }
               ]
             },
             {
@@ -354,6 +504,16 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota 1Não é obrigatório que o conteúdo use esses valores. A exigência é que um mecanismo esteja disponível para usuários mudarem esses aspectos da apresentação. O mecanismo pode ser fornecido pelo navegador ou outro agente usuário. Não é obrigatório que o conteúdo forneça o mecanismo."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2Sistemas de escrita para algumas línguas usam diferentes aspectos de apresentação para melhorar a leitura e a legibilidade. Se um aspecto de apresentação nesse critério de sucesso não for usado no sistema de escrita, o conteúdo naquele sistema de escrita não precisa usar aquela configuração de apresentação e pode estar em conformidade sem ele. Os autores são incentivados a seguir as diretrizes para melhorar a legibilidade do texto em seu sistema de escrita."
+                }
               ]
             },
             {
@@ -366,6 +526,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotaOs logotipos (texto que faz parte de um logotipo ou marca comercial) são considerados essenciais."
+                }
               ]
             },
             {
@@ -377,6 +543,16 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota 1320 pixels CSS equivalem a uma largura de janela de exibição (viewport) inicial de 1.280 pixels de largura, com zoom de 400%. Para conteúdo da Web projetado para rolar horizontalmente (por exemplo, com texto vertical), os 256 pixels CSS equivalem a uma altura inicial da janela de exibição de 1024px com zoom de 400%."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2Exemplos de conteúdo que exigem layout bidimensional são imagens \n                      necessárias para compreensão (como mapas e diagramas), vídeos, jogos, \n                      apresentações, tabelas de dados (não células individuais) e interfaces \n                      onde seja necessário manter as barras de ferramentas em exibição ao \n                      manipular o conteúdo. É aceitável fornecer rolagem bidimensional para \n                      tais partes do conteúdo."
+                }
               ]
             },
             {
@@ -388,6 +564,21 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Componentes de Interface de Usuário",
+                      "text": "Informações visuais necessárias para identificar estados e componentes de interface de usuário, exceto para componentes inativos ou quando a aparência do componente é determinada pelo agente de usuário e não é modificada pelo autor;"
+                    },
+                    {
+                      "handle": "Objetos Gráficos",
+                      "text": "Partes de gráficos necessárias para entender o conteúdo, exceto quando uma apresentação específica de gráficos é essencial para as informações que estão sendo transmitidas."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -399,6 +590,16 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota 1O conteúdo não precisa usar esses valores de espaçamento de texto, a exigência é de garantir que, quando um usuário substitui o espaçamento de texto do autor, o conteúdo ou a funcionalidade não sejam perdidos."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2Sistemas de escrita para algumas línguas usam diferentes configurações de espaçamento de texto, como o recuo de início de parágrafo. Autores são incentivados a seguir as orientações disponíveis localmente para melhorar a legibilidade do texto em seu sistema de escrita."
+                }
               ]
             },
             {
@@ -410,6 +611,37 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Descartável",
+                      "text": "Um mecanismo está disponível para descartar conteúdo adicional sem mover o ponteiro do mouse ou o foco do teclado, a menos que o conteúdo adicional comunique um erro de entrada ou não oculte ou substitua outro conteúdo;"
+                    },
+                    {
+                      "handle": "Flutuante (passar o cursor sobre)",
+                      "text": "Se ao passar sobre o conteúdo adicional, o ponteiro do mouse puder acioná-lo, então o ponteiro poderá ser movido sobre o conteúdo adicional sem que o conteúdo adicional desapareça;"
+                    },
+                    {
+                      "handle": "Persistente",
+                      "text": "O conteúdo adicional permanece visível até que o gatilho de foco do mouse ou do teclado seja removido, o usuário o descarte ou sua informação não seja mais válida."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 1Exemplos de conteúdos adicionais controlados pelo agente de usuário incluem tooltips de navegador criados por meio do uso do atributo title do HTML (em inglês)[HTML]."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2Tooltips personalizados, submenus e outros popups não modais exibidos ao passar o cursor sobre e com o foco são exemplos de conteúdos adicionais cobertos por esse critério."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 3Este critério se aplica ao conteúdo que aparece adicionalmente ao componente de gatilho em si. Como componentes escondidos que se tornam visíveis no foco do teclado (como links utilizados para pular para outra parte da página) não apresentam conteúdo adicional, não são cobertos por este critério."
+                }
               ]
             }
           ]
@@ -448,6 +680,16 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota 1Esta exceção diz respeito à função subjacente, não à técnica de entrada de dados. Por exemplo, se utilizar escrita manual para introduzir texto, a técnica de entrada de dados (escrita manual) requer entrada de dados dependente de caminho, mas a função subjacente (entrada de texto) não."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2Isto não proíbe, e não deve desencorajar, a entrada de dados através do mouse ou outros métodos de entrada de dados em conjunto à operação com o teclado."
+                }
               ]
             },
             {
@@ -460,6 +702,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotaComo qualquer conteúdo que não cumpra este critério de sucesso pode interferir na capacidade do usuário de usar a página inteira, todo o conteúdo da página da Web (seja usado ou não para cumprir outros critérios de sucesso) deve cumprir este critério de sucesso.  Consulte o  Requisito de Conformidade 5: Não Interferência."
+                }
               ]
             },
             {
@@ -483,6 +731,25 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Desativar",
+                      "text": "Um mecanismo está disponível para desativar o atalho;"
+                    },
+                    {
+                      "handle": "Remapear",
+                      "text": "Um mecanismo está disponível para remapear o atalho para usar um ou mais caracteres de teclado não imprimíveis (por exemplo, Ctrl, Alt etc);"
+                    },
+                    {
+                      "handle": "Ativo apenas quando recebe o foco",
+                      "text": "O atalho do teclado para um componente de interface de usuário está ativo apenas quando esse componente está em foco."
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -508,6 +775,41 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Desligar",
+                      "text": "O usuário pode desligar o limite de tempo antes de atingi-lo; ou"
+                    },
+                    {
+                      "handle": "Ajustar",
+                      "text": "O usuário pode ajustar o limite de tempo antes de atingi-lo em um amplo intervalo que seja pelo menos dez vezes maior que a duração da configuração padrão; ou"
+                    },
+                    {
+                      "handle": "Prolongar",
+                      "text": "O usuário é avisado antes de o tempo expirar e tem, no mínimo, 20 segundos para prolongar o limite de tempo com uma simples ação (por exemplo, \"pressionar a barra de espaços\"), e o usuário pode prolongar o limite de tempo, no mínimo, dez vezes; ou"
+                    },
+                    {
+                      "handle": "Exceção em Tempo Real",
+                      "text": "O limite de tempo é uma parte necessária de um evento em tempo real (por exemplo, um leilão), e não é possível nenhuma alternativa ao limite de tempo; ou"
+                    },
+                    {
+                      "handle": "Exceção Essencial",
+                      "text": "O limite de tempo é essencial e prolongá-lo invalidaria a atividade; ou"
+                    },
+                    {
+                      "handle": "Exceção de 20 Horas",
+                      "text": "O limite de tempo é superior a 20 horas."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "NOTA\n             Este critério de sucesso ajuda a garantir que os usuários possam concluir tarefas sem alterações inesperadas no conteúdo ou contexto, que sejam resultado de um limite de tempo. Este critério de sucesso deve ser considerado em conjunto com o Critério de Sucesso 3.2.1, que impõe limites nas alterações de conteúdo ou contexto como resultado da ação do usuário."
+                }
               ]
             },
             {
@@ -520,6 +822,37 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Informações em movimento, piscando, rolando",
+                      "text": "Para qualquer informação que se mova, pisque ou role e que (1) sejam iniciadas automaticamente, (2) durem mais de cinco segundos e (3) sejam apresentadas em paralelo com outro conteúdo, deve haver um mecanismo que permita ao usuário pausar,parar ou ocultar, a menos que o movimento, o piscar ou a rolagem façam parte de uma atividade em que isso seja essencial; e"
+                    },
+                    {
+                      "handle": "Em atualização automática",
+                      "text": "Para quaisquer informações em atualização automática, que (1) sejam iniciadas automaticamente e (2) sejam apresentadas em paralelo com outro conteúdo, existe um mecanismo para o usuário colocar em pausa, parar ou ocultar as mesmas, ou controlar a frequência da atualização, a menos que a atualização automática faça parte de uma atividade, onde é essencial."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "NOTA 1Para requisitos relacionados a conteúdo oscilante ou flash intermitente, \n              consulte a Diretriz 2.3."
+                },
+                {
+                  "type": "note",
+                  "text": "NOTA 2Uma vez que qualquer conteúdo que não cumpra este critério de sucesso pode interferir com a capacidade de um usuário de usar toda a página, todo o conteúdo da página web (quer seja ou não utilizado para cumprir outros critérios de sucesso) tem que cumprir este critério de sucesso. Consulte o Requisito de Conformidade 5: Não-Interferência."
+                },
+                {
+                  "type": "note",
+                  "text": "NOTA 3O conteúdo que é atualizado periodicamente por software ou que é transmitido ao agente do usuário não tem obrigação de preservar ou apresentar as informações geradas ou recebidas entre o início de uma pausa e a continuação da apresentação, uma vez que pode não ser tecnicamente possível e, em muitas situações, pode ser confuso fazê-lo."
+                },
+                {
+                  "type": "note",
+                  "text": "NOTA 4Uma animação que ocorra como parte de uma fase de pré-carregamento ou situação semelhante pode ser considerada essencial se a interação não puder ocorrer durante essa fase para todos os usuários e se a não indicação do progresso puder confundir os usuários e levá-los a pensar que o conteúdo está congelado ou danificado."
+                }
               ]
             },
             {
@@ -567,6 +900,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotaAs políticas de privacidade podem exigir o consentimento explícito do usuário antes que a identificação do usuário seja autenticada e antes que os dados do usuário sejam preservados. Nos casos em que o usuário é menor de idade, o consentimento explícito não pode ser solicitado na maioria das jurisdições, países ou regiões. Aconselha-se a consulta com profissionais de privacidade e assessoria jurídica ao se considerar a preservação de dados como uma abordagem para satisfazer esse critério de sucesso."
+                }
               ]
             }
           ]
@@ -592,6 +931,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NOTA Uma vez que qualquer conteúdo que não cumpra este critério de sucesso pode interferir com a capacidade de um usuário de usar toda a página, todo o conteúdo da página web (quer seja ou não utilizado para cumprir outros critérios de sucesso) tem que cumprir este critério de sucesso. Consulte o Requisito de Conformidade 5: Não-Interferência."
+                }
               ]
             },
             {
@@ -748,6 +1093,16 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NOTA 1\"Cabeçalho\" é utilizado no seu significado geral e inclui títulos e outras formas para adicionar um cabeçalho a diferentes tipos de conteúdo."
+                },
+                {
+                  "type": "note",
+                  "text": "NOTA 2Este critério de sucesso abrange seções sobre escrita, não sobre componentes de interface do usuário. Os componentes de interface do usuário são abrangidos pelo Critério de Sucesso 4.1.2."
+                }
               ]
             },
             {
@@ -758,6 +1113,16 @@
               "level": "AA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota 1Quando o conteúdo numa interface configurável puder ser reposicionado pelo usuário, apenas as posições iniciais de conteúdos que podem ser movidos pelo usuário serão consideradas para teste e conformidade com este Critério de Sucesso."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2O conteúdo aberto pelo usuário pode obscurecer o componente recebendo o foco. Se o usuário pode revelar o componente focado sem avançar o foco do teclado, o componente com foco não é considerado escondido devido ao conteúdo criado pelo autor."
+                }
               ]
             },
             {
@@ -778,6 +1143,20 @@
               "level": "AAA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota 1      \n        O que é percebido como o componente ou subcomponente da interface de usuário (para determinar a delimitação ou tamanho) depende da sua  apresentação visual. A apresentação visual inclui o conteúdo visível, a borda e o plano de fundo específico do componente. Ela não inclui efeitos de sombra ou brilho fora do conteúdo, fundo ou borda do componente."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2Exemplos de subcomponentes que podem receber um indicador de foco são itens de menu em um menu suspenso (drop-down menu), ou células que podem focar em uma grade."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 3\n        Cálculos de contraste podem ser baseados nas cores definidas dentro da tecnologia (como HTML, CSS e SVG). Os pixels modificados por melhorias de resolução do agente do usuário e suavização de serrilhado (anti-aliasing) podem ser ignorados."
+                }
               ]
             }
           ]
@@ -802,6 +1181,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotaEste requisito se aplica ao conteúdo Web que interpreta ações de ponteiro (por exemplo, isto não se aplica a ações exigidas para operar o agente de usuário ou tecnologia assistiva)."
+                }
               ]
             },
             {
@@ -813,6 +1198,37 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Sem Down-Event",
+                      "text": "O down-event do ponteiro não é utilizado para executar nenhuma parte da função;"
+                    },
+                    {
+                      "handle": "Interromper ou Desfazer",
+                      "text": "A conclusão da função está no up-event, e um mecanismo está disponível para interromper a função antes da conclusão ou para desfazer a função após a conclusão;"
+                    },
+                    {
+                      "handle": "Ativação Reversa",
+                      "text": "O up-event reverte qualquer resultado do down-event precedente."
+                    },
+                    {
+                      "handle": "Essencial",
+                      "text": "É essencial completar a função no down-event."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 1As funções que emulam o pressionamento de teclas de um teclado convencional ou numérico são consideradas essenciais."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2Este requisito se aplica ao conteúdo Web que interpreta ações de ponteiro (por exemplo, isto não se aplica a ações exigidas para operar o agente de usuário ou a tecnologia assistiva)."
+                }
               ]
             },
             {
@@ -824,6 +1240,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotaA melhor prática é ter o texto do rótulo no começo do nome."
+                }
               ]
             },
             {
@@ -835,6 +1257,21 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Interface com suporte",
+                      "text": "O movimento é usado para operar a funcionalidade por meio de uma interface com suporte a acessibilidade;"
+                    },
+                    {
+                      "handle": "Essencial",
+                      "text": "O movimento é essencial para a função e fazendo isso invalidaria a atividade."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -846,6 +1283,29 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Equivalente",
+                      "text": "O alvo está disponível por meio de um link ou controle equivalente na mesma página, com pelo menos 44 por 44 pixels CSS;"
+                    },
+                    {
+                      "handle": "Em linha",
+                      "text": "O alvo está em uma sentença ou bloco de texto;"
+                    },
+                    {
+                      "handle": "Controle de Agente de Usuário",
+                      "text": "O tamanho do alvo é determinado pelo agente de usuário e não é modificado pelo autor;"
+                    },
+                    {
+                      "handle": "Essencial",
+                      "text": "Uma apresentação específica do alvo é essencial para as informações que estão sendo transmitidas."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -867,6 +1327,12 @@
               "level": "AA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotaEste requisito se aplica ao conteúdo web que interpreta ações do cursor (ou seja, não se aplica a ações exigidas para operar o agente de usuário ou a tecnologia assistiva)."
+                }
               ]
             },
             {
@@ -877,6 +1343,16 @@
               "level": "AA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota 1Alvos que permitem que os valores sejam selecionados espacialmente com base na posição dentro do alvo são considerados um alvo para os fins do critério de sucesso. Exemplos incluem controle de deslizamento, escolha de cor mostrando um gradiente de cores, ou áreas editáveis onde se posiciona o cursor."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2Alvos que permitem que os valores sejam selecionados espacialmente com base na posição dentro do alvo são considerados um alvo para os fins do critério de sucesso. Exemplos incluem controle de deslizamento, escolha de cor mostrando um gradiente de cores, ou áreas editáveis onde se posiciona o cursor."
+                }
               ]
             }
           ]
@@ -1058,6 +1534,16 @@
               "level": "A",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Nota 1Mecanismos de ajuda podem ser fornecidos diretamente na página ou podem ser fornecidos via um link direto para uma página diferente que contém a informação."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2Para este Critério de Sucesso, \"na mesma ordem em relação a outros conteúdos da página\" pode ser pensada em termos de como o conteúdo é ordenado quando a página é encadeada. A posição visual de um mecanismo de ajuda provavelmente será consistente em todas as páginas para a mesma variação de página (por exemplo, CSS break-point). O usuário pode iniciar uma mudança, como mudar o zoom ou a orientação da página, o que pode desencadear uma variação de página diferente. Esse critério se preocupa com a ordem relativa entre as páginas exibidas na mesma variação de página (por exemplo, mesmo nível de zoom e orientação)."
+                }
               ]
             }
           ]
@@ -1119,6 +1605,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Reversível",
+                      "text": "Os envios de informações são reversíveis."
+                    },
+                    {
+                      "handle": "Verificado",
+                      "text": "Os dados introduzidos pelo usuário são verificados quanto à existência de erros de entrada e é oferecida ao usuário uma oportunidade de corrigi-los."
+                    },
+                    {
+                      "handle": "Confirmado",
+                      "text": "Um mecanismo está disponível para rever, confirmar e corrigir as informações antes de finalizar o envio."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -1143,6 +1648,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Reversível",
+                      "text": "As submissões são reversíveis."
+                    },
+                    {
+                      "handle": "Verificado",
+                      "text": "Os dados introduzidos pelo usuário são verificados quanto à existência de <a href=\"https://www.w3.org/TR/WCAG22/#dfn-input-error\" id=\"ref-for-dfn-input-error-5\">erros de entrada</a> e é oferecida ao usuário uma oportunidade de corrigi-los."
+                    },
+                    {
+                      "handle": "Confirmado",
+                      "text": "Um <a href=\"https://www.w3.org/TR/WCAG22/#dfn-mechanism\" id=\"ref-for-dfn-mechanism-15\">mecanismo</a> está disponível para rever, confirmar e corrigir as informações antes de finalizar o envio."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -1163,6 +1687,37 @@
               "level": "AA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Alternativa",
+                      "text": "Outro método de autenticação que não depende de um teste de função cognitiva."
+                    },
+                    {
+                      "handle": "Mecanismo",
+                      "text": "Um mecanismo está disponível para ajudar o usuário a completar o teste de função cognitiva."
+                    },
+                    {
+                      "handle": "Reconhecimento de objeto",
+                      "text": "O teste de função cognitiva consiste em reconhecer objetos."
+                    },
+                    {
+                      "handle": "Conteúdo pessoal",
+                      "text": "O teste de função cognitiva consiste em identificar conteúdo não textual que o usuário fornece ao website."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 1\"Reconhecimento de objeto\" e \"Conteúdo pessoal\" pode ser representado por imagens, vídeos ou áudios."
+                },
+                {
+                  "type": "note",
+                  "text": "Nota 2Exemplos de mecanismos que satisfazem esse critério incluem:\n        \n            apoio para a inserção de senha por gerenciadores de senha para reduzir a necessidade de memorização, e\n            copiar e colar para reduzir a carga cognitiva de redigitar."
+                }
               ]
             },
             {
@@ -1173,6 +1728,21 @@
               "level": "AAA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Alternativa",
+                      "text": "Outro método de autenticação que não depende de um teste de função cognitiva"
+                    },
+                    {
+                      "handle": "Mecanismo",
+                      "text": "Um mecanismo está disponível para ajudar o usuário a completar o teste de função cognitiva"
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -1211,6 +1781,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NOTAEsse critério foi originalmente adotado para abordar problemas que a tecnologia assistiva tinha ao analisar o HTML diretamente. A tecnologia assistiva não tem mais necessidade de analisar o HTML diretamente. Consequentemente, esses problemas ou não existem mais ou são abordados por outros critérios. Esse critério não tem mais utilidade e foi removido."
+                }
               ]
             },
             {
@@ -1223,6 +1799,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NOTAEste critério de sucesso destina-se, essencialmente, a autores da Web que desenvolvem ou criam os seus próprios componentes de interface de usuário. Por exemplo, os controles HTML padrões já cumprem este critério de sucesso quando utilizados de acordo com a especificação."
+                }
               ]
             },
             {

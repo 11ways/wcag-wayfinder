@@ -721,6 +721,7 @@ export function getAllCriteriaWithTranslations(language: string): CriterionWithT
       t.principle_handle as translated_principle_handle,
       t.guideline_handle as translated_guideline_handle,
       t.source_url as translation_source_url,
+      t.details_json as translated_details_json,
       CASE WHEN t.id IS NOT NULL THEN 1 ELSE 0 END as has_translation
     FROM criteria c
     LEFT JOIN criteria_translations t ON c.id = t.criterion_id AND t.language = ?
@@ -737,6 +738,7 @@ export function getAllCriteriaWithTranslations(language: string): CriterionWithT
     translated_title: row.translated_title || undefined,
     translated_principle_handle: row.translated_principle_handle || undefined,
     translated_guideline_handle: row.translated_guideline_handle || undefined,
+    translated_details_json: row.translated_details_json || undefined,
     translation_source_url: row.translation_source_url || undefined
   }));
 }
@@ -915,6 +917,7 @@ export function getCriterionWithMetadataAndTranslation(
     translated_title: translation?.title,
     translated_principle_handle: translation?.principle_handle ?? undefined,
     translated_guideline_handle: translation?.guideline_handle ?? undefined,
+    translated_details_json: translation?.details_json ?? undefined,
     has_translation: !!translation,
     translation_language: translation ? language : 'en',
     translation_source_url: translation?.source_url ?? undefined,

@@ -143,6 +143,7 @@ const server = Bun.serve({
               translated_title: translation?.translated_title,
               translated_principle_handle: translation?.translated_principle_handle,
               translated_guideline_handle: translation?.translated_guideline_handle,
+              translated_details_json: translation?.translated_details_json,
               has_translation: translation?.has_translation ?? false,
               translation_language: translation?.translation_language ?? 'en',
               translation_source_url: translation?.translation_source_url

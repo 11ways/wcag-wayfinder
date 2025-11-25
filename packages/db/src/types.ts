@@ -236,6 +236,7 @@ export interface CriterionTranslation {
   source_url: string | null;
   translator: string | null;
   translation_date: string | null;
+  details_json: string | null;
   created_at: string;
 }
 
@@ -262,6 +263,7 @@ export interface CriterionWithTranslation extends Criterion {
   translated_title?: string;
   translated_principle_handle?: string;
   translated_guideline_handle?: string;
+  translated_details_json?: string;
   has_translation: boolean;
   translation_language?: string;
   translation_source_url?: string;
@@ -273,6 +275,7 @@ export interface CriterionWithMetadataAndTranslation extends CriterionWithMetada
   translated_title?: string;
   translated_principle_handle?: string;
   translated_guideline_handle?: string;
+  translated_details_json?: string;
   has_translation: boolean;
   translation_language?: string;
   translation_source_url?: string;

@@ -42,6 +42,37 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Kontrolki i wprowadzanie danych przez użytkownika",
+                      "text": "Jeśli treść nietekstowa jest kontrolką użytkownika lub polem wprowadzania danych, posiada wtedy nazwę opisującą jej przeznaczenie. ( <a href=\"https://www.w3.org/Translations/WCAG21-pl/#nazwa-rola-wartosc\">Kryterium sukcesu 4.1.2</a> podaje dodatkowe wymagania dotyczące kontrolek oraz wprowadzania danych przez użytkownika.)"
+                    },
+                    {
+                      "handle": "Multimedia",
+                      "text": "Jeśli treścią nietekstową są media oparte na czasie, wtedy alternatywa tekstowa zawiera przynajmniej opisowe określenie treści nietekstowej. ( <a href=\"https://www.w3.org/Translations/WCAG21-pl/#multimedia\">Wytyczna 1.2</a> podaje dodatkowe wymagania, jeśli chodzi o media.)"
+                    },
+                    {
+                      "handle": "Test",
+                      "text": "Jeśli treść nietekstowa jest testem lub ćwiczeniem, które utraciłoby swój sens ze względu na przedstawienie tej samej treści w postaci tekstu , wtedy alternatywa w postaci tekstu podawać powinna przynajmniej opis pozwalający zrozumieć przeznaczenie treści nietekstowej."
+                    },
+                    {
+                      "handle": "Odczucie zmysłowe",
+                      "text": "Jeśli treść nietekstowa ma za zadanie przede wszystkim tworzyć konkretne odczucie zmysłowe , wtedy alternatywa w postaci tekstu jest opisem pozwalającym zrozumieć przeznaczenie treści nietekstowej."
+                    },
+                    {
+                      "handle": "CAPTCHA",
+                      "text": "Jeśli celem treści nietekstowej jest potwierdzenie, że do treści ma dostęp człowiek, a nie komputer, wtedy dostarcza się alternatywę w postaci tekstu, która identyfikuje oraz opisuje cel treści nietekstowej. Dostarcza się również alternatywnych zabezpieczeń typu CAPTCHA, dostosowanych do różnych możliwości percepcji użytkowników, uwzględniając różne rodzaje niepełnosprawności."
+                    },
+                    {
+                      "handle": "Cele dekoracyjne, formatowanie, treść niewidoczna",
+                      "text": "Jeśli treść nietekstowa pełni funkcję czysto dekoracyjną , używana jest do formatowania wizualnego lub też nie jest przedstawiana użytkownikowi, powinna być wdrożona w sposób umożliwiający technologiom wspomagającym jej zignorowanie."
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -67,6 +98,21 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Alternatywa dla audio",
+                      "text": "Zapewniona jest alternatywa tekstowa dla nagrań dźwiękowych przedstawiająca tę samą treść, co nagranie audio."
+                    },
+                    {
+                      "handle": "Alternatywa dla wideo",
+                      "text": "Zapewniona jest alternatywa tekstowa albo audiodeskrypcja dla nagrań zawierających tylko wideo przedstawiająca tę samą treść, co nagranie wideo."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -212,6 +258,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    \n                        Uwaga: Wymagania dotyczące koloru można znaleźć w \n                        Wytycznej 1.4\n                        ."
+                }
               ]
             },
             {
@@ -223,6 +275,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    Przykłady, w których szczególna orientacja wyświetlacza może mieć zasadnicze znaczenie, to np. czek bankowy, aplikacja na pianino, slajdy do projektora czy telewizora lub treść rzeczywistości wirtualnej, gdy treść nie musi być ograniczona do orientacji poziomej lub pionowej."
+                }
               ]
             },
             {
@@ -270,6 +328,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    \n                        To kryterium sukcesu dotyczy szczególnie percepcji koloru. Inne formy percepcji zostały omówione w \n                        Wytycznej 1.3\n                        , w tym programowy dostęp do koloru oraz inne rodzaje zaprogramowania prezentacji wizualnej."
+                }
               ]
             },
             {
@@ -282,6 +346,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    \n                        Ponieważ każda treść, która nie spełnia tego kryterium sukcesu, może utrudnić użytkownikowi odczytanie całej strony, wszelkie treści na stronie (bez względu na to, czy spełniają inne kryteria sukcesu, czy nie) muszą spełnić niniejsze kryterium. Więcej informacji: \n                        5 Spełnienie wymagań: Bez zakłóceń\n                        ."
+                }
               ]
             },
             {
@@ -294,6 +364,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Duży tekst",
+                      "text": "Duży tekst oraz grafiki takiego tekstu posiadają kontrast przynajmniej 3:1;"
+                    },
+                    {
+                      "handle": "Incydentalne",
+                      "text": "Tekst lub obrazy tekstu, które są częścią nieaktywnego komponentu interfejsu użytkownika , które są czystą dekoracją , które nie są widoczne lub które są częścią obrazu zawierającego inne istotne treści wizualne, nie wymagają minimalnego kontrastu;"
+                    },
+                    {
+                      "handle": "Logotyp",
+                      "text": "Tekst, który jest częścią logo lub nazwy własnej produktu (marki), nie wymaga minimalnego kontrastu."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -318,6 +407,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Możliwy do dostosowania",
+                      "text": "Obraz tekstu może być dostosowany wizualnie do wymagań użytkownika;"
+                    },
+                    {
+                      "handle": "Istotny",
+                      "text": "Prezentacja tekstu w postaci graficznej jest istotna dla zrozumienia przekazywanej informacji."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    Logotyp (tekst będący częścią logo lub nazwy własnej produktu) jest uznawany za istotny."
+                }
               ]
             },
             {
@@ -330,6 +438,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Duży tekst",
+                      "text": "Duży tekst oraz grafiki takiego tekstu posiadają kontrast przynajmniej 4,5:1;"
+                    },
+                    {
+                      "handle": "Incydentalne",
+                      "text": "Tekst lub obrazy tekstu, które są częścią nieaktywnego komponentu interfejsu użytkownika , które są czystą dekoracją , które nie są widoczne lub które są częścią obrazu zawierającego inne istotne treści wizualne, nie wymagają wzmocnionego kontrastu;"
+                    },
+                    {
+                      "handle": "Logotyp",
+                      "text": "Tekst, który jest częścią logo lub nazwy własnej produktu (marki), nie wymaga wzmocnionego kontrastu."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -342,6 +469,29 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Bez treści w tle",
+                      "text": "Nagranie audio nie zawiera dźwięków tła."
+                    },
+                    {
+                      "handle": "Możliwość wyłączenia",
+                      "text": "Dźwięki tła mogą zostać wyłączone."
+                    },
+                    {
+                      "handle": "20 dB",
+                      "text": "Głośność dźwięków tła jest przynajmniej o 20 decybeli mniejsza, niż głośność mowy, która stanowi główną treść nagrania, z wyjątkiem okazyjnych, jedno– lub dwusekundowych dźwięków tła."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                            \n                            Z definicji terminu „decybel” wynika, iż dźwięki tła spełniające powyższy wymóg będą 4 razy cichsze od głównej treści nagrania."
+                }
               ]
             },
             {
@@ -366,6 +516,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    Logotyp (tekst będący częścią logo lub nazwy własnej produktu) jest uznawany za istotny."
+                }
               ]
             },
             {
@@ -377,6 +533,16 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    320 pikseli CSS odpowiada początkowej szerokości obszaru roboczego 1280 pikseli CSS przy 400% powiększeniu. Dla treści internetowych, które są przeznaczone do przewijania w poziomie (np. z tekstem pionowym), 256 pikseli CSS odpowiada początkowej wysokości obszaru roboczego 1024 pikseli CSS z 400% powiększeniem."
+                },
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    Przykładami treści, które wymagają dwuwymiarowego układu są obrazy prezentujące np. mapy i diagramy, wideo, gry, prezentacje, tabele danych (nie poszczególne komórki) oraz interfejsy, w których konieczne jest zachowanie pasków narzędzi w widoku podczas manipulacji treścią. Dopuszczalne jest zapewnienie przewijania dwuwymiarowego dla takich części treści."
+                }
               ]
             },
             {
@@ -388,6 +554,21 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Komponenty interfejsu użytkownika",
+                      "text": "Informacje wizualne wymagane do identyfikacji komponentów interfejsu użytkownika i ich stanów , z wyjątkiem nieaktywnych składników lub gdy wygląd komponentu jest określony przez agenta użytkownika i nie jest modyfikowany przez autora;"
+                    },
+                    {
+                      "handle": "Obiekty graficzne",
+                      "text": "Części grafiki wymagane do zrozumienia treści, z wyjątkiem sytuacji, gdy konkretna prezentacja grafiki ma istotne znaczenie dla przekazywanych informacji."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -410,6 +591,33 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Odrzucone",
+                      "text": "Istnieje mechanizm umożliwiający odrzucenie dodatkowej treści bez przesuwania wskaźnika myszy lub fokusu klawiatury, chyba że dodatkowa treść przekazuje błąd wprowadzanych danych lub nie przesłania ani nie zastępuje innej treści;"
+                    },
+                    {
+                      "handle": "Wskazywane",
+                      "text": "Jeśli wskaźnik myszy (hover) może wyzwolić dodatkową treść, wówczas wskaźnik może zostać przeniesiony na dodatkową treść bez znikania dodatkowej treści;"
+                    },
+                    {
+                      "handle": "Trwałe",
+                      "text": "Dodatkowa treść pozostaje widoczna do momentu usunięcia wyzwalacza aktywacji lub fokusu, użytkownik odrzuca go lub jego informacje nie są już ważne."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    \n                        Przykłady dodatkowej treści kontrolowanej przez program użytkownika obejmują podpowiedzi przeglądarki utworzone przy użyciu atrybutu HTML \n                        \n                            title\n                        \n                        ."
+                },
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    Niestandardowe podpowiedzi, podmenu i inne niemodalne wyskakujące okienka wyświetlane w dymku i fokusie to przykłady dodatkowej treści objętej tym kryterium."
+                }
               ]
             }
           ]
@@ -448,6 +656,16 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    Ten wyjątek dotyczy danej funkcji, a nie techniki wprowadzania danych. Na przykład, jeśli do wprowadzania tekstu używa się pisma odręcznego, technika wprowadzania  (pismo odręczne) wymaga wprowadzenia informacji w oparciu o ścieżkę, jednak powiązana z tym funkcja (wprowadzenie tekstu) już tego nie wymaga."
+                },
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    To nie powinno blokować ani ograniczać użycia interfejsu innymi metodami niż klawiatura, np. za pomocą myszki."
+                }
               ]
             },
             {
@@ -460,6 +678,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    \n                        Ponieważ każda treść, która nie spełnia tego kryterium sukcesu może utrudnić użytkownikowi skorzystanie z całej strony, cała treść danej strony (bez względu na to, czy spełnia inne kryteria, czy nie) musi spełnić powyższe kryterium. Więcej informacji: \n                        Spełnienie wymagań 5: Bez zakłóceń\n                        ."
+                }
               ]
             },
             {
@@ -483,6 +707,25 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Wyłączanie",
+                      "text": "Istnieje mechanizm wyłączania skrótu;"
+                    },
+                    {
+                      "handle": "Mapowanie",
+                      "text": "Istnieje mechanizm zmiany mapowania skrótu w celu użycia jednego lub więcej niedrukowalnych znaków klawiatury (np. Ctrl, Alt, itp.);"
+                    },
+                    {
+                      "handle": "Aktywny tylko po otrzymaniu fokusu",
+                      "text": "Skrót klawiaturowy dla komponentu interfejsu użytkownika jest aktywny tylko wtedy, gdy ten komponent ma fokus."
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -508,6 +751,41 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Wyłączenie",
+                      "text": "Użytkownik może wyłączyć limit czasowy, zanim czas upłynie; lub"
+                    },
+                    {
+                      "handle": "Dostosowanie",
+                      "text": "Użytkownik może swobodnie dostosować limit czasowy (przynajmniej o wartość 10 razy większą od wartości domyślnej), zanim czas upłynie; lub"
+                    },
+                    {
+                      "handle": "Wydłużenie",
+                      "text": "Użytkownik jest ostrzegany przed upłynięciem limitu czasowego i ma przynajmniej 20 sekund na wydłużenie limitu za pomocą prostej czynności (np. „wciśnij klawisz spacji”) oraz może wydłużyć limit przynajmniej dziesięciokrotnie; lub"
+                    },
+                    {
+                      "handle": "Wyjątek dotyczący czasu rzeczywistego",
+                      "text": "Limit czasowy jest wymaganym komponentem jakiejś czynności w czasie rzeczywistym (np. aukcji) i nie ma możliwości zmiany limitu; lub"
+                    },
+                    {
+                      "handle": "Wyjątek dotyczący istoty czynności",
+                      "text": "Limit czasowy jest istotny i wydłużenie go anulowałoby lub zaburzałoby daną czynność; lub"
+                    },
+                    {
+                      "handle": "Wyjątek 20 godzin",
+                      "text": "Limit czasowy przekracza 20 godzin."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    \n                        To kryterium sukcesu ma na celu zapewnienie użytkownikowi wystarczającego czasu na wykonanie czynności, bez niespodziewanych zmian treści lub kontekstu, które mogą być wynikiem limitu czasowego. Powinien on być rozpatrywany w połączeniu z \n                        kryterium sukcesu 3.2.1\n                        , które nakłada ograniczenia na zmiany treści lub kontekstu w wyniku działania użytkownika."
+                }
               ]
             },
             {
@@ -520,6 +798,37 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Poruszanie się, przesuwanie, migotanie",
+                      "text": "Każdą informację, która porusza się, przesuwa lub miga, a takie działanie (1) włącza się automatycznie, (2) jest widoczne dłużej niż 5 sekund, (3) jest przedstawiane równolegle z inną treścią — użytkownik może wstrzymać , zatrzymać lub ukryć za pomocą dostępnego mechanizmu, chyba że poruszanie się, przesuwanie lub migotanie jest częścią czynności, w której takie działanie jest istotne , oraz:"
+                    },
+                    {
+                      "handle": "Automatyczna aktualizacja",
+                      "text": "Każdą automatycznie aktualizującą się informację, która (1) włącza się automatycznie oraz (2) jest przedstawiana równolegle z inną treścią — użytkownik może wstrzymać, zatrzymać lub kontrolować częstotliwość aktualizacji za pomocą dostępnego mechanizmu, chyba, że automatyczna aktualizacja jest częścią takiej czynności, w której takie działanie jest niezbędne."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    \n                        Wytyczna 2.3\n                         zawiera więcej informacji na temat treści migoczącej lub zawierającej błyski."
+                },
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    \n                        Ponieważ każda treść, która nie spełnia tego kryterium sukcesu może utrudnić użytkownikowi skorzystanie z całej strony, cała zawartość danej strony (bez względu na to, czy spełnia inne kryteria, czy nie) musi spełnić powyższe kryterium. Więcej informacji: \n                        Spełnienie wymagań: Bez zakłóceń\n                        ."
+                },
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    Treść, która jest aktualizowana okresowo przez aplikację lub przesyłana w sposób ciągły do programu użytkownika, nie musi być przechowywana lub przedstawiana w czasie pomiędzy wstrzymaniem a wznowieniem prezentacji, ponieważ może to być technicznie niemożliwe, a w wielu przypadkach mogłoby wprowadzać użytkownika w błąd."
+                },
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    Animacja, która pojawia się w czasie poprzedzającym załadowanie treści, może być uznana za istotną, jeśli wszyscy użytkownicy nie mogą dokonać interakcji w tym czasie oraz jeśli brak wskazania etapu załadowania mógłby wprowadzić użytkownika w błąd lub mogłoby mu się wydawać, że załadowanie treści zostało zawieszone albo przerwane."
+                }
               ]
             },
             {
@@ -567,6 +876,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    Przepisy dotyczące prywatności mogą wymagać wyraźnej zgody użytkownika przed uwierzytelnieniem tożsamości użytkownika i zachowaniem danych użytkownika. W przypadkach, gdy użytkownik jest nieletni, wyraźna zgoda może nie być wymagana w większości jurysdykcji, krajów lub regionów. Przy rozważaniu ochrony danych jako podejścia do spełnienia tego kryterium sukcesu zaleca się konsultacje ze specjalistami ds. prywatności i radcą prawnym."
+                }
               ]
             }
           ]
@@ -592,6 +907,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    \n                        Ponieważ każda treść, która nie spełnia tego kryterium sukcesu może utrudnić użytkownikowi skorzystanie z całej strony, cała treść danej strony (bez względu na to, czy spełnia inne kryteria, czy nie) musi spełnić powyższe kryterium. Więcej informacji: \n                        Spełnienie wymagań: Bez zakłóceń\n                        ."
+                }
               ]
             },
             {
@@ -748,6 +1069,16 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    Termin „nagłówek” został tu użyty w swoim ogólnym znaczeniu, obejmując tytuły i inne sposoby przypisywania nagłówków do różnego rodzaju treści."
+                },
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    \n                        Powyższe kryterium sukcesu dotyczy sekcji samych tekstów, a nie komponentów interfejsu użytkownika, które omawiane są osobno w ramach \n                        kryterium sukcesu 4.1.2\n                        ."
+                }
               ]
             }
           ]
@@ -772,6 +1103,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    Ten wymóg dotyczy treści internetowych, które interpretują działania dotykowe (tj. nie dotyczy to działań wymaganych do obsługi programu użytkownika (przeglądarki internetowej) lub technologii wspomagającej)."
+                }
               ]
             },
             {
@@ -783,6 +1120,37 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Brak zdarzenia",
+                      "text": "Naciskanie nie wywołuje jakiejkolwiek części zdarzenia;"
+                    },
+                    {
+                      "handle": "Przerwanie lub cofnięcie",
+                      "text": "Zdarzenie jest zależne od zwolnienia nacisku i istnieje mechanizm , którym można je przerwać lub cofnąć po zwolnieniu nacisku;"
+                    },
+                    {
+                      "handle": "Odwrócenie zdarzenia",
+                      "text": "Zwolnienie nacisku cofa wywołane zdarzenie i przywraca stan sprzed zdarzenia;"
+                    },
+                    {
+                      "handle": "Istotne",
+                      "text": "Wciśnięcie jest niezbędne do wywołania zdarzenia."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    Funkcje emulujące naciśnięcie klawiszy klawiatury lub klawiatury numerycznej są uważane za niezbędne."
+                },
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    Ten wymóg dotyczy treści internetowych, które interpretują działania dotykowe (tj. nie dotyczy to działań wymaganych do obsługi programu użytkownika lub technologii wspomagającej)."
+                }
               ]
             },
             {
@@ -794,6 +1162,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    Najlepszą praktyką jest umieszczenie tekstu etykiety na początku nazwy."
+                }
               ]
             },
             {
@@ -805,6 +1179,21 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Obsługiwany interfejs",
+                      "text": "Ruch służy do obsługi funkcjonalności poprzez interfejs obsługiwany przez dostępność ;"
+                    },
+                    {
+                      "handle": "Istotny",
+                      "text": "Ruch jest niezbędny dla funkcji, a to spowodowałoby unieważnienie działania."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -816,6 +1205,29 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Odpowiednik",
+                      "text": "Cel jest dostępny za pośrednictwem równoważnego łącza lub kontrolki na tej samej stronie, która ma co najmniej 44 na 44 piksele CSS;"
+                    },
+                    {
+                      "handle": "Śródliniowe",
+                      "text": "Cel znajduje się w zdaniu lub w bloku tekstu;"
+                    },
+                    {
+                      "handle": "Kontrola programu użytkownika",
+                      "text": "Rozmiar obiektu docelowego jest określony przez program użytkownika (przeglądarkę) i nie jest modyfikowany przez autora;"
+                    },
+                    {
+                      "handle": "Istotny",
+                      "text": "Szczególna prezentacja celu ma istotne znaczenie dla przekazywanych informacji."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -1059,6 +1471,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Odwracalność",
+                      "text": "Wprowadzenie danych jest odwracalne."
+                    },
+                    {
+                      "handle": "Sprawdzanie",
+                      "text": "Dane wprowadzone przez użytkownika są sprawdzane pod kątem błędów, a użytkownik ma możliwość wprowadzenia poprawek."
+                    },
+                    {
+                      "handle": "Potwierdzenie",
+                      "text": "Istnieje mechanizm sprawdzania, potwierdzania oraz korekty informacji przed jej ostatecznym wysłaniem."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -1083,6 +1514,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Odwracalność",
+                      "text": "Wprowadzenie danych jest odwracalne."
+                    },
+                    {
+                      "handle": "Sprawdzanie",
+                      "text": "Dane wprowadzone przez użytkownika są sprawdzane pod kątem błędów, a użytkownik ma możliwość wprowadzenia poprawek."
+                    },
+                    {
+                      "handle": "Potwierdzenie",
+                      "text": "Istnieje mechanizm sprawdzania, potwierdzania oraz korekty informacji przed jej ostatecznym wysłaniem."
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -1121,6 +1571,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    Początkowe i końcowe znaczniki, w których brak kluczowych znaków, takich, jak zamykający nawias ostry lub pytajnik błędnie dopasowany do atrybutu wartości, nie są uznawane za kompletne znaczniki."
+                }
               ]
             },
             {
@@ -1133,6 +1589,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Uwaga\n                    \n                    To kryterium sukcesu jest przede wszystkim dla autorów stron internetowych, którzy opracowują lub skryptują własne komponenty interfejsu użytkownika. Na przykład, standardowe kontrolki HTML już spełniają to kryterium, gdy są używane zgodnie ze specyfikacją."
+                }
               ]
             },
             {

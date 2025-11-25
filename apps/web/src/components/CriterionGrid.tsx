@@ -122,7 +122,7 @@ function CriterionGridCard({
       {isExpanded && (
         <div id={`details-${criterion.id}`} className="mb-3 space-y-2">
           <CriterionDetails
-            detailsJson={criterion.details_json}
+            detailsJson={criterion.translated_details_json || criterion.details_json}
             className="text-xs"
             terms={terms}
           />

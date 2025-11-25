@@ -42,6 +42,37 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Composant d’interface ou de saisie",
+                      "text": "si le contenu non textuel est un composant d’interface ou s’il permet la saisie d’informations par l’utilisateur, alors il a un nom qui décrit sa fonction. (Se référer au Critère de succès 4.1.2 pour des exigences supplémentaires à propos des composants d’interfaces utilisateur ou des contenus qui permettent la saisie d’informations par l’utilisateur.)"
+                    },
+                    {
+                      "handle": "Média temporel",
+                      "text": "si le contenu non textuel est un média temporel, alors l’équivalent textuel fournit au moins une identification descriptive du contenu non textuel. (Se référer à la Règle 1.2 pour des exigences supplémentaires concernant les médias temporels.)"
+                    },
+                    {
+                      "handle": "Test",
+                      "text": "si le contenu non textuel est un test ou un exercice qui serait invalide s’il était présenté en texte, alors l’équivalent textuel fournit au moins une identification descriptive du contenu non textuel."
+                    },
+                    {
+                      "handle": "Contenu sensoriel",
+                      "text": "si le contenu non textuel vise d’abord à créer une expérience sensorielle spécifique, l’équivalent textuel fournit au moins une identification descriptive de ce contenu non textuel."
+                    },
+                    {
+                      "handle": "CAPTCHA",
+                      "text": "si ce contenu non textuel vise à confirmer que le contenu est consulté par une personne plutôt que par un ordinateur, alors un équivalent textuel est fourni pour identifier et décrire la fonction du contenu non textuel, et des formes alternatives du CAPTCHA sont proposées pour différents types de perception sensorielle afin d’accommoder différents types de limitations fonctionnelles."
+                    },
+                    {
+                      "handle": "Décoration, formatage, invisibilité",
+                      "text": "si le contenu non textuel est purement décoratif, s’il est utilisé seulement pour un formatage visuel ou s’il n’est pas présenté à l’utilisateur, alors il est implémenté de manière à être ignoré par les technologies d’assistance."
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -67,6 +98,21 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Contenu pré-enregistré seulement audio",
+                      "text": "fournir une version de remplacement pour un média temporel, présentant une information équivalente au contenu seulement audio."
+                    },
+                    {
+                      "handle": "Contenu pré-enregistré seulement vidéo",
+                      "text": "fournir, soit une version de remplacement pour un média temporel, soit une piste audio (présentant une information équivalente) pour un contenu pré-enregistré seulement vidéo."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -212,6 +258,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotePour les exigences liées à la couleur, se référer à la Règle 1.4."
+                }
               ]
             },
             {
@@ -223,6 +275,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NoteOn compte parmi les exemples où une orientation spécifique de l’affichage peut être essentielle : un chèque de banque, une application de piano, des diapositives pour un projecteur ou une télévision, ou un contenu de réalité virtuelle qui n’est pas nécessairement limité à une orientation d’affichage en mode paysage ou portrait."
+                }
               ]
             },
             {
@@ -270,6 +328,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NoteCe critère de succès traite spécifiquement de la perception des couleurs. Les autres formes de perception sont traitées à la règle 1.3 comme l’accès à la couleur par programme informatique et les autres formes de codage de la présentation visuelle."
+                }
               ]
             },
             {
@@ -282,6 +346,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotePuisque tout contenu ne satisfaisant pas à ce critère de succès peut interférer avec la capacité de l’utilisateur à exploiter la page entière, tout le contenu présent dans la page Web (qu’il soit utilisé pour satisfaire à d’autres critères de succès ou non) doit satisfaire à ce critère de succès. Voir l’exigence de conformité 5 : Non-interférence."
+                }
               ]
             },
             {
@@ -294,6 +364,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Texte agrandi",
+                      "text": "le texte agrandi et le texte agrandi sous forme d’image ont un rapport de contraste d’au moins 3:1."
+                    },
+                    {
+                      "handle": "Texte décoratif",
+                      "text": "aucune exigence de contraste pour le texte ou le texte sous forme d’image qui fait partie d’un composant d’interface utilisateur inactif, qui est purement décoratif, qui est invisible pour tous ou qui est une partie d’une image contenant un autre contenu significatif."
+                    },
+                    {
+                      "handle": "Logotypes",
+                      "text": "aucune exigence de contraste pour le texte faisant partie d’un logo ou d’un nom de marque."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -318,6 +407,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Personnalisable",
+                      "text": "le texte sous forme d’image peut être personnalisé visuellement selon les exigences de l’utilisateur&nbsp;;"
+                    },
+                    {
+                      "handle": "Essentielle",
+                      "text": "une présentation spécifique du texte est essentielle à l’information véhiculée."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "NoteLes logotypes sont considérés comme essentiels (le texte qui fait partie d’un logo ou d’un nom de marque)."
+                }
               ]
             },
             {
@@ -330,6 +438,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Texte agrandi",
+                      "text": "le texte agrandi et le texte agrandi sous forme d’image ont un rapport de contraste d’au moins 4,5:1&nbsp;;"
+                    },
+                    {
+                      "handle": "Texte décoratif",
+                      "text": "aucune exigence de contraste pour le texte ou le texte sous forme d’image qui fait partie d’un composant d’interface utilisateur inactif, qui est purement décoratif, qui est invisible pour tous ou qui est une partie d’une image contenant un autre contenu significatif."
+                    },
+                    {
+                      "handle": "Logotypes",
+                      "text": "aucune exigence de contraste pour le texte faisant partie d’un logo ou d’un nom de marque."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -342,6 +469,29 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Sans arrière-plan",
+                      "text": "le contenu audio ne contient pas d’arrière-plan sonore."
+                    },
+                    {
+                      "handle": "Désactivation",
+                      "text": "l’arrière-plan sonore peut être désactivé."
+                    },
+                    {
+                      "handle": "20 dB",
+                      "text": "l’arrière-plan sonore est au moins 20 décibels plus faible que le contenu parlé au premier plan sauf pour certains effets sonores occasionnels durant seulement une ou deux secondes."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "NotePar la définition du « décibel », le volume de l’arrière-plan sonore correspondant à cette exigence est approximativement quatre fois plus faible que le contenu parlé au premier plan."
+                }
               ]
             },
             {
@@ -354,6 +504,16 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Note 1Le contenu n’est pas tenu d’utiliser ces valeurs. L’exigence est qu’il existe un mécanisme permettant aux utilisateurs de modifier ces aspects de la présentation. Ce mécanisme peut être fourni par le navigateur ou un autre agent utilisateur. Le contenu n’est pas tenu de fournir ce mécanisme."
+                },
+                {
+                  "type": "note",
+                  "text": "Note 2Les systèmes d’écriture de certaines langues utilisent des aspects de présentation différents pour améliorer la lisibilité visuelle et textuelle. Si un aspect de présentation de ce critère de succès n’est pas utilisé dans un système d’écriture, le contenu n’a pas besoin d’utiliser ce paramètre et peut être conforme sans lui. Les auteurs sont encouragés à suivre les conseils pour améliorer la lisibilité visuelle et textuelle dans leur système d’écriture."
+                }
               ]
             },
             {
@@ -366,6 +526,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NoteLes logotypes (le texte qui fait partie d’un logo ou d’un nom de marque) sont considérés comme essentiels."
+                }
               ]
             },
             {
@@ -377,6 +543,16 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Note 1320 pixels CSS équivaut à une largeur d’affichage initiale de 1280 pixels CSS avec un zoom de 400 %. Pour un contenu Web conçu pour défiler horizontalement (par exemple, avec du texte vertical), la valeur de 256 pixels CSS équivaut à une hauteur d’affichage initiale de 1024 pixels CSS avec un zoom de 400 %."
+                },
+                {
+                  "type": "note",
+                  "text": "Note 2On compte parmi les exemples de contenu nécessitant une mise en page en deux dimensions les images nécessaires à la compréhension (comme les cartes ou les diagrammes), les vidéos, les jeux, les présentations, les tableaux de données (non pas les cellules individuelles), et les interfaces où il est nécessaire de garder les barres d’outils visibles pendant la manipulation du contenu. Un défilement bidimensionnel pour ces parties du contenu est acceptable."
+                }
               ]
             },
             {
@@ -388,6 +564,21 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Composants d’interface utilisateur",
+                      "text": "informations visuelles nécessaires à l’identification des composants et des états de l’interface utilisateur, à l’exception des composants inactifs ou lorsque l’apparence du composant est déterminée par l’agent utilisateur et non modifiée par l’auteur&nbsp;;"
+                    },
+                    {
+                      "handle": "Objets graphiques",
+                      "text": "parties d’éléments graphiques nécessaires à la compréhension du contenu, sauf si une présentation spécifique de ces éléments est essentielle à l’information transmise."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -399,6 +590,16 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Note 1Il n’est pas obligatoire d’utiliser ces valeurs d’espacement du texte. L’exigence consiste à s’assurer que, lorsqu’un utilisateur modifie l’espacement du texte défini par l’auteur, le contenu ou la fonctionnalité ne soient pas perdus."
+                },
+                {
+                  "type": "note",
+                  "text": "Note 2Dans certaines langues, les systèmes d’écriture utilisent des paramètres d’espacement de texte différents, tels que l’indentation au début des paragraphes. Les auteurs sont encouragés à suivre les recommandations disponibles à l’échelle locale pour améliorer la lisibilité et la clarté du texte dans leur propre système d’écriture."
+                }
               ]
             },
             {
@@ -410,6 +611,37 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Masquable",
+                      "text": "il existe un mécanisme permettant de masquer le contenu additionnel sans déplacer le pointeur ou le focus du clavier, à moins que le contenu additionnel ne communique une erreur de saisie ou ne masque ni ne remplace un autre contenu&nbsp;;"
+                    },
+                    {
+                      "handle": "Survolable",
+                      "text": "si le survol du pointeur peut déclencher le contenu additionnel, alors le pointeur peut être déplacé sur le contenu additionnel sans que celui-ci disparaisse&nbsp;;"
+                    },
+                    {
+                      "handle": "Persistant",
+                      "text": "le contenu additionnel reste visible jusqu’à ce que le survol ou le focus soit retiré, que l’utilisateur le masque ou que ses informations ne soient plus valables."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Note 1Parmi les exemples de contenu additionnel contrôlé par l’agent utilisateur figurent les infobulles du navigateur créées à l’aide de l’attribut HTML title [HTML]."
+                },
+                {
+                  "type": "note",
+                  "text": "Note 2Les infobulles personnalisées, les sous-menus et autres fenêtres non modales qui s’affichent au survol et à la prise de focus sont des exemples de contenu additionnel couvert par ce critère."
+                },
+                {
+                  "type": "note",
+                  "text": "Note 3Ce critère s’applique au contenu qui apparaît en plus du composant déclencheur lui-même. Étant donné que les composants cachés qui deviennent visibles au focus du clavier (comme les liens d’accès rapide à une autre partie d’une page) ne présentent pas de contenu additionnel, ils ne sont pas couverts par ce critère."
+                }
               ]
             }
           ]
@@ -448,6 +680,16 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Note 1Cette exception ne concerne que la fonction sous-jacente et non la technique de saisie. Par exemple, lorsqu’on utilise l’écriture manuscrite pour saisir du texte, la technique de saisie (l’écriture manuscrite) nécessite une saisie qui dépend d’un tracé, mais la fonction sous-jacente (la saisie de texte) ne le requiert pas."
+                },
+                {
+                  "type": "note",
+                  "text": "Note 2Cela n’interdit pas et ne devrait pas décourager l’utilisation de la souris ou de toute autre méthode de saisie en plus de l’utilisation du clavier."
+                }
               ]
             },
             {
@@ -460,6 +702,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotePuisque tout contenu ne satisfaisant pas à ce critère de succès peut interférer avec la capacité de l’utilisateur à exploiter la page entière, tout le contenu présent dans la page Web (qu’il soit utilisé pour satisfaire à d’autres critères de succès ou non) doit satisfaire à ce critère de succès. Voir l’exigence de conformité 5 : Non-interférence."
+                }
               ]
             },
             {
@@ -483,6 +731,25 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Désactivation",
+                      "text": "un mécanisme est disponible pour désactiver le raccourci&nbsp;;"
+                    },
+                    {
+                      "handle": "Réassignation",
+                      "text": "un mécanisme est disponible pour réassigner le raccourci afin d’inclure une ou plusieurs touches non imprimables du clavier (par exemple, Ctrl, Alt)&nbsp;;"
+                    },
+                    {
+                      "handle": "Actif uniquement au focus",
+                      "text": "le raccourci clavier pour un composant d’interface utilisateur n’est actif que lorsque ce composant a le focus."
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -508,6 +775,41 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Suppression",
+                      "text": "l’utilisateur a la possibilité de supprimer la limite de temps avant de la rencontrer&nbsp;; ou"
+                    },
+                    {
+                      "handle": "Ajustement",
+                      "text": "l’utilisateur a la possibilité d’ajuster la limite de temps avant de la rencontrer dans un intervalle d’au moins dix fois la durée paramétrée par défaut&nbsp;; ou"
+                    },
+                    {
+                      "handle": "Extension",
+                      "text": "l’utilisateur est averti avant que la limite de temps n’expire et il lui est accordé au moins 20 secondes pour étendre cette limite par une action simple (par exemple, «&nbsp;appuyer sur la barre d’espace&nbsp;») et l’utilisateur a la possibilité d’étendre la limite de temps au moins dix fois&nbsp;; ou"
+                    },
+                    {
+                      "handle": "L’exception du temps réel",
+                      "text": "la limite de temps est une partie constitutive d’un événement en temps réel (par exemple, une enchère) et aucune alternative n’est possible&nbsp;; ou"
+                    },
+                    {
+                      "handle": "L’exception de la limite essentielle",
+                      "text": "la limite de temps est essentielle et l’étendre invaliderait alors l’activité&nbsp;; ou"
+                    },
+                    {
+                      "handle": "L’exception des 20 heures",
+                      "text": "la limite de temps est supérieure à 20 heures."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "NoteCe critère de succès permet de s’assurer que les utilisateurs peuvent compléter leurs tâches sans changement inattendu de contenu ou de contexte résultant de la limite de temps. Il devrait être considéré conjointement avec le critère de succès 3.2.1, qui pose des limites aux changements de contenu ou de contexte résultant d’une action de l’utilisateur."
+                }
               ]
             },
             {
@@ -520,6 +822,37 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Déplacement, clignotement, défilement",
+                      "text": "pour toute information en mouvement, clignotante ou défilante qui (1) démarre automatiquement, (2) dure plus de cinq secondes et (3) est présentée conjointement avec un autre contenu, il y a un mécanisme à la disposition de l’utilisateur pour la mettre en pause, l’arrêter ou la masquer, à moins que le mouvement, le clignotement ou le défilement s’avère un élément essentiel au bon déroulement de l’activité; et"
+                    },
+                    {
+                      "handle": "Mise à jour automatique",
+                      "text": "pour toute information mise à jour automatiquement qui (1) démarre automatiquement (2) et est présentée conjointement avec un autre contenu, il y a un mécanisme à la disposition de l’utilisateur pour la mettre en pause, l’arrêter ou pour en contrôler la fréquence des mises à jour à moins que la mise à jour automatique s’avère essentielle au bon déroulement de l’activité."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Note 1Pour les exigences relatives au contenu scintillant ou flashant, se référer à la règle 2.3."
+                },
+                {
+                  "type": "note",
+                  "text": "Note 2Puisque tout contenu ne satisfaisant pas à ce critère de succès peut interférer avec la capacité de l’utilisateur à exploiter la page entière, tout le contenu présent dans la page Web (qu’il soit utilisé pour satisfaire à d’autres critères de succès ou non) doit satisfaire à ce critère de succès. Lire Exigence de conformité 5 : Non-interférence."
+                },
+                {
+                  "type": "note",
+                  "text": "Note 3Il n’est pas exigé que le contenu mis à jour périodiquement par logiciel ou diffusé en flux à l’agent utilisateur conserve ou présente l’information générée ou reçue entre la mise en pause et la reprise de la présentation, puisque cela peut ne pas être techniquement possible et s’avérer trompeur dans beaucoup de situations."
+                },
+                {
+                  "type": "note",
+                  "text": "Note 4Une animation survenant dans une phase de pré-chargement ou dans une situation similaire peut être considérée comme essentielle si aucune interaction n’est permise à tous les utilisateurs durant cette phase et si l’absence d’indication de progression est susceptible de perturber les utilisateurs ou de leur faire croire que le contenu est figé ou défectueux."
+                }
               ]
             },
             {
@@ -567,6 +900,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NoteLes réglementations relatives à la protection de la vie privée peuvent exiger le consentement explicite de l’utilisateur avant qu’il ait été authentifié et avant que ses données soient conservées. \n\tDans la plupart des juridictions, pays ou régions, le consentement explicite d’une personne mineure ne peut pas être sollicité. \n\tLorsque la conservation des données est envisagée comme une méthode pour satisfaire à ce critère de succès, il est conseillé de consulter des professionnels de la protection de la vie privée et un conseiller juridique."
+                }
               ]
             }
           ]
@@ -592,6 +931,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NotePuisque tout contenu ne satisfaisant pas à ce critère de succès peut interférer avec la capacité de l’utilisateur à exploiter la page entière, tout le contenu présent dans la page Web (qu’il soit utilisé pour satisfaire à d’autres critères de succès ou non) doit satisfaire à ce critère de succès. Voir l’exigence de conformité 5 : Non-interférence."
+                }
               ]
             },
             {
@@ -748,6 +1093,16 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Note 1« En-tête » est utilisé dans le sens général et comprend les titres et autres moyens de structurer les différents types de contenus."
+                },
+                {
+                  "type": "note",
+                  "text": "Note 2Ce critère de succès concerne les contenus de sections et non les composants d’interface utilisateur. Les composants d’interface utilisateur sont traités par le critère de succès 4.1.2."
+                }
               ]
             },
             {
@@ -758,6 +1113,16 @@
               "level": "AA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Note 1Lorsqu’un contenu d’une interface configurable peut être repositionné par l’utilisateur, alors seules les positions initiales du contenu déplaçable sont prises en compte pour les tests et la conformité à ce critère de succès."
+                },
+                {
+                  "type": "note",
+                  "text": "Note 2Il arrive que du contenu ouvert par l’utilisateur masque le composant qui reçoit le focus. Si l’utilisateur peut révéler le composant ayant le focus sans déplacer le focus du clavier, alors le composant ayant le focus n’est pas considéré comme masqué par du contenu créé par l’auteur."
+                }
               ]
             },
             {
@@ -778,6 +1143,20 @@
               "level": "AAA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Note 1Ce qui est perçu comme le composant ou sous-composant d’interface utilisateur (pour déterminer le contour ou la taille) dépend de sa présentation visuelle. La présentation visuelle inclut le contenu visible du composant, la bordure et l’arrière-plan spécifique au composant. Elle n’inclut pas les effets d’ombre et de brillance à l’extérieur du contenu, de l’arrière-plan ou de la bordure du composant."
+                },
+                {
+                  "type": "note",
+                  "text": "Note 2Des exemples de sous-composants qui peuvent recevoir le focus sont les éléments de menu dans un menu déroulant ouvert, ou les cellules focalisables dans une grille."
+                },
+                {
+                  "type": "note",
+                  "text": "Note 3Les calculs de contraste peuvent être basés sur les couleurs définies au niveau de la technologie (comme HTML, CSS et SVG). Les pixels modifiés par les améliorations de résolution de l’agent utilisateur et l’anti-crénelage peuvent être ignorés."
+                }
               ]
             }
           ]
@@ -802,6 +1181,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NoteCette exigence s’applique aux contenus Web qui interprètent les actions du pointeur (elle ne s’applique donc pas aux actions nécessaires à l’utilisation d’un agent utilisateur ou d’une technologie d’assistance)."
+                }
               ]
             },
             {
@@ -813,6 +1198,37 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Aucun événement descendant",
+                      "text": "l’<a href=\"#dfn-down-event\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-down-event-1\" title=\"événement de la plateforme qui se produit lorsque le mécanisme de déclenchement d’un pointeur est enfoncé\">événement descendant (<span lang=\"en\">down-event</span>)</a> du pointeur n’est pas utilisé pour exécuter une partie ou la totalité de la fonction&nbsp;;"
+                    },
+                    {
+                      "handle": "Abandon ou annulation",
+                      "text": "l’achèvement de la fonction se fait sur l’<a href=\"#dfn-up-event\" class=\"internalDFN\" data-link-type=\"dfn\" id=\"ref-for-dfn-up-event-1\" title=\"événement de la plateforme qui se produit lorsque le mécanisme de déclenchement d’un pointeur est relâché\">événement ascendant (<span lang=\"en\">up-event</span>)</a>, et un mécanisme est disponible pour interrompre la fonction avant l’achèvement ou pour annuler la fonction après l’achèvement&nbsp;;"
+                    },
+                    {
+                      "handle": "Inversion sur l’événement ascendant",
+                      "text": "l’événement ascendant inverse tout résultat de l’événement descendant précédent&nbsp;;"
+                    },
+                    {
+                      "handle": "Essentiel",
+                      "text": "l’achèvement de la fonction lors de l’événement descendant est essentiel."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Note 1Les fonctions qui émulent l’appui d’une touche du clavier ou du pavé numérique sont considérées comme essentielles."
+                },
+                {
+                  "type": "note",
+                  "text": "Note 2Cette exigence s’applique aux contenus Web qui interprètent les actions du pointeur (elle ne s’applique donc pas aux actions nécessaires à l’utilisation d’un agent utilisateur ou d’une technologie d’assistance)."
+                }
               ]
             },
             {
@@ -824,6 +1240,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NoteUne bonne pratique consiste à placer le texte de l’étiquette au début du nom."
+                }
               ]
             },
             {
@@ -835,6 +1257,21 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Interface compatible",
+                      "text": "le mouvement est utilisé pour activer la fonctionnalité par l’intermédiaire d’une interface compatible avec l’accessibilité&nbsp;;"
+                    },
+                    {
+                      "handle": "Essentiel",
+                      "text": "le mouvement est essentiel à la fonction et le désactiver invaliderait l’activité."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -846,6 +1283,29 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Équivalence",
+                      "text": "la cible est disponible depuis un lien ou un contrôle équivalent sur la même page qui mesure au moins 44 par 44 pixels <abbr title=\"Cascading Style Sheets\">CSS</abbr>&nbsp;;"
+                    },
+                    {
+                      "handle": "En ligne",
+                      "text": "la cible se trouve dans une phrase ou un bloc de texte&nbsp;;"
+                    },
+                    {
+                      "handle": "Contrôle par l’agent utilisateur",
+                      "text": "la taille de la cible est déterminée par l’agent utilisateur et n’est pas modifiée par l’auteur&nbsp;;"
+                    },
+                    {
+                      "handle": "Essentiel",
+                      "text": "une présentation spécifique de la cible est essentielle pour transmettre l’information."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -867,6 +1327,12 @@
               "level": "AA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NoteCette exigence s’applique aux contenus Web qui interprètent les actions du pointeur (c’est-à-dire qu’elle ne s’applique pas aux actions nécessaires pour faire fonctionner l’agent utilisateur ou la technologie d’assistance)."
+                }
               ]
             },
             {
@@ -877,6 +1343,16 @@
               "level": "AA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Note 1Pour ce critère de succès, les cibles qui permettent de sélectionner des valeurs en fonction de leur position dans la cible sont considérées comme une seule cible. Cela inclut par exemple les curseurs (slider), les sélecteurs de couleurs affichant un dégradé de couleurs, ou les zones éditables où l’on positionne le curseur."
+                },
+                {
+                  "type": "note",
+                  "text": "Note 2Pour les cibles en ligne, la hauteur de ligne doit être interprétée comme étant perpendiculaire au flux de texte. Par exemple, dans une langue affichée verticalement, la hauteur de ligne serait horizontale."
+                }
               ]
             }
           ]
@@ -1058,6 +1534,16 @@
               "level": "A",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Note 1Les mécanismes d’aide peuvent être fournis directement sur la page, ou être fournis grâce à un lien direct vers une page distincte contenant les informations."
+                },
+                {
+                  "type": "note",
+                  "text": "Note 2Pour ce critère de succès, « le même ordre relativement aux autres contenus de la page » peut être considéré comme la manière dont le contenu est ordonné lorsque la page est linéarisée. La position visuelle d’un mécanisme d’aide sera probablement cohérente d’une page à l’autre pour la même variante de page (par exemple, un point de rupture CSS). L’utilisateur peut initier un changement, comme modifier le zoom de la page ou son orientation, ce qui peut déclencher l’affichage d’une variante différente de la page. Ce critère s’intéresse à l’ordre relatif dans des pages affichées avec la même variante de page (par exemple, le même niveau de zoom et la même orientation)."
+                }
               ]
             }
           ]
@@ -1119,6 +1605,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Réversible",
+                      "text": "les actions d’envoi sont réversibles."
+                    },
+                    {
+                      "handle": "Vérifiée",
+                      "text": "les données saisies par l’utilisateur sont vérifiées au niveau des erreurs de saisie et la possibilité est donnée à l’utilisateur de les corriger."
+                    },
+                    {
+                      "handle": "Confirmée",
+                      "text": "un mécanisme est disponible pour revoir, confirmer et corriger les informations avant leur soumission finale."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -1143,6 +1648,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Réversible",
+                      "text": "les actions d’envoi sont réversibles."
+                    },
+                    {
+                      "handle": "Vérifiée",
+                      "text": "les données saisies par l’utilisateur sont vérifiées au niveau des erreurs de saisie et la possibilité est donnée à l’utilisateur de les corriger."
+                    },
+                    {
+                      "handle": "Confirmée",
+                      "text": "un mécanisme est disponible pour revoir, confirmer et corriger les informations avant leur soumission finale."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -1163,6 +1687,37 @@
               "level": "AA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Alternative",
+                      "text": "une autre méthode d’authentification, qui ne repose pas sur un test cognitif."
+                    },
+                    {
+                      "handle": "Mécanisme",
+                      "text": "un mécanisme est disponible pour aider l’utilisateur à compléter le test cognitif."
+                    },
+                    {
+                      "handle": "Reconnaissance d’objets",
+                      "text": "le test cognitif consiste à reconnaître des objets."
+                    },
+                    {
+                      "handle": "Contenu personnel",
+                      "text": "le test cognitif consiste à identifier un contenu non textuel que l’utilisateur a fourni au site web."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Note 1La « reconnaissance d’objets » et le « contenu personnel » peuvent être représentés par des images, des vidéos ou de l’audio."
+                },
+                {
+                  "type": "note",
+                  "text": "Note 2\n        Des exemples de mécanismes qui satisfont à ce critère comprennent :\n        \n            la possibilité de saisir un mot de passe par l’intermédiaire d’un gestionnaire de mots de passe afin de réduire l’effort de mémorisation, et\n            la fonction copier-coller pour réduire la charge cognitive due à une saisie répétitive."
+                }
               ]
             },
             {
@@ -1173,6 +1728,21 @@
               "level": "AAA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Alternative",
+                      "text": "une autre méthode d’authentification, qui ne repose pas sur un test cognitif."
+                    },
+                    {
+                      "handle": "Mécanisme",
+                      "text": "un mécanisme est disponible pour aider l’utilisateur à compléter le test cognitif."
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -1211,6 +1781,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NoteCe critère a été initialement adopté pour résoudre les problèmes que les technologies d’assistance rencontraient lors de l’analyse directe du HTML. Les technologies d’assistance n’ont plus besoin d’analyser directement le HTML. Par conséquent, ces problèmes n’existent plus ou sont traités par d’autres critères. Ce critère n’a plus d’utilité et est supprimé."
+                }
               ]
             },
             {
@@ -1223,6 +1799,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "NoteCe critère de succès s’adresse d’abord aux auteurs qui développent ou programment leurs propres composants d’interface utilisateur. Toutefois, les contrôles HTML standards se conforment déjà à ce critère de succès lorsqu’ils sont utilisés conformément à la spécification."
+                }
               ]
             },
             {

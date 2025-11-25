@@ -37,6 +37,18 @@ interface TranslationManifest {
   wcag_20: TranslationMetadata[];
 }
 
+interface WcagDetailItem {
+  handle: string;
+  text: string;
+}
+
+interface WcagDetail {
+  type: 'ulist' | 'olist' | 'note' | 'p';
+  items?: WcagDetailItem[];
+  text?: string;
+  handle?: string;
+}
+
 interface SuccessCriterion {
   id: string;
   num: string;
@@ -44,6 +56,7 @@ interface SuccessCriterion {
   title: string;
   level: string;
   versions: string[];
+  details?: WcagDetail[];
 }
 
 interface Guideline {
@@ -103,10 +116,10 @@ export async function seedTranslations() {
   const insertTranslationStmt = db.prepare(`
     INSERT OR REPLACE INTO criteria_translations (
       criterion_id, language, wcag_version, handle, title,
-      principle_handle, guideline_handle, source_url, translator, translation_date
+      principle_handle, guideline_handle, source_url, translator, translation_date, details_json
     ) VALUES (
       $criterion_id, $language, $wcag_version, $handle, $title,
-      $principle_handle, $guideline_handle, $source_url, $translator, $translation_date
+      $principle_handle, $guideline_handle, $source_url, $translator, $translation_date, $details_json
     )
   `);
 
@@ -200,6 +213,9 @@ export async function seedTranslations() {
     for (const principle of translationFile.principles) {
       for (const guideline of principle.guidelines) {
         for (const sc of guideline.successcriteria) {
+          // Serialize details to JSON if present
+          const detailsJson = sc.details ? JSON.stringify(sc.details) : null;
+
           insertTranslationStmt.run({
             $criterion_id: sc.id,
             $language: translationMeta.language,
@@ -210,7 +226,8 @@ export async function seedTranslations() {
             $guideline_handle: guideline.handle,
             $source_url: translationMeta.source_url,
             $translator: translationMeta.translator,
-            $translation_date: translationMeta.translation_date
+            $translation_date: translationMeta.translation_date,
+            $details_json: detailsJson
           });
 
           translationCount++;

@@ -42,6 +42,37 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Bedieningselementen, invoer",
+                      "text": "Als niet-tekstuele content een bedieningselement is of gebruikersinvoer accepteert, dan heeft deze een naam die het doel ervan beschrijft. (We verwijzen naar succescriterium 4.1.2 voor aanvullende eisen ten aanzien van bedieningselementen en content die gebruikersinvoer accepteren.)"
+                    },
+                    {
+                      "handle": "Op tijd gebaseerde media",
+                      "text": "Als niet-tekstuele content op tijd gebaseerde media is, dan leveren tekstalternatieven ten minste een beschrijving van de niet-tekstuele content. (We verwijzen naar Richtlijn 1.2 voor aanvullende eisen ten aanzien van media.)"
+                    },
+                    {
+                      "handle": "Test",
+                      "text": "Als niet-tekstuele content een test of oefening is die, als ze door middel van tekst gepresenteerd wordt onjuist zou zijn, dan leveren tekstalternatieven ten minste een beschrijving van de niet-tekstuele content."
+                    },
+                    {
+                      "handle": "Zintuiglijk",
+                      "text": "Als niet-tekstuele content primair is bedoeld om een specifieke zintuiglijke ervaring te creëren, dan leveren tekstalternatieven ten minste een beschrijving van de niet-tekstuele content."
+                    },
+                    {
+                      "handle": "CAPTCHA",
+                      "text": "Als het doel van niet-tekstuele content is om te bevestigen dat content wordt gebruikt door een persoon in plaats van een computer, dan worden tekstalternatieven geleverd die het doel van de niet-tekstuele content identificeren en beschrijven. En er worden alternatieve vormen van CAPTCHA aangeboden gebruikmakend van uitvoermodes voor verschillende soorten van zintuiglijke perceptie om tegemoet te komen aan verschillende functiebeperkingen."
+                    },
+                    {
+                      "handle": "Decoratie, opmaak, onzichtbaar",
+                      "text": "Als niet-tekstuele content puur decoratief is, slechts voor visuele opmaak wordt gebruikt, of niet aan gebruikers wordt gerepresenteerd, dan wordt het op zo'n manier geïmplementeerd dat het genegeerd kan worden door hulptechnologie."
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -67,6 +98,21 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Vooraf opgenomen louter-geluid",
+                      "text": "Er wordt een alternatief geleverd voor op tijd gebaseerde media dat equivalente informatie geeft voor vooraf opgenomen louter-geluid content."
+                    },
+                    {
+                      "handle": "Vooraf opgenomen louter-videobeeld",
+                      "text": "Er wordt een alternatief geleverd voor op tijd gebaseerde media of een geluidsspoor dat equivalente informatie geeft voor vooraf opgenomen louter-videobeeld content."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -212,6 +258,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot\n            \n            \n              Voor eisen met betrekking tot kleur zie\n              Richtlijn 1.4."
+                }
               ]
             },
             {
@@ -223,6 +275,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot\n            \n            \n              Voorbeelden waarbij een specifieke presentatie-oriëntatie essentieel kan zijn: een acceptgiro, een piano applicatie, dia’s voor een projector of televisiescherm, of Virtual Reality waarbij de weergavestand van de content niet noodzakelijkerwijs beperkt is tot staand of liggend."
+                }
               ]
             },
             {
@@ -270,6 +328,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot\n            \n            \n              Dit succescriterium richt zich specifiek op kleurperceptie. Andere vormen van perceptie worden behandeld in Richtlijn 1.3 inclusief softwarematige toegang tot kleur en andere codering van visuele presentatie."
+                }
               ]
             },
             {
@@ -282,6 +346,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot\n            \n            \n              Omdat content die niet aan dit succescriterium voldoet het vermogen van een gebruiker om de hele pagina te gebruiken kan belemmeren, moet alle content op de webpagina (of die nu wel of niet gebruikt wordt om aan andere succescriteria te voldoen) aan dit succescriterium voldoen. Zie \n               Conformiteitseis 5: Non-interferentie."
+                }
               ]
             },
             {
@@ -294,6 +364,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Grote tekst",
+                      "text": "Grote tekst en afbeeldingen van grote tekst hebben een contrastverhouding van ten minste 3:1;"
+                    },
+                    {
+                      "handle": "Incidenteel",
+                      "text": "Tekst of afbeeldingen van tekst die deel zijn van een inactieve component van de gebruikersinterface, die puur decoratief zijn, die voor niemand zichtbaar zijn, of die onderdeel zijn van een afbeelding die significant andere visuele content bevat, hebben geen contrasteis."
+                    },
+                    {
+                      "handle": "Woordmerken",
+                      "text": "Tekst die onderdeel is van een logo of merknaam heeft geen contrasteis."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -318,6 +407,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Aanpasbaar",
+                      "text": "De afbeelding van tekst kan visueel aangepast worden aan de eisen van de gebruiker;"
+                    },
+                    {
+                      "handle": "Essentieel",
+                      "text": "Een specifieke weergave van tekst is essentieel voor de informatie die wordt overgebracht."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Noot\n            \n            \n              Woordmerken (tekst die onderdeel is van een logo of merknaam) worden als essentieel beschouwd."
+                }
               ]
             },
             {
@@ -330,6 +438,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Grote tekst",
+                      "text": "Grote tekst en afbeeldingen van grote tekst hebben een contrastverhouding van ten minste 4,5:1;"
+                    },
+                    {
+                      "handle": "Incidenteel",
+                      "text": "Tekst of afbeeldingen van tekst die onderdeel zijn van een inactieve componenten van de gebruikersinterface, die puur decoratief zijn, die voor niemand zichtbaar zijn, of die onderdeel zijn van een afbeelding die significant andere visuele content bevat, hebben geen contrasteis."
+                    },
+                    {
+                      "handle": "Woordmerken",
+                      "text": "Tekst die onderdeel is van een logo of merknaam heeft geen contrasteis."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -342,6 +469,29 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Geen achtergrond:",
+                      "text": "De geluidsopname bevat geen achtergrondgeluiden."
+                    },
+                    {
+                      "handle": "Uitzetten",
+                      "text": "De achtergrondgeluiden kunnen uitgezet worden."
+                    },
+                    {
+                      "handle": "20 dB",
+                      "text": "De achtergrondgeluiden zijn ten minste 20 decibel lager dan spraak content die op de voorgrond klinkt, met uitzondering van incidentele geluiden die slechts één of twee seconden duren."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Noot\n                \n                \n                  Uit de definitie van \"decibel\" volgt dat achtergrondgeluid dat\n                  aan deze eis voldoet ongeveer vier keer zachter klinkt dan de\n                  spraak content op de voorgrond."
+                }
               ]
             },
             {
@@ -354,6 +504,16 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot 1\n            \n            \n                Content hoeft niet aan deze waarden te voldoen. De vereiste is \n                dat er een mechanisme beschikbaar is voor gebruikers om deze weergaveaspecten \n                te wijzigen. Het mechanisme kan worden geleverd door de browser of een andere \n                user agent. Het is niet verplicht om in de content het mechanisme aan te bieden."
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 2\n            \n            \n                Sommige talen gebruiken, als het om schriftsystemen gaat, verschillende weergaveaspecten\n                om leesbaarheid en duidelijkheid te verbeteren. Als een weergaveaspect in dit \n                succescriterium niet wordt gebruikt in een schriftsysteem, dan hoeft de content \n                die weergave-instelling niet te gebruiken om te voldoen. Auteurs worden aangemoedigd \n                om handreikingen te volgen voor het verbeteren van de readableheid en duidelijkheid \n                van tekst in hun schriftsysteem."
+                }
               ]
             },
             {
@@ -366,6 +526,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot\n            \n            \n              Opmerking: woordmerken (tekst die onderdeel is van een logo of\n              merknaam) worden als essentieel beschouwd."
+                }
               ]
             },
             {
@@ -377,6 +543,16 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot 1\n            \n            \n              320 CSS-pixels zijn gelijk aan de beginbreedte van een weergavekader van 1280 CSS-pixels bij 400% zoom. Voor webcontent die ontworpen is om horizontaal te scrollen (bijv. bij verticale tekst), zijn de 256 CSS-pixels gelijk aan de beginbreedte van een weergavekader van 1024 CSS-pixels bij 400% zoom."
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 2\n            \n            \n              Voorbeelden van content die een tweedimensionale lay-out vereisen, zijn afbeeldingen nodig om iets te begrijpen (zoals kaarten en schema's), video's, games, presentaties, gegevenstabellen (geen individuele cellen) en interfaces waarbij de werkbalken zichtbaar moeten blijven tijdens het manipuleren van de content. Het is aanvaardbaar om voor zulke onderdelen van de content tweedimensionaal scrollen aan te bieden."
+                }
               ]
             },
             {
@@ -388,6 +564,21 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Componenten van de gebruikersinterface",
+                      "text": "Visuele informatie die vereist is om componenten van de gebruikersinterface en statussen te identificeren, met uitzondering van inactieve componenten of componenten waarvan de weergave van de component wordt bepaald door de user agent en niet wordt aangepast door de auteur;"
+                    },
+                    {
+                      "handle": "Grafische objecten",
+                      "text": "Delen van afbeeldingen die vereist zijn om de content te begrijpen, behalve wanneer een specifieke weergave van afbeeldingen essentieel is voor de informatie die wordt overgebracht."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -399,6 +590,16 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot 1\n            \n            \n                Het is niet verplicht om voor content deze waarden voor tekstafstand te gebruiken. \n                De eis is om ervoor te zorgen dat als een gebruiker de ingestelde waarden vervangt, \n                er dan geen content of functionaliteit verloren gaat."
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 2\n            \n            \n                Voor sommige talen gebruiken schriftsystemen verschillende instellingen voor tekstafstand, \n                zoals inspringen aan het begin van een alinea. Auteurs worden aangemoedigd om lokaal beschikbare \n                handreikingen te volgen voor het verbeteren van de leesbaarheid en duidelijkheid van tekst in hun \n                schriftsystemen."
+                }
               ]
             },
             {
@@ -410,6 +611,37 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Sluiten",
+                      "text": "Er is een mechanisme beschikbaar waarmee de aanvullende content kan worden gesloten zonder de aanwijzer hover of de toetsenbordfocus te verplaatsen, tenzij de aanvullende content een invoerfout communiceert of andere content niet verbergt of vervangt;"
+                    },
+                    {
+                      "handle": "Aanwijsbaar",
+                      "text": "Wanneer een aanwijzer hover aanvullende content kan activeren, dan kan de aanwijzer over de aanvullende content worden bewogen zonder dat deze verdwijnt;"
+                    },
+                    {
+                      "handle": "Aanhouden",
+                      "text": "De aanvullende content blijft zichtbaar totdat de oorzaak voor de hover of focus is verwijderd, de gebruiker de content sluit of de informatie niet langer geldig is."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 1\n            \n            \n                Voorbeelden van aanvullende content die door de user agent wordt bepaald, \n    zijn de browser tooltips die worden gemaakt met behulp van het HTML title-attribuut."
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 2\n            \n            \n                Aangepaste tooltips, submenu's en andere niet-modale pop-ups die worden weergegeven \n                bij hover en focus zijn voorbeelden van aanvullende content waarop dit criterium van \n                toepassing is."
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 3\n            \n            \n                Dit criterium is van toepassing op content die aanvullend verschijnt met de activerende \n                component zelf. Aangezien verborgen componenten die zichtbaar worden bij toetsenbordfocus \n                (zoals links die worden gebruikt om naar een ander deel van een pagina te springen) \n                geen aanvullende content presenteren, vallen ze niet onder dit criterium."
+                }
               ]
             }
           ]
@@ -448,6 +680,16 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot 1\n            \n            \n              Deze uitzondering is gerelateerd aan de onderliggende functie,\n              niet aan de invoertechniek. Als we bijvoorbeeld met de hand\n              geschreven tekst invoeren, vereist de invoertechniek (met de hand\n              geschreven tekst) pad-afhankelijke invoer, maar de onderliggende\n              functie (tekstinvoer) vereist dat niet."
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 2\n            \n            \n              Dit succescriterium verbiedt geen muisinvoer of andere\n              invoermethoden naast de toetsenbordinvoer en wil dit ook niet\n              ontmoedigen."
+                }
               ]
             },
             {
@@ -460,6 +702,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot\n            \n            \n              Omdat content die niet aan dit succescriterium voldoet het\n              vermogen van een gebruiker om de hele pagina te gebruiken kan\n              belemmeren, moet alle content op de webpagina (ongeacht of deze\n              gebruikt wordt om aan andere succescriteria te voldoen of niet)\n              voldoen aan dit succescriterium. Zie\n              Conformiteitseis 5: Non-interferentie."
+                }
               ]
             },
             {
@@ -483,6 +731,25 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Uitzetten",
+                      "text": "Er is een mechanisme beschikbaar waarmee de sneltoets kan worden uitgezet;"
+                    },
+                    {
+                      "handle": "Opnieuw toewijzen",
+                      "text": "Er is een mechanisme beschikbaar om de sneltoets opnieuw toe te wijzen aan één of meerdere niet-afdrukbare tekens (bijv. Ctrl, Alt, enz.);"
+                    },
+                    {
+                      "handle": "Alleen actief bij focus",
+                      "text": "De sneltoets voor een component van de gebruikersinterface is alleen actief wanneer de betreffende component de focus heeft."
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -508,6 +775,41 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Uitzetten",
+                      "text": "De gebruiker kan de tijdslimiet uitzetten voordat die wordt bereikt; of"
+                    },
+                    {
+                      "handle": "Aanpassen",
+                      "text": "De gebruiker mag de tijdslimiet aanpassen voordat deze is verstreken over een bereik van ten minste tien keer de standaardinstelling; of"
+                    },
+                    {
+                      "handle": "Verlengen",
+                      "text": "De gebruiker wordt gewaarschuwd voor de tijd afloopt en krijgt ten minste 20 seconden om de tijdslimiet met een eenvoudige handeling te verlengen (bijvoorbeeld, \"druk op de spatiebalk\"), en de gebruiker mag de tijdslimiet ten minste tien keer verlengen; of"
+                    },
+                    {
+                      "handle": "Real-time uitzondering",
+                      "text": "De tijdslimiet is onderdeel van een realtime gebeurtenis (een veiling bijvoorbeeld) en er is geen alternatief voor de tijdslimiet mogelijk; of"
+                    },
+                    {
+                      "handle": "Essentiële uitzondering",
+                      "text": "De tijdslimiet is essentieel en verlenging zou de activiteit ongeldig maken; of"
+                    },
+                    {
+                      "handle": "20 uur uitzondering",
+                      "text": "De tijdslimiet is langer dan 20 uur."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Noot\n            \n            \n              Dit succescriterium helpt om ervoor te zorgen dat gebruikers taken\n              kunnen voltooien zonder onverwachte veranderingen in content of\n              context die het resultaat zijn van een tijdslimiet. Dit\n              succescriterium moet in samenhang met\n              Succescriterium 3.2.1 worden beschouwd,\n              dat limieten stelt aan veranderingen van content of context als\n              gevolg van een gebruikersactie."
+                }
               ]
             },
             {
@@ -520,6 +822,37 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Bewegen, knipperen, scrollen:",
+                      "text": "Voor bewegende, knipperende of scrollende informatie die (1) automatisch start, (2) langer dan vijf seconden duurt, en (3) parallel met andere content wordt getoond, is er een mechanisme voor de gebruiker om dit te pauzeren, te stoppen of te verbergen, tenzij de beweging, knippering of scrolling, onderdeel is van een activiteit waar ze essentieel is en"
+                    },
+                    {
+                      "handle": "Automatisch actualiserend:",
+                      "text": "Voor elke soort automatisch actualiserende informatie die (1) automatisch start en (2) parallel met andere content wordt gepresenteerd, is er een mechanisme voor de gebruiker om dit te pauzeren, te stoppen of te verbergen of de frequentie van de actualisering in te stellen, tenzij de automatische actualisering onderdeel is van een activiteit waar ze essentieel is."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 1\n            \n            \n              Voor eisen gerelateerd aan knipperende of flitsende content zie\n              Richtlijn 2.3."
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 2\n            \n            \n              Omdat content die niet aan dit succescriterium voldoet het\n              vermogen van een gebruiker om de hele pagina te gebruiken kan\n              belemmeren, moet alle content op de webpagina (of ze gebruikt\n              wordt om aan andere succescriteria te voldoen of niet) voldoen aan\n              dit succescriterium. Zie\n              conformiteitseis 5: Non-interferentie."
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 3\n            \n            \n              Van content die periodiek door software wordt geactualiseerd of\n              die naar de user agent wordt verzonden, wordt niet vereist dat ze\n              informatie behoudt of weergeeft die gegenereerd of ontvangen wordt\n              tussen het begin van de pauze en het moment van de hervatting van\n              de weergave, aangezien dit technisch wellicht niet mogelijk is en\n              het in veel situaties misleidend is om dit te doen."
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 4\n            \n            \n              Een animatie die speelt tijdens het laden of een gelijkwaardige\n              situatie, kan als essentieel worden beschouwd als niet\n              tegelijkertijd interactie kan plaatsvinden door alle gebruikers en\n              als het niet aangeven van de voortgang gebruikers zou kunnen\n              verwarren of laten denken dat de content vastgelopen of onvolledig\n              was."
+                }
               ]
             },
             {
@@ -567,6 +900,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot\n            \n            \n              Privacyregelgeving vereist mogelijk dat de gebruiker uitdrukkelijk\n              toestemming moet geven alvorens de gebruikersidentificatie mag\n              worden geverifieerd en gebruikersgegevens mogen worden bewaard.\n              Wanneer de gebruiker minderjarig is, mag in de meeste\n              rechtsgebieden, landen of regio's mogelijk niet om uitdrukkelijke\n              toestemming worden gevraagd. Aanbevolen wordt om deskundigen op\n              het gebied van privacy te raadplegen en juridisch advies in te\n              winnen wanneer men het bewaren van gegevens als een mogelijkheid\n              beschouwd om aan dit succescriterium te voldoen."
+                }
               ]
             }
           ]
@@ -592,6 +931,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot\n            \n            \n              Omdat content die niet aan dit succescriterium voldoet het\n              vermogen van een gebruiker om de hele pagina te gebruiken kan\n              belemmeren, moet alle content op de webpagina (ongeacht of deze\n              gebruikt wordt om aan andere succescriteria te voldoen of niet)\n              voldoen aan dit succescriterium. Zie\n              Conformiteitseis 5: Non-interferentie."
+                }
               ]
             },
             {
@@ -748,6 +1093,16 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot 1\n            \n            \n              \"Kop\" wordt in algemene zin gebruikt met inbegrip van titels en\n              andere manieren om een kop aan verschillende soorten content te\n              geven."
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 2\n            \n            \n              Dit succescriterium betreft paragrafen binnen de tekst, niet\n              componenten van de gebruikersinterface. Componenten van de gebruikersinterface vallen onder\n              Succescriterium 4.1.2."
+                }
               ]
             },
             {
@@ -758,6 +1113,16 @@
               "level": "AA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot 1Waar content in een configureerbare interface door de gebruiker kan worden verplaatst, worden alleen de oorspronkelijke posities van door de gebruiker verplaatsbare content beoordeeld bij testen en conformiteit met dit succescriterium."
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 2Content die de gebruiker opent, kan de component die focus ontvangt bedekken. Als de gebruiker de gefocuste component zichtbaar kan maken zonder de toetsenbordfocus te verplaatsen, wordt de component met focus niet beschouwd als bedekt door de content die door de auteur is gecreëerd."
+                }
               ]
             },
             {
@@ -778,6 +1143,20 @@
               "level": "AAA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot 1Wat wordt waargenomen als component van de gebruikersinterface of subcomponent (om de begrenzing of grootte te bepalen) hangt af van de visuele weergave. \n                De visuele weergave omvat de zichtbare content, rand en component-specifieke achtergrond van een component. Het omvat geen schaduw- en gloedeffecten die buiten de content, achtergrond of rand van een component vallen."
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 2\n                Voorbeelden van subcomponenten die een focusindicator kunnen ontvangen, zijn menu-items in een geopend uitklapmenu, of focusbare cellen in een raster."
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 3Contrastberekeningen kunnen worden gebaseerd op kleuren die binnen de technologie \n                (zoals HTML, CSS en SVG). Pixels die zijn aangepast door resolutieverbeteringen en anti-aliasing van de user agent kunnen worden genegeerd."
+                }
               ]
             }
           ]
@@ -802,6 +1181,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot\n            \n            \n              Deze eis is van toepassing op webcontent die acties met de\n              aanwijzer interpreteert (NB: dit geldt niet voor acties die\n              vereist zijn om de user agent of hulptechnologie te bedienen)."
+                }
               ]
             },
             {
@@ -813,6 +1198,37 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Geen down-event",
+                      "text": "Het down-event van de aanwijzer wordt niet gebruikt om enig onderdeel van de functie uit te voeren;"
+                    },
+                    {
+                      "handle": "Afbreken of ongedaan maken",
+                      "text": "De functie wordt voltooid door het up-event en er is een mechanisme beschikbaar om de functie af te breken voordat deze wordt voltooid of om de functie ongedaan te maken als deze is voltooid;"
+                    },
+                    {
+                      "handle": "Up reversal",
+                      "text": "Met het up-event wordt elk resultaat van het voorgaande down-event ongedaan gemaakt;"
+                    },
+                    {
+                      "handle": "Essentieel",
+                      "text": "Het voltooien van de functie met het down-event is essentieel."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 1\n            \n            \n              Functies die het indrukken van een toets op het toetsenbord of het\n              numeriek toetsenbord nabootsen, worden als essentieel beschouwd."
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 2\n            \n            \n              Deze eis is van toepassing op webcontent die acties met de\n              aanwijzer interpreteert (dus dit geldt niet voor acties die\n              vereist zijn om de user agent of hulptechnologie te bedienen)."
+                }
               ]
             },
             {
@@ -824,6 +1240,12 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot\n            \n            \n              Een best practice is om de naam te laten beginnen met de tekst van\n              het label."
+                }
               ]
             },
             {
@@ -835,6 +1257,21 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Ondersteunde interface",
+                      "text": "De beweging wordt gebruikt om de functionaliteit te bedienen via een door toegankelijkheid ondersteunde interface;"
+                    },
+                    {
+                      "handle": "Essentieel",
+                      "text": "De beweging is essentieel voor de functie en wanneer de reactie op de beweging wordt uitgeschakeld, wordt de activiteit ongeldig gemaakt."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -846,6 +1283,29 @@
               "versions": [
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Gelijkwaardig",
+                      "text": "Het doel is beschikbaar via een gelijkwaardige link of een bedieningselement van ten minste 44 bij 44 CSS-pixels op dezelfde pagina;"
+                    },
+                    {
+                      "handle": "Inline",
+                      "text": "Het doel bevindt zich in een regel of tekstblok;"
+                    },
+                    {
+                      "handle": "User agent control",
+                      "text": "De doelgrootte wordt bepaald door de user agent en wordt niet aangepast door de auteur."
+                    },
+                    {
+                      "handle": "Essentieel",
+                      "text": "Een specifieke weergave van het doel is essentieel voor de informatie die wordt overgebracht."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -867,6 +1327,12 @@
               "level": "AA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot\n            \n\n            Deze eis is van toepassing op webcontent die acties met de aanwijzer interpreteert (d.w.z.: dit geldt niet voor acties die vereist zijn om de user agent of hulptechnologie te bedienen)."
+                }
               ]
             },
             {
@@ -877,6 +1343,16 @@
               "level": "AA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot 1Aanwijsgebieden waarmee waarden ruimtelijk kunnen worden geselecteerd op basis van de positie binnen het gebied, worden beschouwd als 1 aanwijsgebied voor het succescriterium. Voorbeelden zijn schuifregelaars, kleurenkiezers die een kleurverloop weergeven, of bewerkbare gebieden waar je de cursor in kunt positioneren."
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 2Voor inline aanwijsgebieden moet de regelhoogte worden geïnterpreteerd als zijnde loodrecht op de tekstrichting. Bijvoorbeeld, bij een taal die verticaal wordt weergegeven, zou de regelhoogte horizontaal zijn."
+                }
               ]
             }
           ]
@@ -1058,6 +1534,16 @@
               "level": "A",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot 1Hulpmechanismen kunnen direct op de pagina worden aangeboden, of kunnen worden aangeboden via een directe link naar een andere pagina met die informatie."
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 2Voor dit succescriterium kan ‘dezelfde relatieve volgorde ten opzichte van andere paginacontent’ worden gezien als hoe de content is geordend wanneer de pagina onderdeel is van een serie pagina’s. De visuele positie van een hulpmechanisme is doorgaans consistent bij pagina’s met dezelfde paginavariant (bijv. CSS-break-point). De gebruiker kan een wijziging initiëren, zoals het wijzigen van de zoom of de oriëntatie van de pagina. Dat kan een andere paginavariant veroorzaken. Dit criterium heeft betrekking op de relatieve volgorde binnen pagina's die worden weergegeven in dezelfde paginavariant (bijv. hetzelfde zoomniveau en oriëntatie)."
+                }
               ]
             }
           ]
@@ -1119,6 +1605,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Omkeerbaar",
+                      "text": "Verzendingen kunnen ongedaan gemaakt worden."
+                    },
+                    {
+                      "handle": "Gecontroleerd",
+                      "text": "Door de gebruiker ingevoerde gegevens worden gecontroleerd op invoerfouten en de gebruiker wordt de mogelijkheid gegeven om ze te verbeteren."
+                    },
+                    {
+                      "handle": "Bevestigd",
+                      "text": "Er is een mechanisme beschikbaar voor het beoordelen, bevestigen en verbeteren van informatie voordat de verzending wordt voltooid."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -1143,6 +1648,25 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Omkeerbaar",
+                      "text": "Verzendingen kunnen ongedaan gemaakt worden."
+                    },
+                    {
+                      "handle": "Gecontroleerd",
+                      "text": "Door de gebruiker ingevoerde gegevens worden gecontroleerd op invoerfouten en de gebruiker wordt de mogelijkheid gegeven om ze te verbeteren."
+                    },
+                    {
+                      "handle": "Bevestigd",
+                      "text": "Er is een mechanisme beschikbaar voor het beoordelen, bevestigen en verbeteren van informatie voordat de verzending wordt voltooid."
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -1163,6 +1687,37 @@
               "level": "AA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Alternatief",
+                      "text": "Een andere authenticatiemethode die niet afhankelijk is van een cognitieve functietest."
+                    },
+                    {
+                      "handle": "Mechanisme",
+                      "text": "Er is een mechanisme beschikbaar om de gebruiker te helpen bij het voltooien van de cognitieve functietest."
+                    },
+                    {
+                      "handle": "Objectherkenning",
+                      "text": "De cognitieve functietest is gericht op het herkennen van objecten."
+                    },
+                    {
+                      "handle": "Persoonlijke content",
+                      "text": "De cognitieve functietest is gericht op het identificeren van niet-tekstuele content die de gebruiker aan de website heeft verstrekt."
+                    }
+                  ]
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 1‘Objectherkenning’ en ‘Persoonlijke content’ kunnen worden weergegeven door afbeeldingen, video of audio."
+                },
+                {
+                  "type": "note",
+                  "text": "Noot 2Voorbeelden van mechanismen die aan dit criterium voldoen, omvatten:\n            \n                ondersteuning van wachtwoordinvoer door wachtwoordmanagers om de geheugenbehoefte te verminderen, en\n                kopiëren en plakken om de cognitieve belasting van opnieuw intypen te verminderen."
+                }
               ]
             },
             {
@@ -1173,6 +1728,21 @@
               "level": "AAA",
               "versions": [
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "ulist",
+                  "items": [
+                    {
+                      "handle": "Alternatief",
+                      "text": "Een andere authenticatiemethode die niet afhankelijk is van een cognitieve functietest."
+                    },
+                    {
+                      "handle": "Mechanisme",
+                      "text": "Er is een mechanisme beschikbaar om de gebruiker te helpen bij het voltooien van de cognitieve functietest."
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -1211,6 +1781,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot\n            \n            \n                Dit criterium werd oorspronkelijk aangenomen om problemen aan te pakken die hulptechnologie had bij het direct parsen van HTML Hulptechnologie hoeft HTML niet meer rechtstreeks te parsen. Als gevolg hiervan bestaan deze problemen niet meer of worden ze opgevangen door andere criteria. Dit criterium heeft geen nut meer en is verwijderd."
+                }
               ]
             },
             {
@@ -1223,6 +1799,12 @@
                 "2.0",
                 "2.1",
                 "2.2"
+              ],
+              "details": [
+                {
+                  "type": "note",
+                  "text": "Noot\n            \n            \n              Dit succescriterium is primair voor webauteurs die hun eigen\n              componenten van de gebruikersinterface ontwikkelen of scripten.\n              Standaard bedieningselementen in HTML bijvoorbeeld voldoen al aan\n              dit succescriterium als ze gebruikt worden volgens specificatie."
+                }
               ]
             },
             {
