@@ -25,8 +25,10 @@ export function LanguageSwitcher() {
   const containerRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
+  const optionRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
-  const languages = getEnabledLanguages();
+  // Sort languages alphabetically by native name
+  const languages = getEnabledLanguages().sort((a, b) => a.name.localeCompare(b.name));
   const currentLang = languages.find((l) => l.code === i18n.language) || languages[0];
   const currentIndex = languages.findIndex((l) => l.code === i18n.language);
 
@@ -49,11 +51,14 @@ export function LanguageSwitcher() {
     }
   }, [isOpen, currentIndex]);
 
-  // Scroll focused item into view
+  // Focus and scroll focused item into view
   useEffect(() => {
-    if (isOpen && focusedIndex >= 0 && listRef.current) {
-      const items = listRef.current.querySelectorAll('[role="option"]');
-      items[focusedIndex]?.scrollIntoView({ block: 'nearest' });
+    if (isOpen && focusedIndex >= 0) {
+      const button = optionRefs.current[focusedIndex];
+      if (button) {
+        button.focus();
+        button.scrollIntoView({ block: 'nearest' });
+      }
     }
   }, [focusedIndex, isOpen]);
 
@@ -166,41 +171,96 @@ export function LanguageSwitcher() {
           role="listbox"
           aria-label={t('common:language.select')}
           aria-activedescendant={focusedIndex >= 0 ? `lang-option-${languages[focusedIndex].code}` : undefined}
-          className="absolute right-0 top-full z-50 mt-1 min-w-[180px] overflow-hidden rounded-lg border border-gray-200 bg-white py-1 shadow-lg dark:border-gray-700 dark:bg-gray-800"
+          className="absolute right-0 top-full z-50 mt-1 grid w-[580px] grid-flow-col grid-cols-[1fr_1fr] grid-rows-6 overflow-hidden rounded-lg border border-gray-200 bg-white py-1 shadow-lg dark:border-gray-700 dark:bg-gray-800"
         >
-          {languages.map((lang, index) => (
-            <li key={lang.code}>
-              <button
-                id={`lang-option-${lang.code}`}
-                role="option"
-                aria-selected={lang.code === i18n.language}
-                onClick={() => handleLanguageChange(lang)}
-                className={`flex w-full items-center gap-3 px-4 py-2 text-left text-sm ${
-                  index === focusedIndex
-                    ? 'bg-blue-50 dark:bg-blue-900/30'
-                    : 'hover:bg-gray-100 dark:hover:bg-gray-700'
-                } ${
-                  lang.code === i18n.language
-                    ? 'font-medium text-blue-600 dark:text-blue-400'
-                    : 'text-gray-700 dark:text-gray-200'
-                }`}
-                lang={lang.code}
-                tabIndex={-1}
-              >
-                <span className="text-base" aria-hidden="true">
-                  {lang.flag}
-                </span>
-                <span className="flex-1">{lang.name}</span>
-                {lang.code === i18n.language && (
-                  <FontAwesomeIcon
-                    icon={faCheck}
-                    className="h-4 w-4 text-blue-600 dark:text-blue-400"
-                    aria-hidden="true"
-                  />
-                )}
-              </button>
-            </li>
-          ))}
+          {languages.map((lang, index) => {
+            // Badge configuration based on authorization type
+            const badgeConfig = {
+              source: {
+                label: 'Official',
+                ariaLabel: `${lang.englishName} - Official W3C Source`,
+                normalClass: 'bg-purple-100 text-purple-700 dark:bg-purple-900/50 dark:text-purple-400',
+              },
+              authorized: {
+                label: 'Authorized',
+                ariaLabel: `${lang.englishName} - W3C Authorized Translation`,
+                normalClass: 'bg-green-100 text-green-700 dark:bg-green-900/50 dark:text-green-400',
+              },
+              candidate: {
+                label: 'Candidate',
+                ariaLabel: `${lang.englishName} - Candidate Authorized Translation`,
+                normalClass: 'bg-blue-100 text-blue-700 dark:bg-blue-900/50 dark:text-blue-300',
+              },
+              unofficial: {
+                label: 'Unofficial',
+                ariaLabel: `${lang.englishName} - Unofficial Translation`,
+                normalClass: 'bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-400',
+              },
+            };
+
+            const badge = badgeConfig[lang.authorizationType];
+
+            return (
+              <li key={lang.code}>
+                <button
+                  ref={(el) => {
+                    optionRefs.current[index] = el;
+                  }}
+                  id={`lang-option-${lang.code}`}
+                  role="option"
+                  aria-selected={lang.code === i18n.language}
+                  onClick={() => handleLanguageChange(lang)}
+                  className={`flex w-full items-center gap-2 px-3 py-2 text-left text-sm transition-colors ${
+                    index === focusedIndex
+                      ? 'bg-blue-600 text-white dark:bg-blue-500'
+                      : 'hover:bg-gray-100 dark:hover:bg-gray-700'
+                  } ${
+                    lang.code === i18n.language
+                      ? 'font-bold'
+                      : ''
+                  } ${
+                    lang.code === i18n.language && index !== focusedIndex
+                      ? 'text-blue-600 dark:text-blue-400'
+                      : index !== focusedIndex
+                        ? 'text-gray-700 dark:text-gray-200'
+                        : ''
+                  }`}
+                  lang={lang.code}
+                  tabIndex={-1}
+                >
+                  {/* Checkmark - left of flag */}
+                  <span className="w-4 shrink-0">
+                    {lang.code === i18n.language && (
+                      <FontAwesomeIcon
+                        icon={faCheck}
+                        className={`h-4 w-4 ${index === focusedIndex ? 'text-white' : 'text-blue-600 dark:text-blue-400'}`}
+                        aria-hidden="true"
+                      />
+                    )}
+                  </span>
+                  {/* Flag */}
+                  <span className="text-base" aria-hidden="true">
+                    {lang.flag}
+                  </span>
+                  {/* Language name */}
+                  <span className="flex-1">{lang.name}</span>
+                  {/* Authorization badge */}
+                  {badge && (
+                    <span
+                      className={`shrink-0 rounded px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wide ${
+                        index === focusedIndex
+                          ? 'bg-blue-500 text-blue-100 dark:bg-blue-400 dark:text-blue-900'
+                          : badge.normalClass
+                      }`}
+                      aria-label={badge.ariaLabel}
+                    >
+                      {badge.label}
+                    </span>
+                  )}
+                </button>
+              </li>
+            );
+          })}
         </ul>
       )}
     </div>

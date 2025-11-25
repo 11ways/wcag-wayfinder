@@ -10,6 +10,9 @@
 
 export type SupportedLanguage = 'en' | 'nl' | 'fr' | 'it' | 'ca' | 'pt-BR' | 'zh' | 'da' | 'fi' | 'no' | 'pl';
 
+/** W3C translation authorization status */
+export type AuthorizationType = 'source' | 'authorized' | 'candidate' | 'unofficial';
+
 export interface LanguageConfig {
   /** ISO 639-1 language code */
   code: SupportedLanguage;
@@ -27,6 +30,8 @@ export interface LanguageConfig {
   wcagVersion?: '2.2' | '2.1';
   /** Whether UI translations exist (if false, UI falls back to English) */
   hasUiTranslations?: boolean;
+  /** W3C translation authorization status */
+  authorizationType: AuthorizationType;
 }
 
 /**
@@ -47,6 +52,7 @@ export const SUPPORTED_LANGUAGES: LanguageConfig[] = [
     direction: 'ltr',
     wcagVersion: '2.2',
     hasUiTranslations: true,
+    authorizationType: 'source',
   },
   {
     code: 'nl',
@@ -57,6 +63,7 @@ export const SUPPORTED_LANGUAGES: LanguageConfig[] = [
     direction: 'ltr',
     wcagVersion: '2.2',
     hasUiTranslations: true,
+    authorizationType: 'authorized',
   },
   {
     code: 'fr',
@@ -67,6 +74,7 @@ export const SUPPORTED_LANGUAGES: LanguageConfig[] = [
     direction: 'ltr',
     wcagVersion: '2.2',
     hasUiTranslations: true,
+    authorizationType: 'authorized',
   },
   {
     code: 'it',
@@ -77,6 +85,7 @@ export const SUPPORTED_LANGUAGES: LanguageConfig[] = [
     direction: 'ltr',
     wcagVersion: '2.2',
     hasUiTranslations: true,
+    authorizationType: 'authorized',
   },
   {
     code: 'ca',
@@ -87,6 +96,7 @@ export const SUPPORTED_LANGUAGES: LanguageConfig[] = [
     direction: 'ltr',
     wcagVersion: '2.2',
     hasUiTranslations: true,
+    authorizationType: 'authorized',
   },
   {
     code: 'pt-BR',
@@ -97,6 +107,7 @@ export const SUPPORTED_LANGUAGES: LanguageConfig[] = [
     direction: 'ltr',
     wcagVersion: '2.2',
     hasUiTranslations: true,
+    authorizationType: 'authorized',
   },
   // === WCAG 2.1 Languages (78 SC, 9 new WCAG 2.2 SC fallback to English) ===
   {
@@ -108,6 +119,7 @@ export const SUPPORTED_LANGUAGES: LanguageConfig[] = [
     direction: 'ltr',
     wcagVersion: '2.1',
     hasUiTranslations: true,
+    authorizationType: 'authorized',
   },
   {
     code: 'da',
@@ -118,6 +130,7 @@ export const SUPPORTED_LANGUAGES: LanguageConfig[] = [
     direction: 'ltr',
     wcagVersion: '2.1',
     hasUiTranslations: true,
+    authorizationType: 'authorized',
   },
   {
     code: 'fi',
@@ -128,6 +141,7 @@ export const SUPPORTED_LANGUAGES: LanguageConfig[] = [
     direction: 'ltr',
     wcagVersion: '2.1',
     hasUiTranslations: true,
+    authorizationType: 'authorized',
   },
   {
     code: 'no',
@@ -138,6 +152,7 @@ export const SUPPORTED_LANGUAGES: LanguageConfig[] = [
     direction: 'ltr',
     wcagVersion: '2.1',
     hasUiTranslations: true,
+    authorizationType: 'authorized',
   },
   {
     code: 'pl',
@@ -148,6 +163,7 @@ export const SUPPORTED_LANGUAGES: LanguageConfig[] = [
     direction: 'ltr',
     wcagVersion: '2.1',
     hasUiTranslations: true,
+    authorizationType: 'authorized',
   },
 ];
 
