@@ -30,7 +30,12 @@ import {
   saveSidebarVisible,
   loadSidebarVisible,
 } from './lib/filterState';
-import { getSelectedTags } from './lib/tagUtils';
+import {
+  getSelectedTags,
+  getSelectedAffectedUsers,
+  getSelectedAssignees,
+  getSelectedTechnologies,
+} from './lib/tagUtils';
 import { applyEasyMode, getEasyModeEnabled } from './lib/accessibilitySettings';
 
 import { announce } from './utils/announce';
@@ -88,11 +93,17 @@ export default function App() {
     cancelClearAll,
   } = useFavorites({ isFavoritesPage });
 
-  // Tag selection hook
+  // Tag selection hook (handles all 4 metadata types)
   const {
     hideCollapsed,
     handleTagToggle,
     handleRemoveTag,
+    handleAffectedUserToggle,
+    handleRemoveAffectedUser,
+    handleAssigneeToggle,
+    handleRemoveAssignee,
+    handleTechnologyToggle,
+    handleRemoveTechnology,
     handleClearAllTags,
     handleToggleCollapse,
   } = useTagSelection({ filters, setFilters });
@@ -129,12 +140,29 @@ export default function App() {
       }
     : results;
 
-  // If hideCollapsed is true and tags are selected, filter out non-matching criteria
-  if (hideCollapsed && filters.tag_ids && filters.tag_ids.length > 0) {
-    const selectedTagIds = filters.tag_ids;
-    const filteredItems = displayResults.items.filter((criterion) =>
-      criterion.tags?.some((tag) => selectedTagIds.includes(tag.id))
-    );
+  // If hideCollapsed is true and any metadata is selected, filter out non-matching criteria (OR logic)
+  const hasAnyMetadataSelected =
+    (filters.tag_ids && filters.tag_ids.length > 0) ||
+    (filters.affected_user_ids && filters.affected_user_ids.length > 0) ||
+    (filters.assignee_ids && filters.assignee_ids.length > 0) ||
+    (filters.technology_ids && filters.technology_ids.length > 0);
+
+  if (hideCollapsed && hasAnyMetadataSelected) {
+    const filteredItems = displayResults.items.filter((criterion) => {
+      const matchesTags =
+        filters.tag_ids?.length &&
+        criterion.tags?.some((tag) => filters.tag_ids!.includes(tag.id));
+      const matchesAffected =
+        filters.affected_user_ids?.length &&
+        criterion.affected_users?.some((u) => filters.affected_user_ids!.includes(u.id));
+      const matchesAssignees =
+        filters.assignee_ids?.length &&
+        criterion.assignees?.some((a) => filters.assignee_ids!.includes(a.id));
+      const matchesTech =
+        filters.technology_ids?.length &&
+        criterion.technologies?.some((t) => filters.technology_ids!.includes(t.id));
+      return matchesTags || matchesAffected || matchesAssignees || matchesTech;
+    });
     displayResults = {
       ...displayResults,
       items: filteredItems,
@@ -291,7 +319,7 @@ export default function App() {
                 </div>
               )}
 
-              {/* Selected tags pane */}
+              {/* Selected tags pane (all 4 metadata types) */}
               <div className="walkthrough-4">
                 <SelectedTagsPane
                   selectedTags={getSelectedTags(
@@ -299,6 +327,21 @@ export default function App() {
                     displayResults.items
                   )}
                   onRemoveTag={handleRemoveTag}
+                  selectedAffectedUsers={getSelectedAffectedUsers(
+                    filters.affected_user_ids || [],
+                    displayResults.items
+                  )}
+                  onRemoveAffectedUser={handleRemoveAffectedUser}
+                  selectedAssignees={getSelectedAssignees(
+                    filters.assignee_ids || [],
+                    displayResults.items
+                  )}
+                  onRemoveAssignee={handleRemoveAssignee}
+                  selectedTechnologies={getSelectedTechnologies(
+                    filters.technology_ids || [],
+                    displayResults.items
+                  )}
+                  onRemoveTechnology={handleRemoveTechnology}
                   onClearAll={handleClearAllTags}
                   totalResults={totalCriteriaCount}
                   matchingResults={matchingCriteriaCount}
@@ -318,6 +361,12 @@ export default function App() {
                 isFavoritesPage={isFavoritesPage}
                 selectedTags={filters.tag_ids || []}
                 onTagToggle={handleTagToggle}
+                selectedAffectedUsers={filters.affected_user_ids || []}
+                onAffectedUserToggle={handleAffectedUserToggle}
+                selectedAssignees={filters.assignee_ids || []}
+                onAssigneeToggle={handleAssigneeToggle}
+                selectedTechnologies={filters.technology_ids || []}
+                onTechnologyToggle={handleTechnologyToggle}
                 versionFilters={filters.version}
                 levelFilters={filters.level}
                 principleFilters={filters.principle}

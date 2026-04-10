@@ -164,6 +164,9 @@ export interface QueryFilters {
   version?: string[];
   tag_id?: number; // Legacy single tag (for backward compatibility)
   tag_ids?: number[]; // Multiple tags (up to 3)
+  affected_user_ids?: number[]; // Visual filter: Affects (up to 3)
+  assignee_ids?: number[]; // Visual filter: Responsibility (up to 3)
+  technology_ids?: number[]; // Visual filter: Technology (up to 3)
   page?: number;
   pageSize?: number;
   lang?: string; // Language code for translations (e.g., 'nl', 'fr')

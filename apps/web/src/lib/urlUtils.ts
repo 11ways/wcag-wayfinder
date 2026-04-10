@@ -101,6 +101,48 @@ export function parseURL(pathname: string, search: string): QueryFilters {
         }
         break;
       }
+
+      case 'affects': {
+        // 'affects:1+2+3' → affected_user_ids = [1, 2, 3] (max 3)
+        const affectedIds = value
+          .split('+')
+          .map((id) => parseInt(id, 10))
+          .filter((id) => !isNaN(id))
+          .slice(0, 3);
+
+        if (affectedIds.length > 0) {
+          filters.affected_user_ids = affectedIds;
+        }
+        break;
+      }
+
+      case 'responsibility': {
+        // 'responsibility:1+2+3' → assignee_ids = [1, 2, 3] (max 3)
+        const assigneeIds = value
+          .split('+')
+          .map((id) => parseInt(id, 10))
+          .filter((id) => !isNaN(id))
+          .slice(0, 3);
+
+        if (assigneeIds.length > 0) {
+          filters.assignee_ids = assigneeIds;
+        }
+        break;
+      }
+
+      case 'technology': {
+        // 'technology:1+2+3' → technology_ids = [1, 2, 3] (max 3)
+        const techIds = value
+          .split('+')
+          .map((id) => parseInt(id, 10))
+          .filter((id) => !isNaN(id))
+          .slice(0, 3);
+
+        if (techIds.length > 0) {
+          filters.technology_ids = techIds;
+        }
+        break;
+      }
     }
   }
 
@@ -199,6 +241,33 @@ export function buildURL(filters: QueryFilters, hash?: string): string {
     segments.push(`tag:${filters.tag_id}`);
   }
 
+  // Affects (affected users)
+  if (filters.affected_user_ids && filters.affected_user_ids.length > 0) {
+    const affectsStr = filters.affected_user_ids
+      .slice(0, 3)
+      .sort((a, b) => a - b)
+      .join('+');
+    segments.push(`affects:${affectsStr}`);
+  }
+
+  // Responsibility (assignees)
+  if (filters.assignee_ids && filters.assignee_ids.length > 0) {
+    const responsibilityStr = filters.assignee_ids
+      .slice(0, 3)
+      .sort((a, b) => a - b)
+      .join('+');
+    segments.push(`responsibility:${responsibilityStr}`);
+  }
+
+  // Technology
+  if (filters.technology_ids && filters.technology_ids.length > 0) {
+    const techStr = filters.technology_ids
+      .slice(0, 3)
+      .sort((a, b) => a - b)
+      .join('+');
+    segments.push(`technology:${techStr}`);
+  }
+
   // Build path
   const path = segments.length > 0 ? '/' + segments.join('/') + '/' : '/';
 
@@ -242,6 +311,9 @@ export function mergeWithDefaults(urlFilters: QueryFilters): QueryFilters {
     guideline_ids: urlFilters.guideline_ids,
     tag_id: urlFilters.tag_id,
     tag_ids: urlFilters.tag_ids,
+    affected_user_ids: urlFilters.affected_user_ids,
+    assignee_ids: urlFilters.assignee_ids,
+    technology_ids: urlFilters.technology_ids,
     q: urlFilters.q,
     page: urlFilters.page || 1,
     pageSize: urlFilters.pageSize || 25,

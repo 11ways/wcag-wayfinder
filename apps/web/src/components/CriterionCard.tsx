@@ -12,6 +12,8 @@ import { getIconForEmoji, faWandMagicSparkles } from '../lib/iconMapper';
 import { truncateOnWordBoundary, generateCriterionId } from '../lib/textUtils';
 import { getPrincipleColor } from '../lib/principleUtils';
 import { getLevelClass, getLevelShape } from '../lib/levelUtils';
+import { getMetadataButtonClasses } from '../lib/metadataColors';
+import { MAX_SELECTED_TAGS } from '../lib/constants';
 
 import type { Criterion, Term } from '../lib/types';
 
@@ -20,8 +22,18 @@ interface CriterionCardProps {
   isFavorite: boolean;
   onToggleFavorite: () => void;
   showTrash?: boolean;
+  // Tags selection
   selectedTags: number[];
   onTagToggle: (tagId: number) => void;
+  // Affected Users selection
+  selectedAffectedUsers: number[];
+  onAffectedUserToggle: (id: number) => void;
+  // Assignees selection
+  selectedAssignees: number[];
+  onAssigneeToggle: (id: number) => void;
+  // Technologies selection
+  selectedTechnologies: number[];
+  onTechnologyToggle: (id: number) => void;
   terms?: Term[];
 }
 
@@ -36,16 +48,35 @@ function CriterionCard({
   showTrash = false,
   selectedTags,
   onTagToggle,
+  selectedAffectedUsers,
+  onAffectedUserToggle,
+  selectedAssignees,
+  onAssigneeToggle,
+  selectedTechnologies,
+  onTechnologyToggle,
   terms = [],
 }: CriterionCardProps) {
   const { i18n } = useTranslation();
   const currentLanguage = i18n.language;
 
-  // Check if criterion has any selected tags
+  // Check if any filters are active
+  const hasAnyFilter =
+    selectedTags.length > 0 ||
+    selectedAffectedUsers.length > 0 ||
+    selectedAssignees.length > 0 ||
+    selectedTechnologies.length > 0;
+
+  // Check if criterion matches any selected metadata (OR logic)
   const hasSelectedTag =
-    selectedTags.length === 0 ||
-    (criterion.tags &&
-      criterion.tags.some((tag) => selectedTags.includes(tag.id)));
+    !hasAnyFilter ||
+    (selectedTags.length > 0 &&
+      criterion.tags?.some((tag) => selectedTags.includes(tag.id))) ||
+    (selectedAffectedUsers.length > 0 &&
+      criterion.affected_users?.some((user) => selectedAffectedUsers.includes(user.id))) ||
+    (selectedAssignees.length > 0 &&
+      criterion.assignees?.some((assignee) => selectedAssignees.includes(assignee.id))) ||
+    (selectedTechnologies.length > 0 &&
+      criterion.technologies?.some((tech) => selectedTechnologies.includes(tech.id)));
   const [isExpanded, setIsExpanded] = useState(false);
   const [isWandModalOpen, setIsWandModalOpen] = useState(false);
 
@@ -204,7 +235,7 @@ function CriterionCard({
                 {criterion.tags.map((tag) => {
                   const icon = getIconForEmoji(tag.icon);
                   const isSelected = selectedTags.includes(tag.id);
-                  const isAtMax = !isSelected && selectedTags.length >= 3;
+                  const isAtMax = !isSelected && selectedTags.length >= MAX_SELECTED_TAGS;
 
                   return (
                     <button
@@ -217,12 +248,8 @@ function CriterionCard({
                       }}
                       disabled={isAtMax}
                       className={`inline-flex items-center rounded-full border-2 px-2.5 py-0.5 text-xs font-medium transition-colors ${
-                        isSelected
-                          ? 'border-yellow-500 bg-yellow-100 text-yellow-900 dark:bg-yellow-900 dark:text-yellow-100'
-                          : isAtMax
-                            ? 'cursor-not-allowed border-transparent bg-gray-100 text-gray-400 dark:bg-gray-700 dark:text-gray-500'
-                            : 'cursor-pointer border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600'
-                      }`}
+                        getMetadataButtonClasses('tags', isSelected, isAtMax)
+                      } ${!isAtMax && !isSelected ? 'cursor-pointer' : ''}`}
                       title={
                         isAtMax
                           ? 'Maximum 3 tags selected'
@@ -255,11 +282,28 @@ function CriterionCard({
               <div className="flex flex-wrap gap-2">
                 {criterion.affected_users.map((user) => {
                   const icon = getIconForEmoji(user.icon);
+                  const isSelected = selectedAffectedUsers.includes(user.id);
+                  const isAtMax = !isSelected && selectedAffectedUsers.length >= MAX_SELECTED_TAGS;
+
                   return (
-                    <span
+                    <button
                       key={user.id}
-                      className="inline-flex items-center rounded-full border border-blue-300 bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800 dark:border-blue-700 dark:bg-blue-900 dark:text-blue-200"
-                      title={user.description || user.name}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        if (!isAtMax) {
+                          onAffectedUserToggle(user.id);
+                        }
+                      }}
+                      disabled={isAtMax}
+                      className={`inline-flex items-center rounded-full border-2 px-2.5 py-0.5 text-xs font-medium transition-colors ${
+                        getMetadataButtonClasses('affects', isSelected, isAtMax)
+                      } ${!isAtMax && !isSelected ? 'cursor-pointer' : ''}`}
+                      title={
+                        isAtMax
+                          ? 'Maximum 3 affects filters selected'
+                          : user.description || user.name
+                      }
+                      aria-pressed={isSelected}
                     >
                       {icon && (
                         <FontAwesomeIcon
@@ -269,7 +313,7 @@ function CriterionCard({
                         />
                       )}
                       {user.name}
-                    </span>
+                    </button>
                   );
                 })}
               </div>
@@ -285,11 +329,28 @@ function CriterionCard({
               <div className="flex flex-wrap gap-2">
                 {criterion.assignees.map((assignee) => {
                   const icon = getIconForEmoji(assignee.icon);
+                  const isSelected = selectedAssignees.includes(assignee.id);
+                  const isAtMax = !isSelected && selectedAssignees.length >= MAX_SELECTED_TAGS;
+
                   return (
-                    <span
+                    <button
                       key={assignee.id}
-                      className="inline-flex items-center rounded-full border border-purple-300 bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800 dark:border-purple-700 dark:bg-purple-900 dark:text-purple-200"
-                      title={assignee.description || assignee.name}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        if (!isAtMax) {
+                          onAssigneeToggle(assignee.id);
+                        }
+                      }}
+                      disabled={isAtMax}
+                      className={`inline-flex items-center rounded-full border-2 px-2.5 py-0.5 text-xs font-medium transition-colors ${
+                        getMetadataButtonClasses('responsibility', isSelected, isAtMax)
+                      } ${!isAtMax && !isSelected ? 'cursor-pointer' : ''}`}
+                      title={
+                        isAtMax
+                          ? 'Maximum 3 responsibility filters selected'
+                          : assignee.description || assignee.name
+                      }
+                      aria-pressed={isSelected}
                     >
                       {icon && (
                         <FontAwesomeIcon
@@ -299,7 +360,7 @@ function CriterionCard({
                         />
                       )}
                       {assignee.name}
-                    </span>
+                    </button>
                   );
                 })}
               </div>
@@ -315,11 +376,28 @@ function CriterionCard({
               <div className="flex flex-wrap gap-2">
                 {criterion.technologies.map((tech) => {
                   const icon = getIconForEmoji(tech.icon);
+                  const isSelected = selectedTechnologies.includes(tech.id);
+                  const isAtMax = !isSelected && selectedTechnologies.length >= MAX_SELECTED_TAGS;
+
                   return (
-                    <span
+                    <button
                       key={tech.id}
-                      className="inline-flex items-center rounded-full border border-green-300 bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800 dark:border-green-700 dark:bg-green-900 dark:text-green-200"
-                      title={tech.description || tech.name}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        if (!isAtMax) {
+                          onTechnologyToggle(tech.id);
+                        }
+                      }}
+                      disabled={isAtMax}
+                      className={`inline-flex items-center rounded-full border-2 px-2.5 py-0.5 text-xs font-medium transition-colors ${
+                        getMetadataButtonClasses('technology', isSelected, isAtMax)
+                      } ${!isAtMax && !isSelected ? 'cursor-pointer' : ''}`}
+                      title={
+                        isAtMax
+                          ? 'Maximum 3 technology filters selected'
+                          : tech.description || tech.name
+                      }
+                      aria-pressed={isSelected}
                     >
                       {icon && (
                         <FontAwesomeIcon
@@ -329,7 +407,7 @@ function CriterionCard({
                         />
                       )}
                       {tech.name}
-                    </span>
+                    </button>
                   );
                 })}
               </div>

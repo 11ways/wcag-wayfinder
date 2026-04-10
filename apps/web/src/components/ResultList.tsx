@@ -21,8 +21,18 @@ interface ResultListProps {
   favorites: Set<string>;
   onToggleFavorite: (id: string) => void;
   isFavoritesPage?: boolean;
+  // Tags selection
   selectedTags: number[];
   onTagToggle: (tagId: number) => void;
+  // Affected Users selection
+  selectedAffectedUsers: number[];
+  onAffectedUserToggle: (id: number) => void;
+  // Assignees selection
+  selectedAssignees: number[];
+  onAssigneeToggle: (id: number) => void;
+  // Technologies selection
+  selectedTechnologies: number[];
+  onTechnologyToggle: (id: number) => void;
   versionFilters?: string[];
   levelFilters?: string[];
   principleFilters?: string[];
@@ -43,6 +53,12 @@ export default function ResultList({
   isFavoritesPage = false,
   selectedTags,
   onTagToggle,
+  selectedAffectedUsers,
+  onAffectedUserToggle,
+  selectedAssignees,
+  onAssigneeToggle,
+  selectedTechnologies,
+  onTechnologyToggle,
   versionFilters = [],
   levelFilters = [],
   principleFilters = [],
@@ -274,6 +290,12 @@ export default function ResultList({
           showTrash={isFavoritesPage}
           selectedTags={selectedTags}
           onTagToggle={onTagToggle}
+          selectedAffectedUsers={selectedAffectedUsers}
+          onAffectedUserToggle={onAffectedUserToggle}
+          selectedAssignees={selectedAssignees}
+          onAssigneeToggle={onAssigneeToggle}
+          selectedTechnologies={selectedTechnologies}
+          onTechnologyToggle={onTechnologyToggle}
         />
       </>
     );
@@ -291,6 +313,12 @@ export default function ResultList({
           showTrash={isFavoritesPage}
           selectedTags={selectedTags}
           onTagToggle={onTagToggle}
+          selectedAffectedUsers={selectedAffectedUsers}
+          onAffectedUserToggle={onAffectedUserToggle}
+          selectedAssignees={selectedAssignees}
+          onAssigneeToggle={onAssigneeToggle}
+          selectedTechnologies={selectedTechnologies}
+          onTechnologyToggle={onTechnologyToggle}
           terms={terms}
         />
       </>
@@ -312,6 +340,12 @@ export default function ResultList({
             showTrash={isFavoritesPage}
             selectedTags={selectedTags}
             onTagToggle={onTagToggle}
+            selectedAffectedUsers={selectedAffectedUsers}
+            onAffectedUserToggle={onAffectedUserToggle}
+            selectedAssignees={selectedAssignees}
+            onAssigneeToggle={onAssigneeToggle}
+            selectedTechnologies={selectedTechnologies}
+            onTechnologyToggle={onTechnologyToggle}
             terms={terms}
           />
         ))}

@@ -7,7 +7,7 @@ import {
   getFuzzySuggestions,
   type FuzzySuggestion,
 } from '../lib/fuzzySearch';
-import { countCriteriaWithTags, generateResultsMessage } from '../lib/resultsUtils';
+import { countCriteriaWithMetadata, generateResultsMessage } from '../lib/resultsUtils';
 import { announce } from '../utils/announce';
 import { getPageSize } from '../lib/accessibilitySettings';
 
@@ -105,20 +105,32 @@ export function useResults({
     }
   }, [allCriteriaData]);
 
-  // === TanStack Query for tag counting (when tags are selected) ===
-  const filtersWithoutTags = useMemo(() => {
-    if (!filters.tag_ids || filters.tag_ids.length === 0) return null;
+  // === TanStack Query for metadata counting (when any metadata is selected) ===
+  const hasAnyMetadataSelected = useMemo(() => {
+    return (
+      (filters.tag_ids && filters.tag_ids.length > 0) ||
+      (filters.affected_user_ids && filters.affected_user_ids.length > 0) ||
+      (filters.assignee_ids && filters.assignee_ids.length > 0) ||
+      (filters.technology_ids && filters.technology_ids.length > 0)
+    );
+  }, [filters.tag_ids, filters.affected_user_ids, filters.assignee_ids, filters.technology_ids]);
+
+  const filtersWithoutMetadata = useMemo(() => {
+    if (!hasAnyMetadataSelected) return null;
     return {
       ...filtersWithLang,
       tag_ids: undefined,
+      affected_user_ids: undefined,
+      assignee_ids: undefined,
+      technology_ids: undefined,
       pageSize: 1000,
     };
-  }, [filtersWithLang]);
+  }, [filtersWithLang, hasAnyMetadataSelected]);
 
-  const { data: allDataForTags } = useCriteriaQuery(
-    filtersWithoutTags ?? {},
+  const { data: allDataForMetadata } = useCriteriaQuery(
+    filtersWithoutMetadata ?? {},
     {
-      enabled: !!filtersWithoutTags && !hasEmptyFilters && !isFavoritesPage,
+      enabled: !!filtersWithoutMetadata && !hasEmptyFilters && !isFavoritesPage,
     }
   );
 
@@ -135,14 +147,19 @@ export function useResults({
       return { totalCriteriaCount: 0, matchingCriteriaCount: 0 };
     }
 
-    if (filters.tag_ids && filters.tag_ids.length > 0 && allDataForTags) {
-      const matchingCount = countCriteriaWithTags(allDataForTags.items, filters.tag_ids);
-      return { totalCriteriaCount: allDataForTags.total, matchingCriteriaCount: matchingCount };
+    if (hasAnyMetadataSelected && allDataForMetadata) {
+      const matchingCount = countCriteriaWithMetadata(allDataForMetadata.items, {
+        tagIds: filters.tag_ids || [],
+        affectedUserIds: filters.affected_user_ids || [],
+        assigneeIds: filters.assignee_ids || [],
+        technologyIds: filters.technology_ids || [],
+      });
+      return { totalCriteriaCount: allDataForMetadata.total, matchingCriteriaCount: matchingCount };
     }
 
     const total = results.total;
     return { totalCriteriaCount: total, matchingCriteriaCount: total };
-  }, [hasEmptyFilters, filters.tag_ids, allDataForTags, results.total]);
+  }, [hasEmptyFilters, hasAnyMetadataSelected, allDataForMetadata, filters.tag_ids, filters.affected_user_ids, filters.assignee_ids, filters.technology_ids, results.total]);
 
   // === Generate status message ===
   const statusMessage = useMemo(() => {
